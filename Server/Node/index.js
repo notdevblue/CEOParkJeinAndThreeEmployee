@@ -10,5 +10,5 @@ hs.process(ws => {
     if (ws.match == true)
         match.leaveQueue(ws);
     if (ws.game != null)
-        console.log(""); // 탈주 처리
+        ws.game.left(ws);
 });

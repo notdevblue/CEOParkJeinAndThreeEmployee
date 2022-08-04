@@ -16,7 +16,22 @@ class game
     broadcast(payload) {
         this.players.forEach(ws => {
             hs.send(ws, payload);
+            ws.won = 0;
+            ws.onDamage = [];
+
+            this.init(
+                ws,
+                this.initialHp,
+                this.initialAtk,
+                this.initialSpeed
+            );
         });
+    }
+
+    init(ws, hp, atk, speed) {
+        ws.hp = hp
+        ws.atk = atk;
+        ws.speed = speed;
     }
 
     loaded() {
@@ -52,6 +67,50 @@ class game
             });
         }
     }
+    
+    dead(deadws) {
+        ++this.players.find(x => x != deadws).won;
+    }
+
+    damage(damagedws, customDamageAction) {
+
+    }
+
+    gameEnd(winnerId, reason) {
+        let payload = {
+            winnerId: winnerId,
+            reason: reason
+        }
+
+        this.players.forEach(ws => {
+            hs.send(ws, hs.toJson(
+                "gameend",
+                JSON.stringify(payload)
+            ));
+
+            ws.game = null;
+        });
+    }
+
+    left(leftws) {
+        let idx = this.players.findIndex(x => x == leftws);
+        this.players.splice(idx, 1);
+
+        this.broadcast(hs.toJson(
+            "left",
+            JSON.stringify({
+                id: leftws.id
+            }),
+        ));
+
+        if (this.players.length <= 1) {
+            let lastPlayerid = this.players.find(x => x != leftws);
+            this.gameEnd(lastPlayerid.id, "상대가 게임을 종료했습니다.");
+        }
+
+        leftws.game = null;
+    }
+
 }
 
 module.exports = game;
