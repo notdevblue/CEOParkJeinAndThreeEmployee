@@ -35,10 +35,12 @@ namespace HanSocket
 
             ws.OnMessage += (sender, e) =>
             {
-                Debug.Log($"Arrived: {e.Data}");
 
                 DataVO data = JsonUtility.FromJson<DataVO>(e.Data);
                 BufferHandler.Instance.Handle(data.type, data.payload);
+                
+                if(data.type != "move")
+                    Debug.Log($"Arrived: {e.Data}");
             };
 
             ws.Connect();

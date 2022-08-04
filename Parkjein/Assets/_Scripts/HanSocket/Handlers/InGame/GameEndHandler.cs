@@ -27,7 +27,7 @@ namespace HanSocket.Handlers.InGame
         protected override void OnFlag()
         {
             string displayText =
-                (vo.winnerId == UserData.Instance.myId ? "승리\n" : "패배\n")
+                (vo.winnerId == UserData.Instance.myId ? "Victory\n" : "Lost\n")
                 + vo.reason;
 
             _gameEndCvs.Display(displayText);

@@ -12,7 +12,7 @@ namespace HanSocket.Sender.InGame
         private float _frame;
         private WaitForSecondsRealtime _wait;
 
-        private void Awake()
+        private void Start()
         {
             _frame = 1.0f / frame;
             _wait  = new WaitForSecondsRealtime(_frame);
@@ -31,7 +31,7 @@ namespace HanSocket.Sender.InGame
                         UserData.Instance.myId,
                         transform.position
                         ).ToJson()
-                );
+                , true);
 
                 yield return _wait;
             }

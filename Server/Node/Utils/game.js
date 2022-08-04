@@ -71,11 +71,13 @@ class game
 
     newLoop() {
         this.deadPlayers = 0;
+        let targetId =
+            (this.justDiedPlayer == null) ? -1 : this.justDiedPlayer.id;
 
         this.broadcast(hs.toJson(
             "newloop",
             JSON.stringify({
-                skill: this.justDiedPlayer.id,
+                skill: targetId,
             }),
         ));
 
@@ -91,10 +93,10 @@ class game
             let ids = [];
             this.players.forEach(ws => {
                 ids.push(ws.id);
+                ws.setWon  = 0;
+                ws.gameWon = 0;
             });
 
-            ws.setWon  = 0;
-            ws.gameWon = 0;
 
             let inGameData = {
                 // 플레이어 아이디 데이터
@@ -124,10 +126,12 @@ class game
                     JSON.stringify(inGameData)
                 ));
             });
+
+            this.skillSelectCount = 2;
+            this.newLoop();
         }
         
-        this.skillSelectCount = 2;
-        this.newLoop();
+
     }
 
     skillselected(index) {
@@ -137,12 +141,14 @@ class game
             let pos = new Vector2(-2.0, 0.0);
 
             this.players.forEach(ws => {
-                ws.send(hs.toJson(
+                this.broadcast(hs.toJson(
                     "gamestart",
                     JSON.stringify({
+                        id: ws.id,
                         pos: pos,
                     }),
                 ));
+
                 pos.x = 2;
             });
         }
@@ -152,30 +158,37 @@ class game
     dead(deadws) {
         ++this.deadPlayers;
         this.justDiedPlayer = deadws;
+
         if (this.deadPlayers >= this.players.length - 1) {
             let ws = this.players.find(x => x != deadws);
+            ++ws.setWon;
 
-            if (++ws.setWon >= this.setWonStackToWin) {
-                if (++ws.gameWon >= this.gameWonStackToWin) {
+            if (ws.setWon >= this.setWonStackToWin) { // 세트 승리
+                ws.setWon     = 0;
+                deadws.setWon = 0;
+                ++ws.gameWon;
+
+                if (ws.gameWon >= this.gameWonStackToWin) { // 게임 승리
                     this.gameEnd(ws.id);
                     return;
                 }
-
+                
+                // 새 세트 실행
+                this.skillSelectCount = 1;
                 this.newLoop();
-            } else {
-                // TODO: 부활 처리
-                hs.send(deadws, hs.toJson(
+
+            } else { // 리스폰 처리
+                this.broadcast(hs.toJson(
                     "respawn",
                     JSON.stringify({
+                        id: deadws.id,
                         pos: new Vector2(0.0, 0.0),
                     }),
                 ));
+
+                // TODO: n초간 무적 처리
             }
         }
-            
-        
-        this.skillSelectCount = 1;
-        this.newLoop();
     }
     
     gameEnd(winnerId, reason = "") {
@@ -190,7 +203,8 @@ class game
                 JSON.stringify(payload)
             ));
 
-            ws.game = null;
+            ws.game  = null;
+            ws.match = false;
         });
     }
 
@@ -207,7 +221,7 @@ class game
 
         if (this.players.length <= 1) {
             let lastPlayerid = this.players.find(x => x != leftws);
-            this.gameEnd(lastPlayerid.id, "상대가 게임을 종료했습니다.");
+            this.gameEnd(lastPlayerid.id, "Enemy left.");
         }
 
         leftws.game = null;

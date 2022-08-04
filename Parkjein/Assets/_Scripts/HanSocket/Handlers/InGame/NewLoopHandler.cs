@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using HanSocket.Data;
 using HanSocket.VO.InGame;
+using UI.InGame;
 using UnityEngine;
 
 namespace HanSocket.Handlers.InGame
@@ -12,6 +13,14 @@ namespace HanSocket.Handlers.InGame
 
         private NewLoopVO vo;
 
+        private SkillSelectCanvas _cvsSkillSelect;
+
+        private void Start()
+        {
+            _cvsSkillSelect = FindObjectOfType<SkillSelectCanvas>();
+            _cvsSkillSelect.gameObject.SetActive(false);
+        }
+
         protected override void OnArrived(string payload)
         {
             vo = JsonUtility.FromJson<NewLoopVO>(payload);
@@ -19,11 +28,8 @@ namespace HanSocket.Handlers.InGame
 
         protected override void OnFlag()
         {
-            
-            // foreach(var item in UserData.Instance.users)
-            // {
-            //     item.Value.transform.position = Vector2.zero;
-            // }
+            _cvsSkillSelect
+                .Set((vo.skill == UserData.Instance.myId) || (vo.skill == -1));
         }
     }
 }

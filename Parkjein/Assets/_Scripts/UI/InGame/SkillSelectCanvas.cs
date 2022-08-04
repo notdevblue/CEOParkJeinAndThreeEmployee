@@ -16,7 +16,14 @@ namespace UI.InGame
             okButton.onClick.AddListener(() => {
                 // TODO: 나중에 Payload 로 선택한 스킬 인덱스 보내야 함
                 WebSocketClient.Instance.Send("skillselected", "");
+                this.gameObject.SetActive(false);
             });
+        }
+
+        public void Set(bool canSelect)
+        {
+            okButton.interactable = canSelect;
+            gameObject.SetActive(true);
         }
     }
 }

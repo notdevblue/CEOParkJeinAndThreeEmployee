@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac5803feced3f1b32a07c23217f46228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  okButton: {fileID: 0}
+  okButton: {fileID: 1892248272}
 --- !u!1 &524227350
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,8 +679,8 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 864276347}
           m_TargetAssemblyTypeName: HanSocket.Sender.InGame.DeadSender, Assembly-CSharp
-          m_MethodName: OnDead
-          m_Mode: 1
+          m_MethodName: Active
+          m_Mode: 0
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -691,19 +691,7 @@ MonoBehaviour:
           m_CallState: 2
     OnDeactive:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 864276347}
-          m_TargetAssemblyTypeName: HanSocket.Sender.InGame.DeadSender, Assembly-CSharp
-          m_MethodName: OnDead
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   <EventIsToggle>k__BackingField: 0
   <InitalActiveStatus>k__BackingField: 0
 --- !u!1 &1058303437
@@ -851,11 +839,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1349045545}
   - component: {fileID: 1349045546}
+  - component: {fileID: 1349045553}
   - component: {fileID: 1349045548}
   - component: {fileID: 1349045547}
   - component: {fileID: 1349045549}
   - component: {fileID: 1349045550}
   - component: {fileID: 1349045551}
+  - component: {fileID: 1349045552}
   m_Layer: 0
   m_Name: Handlers
   m_TagString: Untagged
@@ -950,6 +940,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc674cf542e98b499f8397607bce9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1349045552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349045544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f02a72d83a30447191bd9f0676248cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1349045553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349045544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 776e7afb4b7e8bae2825210c98939ec6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cvsSkill: {fileID: 355752491}
 --- !u!1 &1357797936
 GameObject:
   m_ObjectHideFlags: 0
