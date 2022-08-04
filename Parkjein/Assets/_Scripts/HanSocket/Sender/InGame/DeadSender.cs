@@ -8,6 +8,7 @@ namespace HanSocket.Sender.InGame
     {
         public void OnDead()
         {
+            Debug.LogError("ASDASDASD");
             WebSocketClient.Instance.Send("dead", "");
         }
     }

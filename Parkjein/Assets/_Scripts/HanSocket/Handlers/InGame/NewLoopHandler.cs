@@ -19,10 +19,11 @@ namespace HanSocket.Handlers.InGame
 
         protected override void OnFlag()
         {
-            foreach(var item in UserData.Instance.users)
-            {
-                item.Value.transform.position = Vector2.zero;
-            }
+            
+            // foreach(var item in UserData.Instance.users)
+            // {
+            //     item.Value.transform.position = Vector2.zero;
+            // }
         }
     }
 }

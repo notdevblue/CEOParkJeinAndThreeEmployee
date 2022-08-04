@@ -27,7 +27,7 @@ namespace HanSocket.Data
         public Dictionary<int, GameObject> users;
 
 
-        public void Init(GameStartVO vo, GameObject prefab)
+        public void Init(GameDataVO vo, GameObject prefab)
         {
             myId  = vo.myId;
 
@@ -45,6 +45,7 @@ namespace HanSocket.Data
             vo.players.ForEach(e => {
 
                 var obj = MonoBehaviour.Instantiate(prefab);
+                obj.SetActive(false);
                 if (e != myId)
                 {
                     obj.name = $"RemotePlayer {e}";

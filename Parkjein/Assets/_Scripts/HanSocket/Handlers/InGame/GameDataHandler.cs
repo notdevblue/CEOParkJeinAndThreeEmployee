@@ -4,12 +4,12 @@ using UnityEngine;
 
 namespace HanSocket.Handlers.InGame
 {
-    public class GameStartHandler : HandlerBase
+    public class GameDataHandler : HandlerBase
     {
-        protected override string Type => "gamestart";
+        protected override string Type => "gamedata";
 
         private GameObject _playerPrefab;
-        private GameStartVO vo;
+        private GameDataVO vo;
 
         private void Start()
         {
@@ -18,7 +18,7 @@ namespace HanSocket.Handlers.InGame
 
         protected override void OnArrived(string payload)
         {
-            vo = JsonUtility.FromJson<GameStartVO>(payload);
+            vo = JsonUtility.FromJson<GameDataVO>(payload);
         }
 
         protected override void OnFlag()

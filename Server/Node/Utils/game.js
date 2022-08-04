@@ -1,4 +1,5 @@
 const hs = require("../HanSocket/HanSocket");
+const Vector2 = require("./Vector2");
 
 class game
 {
@@ -22,6 +23,13 @@ class game
         this.initialRotationSpeed = 1;
 
         this.initialPushPower     = 10; // 피격 시
+        
+        this.skillSelectCount     = 0; // 스킬 선택 카운트
+        this.gameWonStackToWin    = 3;
+        this.setWonStackToWin     = 2;
+        
+        // (3판 2선승제) => 5판 3선승
+        // 한 세트 끝 마다 능력
     }
 
     broadcast(payload, excludeIds = [-1,]) {
@@ -30,14 +38,11 @@ class game
             // 제외
             if (excludeIds.findIndex(x => x == ws.id) != -1)
                 return;
-
-            hs.send(ws, payload);
-            ws.won = 0;
+            
+            ws.send(payload);
             ws.onDamage = [];
 
-            this.init(
-                ws
-            );
+            this.init(ws);
         });
     }
 
@@ -65,11 +70,7 @@ class game
     }
 
     newLoop() {
-        this.players.forEach(ws => {
-            this.deadPlayers = 0;
-
-            this.init(ws);
-        });
+        this.deadPlayers = 0;
 
         this.broadcast(hs.toJson(
             "newloop",
@@ -91,6 +92,9 @@ class game
             this.players.forEach(ws => {
                 ids.push(ws.id);
             });
+
+            ws.setWon  = 0;
+            ws.gameWon = 0;
 
             let inGameData = {
                 // 플레이어 아이디 데이터
@@ -116,23 +120,65 @@ class game
             this.players.forEach(ws => {
                 inGameData.myId = ws.id;
                 ws.send(hs.toJson(
-                    "gamestart",
+                    "gamedata",
                     JSON.stringify(inGameData)
                 ));
             });
         }
+        
+        this.skillSelectCount = 2;
+        this.newLoop();
+    }
+
+    skillselected(index) {
+        // TODO: 스킬 적용
+
+        if (--this.skillSelectCount <= 0) {
+            let pos = new Vector2(-2.0, 0.0);
+
+            this.players.forEach(ws => {
+                ws.send(hs.toJson(
+                    "gamestart",
+                    JSON.stringify({
+                        pos: pos,
+                    }),
+                ));
+                pos.x = 2;
+            });
+        }
+        
     }
     
     dead(deadws) {
         ++this.deadPlayers;
         this.justDiedPlayer = deadws;
-        if (this.deadPlayers >= this.players.length - 1)
-            ++this.players.find(x => x != deadws).won;
+        if (this.deadPlayers >= this.players.length - 1) {
+            let ws = this.players.find(x => x != deadws);
+
+            if (++ws.setWon >= this.setWonStackToWin) {
+                if (++ws.gameWon >= this.gameWonStackToWin) {
+                    this.gameEnd(ws.id);
+                    return;
+                }
+
+                this.newLoop();
+            } else {
+                // TODO: 부활 처리
+                hs.send(deadws, hs.toJson(
+                    "respawn",
+                    JSON.stringify({
+                        pos: new Vector2(0.0, 0.0),
+                    }),
+                ));
+            }
+        }
+            
         
+        this.skillSelectCount = 1;
         this.newLoop();
     }
     
-    gameEnd(winnerId, reason) {
+    gameEnd(winnerId, reason = "") {
         let payload = {
             winnerId: winnerId,
             reason: reason

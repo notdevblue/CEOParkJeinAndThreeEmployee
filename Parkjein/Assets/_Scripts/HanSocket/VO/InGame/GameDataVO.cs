@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace HanSocket.VO.InGame
 {    
     [Serializable]
-    public class GameStartVO : ValueObject
+    public class GameDataVO : ValueObject
     {
         public List<int> players;
         public int myId;
