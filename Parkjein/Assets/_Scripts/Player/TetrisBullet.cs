@@ -7,29 +7,18 @@ public class TetrisBullet : MonoBehaviour
     [SerializeField]
     private Rigidbody2D rigid;
 
-    private Vector2 startPos = Vector2.zero;
-    private Vector2 targetPos = Vector2.zero;
-
-    [SerializeField]
-    private float speed = 3f;
+    public int bulletIdx;
 
     public void SetActive(bool active)
     {
         gameObject.SetActive(active);
     }
 
-    private void Update()
+    public void Shoot(Vector3 curPos,Vector2 dir,float speed)
     {
-        
-    }
-
-    public void Shoot(Transform curPos, Vector2 targetPos)
-    {
-        transform.position = startPos = curPos.position;
-        this.targetPos = targetPos;
+        transform.position = curPos;
         this.SetActive(true);
-
-        Vector2 dir = targetPos - (Vector2)transform.position;
+        
         //float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
         rigid.AddForce(dir * speed, ForceMode2D.Impulse);

@@ -2,34 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using _Core;
+using HanSocket;
+using HanSocket.VO.InGame;
+using HanSocket.Data;
 
 public class PlayerShoot : MonoBehaviour
 {
     private const KeyCode SHOOT = KeyCode.Mouse0;
 
-    private TetrisBullet[] bulletPrefab;
-
     [SerializeField]
-    private Transform bulletParent;
-
-    [SerializeField]
-    private int initCount = 5;
-
-    private Queue<TetrisBullet> bulletQueue = new Queue<TetrisBullet>();
+    private float bulletSpeed = 3f;
 
     private Camera mainCam;
-
-    private void Awake()
-    {
-        bulletPrefab = Resources.LoadAll<TetrisBullet>("Bullets");
-
-        for (int i = 0; i < initCount; i++)
-        {
-            TetrisBullet bullet = InstantiateBullet();
-            bulletQueue.Enqueue(bullet);
-            bullet.SetActive(false);
-        }
-    }
 
     private void Start()
     {
@@ -44,18 +28,13 @@ public class PlayerShoot : MonoBehaviour
         }
     }
 
-    private TetrisBullet InstantiateBullet()
-    {
-        int idx = Random.Range(0, bulletPrefab.Length);
-        TetrisBullet bul = Instantiate(bulletPrefab[idx], bulletParent);
-
-        return bul;
-    }
-
     private void Shoot()
     {
-        TetrisBullet bullet = bulletQueue.Count > 0 ? bulletQueue.Dequeue() : InstantiateBullet();
+        TetrisBullet bullet = BulletPool.Instance.GetBullet();
+        Vector2 dir = mainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
 
-        bullet.Shoot(transform, mainCam.ScreenToWorldPoint(Input.mousePosition));
+        WebSocketClient.Instance.Send("fire",
+            new FireVO( bullet.bulletIdx, transform.position, dir, bulletSpeed).ToJson());
+        bullet.Shoot(transform.position, dir,bulletSpeed);
     }
 }
