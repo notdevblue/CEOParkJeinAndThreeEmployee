@@ -11,6 +11,7 @@ public class PlayerMove : MonoBehaviour
 
     private SpriteRenderer sr;
     private Rigidbody2D rigid;
+    private PlayerAnimation anim;
 
     [SerializeField]
     private float moveSpeed = 5f;
@@ -30,6 +31,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Start()
     {
+        anim = GetComponent<PlayerAnimation>();
         rigid = GetComponent<Rigidbody2D>();
     }
 
@@ -45,9 +47,11 @@ public class PlayerMove : MonoBehaviour
         {
             Move(Vector3.left);
         }
-        if (Input.GetKey(RIGHT))
+        else if (Input.GetKey(RIGHT))
         {
             Move(Vector3.right);
+        }else {
+            anim.Anim.SetBool(anim.ANIM_MOVE, false);
         }
     }
 
@@ -72,8 +76,14 @@ public class PlayerMove : MonoBehaviour
         {
             if(dir.x != 0)
             {
-                sr.flipX = dir.x > 0;
+                sr.flipX = dir.x < 0;
             }
+
+            anim.Anim.SetBool(anim.ANIM_MOVE, true);
+        }
+        else
+        {
+            anim.Anim.SetBool(anim.ANIM_MOVE, false);
         }
 
         transform.position += dir * moveSpeed * Time.deltaTime;

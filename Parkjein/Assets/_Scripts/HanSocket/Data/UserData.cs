@@ -49,15 +49,18 @@ namespace HanSocket.Data
                 if (e != myId)
                 {
                     obj.name = $"RemotePlayer {e}";
-                    obj.AddComponent<Remote>();
+
+                    obj.GetComponent<PlayerMove>().enabled = false;
+                    obj.GetComponent<PlayerShoot>().enabled = false;
+                    obj.GetComponent<PositionSender>().enabled = false;
+                    obj.GetComponent<Rigidbody2D>().gravityScale = 0;
                 }
                 else
                 {
                     obj.name = $"Player {e}";
-                    obj.AddComponent<PlayerMove>();
-                    obj.AddComponent<PlayerShoot>();
-                    obj.AddComponent<PositionSender>();
-                    obj.AddComponent<Rigidbody2D>();
+
+                    obj.GetComponent<Rigidbody2D>().gravityScale = 1;
+                    obj.GetComponent<Remote>().enabled = false;
                 }
 
                 users.Add(e, obj);
