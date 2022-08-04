@@ -22,7 +22,7 @@ namespace HanSocket.Data
         public Dictionary<int, GameObject> users;
 
 
-        public void Init(GameStartVO vo)
+        public void Init(GameStartVO vo, GameObject prefab)
         {
             myId  = vo.myId;
             atk   = vo.atk;
@@ -32,7 +32,17 @@ namespace HanSocket.Data
 
             users = new Dictionary<int, GameObject>();
             vo.players.ForEach(e => {
-                users.Add(e, null);
+
+                var obj = MonoBehaviour.Instantiate(prefab);
+                if (e != myId)
+                    obj.AddComponent<Remote>();
+                else
+                {
+                    obj.AddComponent<PlayerMove>();
+                    obj.AddComponent<PlayerShoot>();
+                }
+
+                users.Add(e, prefab);
             });
         }
     }

@@ -8,7 +8,13 @@ namespace HanSocket.Handlers.InGame
     {
         protected override string Type => "gamestart";
 
-        GameStartVO vo;
+        private GameObject _playerPrefab;
+        private GameStartVO vo;
+
+        private void Start()
+        {
+            _playerPrefab = Resources.Load<GameObject>("Player");
+        }
 
         protected override void OnArrived(string payload)
         {
@@ -17,7 +23,7 @@ namespace HanSocket.Handlers.InGame
 
         protected override void OnFlag()
         {
-            UserData.Instance.Init(vo);
+            UserData.Instance.Init(vo, _playerPrefab);
         }
     }
 }
