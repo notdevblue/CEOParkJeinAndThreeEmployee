@@ -28,7 +28,7 @@ public class PlayerShoot : MonoBehaviour
     {
         if(Input.GetKeyDown(SHOOT))
         {
-            Attack();
+            Shoot();
         }
     }
 
@@ -45,6 +45,7 @@ public class PlayerShoot : MonoBehaviour
         //WebSocketClient.Instance.Send("fire",
         //    new FireVO( bullet.bulletIdx, transform.position, dir, bulletSpeed).ToJson());
 
+        anim.Anim.SetTrigger(anim.ANIM_ATTACK);
         bullet.Shoot(transform.position, dir, bulletSpeed);
     }
 }
