@@ -1,11 +1,13 @@
 const hs = require("../HanSocket/HanSocket");
+const game = require("./game");
 const write = require("./Logger");
 
 class match
 {
     constructor() {
         this.minimumPlayer = 1;
-        this.matches;
+        this.matches = [];
+        this.matchId = 0;
         this.matchqueue = [];
     }
 
@@ -29,25 +31,28 @@ class match
     matchmake() {
         if (this.matchqueue.length < this.minimumPlayer) return;
 
-        this.queue = [];
+        let queue = [];
 
         for (let i = 0; i < this.minimumPlayer; ++i) {
             let idx = Math.floor(Math.random() * this.matchqueue.length);
-            this.queue.push(this.matchqueue[idx]);
+            queue.push(this.matchqueue[idx]);
             
             this.matchqueue.splice(idx, 1);
         }
 
-        if (this.queue.findIndex(x => x == undefined) != -1)
-        {
+        if (queue.findIndex(x => x == undefined) != -1) {
             write("메치메이킹 중 유저 처리 오류 발생");
             return;
         }
 
-        this.queue.forEach(ws => {
+        this.matches[++this.matchId] = new game(queue, this.matchId);
+
+        queue.forEach(ws => {
             ws.ingame = true;
+            ws.match = undefined;
+            ws.game = this.matches[this.matchId];
             hs.send(ws, hs.toJson("ingame", ""));
-        })
+        });
     }
 
 

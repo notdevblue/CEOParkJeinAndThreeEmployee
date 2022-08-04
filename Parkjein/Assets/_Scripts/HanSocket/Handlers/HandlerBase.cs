@@ -30,8 +30,14 @@ namespace HanSocket.Handlers
          }
       }
 
-
+      /// <summary>
+      /// 도착시 웹소켓 쓰레드에서 호출됨
+      /// </summary>
       abstract protected void OnArrived(string payload);
+
+      /// <summary>
+      /// OnArrived 후 호출됨
+      /// </summary>
       abstract protected void OnFlag();
    }
 }

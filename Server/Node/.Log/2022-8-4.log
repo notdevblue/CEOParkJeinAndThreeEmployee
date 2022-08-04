@@ -381,3 +381,437 @@
 2022-8-4 16-7-49-382 					[  ] Server is listening
 2022-8-4 16-7-49-383 					[  ] Found heandler exampleHandler.js
 2022-8-4 16-7-49-383 					[  ] Found heandler matchmaking.js
+2022-8-4 16-10-40-756 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-4 16-10-42-713 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-4 16-10-42-714 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-4 16-10-42-715 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-4 16-10-44-72 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-4 16-10-44-73 					[  ] Sending {"type":"unmatch","payload":""} to 127.0.0.1:48000
+2022-8-4 16-10-49-641 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-4 16-11-28-414 					
+2022-8-4 16-11-28-416 					[II] Server started on port 48000.
+2022-8-4 16-11-28-416 					[  ] Server is listening
+2022-8-4 16-11-28-417 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-11-28-417 					[  ] Found heandler matchmaking.js
+2022-8-4 16-11-29-759 					
+2022-8-4 16-11-29-760 					[II] Server started on port 48000.
+2022-8-4 16-11-29-760 					[  ] Server is listening
+2022-8-4 16-11-29-761 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-11-29-761 					[  ] Found heandler matchmaking.js
+2022-8-4 16-11-32-607 					
+2022-8-4 16-11-32-608 					[II] Server started on port 48000.
+2022-8-4 16-11-32-608 					[  ] Server is listening
+2022-8-4 16-11-32-609 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-11-32-609 					[  ] Found heandler matchmaking.js
+2022-8-4 16-13-14-418 					
+2022-8-4 16-13-14-420 					[II] Server started on port 48000.
+2022-8-4 16-13-14-420 					[  ] Server is listening
+2022-8-4 16-13-14-420 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-13-14-421 					[  ] Found heandler matchmaking.js
+2022-8-4 16-13-31-777 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-4 16-13-33-13 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-4 16-13-37-815 					
+2022-8-4 16-13-37-816 					[II] Server started on port 48000.
+2022-8-4 16-13-37-816 					[  ] Server is listening
+2022-8-4 16-13-37-817 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-13-37-817 					[  ] Found heandler matchmaking.js
+2022-8-4 16-14-3-490 					
+2022-8-4 16-14-3-491 					[II] Server started on port 48000.
+2022-8-4 16-14-3-491 					[  ] Server is listening
+2022-8-4 16-14-3-492 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-14-3-492 					[  ] Found heandler matchmaking.js
+2022-8-4 16-14-8-744 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-4 16-14-12-709 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-4 16-14-12-711 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-4 16-14-12-712 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-4 16-14-14-888 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-4 16-14-14-889 					[  ] Sending {"type":"unmatch","payload":""} to 127.0.0.1:48000
+2022-8-4 16-14-32-976 					
+2022-8-4 16-14-32-977 					[II] Server started on port 48000.
+2022-8-4 16-14-32-977 					[  ] Server is listening
+2022-8-4 16-14-32-978 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-14-32-978 					[  ] Found heandler matchmaking.js
+2022-8-4 16-14-38-300 					
+2022-8-4 16-14-38-302 					[II] Server started on port 48000.
+2022-8-4 16-14-38-302 					[  ] Server is listening
+2022-8-4 16-14-38-302 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-14-38-303 					[  ] Found heandler matchmaking.js
+2022-8-4 16-14-54-979 					
+2022-8-4 16-14-54-981 					[II] Server started on port 48000.
+2022-8-4 16-14-54-981 					[  ] Server is listening
+2022-8-4 16-14-54-981 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-14-54-982 					[  ] Found heandler matchmaking.js
+2022-8-4 16-14-55-716 					
+2022-8-4 16-14-55-717 					[II] Server started on port 48000.
+2022-8-4 16-14-55-717 					[  ] Server is listening
+2022-8-4 16-14-55-718 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-14-55-718 					[  ] Found heandler matchmaking.js
+2022-8-4 16-26-28-369 					
+2022-8-4 16-26-28-371 					[II] Server started on port 48000.
+2022-8-4 16-26-28-371 					[  ] Server is listening
+2022-8-4 16-26-28-371 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-26-28-372 					[  ] Found heandler matchmaking.js
+2022-8-4 16-26-33-214 					
+2022-8-4 16-26-33-215 					[II] Server started on port 48000.
+2022-8-4 16-26-33-215 					[  ] Server is listening
+2022-8-4 16-26-33-216 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-26-33-216 					[  ] Found heandler matchmaking.js
+2022-8-4 16-26-44-73 					
+2022-8-4 16-26-44-74 					[II] Server started on port 48000.
+2022-8-4 16-26-44-75 					[  ] Server is listening
+2022-8-4 16-26-44-75 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-26-44-76 					[  ] Found heandler matchmaking.js
+2022-8-4 16-26-50-478 					
+2022-8-4 16-26-50-479 					[II] Server started on port 48000.
+2022-8-4 16-26-50-479 					[  ] Server is listening
+2022-8-4 16-26-50-479 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-26-50-480 					[  ] Found heandler matchmaking.js
+2022-8-4 16-26-57-987 					
+2022-8-4 16-26-57-988 					[II] Server started on port 48000.
+2022-8-4 16-26-57-988 					[  ] Server is listening
+2022-8-4 16-26-57-989 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-26-57-989 					[  ] Found heandler matchmaking.js
+2022-8-4 16-26-59-917 					
+2022-8-4 16-26-59-918 					[II] Server started on port 48000.
+2022-8-4 16-26-59-918 					[  ] Server is listening
+2022-8-4 16-26-59-919 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-26-59-920 					[  ] Found heandler matchmaking.js
+2022-8-4 16-27-1-515 					
+2022-8-4 16-27-1-517 					[II] Server started on port 48000.
+2022-8-4 16-27-1-517 					[  ] Server is listening
+2022-8-4 16-27-1-518 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-27-1-519 					[  ] Found heandler matchmaking.js
+2022-8-4 16-27-4-253 					
+2022-8-4 16-27-4-254 					[II] Server started on port 48000.
+2022-8-4 16-27-4-254 					[  ] Server is listening
+2022-8-4 16-27-4-254 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-27-4-255 					[  ] Found heandler matchmaking.js
+2022-8-4 16-27-32-217 					
+2022-8-4 16-27-32-219 					[II] Server started on port 48000.
+2022-8-4 16-27-32-219 					[  ] Server is listening
+2022-8-4 16-27-32-219 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-27-32-220 					[  ] Found heandler matchmaking.js
+2022-8-4 16-27-40-511 					
+2022-8-4 16-27-40-512 					[II] Server started on port 48000.
+2022-8-4 16-27-40-512 					[  ] Server is listening
+2022-8-4 16-27-40-513 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-27-40-513 					[  ] Found heandler matchmaking.js
+2022-8-4 16-27-52-996 					
+2022-8-4 16-27-52-998 					[II] Server started on port 48000.
+2022-8-4 16-27-52-998 					[  ] Server is listening
+2022-8-4 16-27-52-998 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-27-52-999 					[  ] Found heandler matchmaking.js
+2022-8-4 16-29-30-735 					
+2022-8-4 16-29-30-737 					[II] Server started on port 48000.
+2022-8-4 16-29-30-737 					[  ] Server is listening
+2022-8-4 16-29-30-737 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-29-30-738 					[  ] Found heandler matchmaking.js
+2022-8-4 16-29-36-626 					
+2022-8-4 16-29-36-627 					[II] Server started on port 48000.
+2022-8-4 16-29-36-627 					[  ] Server is listening
+2022-8-4 16-29-36-628 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-29-36-628 					[  ] Found heandler matchmaking.js
+2022-8-4 16-30-5-321 					
+2022-8-4 16-30-5-323 					[II] Server started on port 48000.
+2022-8-4 16-30-5-323 					[  ] Server is listening
+2022-8-4 16-30-5-323 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-30-5-324 					[  ] Found heandler matchmaking.js
+2022-8-4 16-30-9-399 					
+2022-8-4 16-30-9-400 					[II] Server started on port 48000.
+2022-8-4 16-30-9-400 					[  ] Server is listening
+2022-8-4 16-30-9-401 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-30-9-401 					[  ] Found heandler matchmaking.js
+2022-8-4 16-30-12-297 					
+2022-8-4 16-30-12-299 					[II] Server started on port 48000.
+2022-8-4 16-30-12-299 					[  ] Server is listening
+2022-8-4 16-30-12-299 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-30-12-300 					[  ] Found heandler matchmaking.js
+2022-8-4 16-30-17-30 					
+2022-8-4 16-30-17-31 					[II] Server started on port 48000.
+2022-8-4 16-30-17-31 					[  ] Server is listening
+2022-8-4 16-30-17-32 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-30-17-32 					[  ] Found heandler matchmaking.js
+2022-8-4 16-30-30-49 					
+2022-8-4 16-30-30-50 					[II] Server started on port 48000.
+2022-8-4 16-30-30-50 					[  ] Server is listening
+2022-8-4 16-30-30-51 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-30-30-51 					[  ] Found heandler matchmaking.js
+2022-8-4 16-31-1-955 					
+2022-8-4 16-31-1-956 					[II] Server started on port 48000.
+2022-8-4 16-31-1-956 					[  ] Server is listening
+2022-8-4 16-31-1-956 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-31-1-957 					[  ] Found heandler matchmaking.js
+2022-8-4 16-31-25-151 					
+2022-8-4 16-31-25-152 					[II] Server started on port 48000.
+2022-8-4 16-31-25-152 					[  ] Server is listening
+2022-8-4 16-31-25-153 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-31-25-153 					[  ] Found heandler matchmaking.js
+2022-8-4 16-31-25-951 					
+2022-8-4 16-31-25-952 					[II] Server started on port 48000.
+2022-8-4 16-31-25-953 					[  ] Server is listening
+2022-8-4 16-31-25-953 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-31-25-954 					[  ] Found heandler matchmaking.js
+2022-8-4 16-31-35-939 					
+2022-8-4 16-31-35-940 					[II] Server started on port 48000.
+2022-8-4 16-31-35-940 					[  ] Server is listening
+2022-8-4 16-31-35-941 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-31-35-941 					[  ] Found heandler matchmaking.js
+2022-8-4 16-32-35-611 					
+2022-8-4 16-32-35-612 					[II] Server started on port 48000.
+2022-8-4 16-32-35-612 					[  ] Server is listening
+2022-8-4 16-32-35-612 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-32-35-613 					[  ] Found heandler matchmaking.js
+2022-8-4 16-33-51-374 					
+2022-8-4 16-33-51-375 					[II] Server started on port 48000.
+2022-8-4 16-33-51-375 					[  ] Server is listening
+2022-8-4 16-33-51-376 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-33-51-376 					[  ] Found heandler matchmaking.js
+2022-8-4 16-34-0-846 					
+2022-8-4 16-34-0-847 					[II] Server started on port 48000.
+2022-8-4 16-34-0-847 					[  ] Server is listening
+2022-8-4 16-34-0-847 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-34-0-848 					[  ] Found heandler matchmaking.js
+2022-8-4 16-34-17-902 					
+2022-8-4 16-34-17-903 					[II] Server started on port 48000.
+2022-8-4 16-34-17-903 					[  ] Server is listening
+2022-8-4 16-34-17-904 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-34-17-904 					[  ] Found heandler loaded.js
+2022-8-4 16-34-17-905 					[  ] Found heandler matchmaking.js
+2022-8-4 16-34-23-128 					
+2022-8-4 16-34-23-129 					[II] Server started on port 48000.
+2022-8-4 16-34-23-129 					[  ] Server is listening
+2022-8-4 16-34-23-129 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-34-23-130 					[  ] Found heandler loaded.js
+2022-8-4 16-34-23-130 					[  ] Found heandler matchmaking.js
+2022-8-4 16-34-26-647 					
+2022-8-4 16-34-26-648 					[II] Server started on port 48000.
+2022-8-4 16-34-26-648 					[  ] Server is listening
+2022-8-4 16-34-26-648 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-34-26-649 					[  ] Found heandler loaded.js
+2022-8-4 16-34-26-649 					[  ] Found heandler matchmaking.js
+2022-8-4 16-35-6-871 					
+2022-8-4 16-35-6-872 					[II] Server started on port 48000.
+2022-8-4 16-35-6-872 					[  ] Server is listening
+2022-8-4 16-35-6-872 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-35-6-873 					[  ] Found heandler loaded.js
+2022-8-4 16-35-6-874 					[  ] Found heandler matchmaking.js
+2022-8-4 16-35-22-956 					
+2022-8-4 16-35-22-957 					[II] Server started on port 48000.
+2022-8-4 16-35-22-957 					[  ] Server is listening
+2022-8-4 16-35-22-957 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-35-22-958 					[  ] Found heandler loaded.js
+2022-8-4 16-35-22-958 					[  ] Found heandler matchmaking.js
+2022-8-4 16-35-47-982 					
+2022-8-4 16-35-47-983 					[II] Server started on port 48000.
+2022-8-4 16-35-47-983 					[  ] Server is listening
+2022-8-4 16-35-47-984 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-35-47-984 					[  ] Found heandler loaded.js
+2022-8-4 16-35-47-985 					[  ] Found heandler matchmaking.js
+2022-8-4 16-36-7-500 					
+2022-8-4 16-36-7-501 					[II] Server started on port 48000.
+2022-8-4 16-36-7-501 					[  ] Server is listening
+2022-8-4 16-36-7-502 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-36-7-502 					[  ] Found heandler loaded.js
+2022-8-4 16-36-7-503 					[  ] Found heandler matchmaking.js
+2022-8-4 16-36-16-542 					
+2022-8-4 16-36-16-543 					[II] Server started on port 48000.
+2022-8-4 16-36-16-543 					[  ] Server is listening
+2022-8-4 16-36-16-544 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-36-16-544 					[  ] Found heandler loaded.js
+2022-8-4 16-36-16-545 					[  ] Found heandler matchmaking.js
+2022-8-4 16-36-19-596 					
+2022-8-4 16-36-19-597 					[II] Server started on port 48000.
+2022-8-4 16-36-19-598 					[  ] Server is listening
+2022-8-4 16-36-19-598 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-36-19-598 					[  ] Found heandler loaded.js
+2022-8-4 16-36-19-599 					[  ] Found heandler matchmaking.js
+2022-8-4 16-36-27-242 					
+2022-8-4 16-36-27-243 					[II] Server started on port 48000.
+2022-8-4 16-36-27-243 					[  ] Server is listening
+2022-8-4 16-36-27-244 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-36-27-244 					[  ] Found heandler loaded.js
+2022-8-4 16-36-27-245 					[  ] Found heandler matchmaking.js
+2022-8-4 16-36-32-571 					
+2022-8-4 16-36-32-572 					[II] Server started on port 48000.
+2022-8-4 16-36-32-572 					[  ] Server is listening
+2022-8-4 16-36-32-573 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-36-32-573 					[  ] Found heandler loaded.js
+2022-8-4 16-36-32-574 					[  ] Found heandler matchmaking.js
+2022-8-4 16-36-47-223 					
+2022-8-4 16-36-47-224 					[II] Server started on port 48000.
+2022-8-4 16-36-47-224 					[  ] Server is listening
+2022-8-4 16-36-47-224 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-36-47-225 					[  ] Found heandler matchmaking.js
+2022-8-4 16-36-47-225 					[  ] Found heandler loaded.js
+2022-8-4 16-36-50-382 					
+2022-8-4 16-36-50-383 					[II] Server started on port 48000.
+2022-8-4 16-36-50-383 					[  ] Server is listening
+2022-8-4 16-36-50-384 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-36-50-384 					[  ] Found heandler loaded.js
+2022-8-4 16-36-50-385 					[  ] Found heandler matchmaking.js
+2022-8-4 16-36-53-595 					
+2022-8-4 16-36-53-596 					[II] Server started on port 48000.
+2022-8-4 16-36-53-596 					[  ] Server is listening
+2022-8-4 16-36-53-596 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-36-53-597 					[  ] Found heandler loaded.js
+2022-8-4 16-36-53-597 					[  ] Found heandler matchmaking.js
+2022-8-4 16-36-54-779 					
+2022-8-4 16-36-54-780 					[II] Server started on port 48000.
+2022-8-4 16-36-54-780 					[  ] Server is listening
+2022-8-4 16-36-54-781 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-36-54-781 					[  ] Found heandler loaded.js
+2022-8-4 16-36-54-782 					[  ] Found heandler matchmaking.js
+2022-8-4 16-36-57-12 					
+2022-8-4 16-36-57-13 					[II] Server started on port 48000.
+2022-8-4 16-36-57-13 					[  ] Server is listening
+2022-8-4 16-36-57-14 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-36-57-14 					[  ] Found heandler loaded.js
+2022-8-4 16-36-57-15 					[  ] Found heandler matchmaking.js
+2022-8-4 16-37-8-652 					
+2022-8-4 16-37-8-653 					[II] Server started on port 48000.
+2022-8-4 16-37-8-653 					[  ] Server is listening
+2022-8-4 16-37-8-654 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-37-8-654 					[  ] Found heandler loaded.js
+2022-8-4 16-37-8-655 					[  ] Found heandler matchmaking.js
+2022-8-4 16-37-14-806 					
+2022-8-4 16-37-14-808 					[II] Server started on port 48000.
+2022-8-4 16-37-14-808 					[  ] Server is listening
+2022-8-4 16-37-14-808 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-37-14-809 					[  ] Found heandler loaded.js
+2022-8-4 16-37-14-809 					[  ] Found heandler matchmaking.js
+2022-8-4 16-37-15-788 					
+2022-8-4 16-37-15-789 					[II] Server started on port 48000.
+2022-8-4 16-37-15-789 					[  ] Server is listening
+2022-8-4 16-37-15-790 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-37-15-790 					[  ] Found heandler loaded.js
+2022-8-4 16-37-15-791 					[  ] Found heandler matchmaking.js
+2022-8-4 16-37-29-850 					
+2022-8-4 16-37-29-852 					[II] Server started on port 48000.
+2022-8-4 16-37-29-852 					[  ] Server is listening
+2022-8-4 16-37-29-853 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-37-29-853 					[  ] Found heandler loaded.js
+2022-8-4 16-37-29-854 					[  ] Found heandler matchmaking.js
+2022-8-4 16-37-37-235 					
+2022-8-4 16-37-37-236 					[II] Server started on port 48000.
+2022-8-4 16-37-37-236 					[  ] Server is listening
+2022-8-4 16-37-37-237 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-37-37-237 					[  ] Found heandler loaded.js
+2022-8-4 16-37-37-238 					[  ] Found heandler matchmaking.js
+2022-8-4 16-38-21-689 					
+2022-8-4 16-38-21-690 					[II] Server started on port 48000.
+2022-8-4 16-38-21-690 					[  ] Server is listening
+2022-8-4 16-38-21-690 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-38-21-691 					[  ] Found heandler loaded.js
+2022-8-4 16-38-21-691 					[  ] Found heandler matchmaking.js
+2022-8-4 16-40-28-52 					
+2022-8-4 16-40-28-53 					[II] Server started on port 48000.
+2022-8-4 16-40-28-53 					[  ] Server is listening
+2022-8-4 16-40-28-54 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-40-28-54 					[  ] Found heandler loaded.js
+2022-8-4 16-40-28-55 					[  ] Found heandler matchmaking.js
+2022-8-4 16-40-34-304 					
+2022-8-4 16-40-34-306 					[II] Server started on port 48000.
+2022-8-4 16-40-34-306 					[  ] Server is listening
+2022-8-4 16-40-34-306 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-40-34-307 					[  ] Found heandler loaded.js
+2022-8-4 16-40-34-307 					[  ] Found heandler matchmaking.js
+2022-8-4 16-40-36-176 					
+2022-8-4 16-40-36-177 					[II] Server started on port 48000.
+2022-8-4 16-40-36-177 					[  ] Server is listening
+2022-8-4 16-40-36-177 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-40-36-178 					[  ] Found heandler loaded.js
+2022-8-4 16-40-36-178 					[  ] Found heandler matchmaking.js
+2022-8-4 16-40-46-669 					
+2022-8-4 16-40-46-670 					[II] Server started on port 48000.
+2022-8-4 16-40-46-670 					[  ] Server is listening
+2022-8-4 16-40-46-671 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-40-46-671 					[  ] Found heandler loaded.js
+2022-8-4 16-40-46-672 					[  ] Found heandler matchmaking.js
+2022-8-4 16-41-4-530 					
+2022-8-4 16-41-4-531 					[II] Server started on port 48000.
+2022-8-4 16-41-4-531 					[  ] Server is listening
+2022-8-4 16-41-4-531 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-41-4-532 					[  ] Found heandler loaded.js
+2022-8-4 16-41-4-532 					[  ] Found heandler matchmaking.js
+2022-8-4 16-41-11-866 					
+2022-8-4 16-41-11-867 					[II] Server started on port 48000.
+2022-8-4 16-41-11-867 					[  ] Server is listening
+2022-8-4 16-41-11-868 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-41-11-868 					[  ] Found heandler loaded.js
+2022-8-4 16-41-11-869 					[  ] Found heandler matchmaking.js
+2022-8-4 16-42-11-255 					
+2022-8-4 16-42-11-256 					[II] Server started on port 48000.
+2022-8-4 16-42-11-257 					[  ] Server is listening
+2022-8-4 16-42-11-257 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-42-11-258 					[  ] Found heandler loaded.js
+2022-8-4 16-42-11-258 					[  ] Found heandler matchmaking.js
+2022-8-4 16-42-45-135 					
+2022-8-4 16-42-45-136 					[II] Server started on port 48000.
+2022-8-4 16-42-45-136 					[  ] Server is listening
+2022-8-4 16-42-45-137 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-42-45-137 					[  ] Found heandler loaded.js
+2022-8-4 16-42-45-138 					[  ] Found heandler matchmaking.js
+2022-8-4 16-43-45-169 					
+2022-8-4 16-43-45-170 					[II] Server started on port 48000.
+2022-8-4 16-43-45-171 					[  ] Server is listening
+2022-8-4 16-43-45-171 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-43-45-172 					[  ] Found heandler loaded.js
+2022-8-4 16-43-45-172 					[  ] Found heandler matchmaking.js
+2022-8-4 16-43-47-981 					
+2022-8-4 16-43-47-982 					[II] Server started on port 48000.
+2022-8-4 16-43-47-982 					[  ] Server is listening
+2022-8-4 16-43-47-983 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-43-47-983 					[  ] Found heandler loaded.js
+2022-8-4 16-43-47-984 					[  ] Found heandler matchmaking.js
+2022-8-4 16-43-48-769 					
+2022-8-4 16-43-48-770 					[II] Server started on port 48000.
+2022-8-4 16-43-48-770 					[  ] Server is listening
+2022-8-4 16-43-48-771 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-43-48-771 					[  ] Found heandler loaded.js
+2022-8-4 16-43-48-772 					[  ] Found heandler matchmaking.js
+2022-8-4 16-43-49-787 					
+2022-8-4 16-43-49-788 					[II] Server started on port 48000.
+2022-8-4 16-43-49-789 					[  ] Server is listening
+2022-8-4 16-43-49-789 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-43-49-790 					[  ] Found heandler loaded.js
+2022-8-4 16-43-49-790 					[  ] Found heandler matchmaking.js
+2022-8-4 16-43-55-797 					
+2022-8-4 16-43-55-799 					[II] Server started on port 48000.
+2022-8-4 16-43-55-799 					[  ] Server is listening
+2022-8-4 16-43-55-799 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-43-55-800 					[  ] Found heandler loaded.js
+2022-8-4 16-43-55-800 					[  ] Found heandler matchmaking.js
+2022-8-4 16-44-16-186 					
+2022-8-4 16-44-16-188 					[II] Server started on port 48000.
+2022-8-4 16-44-16-188 					[  ] Server is listening
+2022-8-4 16-44-16-188 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-44-16-189 					[  ] Found heandler loaded.js
+2022-8-4 16-44-16-189 					[  ] Found heandler matchmaking.js
+2022-8-4 16-44-18-657 					
+2022-8-4 16-44-18-658 					[II] Server started on port 48000.
+2022-8-4 16-44-18-658 					[  ] Server is listening
+2022-8-4 16-44-18-658 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-44-18-659 					[  ] Found heandler loaded.js
+2022-8-4 16-44-18-659 					[  ] Found heandler matchmaking.js
+2022-8-4 16-45-12-738 					
+2022-8-4 16-45-12-739 					[II] Server started on port 48000.
+2022-8-4 16-45-12-739 					[  ] Server is listening
+2022-8-4 16-45-12-740 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-45-12-741 					[  ] Found heandler loaded.js
+2022-8-4 16-45-12-741 					[  ] Found heandler matchmaking.js
+2022-8-4 16-49-2-554 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-4 16-49-3-812 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-4 16-49-27-248 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-4 16-49-29-159 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-4 16-49-29-160 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-4 16-49-29-161 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-4 16-49-29-265 		[127.0.0.1:48000]	[II] New client joined. ID:2
+2022-8-4 16-49-29-321 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-4 16-49-47-726 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-4 16-52-41-11 		[127.0.0.1:48000]	[II] Client disconnected, code: 1006, reason: 
+2022-8-4 16-52-45-576 					
+2022-8-4 16-52-45-577 					[II] Server started on port 48000.
+2022-8-4 16-52-45-577 					[  ] Server is listening
+2022-8-4 16-52-45-577 					[  ] Found heandler exampleHandler.js
+2022-8-4 16-52-45-578 					[  ] Found heandler loaded.js
+2022-8-4 16-52-45-578 					[  ] Found heandler matchmaking.js

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace HanSocket.Handlers.Matchmaking
 {
@@ -15,7 +16,7 @@ namespace HanSocket.Handlers.Matchmaking
 
         protected override void OnFlag()
         {
-            
+            SceneManager.LoadScene("InGameScene");
         }
     }
 }
