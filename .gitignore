@@ -61,3 +61,5 @@ Parkjein/Library
 Parkjein/Logs
 Parkjein/Temp
 Parkjein/UserSettings
+Parkjein/obj/Debug
+Server/Node/node_modules
