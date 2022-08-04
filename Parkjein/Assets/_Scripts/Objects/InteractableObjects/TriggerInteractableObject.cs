@@ -7,12 +7,12 @@ namespace Objects.InteractableObjects
    public class TriggerInteractableObject : InteractableObjects
    {
       #region Unity Trigger Event
-      private void OnTriggerEnter(Collider other)
+      private void OnTriggerEnter2D(Collider2D other)
       {
          OnEventTrigger(other.gameObject);
       }
 
-      private void OnTriggerExit(Collider other)
+      private void OnTriggerExit2D(Collider2D other)
       {
          if (EventIsToggle) return;
 

@@ -16,7 +16,8 @@ namespace Objects.InteractableObjects
       public Vector3 colPosition;
       
       #region Unity Collision Event
-      private void OnCollisionEnter(Collision other)
+
+      private void OnCollisionEnter2D(Collision2D other)
       {
          if (!Activated) return;
 
@@ -27,7 +28,7 @@ namespace Objects.InteractableObjects
          OnEventTrigger(other.gameObject);
       }
 
-      private void OnCollisionExit(Collision other)
+      private void OnCollisionExit2D(Collision2D other)
       {
          if (!Activated || EventIsToggle) return;
 

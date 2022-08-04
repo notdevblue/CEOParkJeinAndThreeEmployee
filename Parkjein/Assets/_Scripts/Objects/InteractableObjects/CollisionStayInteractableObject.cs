@@ -11,7 +11,7 @@ namespace Objects.InteractableObjects
 
       private GameObject _curCollision;
 
-      private void OnCollisionStay(Collision other)
+      private void OnCollisionStay2D(Collision2D other)
       {
          if (!isOn) return;
          colPosition = other.contacts[0].point;
@@ -20,7 +20,7 @@ namespace Objects.InteractableObjects
          OnEventTrigger(other.gameObject);
       }
 
-      private void OnCollisionExit(Collision other)
+      private void OnCollisionExit2D(Collision2D other)
       {
          if (!isOn || _curCollision != other.gameObject) return;
 

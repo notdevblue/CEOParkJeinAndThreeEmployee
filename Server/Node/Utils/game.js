@@ -14,7 +14,7 @@ class game
         this.initialSpeed = 5;
     }
 
-    broadcast(payload, excludeIds) {
+    broadcast(payload, excludeIds = [-1,]) {
         this.players.forEach(ws => {
 
             // 제외
