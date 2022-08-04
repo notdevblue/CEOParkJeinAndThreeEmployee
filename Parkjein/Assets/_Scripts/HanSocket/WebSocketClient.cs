@@ -20,9 +20,11 @@ namespace HanSocket
         {
             base.Awake();
             DontDestroyOnLoad(this.gameObject);
+        }
 
-            if (ws == null)
-                Connect(ipAddr, port);
+        private void Start()
+        {
+            Connect(ipAddr, port);
         }
 
 

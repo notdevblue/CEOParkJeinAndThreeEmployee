@@ -48,9 +48,8 @@ class match
         this.matches[++this.matchId] = new game(queue, this.matchId);
 
         queue.forEach(ws => {
-            ws.ingame = true;
-            ws.match = undefined;
-            ws.game = this.matches[this.matchId];
+            ws.match = false;
+            ws.game  = this.matches[this.matchId];
             hs.send(ws, hs.toJson("ingame", ""));
         });
     }

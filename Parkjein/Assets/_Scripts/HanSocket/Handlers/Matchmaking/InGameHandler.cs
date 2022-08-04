@@ -11,11 +11,11 @@ namespace HanSocket.Handlers.Matchmaking
 
         protected override void OnArrived(string payload)
         {
-            Debug.Log("메치메이킹 완료");
         }
 
         protected override void OnFlag()
         {
+            Debug.Log("메치메이킹 완료");
             SceneManager.LoadScene("InGameScene");
         }
     }
