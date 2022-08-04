@@ -7,14 +7,20 @@ class game
         this.id = id;
 
         this.loadedCount = 0;
+        this.deadPlayers = 0;
 
         this.initialHp = 100;
         this.initialAtk = 10;
         this.initialSpeed = 5;
     }
 
-    broadcast(payload) {
+    broadcast(payload, excludeIds) {
         this.players.forEach(ws => {
+
+            // 제외
+            if (excludeIds.findIndex(x => x == ws.id) != -1)
+                return;
+
             hs.send(ws, payload);
             ws.won = 0;
             ws.onDamage = [];
@@ -32,6 +38,12 @@ class game
         ws.hp = hp
         ws.atk = atk;
         ws.speed = speed;
+    }
+
+    newLoop() {
+        this.players.forEach(ws => {
+            this.deadPlayers = 0;
+        });
     }
 
     loaded() {
@@ -69,13 +81,13 @@ class game
     }
     
     dead(deadws) {
-        ++this.players.find(x => x != deadws).won;
+        ++this.deadPlayers;
+        if (this.deadPlayers >= this.players.length - 1)
+            ++this.players.find(x => x != deadws).won;
+        
+        this.newLoop();
     }
-
-    damage(damagedws, customDamageAction) {
-
-    }
-
+    
     gameEnd(winnerId, reason) {
         let payload = {
             winnerId: winnerId,

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using HanSocket.VO.InGame;
+using UnityEngine;
 
 namespace HanSocket.Data
 {
@@ -17,8 +18,8 @@ namespace HanSocket.Data
         public int maxHp;
         public int curHp;
 
-        // 유저 아이디 모아둔 것들
-        public List<int> users;
+        // 유저 아이디: 유저 오브젝트
+        public Dictionary<int, GameObject> users;
 
 
         public void Init(GameStartVO vo)
@@ -29,7 +30,10 @@ namespace HanSocket.Data
             maxHp = vo.hp;
             curHp = vo.hp;
 
-            users = vo.players;
+            users = new Dictionary<int, GameObject>();
+            vo.players.ForEach(e => {
+                users.Add(e, null);
+            });
         }
     }
 }
