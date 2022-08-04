@@ -12,9 +12,7 @@ public class PlayerMove : MonoBehaviour
     //private MoveVO vo = new MoveVO(Vector2.zero);
     private WaitForSeconds wait;
 
-    [SerializeField]
     private SpriteRenderer sr;
-    [SerializeField]
     private Rigidbody2D rigid;
 
     [SerializeField]
@@ -33,6 +31,8 @@ public class PlayerMove : MonoBehaviour
     private void Awake()
     {
         wait = new WaitForSeconds(1.0f / fps);
+        sr = GetComponent<SpriteRenderer>();
+        rigid = GetComponent<Rigidbody2D>();
 
         StartCoroutine(SendToServer());
     }

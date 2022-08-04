@@ -7,7 +7,6 @@ public class PlayerShoot : MonoBehaviour
 {
     private const KeyCode SHOOT = KeyCode.Mouse0;
 
-    [SerializeField]
     private TetrisBullet[] bulletPrefab;
 
     [SerializeField]
@@ -22,6 +21,8 @@ public class PlayerShoot : MonoBehaviour
 
     private void Awake()
     {
+        bulletPrefab = Resources.LoadAll<TetrisBullet>("Bullets");
+
         for (int i = 0; i < initCount; i++)
         {
             TetrisBullet bullet = InstantiateBullet();
