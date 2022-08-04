@@ -9,6 +9,11 @@ public class Remote : MonoBehaviour
     [SerializeField]
     private float _t = 0.15f;
 
+    private void Start()
+    {
+        anim = GetComponent<PlayerAnimation>();
+    }
+
     public void SetTarget(Vector2 pos)
     {
         _target = pos;
