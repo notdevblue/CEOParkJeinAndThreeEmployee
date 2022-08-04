@@ -6,7 +6,7 @@ public class Flag
    protected           bool _status;
    protected readonly  bool _autoReset;
 
-   public Flag(bool initalStatus,
+   public Flag(bool initalStatus = false,
                bool autoResetEvent = true)
    {
       _status     = initalStatus;
