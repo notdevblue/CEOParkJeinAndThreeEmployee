@@ -8,8 +8,13 @@ namespace HanSocket.VO.InGame
     {
         public List<int> players;
         public int myId;
-        public int hp;
-        public int atk;
+
+        public float atk;
+        public float hp;
         public float speed;
+        public float jumpPower;
+        public float blockSize;
+        public float blockWeight;
+        public float rotationSpeed;
     }
 }
