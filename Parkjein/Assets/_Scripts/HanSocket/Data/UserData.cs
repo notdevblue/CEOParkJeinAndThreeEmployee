@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using HanSocket.Sender.InGame;
 using HanSocket.VO.InGame;
 using UnityEngine;
 
@@ -35,14 +36,20 @@ namespace HanSocket.Data
 
                 var obj = MonoBehaviour.Instantiate(prefab);
                 if (e != myId)
+                {
+                    obj.name = $"RemotePlayer {e}";
                     obj.AddComponent<Remote>();
+                }
                 else
                 {
+                    obj.name = $"Player {e}";
                     obj.AddComponent<PlayerMove>();
                     obj.AddComponent<PlayerShoot>();
+                    obj.AddComponent<PositionSender>();
+                    obj.AddComponent<Rigidbody2D>();
                 }
 
-                users.Add(e, prefab);
+                users.Add(e, obj);
             });
         }
     }

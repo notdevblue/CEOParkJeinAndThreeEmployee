@@ -10,10 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7615424028072675664}
   - component: {fileID: 7615424028072675665}
-  - component: {fileID: 7615424028072675666}
-  - component: {fileID: 7615424028072675669}
-  - component: {fileID: 7615424028072675670}
-  - component: {fileID: 7615424028072675671}
+  - component: {fileID: 268925398853366551}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -88,62 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7615424028072675666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7615424028072675667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa039d2e131025b48aa0c45e485e5804, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sr: {fileID: 7615424028072675665}
-  rigid: {fileID: 7615424028072675670}
-  fps: 30
-  moveSpeed: 5
-  jumpSpeed: 5
-  jumpCount: 2
---- !u!114 &7615424028072675669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7615424028072675667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e933160ba228ee40a4af67f532573da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab:
-  - {fileID: 816149622235471961, guid: d6801f4456168b84d9247a047577451e, type: 3}
-  bulletParent: {fileID: 0}
-  initCount: 20
---- !u!50 &7615424028072675670
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7615424028072675667}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!61 &7615424028072675671
+--- !u!61 &268925398853366551
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -9,14 +9,9 @@ public class PlayerMove : MonoBehaviour
     private const KeyCode RIGHT = KeyCode.D;
     private const KeyCode JUMP = KeyCode.Space;
 
-    //private MoveVO vo = new MoveVO(Vector2.zero);
-    private WaitForSeconds wait;
-
     private SpriteRenderer sr;
     private Rigidbody2D rigid;
 
-    [SerializeField]
-    private float fps = 24.0f;
     [SerializeField]
     private float moveSpeed = 5f;
     [SerializeField]
@@ -30,11 +25,12 @@ public class PlayerMove : MonoBehaviour
 
     private void Awake()
     {
-        wait = new WaitForSeconds(1.0f / fps);
         sr = GetComponent<SpriteRenderer>();
-        rigid = GetComponent<Rigidbody2D>();
+    }
 
-        StartCoroutine(SendToServer());
+    private void Start()
+    {
+        rigid = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -81,17 +77,5 @@ public class PlayerMove : MonoBehaviour
         }
 
         transform.position += dir * moveSpeed * Time.deltaTime;
-    }
-
-    IEnumerator SendToServer()
-    {
-        while (true)
-        {
-            //vo.delta.Normalize();
-            //WebSocketClient.Instance.Send("move", vo.ToJson(), true);
-            //vo.delta = Vector2.zero;
-
-            yield return wait;
-        }
     }
 }

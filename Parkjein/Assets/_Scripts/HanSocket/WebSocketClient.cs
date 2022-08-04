@@ -21,7 +21,8 @@ namespace HanSocket
             base.Awake();
             DontDestroyOnLoad(this.gameObject);
 
-            Connect(ipAddr, port);
+            if (ws == null)
+                Connect(ipAddr, port);
         }
 
 

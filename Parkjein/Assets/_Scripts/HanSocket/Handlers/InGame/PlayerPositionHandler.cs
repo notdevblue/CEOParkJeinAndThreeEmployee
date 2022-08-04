@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.Collections.Concurrent;
 using UnityEngine;
 using HanSocket.VO.InGame;
 using HanSocket.Data;
@@ -10,16 +9,32 @@ namespace HanSocket.Handlers.InGame
     {
         protected override string Type => "move";
 
-        private MoveVO vo;
+        ConcurrentQueue<MoveVO> vos
+            = new ConcurrentQueue<MoveVO>();
 
         protected override void OnArrived(string payload)
         {
-            vo = JsonUtility.FromJson<MoveVO>(payload);
+            vos.Enqueue(JsonUtility.FromJson<MoveVO>(payload));
         }
 
         protected override void OnFlag()
+        {            
+        }
+
+        private void Update()
         {
-            UserData.Instance.users[vo.id].GetComponent<Remote>();
+            while (vos.Count > 0)
+            {
+                if (vos.TryDequeue(out var vo))
+                {
+                    if (!UserData.Instance.users.ContainsKey(vo.id))
+                        return;
+
+                    UserData.Instance.users[vo.id]
+                        .GetComponent<Remote>()
+                        .SetTarget(vo.pos);
+                }
+            }
         }
     }
 }
