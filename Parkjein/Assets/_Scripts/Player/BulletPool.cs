@@ -44,6 +44,11 @@ public class BulletPool : MonoSingleton<BulletPool>
         return bul;
     }
 
+    public void Enqueue(TetrisBullet bullet)
+    {
+        bulletQueue.Enqueue(bullet);
+    }
+
     public TetrisBullet GetBullet()
     {
         return bulletQueue.Count > 0 ? bulletQueue.Dequeue() : InstantiateBullet();
