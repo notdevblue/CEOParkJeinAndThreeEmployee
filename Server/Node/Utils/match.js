@@ -5,7 +5,7 @@ const write = require("./Logger");
 class match
 {
     constructor() {
-        this.minimumPlayer = 1;
+        this.minimumPlayer = 2;
         this.matches = [];
         this.matchId = 0;
         this.matchqueue = [];
