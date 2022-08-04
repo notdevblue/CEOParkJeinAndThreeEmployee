@@ -10,14 +10,14 @@ namespace HanSocket.Data
         public int myId;
 
         // 공격
-        public int atk;
+        public float atk;
 
         // 이동
         public float speed;
 
         // 채력
-        public int maxHp;
-        public int curHp;
+        public float maxHp;
+        public float curHp;
 
         // 유저 아이디: 유저 오브젝트
         public Dictionary<int, GameObject> users;
