@@ -9,15 +9,19 @@ namespace HanSocket.Data
     {
         public int myId;
 
-        // 공격
-        public float atk;
-
         // 이동
         public float speed;
+        public float jump;
 
         // 채력
         public float maxHp;
         public float curHp;
+
+        // 블록 관련
+        public float blockSize;
+        public float blockSpeed;
+        public float blockRotationSpeed;
+        public float blockRateFire;
 
         // 유저 아이디: 유저 오브젝트
         public Dictionary<int, GameObject> users;
@@ -26,10 +30,16 @@ namespace HanSocket.Data
         public void Init(GameStartVO vo, GameObject prefab)
         {
             myId  = vo.myId;
-            atk   = vo.atk;
+
             speed = vo.speed;
+
             maxHp = vo.hp;
             curHp = vo.hp;
+
+            blockSize          = vo.blockSize;
+            blockSpeed         = vo.blockSpeed;
+            blockRotationSpeed = vo.rotationSpeed;
+            blockRateFire      = vo.blockRateFire;
 
             users = new Dictionary<int, GameObject>();
             vo.players.ForEach(e => {

@@ -6,12 +6,22 @@ class game
         this.players = players;
         this.id = id;
 
+        this.justDiedPlayer;
+
         this.loadedCount = 0;
         this.deadPlayers = 0;
 
-        this.initialHp = 100;
-        this.initialAtk = 10;
-        this.initialSpeed = 5;
+        this.initialHp            = 100;
+        this.initialAtk           = 20;
+        this.initialSpeed         = 1;
+        this.initialJump          = 5;
+        
+        this.initialblockSize     = 5;
+        this.initialBlockRateFire = 0.5;
+        this.initialBlockSpeed    = 1;
+        this.initialRotationSpeed = 1;
+
+        this.initialPushPower     = 10; // 피격 시
     }
 
     broadcast(payload, excludeIds = [-1,]) {
@@ -26,24 +36,49 @@ class game
             ws.onDamage = [];
 
             this.init(
-                ws,
-                this.initialHp,
-                this.initialAtk,
-                this.initialSpeed
+                ws
             );
         });
     }
 
-    init(ws, hp, atk, speed) {
-        ws.hp = hp
-        ws.atk = atk;
-        ws.speed = speed;
+    init(
+        ws,
+        atk           = this.initialAtk,
+        hp            = this.initialHp,
+        speed         = this.initialSpeed,
+        jump          = this.initialJump,
+        blocksize     = this.initialblockSize,
+        blockRateFire = this.blockRateFire,
+        blockspeed    = this.initialBlockSpeed,
+        rotationspeed = this.initialRotationSpeed,
+        pushpower     = this.initialPushPower) {
+        
+        ws.hp            = hp
+        ws.atk           = atk;
+        ws.speed         = speed;
+        ws.jump          = jump;
+        ws.blocksize     = blocksize;
+        ws.blockRateFire = blockRateFire;
+        ws.blockspeed    = blockspeed;
+        ws.rotationspeed = rotationspeed;
+        ws.pushpower     = pushpower;
     }
 
     newLoop() {
         this.players.forEach(ws => {
             this.deadPlayers = 0;
+
+            this.init(ws);
         });
+
+        this.broadcast(hs.toJson(
+            "newloop",
+            JSON.stringify({
+                skill: this.justDiedPlayer.id,
+            }),
+        ));
+
+        this.justDiedPlayer = null;
     }
 
     loaded() {
@@ -66,8 +101,16 @@ class game
 
                 // 기본값
                 hp: this.initialHp,
-                atk: this.initialAtk,
-                speed: this.initialSpeed,
+                
+                // 이동
+                speed:      this.initialSpeed,
+                jumpPower:  this.initialJump,
+                
+                // 블럭 관련
+                blockSize:      this.initialblockSize,
+                blockRateFire:  this.initialBlockRateFire,
+                blockSpeed:     this.initialBlockSpeed,
+                rotationSpeed:  this.initialRotationSpeed,
             };
 
             this.players.forEach(ws => {
@@ -82,6 +125,7 @@ class game
     
     dead(deadws) {
         ++this.deadPlayers;
+        this.justDiedPlayer = deadws;
         if (this.deadPlayers >= this.players.length - 1)
             ++this.players.find(x => x != deadws).won;
         
