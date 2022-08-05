@@ -5,6 +5,7 @@ using _Core;
 using HanSocket;
 using HanSocket.VO.InGame;
 using HanSocket.Data;
+using UnityEngine.EventSystems;
 
 public class PlayerShoot : MonoBehaviour
 {
@@ -64,10 +65,10 @@ public class PlayerShoot : MonoBehaviour
                 isAttackAble = true;
             }
         }
-       
 
         if (Input.GetKeyDown(SHOOT) && isAttackAble)
         {
+            if (EventSystem.current.IsPointerOverGameObject()) return;
             Shoot();
         }
     }
