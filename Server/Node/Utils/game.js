@@ -55,11 +55,11 @@ class game
         ws.gameWon     = 0;
         ws.invincible  = false;
         ws.selectCount = 1;
+        ws.hp          = 100;
+        ws.skills = [];
 
         // 모든 클라이언트가 로딩 완료된 경우
         if (this.loadedCount >= this.players.length) {
-            const stat = new skills();
-
             this.sendGamedata();
 
             this.skillSelectCount = 2;
@@ -69,6 +69,8 @@ class game
     }
 
     sendGamedata() {
+        const stat = new skills();
+        
         let ids = [];
         this.players.forEach(ws => {
             ids.push(ws.id);
@@ -81,8 +83,9 @@ class game
             // 자신 아이디
             myId: -1,
 
-            // 기본값
+            // 채력
             hp: stat.hp,
+            damage: stat.damage,
 
             // 이동
             speed: stat.speed,
@@ -104,10 +107,11 @@ class game
         });
     }
 
-    skillselected(ws, index) {
+    skillselected(ws, type, index) {
         // TODO: 스킬 적용
-
         if (--ws.selectCount < 0) return;
+
+        ws.skills.push({ type, index });
 
         if (--this.skillSelectCount <= 0) {
             let pos = new Vector2(-4.0, 0.0);
@@ -126,6 +130,21 @@ class game
             });
         }
         
+    }
+
+    damage(damagedws) {
+        let attackws = this.players.find(x => x != damagedws);
+        let instance = null;
+        console.log("Damaged");
+
+        // attackws.skills
+        //     .filter(x => x.type == 0)
+        //     .forEach(skill => {
+        //         instance =
+        //             new skills(instance, attackws).skills[0][skills]();
+        //     });
+        
+        console.log(instance);
     }
     
     dead(deadws) {
