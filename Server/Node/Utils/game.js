@@ -32,6 +32,7 @@ class game
     }
 
     newLoop() {
+        this.sendGamedata();
         this.deadPlayers = 0;
         let targetId =
             (this.justDiedPlayer == null) ? -1 : this.justDiedPlayer.id;
@@ -46,8 +47,6 @@ class game
                 randomSkills.push(randomSkills.length);
             });
         });
-
-        console.log(randomSkills);
         
         for (let i = 0; i < 5; ++i) {
             let idx = Math.floor(Math.random() * (randomSkills.length - 1));
@@ -84,12 +83,6 @@ class game
             });
         }
 
-        // TODO:
-        // 스킬 픽 구현 중
-        // 아레쪽에 데미지 스킬 적용시켜서 하는거 테스트 안함
-        // random 으로 skill 중에 하나 뽑고
-        // skill[random] 에서 하나 또 뽑고
-
         this.broadcast(hs.toJson(
             "newloop",
             JSON.stringify({
@@ -104,58 +97,70 @@ class game
     }
 
     loaded(ws) {
-        ++this.loadedCount;
-        
-        ws.setWon      = 0;
-        ws.gameWon     = 0;
-        ws.invincible  = false;
-        ws.selectCount = 1;
-        ws.hp          = 100;
-        ws.maxhp       = 100;
-        ws.skills = [];
 
+        ++this.loadedCount;
+        ws.setWon        = 0;
+        ws.gameWon       = 0;
+        ws.invincible    = false;
+        ws.selectCount   = 1;
+        ws.skills        = [];
+        ws.abliSkills    = [];
+        
+        this.resetPlayerValue(ws);
+        
         // 모든 클라이언트가 로딩 완료된 경우
         if (this.loadedCount >= this.players.length) {
-            this.sendGamedata();
-
             this.skillSelectCount = 2;
             this.newLoop();
         }
-        
+    }
+
+    resetPlayerValue(ws) {
+        ws.damage        = 20;
+        ws.hp            = 100;
+        ws.maxhp         = 100;
+        ws.blocksize     = 5;
+        ws.blockspeed    = 5;
+        ws.speed         = 4;
+        ws.jumpPower     = 5;
+        ws.ratefire      = 0.25;
+        ws.rotationspeed = 7;
+        ws.pushpower     = 10;
     }
 
     sendGamedata() {
-        const stat = new skills();
-
+        
         let ids = [];
         this.players.forEach(ws => {
             ids.push(ws.id);
         });
 
-        let gamedata = {
-            // 플레이어 아이디 데이터
-            players: ids,
-
-            // 자신 아이디
-            myId: -1,
-
-            // 채력
-            hp: stat.hp,
-            damage: stat.damage,
-
-            // 이동
-            speed: stat.speed,
-            jumpPower: stat.jumpPower,
-
-            // 블럭 관련
-            blockSize: stat.blocksize,
-            blockRateFire: stat.ratefire,
-            blockSpeed: stat.blockspeed,
-            rotationSpeed: stat.rotationspeed,
-        };
-
+        
         this.players.forEach(ws => {
-            gamedata.myId = ws.id;
+            this.applyStat(ws);
+            let gamedata = {
+                // 플레이어 아이디 데이터
+                players: ids,
+
+                // 자신 아이디
+                myId: ws.id,
+
+                // 채력
+                damage: ws.damage,
+                hp: ws.hp,
+
+                // 이동
+                speed: ws.speed,
+                jumpPower: ws.jumpPower,
+
+                // 블럭 관련
+                blockSize: ws.blocksize,
+                blockRateFire: ws.ratefire,
+                blockSpeed: ws.blockspeed,
+                rotationSpeed: ws.rotationspeed,
+            };
+
+            
             hs.send(ws, hs.toJson(
                 "gamedata",
                 JSON.stringify(gamedata)
@@ -164,15 +169,21 @@ class game
     }
 
     skillselected(ws, type, index) {
-        // TODO: 스킬 적용
+
         if (--ws.selectCount < 0) return;
 
         ws.skills.push({ type, index });
 
+        if (type == 4) {
+            ws.abliSkills.push(new skills(null, ws).skills[type][index]);
+        }
+
         if (--this.skillSelectCount <= 0) {
             let pos = new Vector2(-4.0, 0.0);
 
+            this.sendGamedata();
             this.players.forEach(ws => {
+
                 this.broadcast(hs.toJson(
                     "gamestart",
                     JSON.stringify({
@@ -185,7 +196,22 @@ class game
                 ws.selectCount = 0;
             });
         }
-        
+    }
+
+    applyStat(ws) {
+        this.resetPlayerValue(ws);
+        ws.abliSkills?.forEach(x => {
+            let inst = x();
+            ws.damage = inst.damage;
+            ws.hp = inst.hp;
+            ws.maxhp = inst.hp;
+            ws.blocksize = inst.blocksize;
+            ws.blockspeed = inst.blockspeed;
+            ws.speed = inst.speed;
+            ws.ratefire = inst.ratefire;
+            ws.rotationspeed = inst.rotationspeed;
+            ws.pushpower = inst.pushpower;
+        });
     }
 
     damage(damagedws) {
@@ -240,7 +266,7 @@ class game
     dead(deadws) {
         ++this.deadPlayers;
         this.justDiedPlayer = deadws;
-        deadws.hp = 100; // FIXME: 임시
+        deadws.hp = deadws.maxhp; // FIXME: 임시
 
         if (this.deadPlayers >= this.players.length - 1) {
             let ws = this.players.find(x => x != deadws);

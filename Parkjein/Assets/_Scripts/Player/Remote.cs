@@ -29,6 +29,8 @@ public class Remote : MonoBehaviour
         }
 
         _target = pos;
+
+        Debug.Log(gameObject.name + " " + _target + " " + transform.position);
     }
 
     private void Update()
@@ -36,13 +38,15 @@ public class Remote : MonoBehaviour
         transform.position =
             Vector2.Lerp(transform.position, _target, _t);
 
-        if (Vector2.Distance(_target, transform.position) <= 0.03f)
-        {
-            anim.Anim.SetBool(anim.ANIM_MOVE, false);
-        }
-        else
-        {
-            anim.Anim.SetBool(anim.ANIM_MOVE, true);
-        }
+        // if (Vector2.Distance(_target, transform.position) <= 0.03f)
+        // {
+        //     anim.Anim.SetBool(anim.ANIM_MOVE, false);
+        // }
+        // else
+        // {
+        //     anim.Anim.SetBool(anim.ANIM_MOVE, true);
+        // }
+
+
     }
 }

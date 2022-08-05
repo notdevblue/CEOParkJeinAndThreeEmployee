@@ -45,9 +45,17 @@ namespace HanSocket.Data
             users = new Dictionary<int, GameObject>();
             bool isLeftUI = false;
 
-            vo.players.ForEach(e => {
+            
 
-                var obj = MonoBehaviour.Instantiate(prefab);
+            vo.players.ForEach(e => {
+                bool alreadyadded = users.ContainsKey(e);
+                GameObject obj;
+
+                if (!alreadyadded)
+                    obj = MonoBehaviour.Instantiate(prefab);
+                else
+                    obj = users[e];
+
                 obj.AddComponent<User>().id = e;
                 obj.SetActive(false);
 
@@ -56,10 +64,16 @@ namespace HanSocket.Data
                 data.InitValue(
                         vo.jumpPower,
                         vo.speed,
-                         vo.blockSpeed,
+                        vo.blockSpeed,
                         vo.blockRateFire,
                         vo.rotationSpeed
                     );
+
+                if (alreadyadded)
+                {
+                    Debug.Log($"User {e} already added.");
+                    return;
+                }
 
                 if (e != myId)
                 {

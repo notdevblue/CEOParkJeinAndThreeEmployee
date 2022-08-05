@@ -12,3 +12,776 @@
 2022-8-6 0-0-11-281 					[  ] Sending {"type":"left","payload":"{\"id\":4}"} to 127.0.0.1:48000
 2022-8-6 0-0-11-281 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":5,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
 2022-8-6 0-0-12-678 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 0-44-0-829 					
+2022-8-6 0-44-0-830 					[II] Server started on port 48000.
+2022-8-6 0-44-0-830 					[  ] Server is listening
+2022-8-6 0-44-0-830 					[  ] Found heandler damage.js
+2022-8-6 0-44-0-831 					[  ] Found heandler dead.js
+2022-8-6 0-44-0-831 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-44-0-832 					[  ] Found heandler fire.js
+2022-8-6 0-44-0-832 					[  ] Found heandler loaded.js
+2022-8-6 0-44-0-832 					[  ] Found heandler matchmaking.js
+2022-8-6 0-44-0-833 					[  ] Found heandler move.js
+2022-8-6 0-44-0-833 					[  ] Found heandler skillselected.js
+2022-8-6 0-44-16-66 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 0-44-21-500 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-44-21-502 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-44-27-969 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 0-44-35-303 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-44-35-303 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-44-35-304 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-44-35-305 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-44-35-357 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 0-44-43-267 					
+2022-8-6 0-44-43-268 					[II] Server started on port 48000.
+2022-8-6 0-44-43-268 					[  ] Server is listening
+2022-8-6 0-44-43-269 					[  ] Found heandler damage.js
+2022-8-6 0-44-43-270 					[  ] Found heandler dead.js
+2022-8-6 0-44-43-270 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-44-43-271 					[  ] Found heandler fire.js
+2022-8-6 0-44-43-271 					[  ] Found heandler loaded.js
+2022-8-6 0-44-43-272 					[  ] Found heandler matchmaking.js
+2022-8-6 0-44-43-273 					[  ] Found heandler move.js
+2022-8-6 0-44-43-273 					[  ] Found heandler skillselected.js
+2022-8-6 0-45-29-516 					
+2022-8-6 0-45-29-518 					[II] Server started on port 48000.
+2022-8-6 0-45-29-518 					[  ] Server is listening
+2022-8-6 0-45-29-519 					[  ] Found heandler damage.js
+2022-8-6 0-45-29-520 					[  ] Found heandler dead.js
+2022-8-6 0-45-29-521 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-45-29-521 					[  ] Found heandler fire.js
+2022-8-6 0-45-29-522 					[  ] Found heandler loaded.js
+2022-8-6 0-45-29-522 					[  ] Found heandler matchmaking.js
+2022-8-6 0-45-29-523 					[  ] Found heandler move.js
+2022-8-6 0-45-29-524 					[  ] Found heandler skillselected.js
+2022-8-6 0-45-31-983 					
+2022-8-6 0-45-31-984 					[II] Server started on port 48000.
+2022-8-6 0-45-31-985 					[  ] Server is listening
+2022-8-6 0-45-31-985 					[  ] Found heandler damage.js
+2022-8-6 0-45-31-986 					[  ] Found heandler dead.js
+2022-8-6 0-45-31-986 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-45-31-986 					[  ] Found heandler fire.js
+2022-8-6 0-45-31-987 					[  ] Found heandler loaded.js
+2022-8-6 0-45-31-987 					[  ] Found heandler matchmaking.js
+2022-8-6 0-45-31-988 					[  ] Found heandler move.js
+2022-8-6 0-45-31-988 					[  ] Found heandler skillselected.js
+2022-8-6 0-45-37-133 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 0-45-38-653 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-45-38-655 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-45-43-616 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 0-45-50-870 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-45-50-870 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-45-50-871 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-45-50-872 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-45-50-908 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 0-46-59-751 					
+2022-8-6 0-46-59-752 					[II] Server started on port 48000.
+2022-8-6 0-46-59-753 					[  ] Server is listening
+2022-8-6 0-46-59-753 					[  ] Found heandler damage.js
+2022-8-6 0-46-59-754 					[  ] Found heandler dead.js
+2022-8-6 0-46-59-755 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-46-59-755 					[  ] Found heandler fire.js
+2022-8-6 0-46-59-756 					[  ] Found heandler loaded.js
+2022-8-6 0-46-59-756 					[  ] Found heandler matchmaking.js
+2022-8-6 0-46-59-757 					[  ] Found heandler move.js
+2022-8-6 0-46-59-757 					[  ] Found heandler skillselected.js
+2022-8-6 0-47-7-558 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 0-47-10-577 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 0-47-24-523 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-47-24-525 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-47-25-616 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-47-25-616 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-47-25-616 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-47-25-617 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-47-25-672 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 0-47-38-517 					
+2022-8-6 0-47-38-518 					[II] Server started on port 48000.
+2022-8-6 0-47-38-518 					[  ] Server is listening
+2022-8-6 0-47-38-519 					[  ] Found heandler damage.js
+2022-8-6 0-47-38-520 					[  ] Found heandler dead.js
+2022-8-6 0-47-38-520 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-47-38-520 					[  ] Found heandler fire.js
+2022-8-6 0-47-38-521 					[  ] Found heandler loaded.js
+2022-8-6 0-47-38-521 					[  ] Found heandler matchmaking.js
+2022-8-6 0-47-38-522 					[  ] Found heandler move.js
+2022-8-6 0-47-38-522 					[  ] Found heandler skillselected.js
+2022-8-6 0-47-46-150 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 0-47-47-411 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-47-47-412 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-47-49-277 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 0-47-51-915 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-47-51-916 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-47-51-916 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-47-51-916 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-47-51-971 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 0-48-22-824 					
+2022-8-6 0-48-22-826 					[II] Server started on port 48000.
+2022-8-6 0-48-22-827 					[  ] Server is listening
+2022-8-6 0-48-22-827 					[  ] Found heandler damage.js
+2022-8-6 0-48-22-828 					[  ] Found heandler dead.js
+2022-8-6 0-48-22-829 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-48-22-829 					[  ] Found heandler loaded.js
+2022-8-6 0-48-22-830 					[  ] Found heandler matchmaking.js
+2022-8-6 0-48-22-829 					[  ] Found heandler fire.js
+2022-8-6 0-48-22-831 					[  ] Found heandler move.js
+2022-8-6 0-48-22-832 					[  ] Found heandler skillselected.js
+2022-8-6 0-49-8-145 					
+2022-8-6 0-49-8-146 					[II] Server started on port 48000.
+2022-8-6 0-49-8-146 					[  ] Server is listening
+2022-8-6 0-49-8-147 					[  ] Found heandler damage.js
+2022-8-6 0-49-8-147 					[  ] Found heandler dead.js
+2022-8-6 0-49-8-148 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-49-8-148 					[  ] Found heandler fire.js
+2022-8-6 0-49-8-148 					[  ] Found heandler loaded.js
+2022-8-6 0-49-8-149 					[  ] Found heandler matchmaking.js
+2022-8-6 0-49-8-149 					[  ] Found heandler move.js
+2022-8-6 0-49-8-150 					[  ] Found heandler skillselected.js
+2022-8-6 0-49-14-450 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 0-49-16-63 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-49-16-65 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-49-17-642 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 0-49-21-80 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-49-21-80 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-49-21-81 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-49-21-81 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-49-21-125 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 0-50-36-114 					
+2022-8-6 0-50-36-115 					[II] Server started on port 48000.
+2022-8-6 0-50-36-115 					[  ] Server is listening
+2022-8-6 0-50-36-116 					[  ] Found heandler damage.js
+2022-8-6 0-50-36-116 					[  ] Found heandler dead.js
+2022-8-6 0-50-36-117 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-50-36-117 					[  ] Found heandler fire.js
+2022-8-6 0-50-36-118 					[  ] Found heandler loaded.js
+2022-8-6 0-50-36-118 					[  ] Found heandler matchmaking.js
+2022-8-6 0-50-36-119 					[  ] Found heandler move.js
+2022-8-6 0-50-36-120 					[  ] Found heandler skillselected.js
+2022-8-6 0-50-44-721 					
+2022-8-6 0-50-44-722 					[II] Server started on port 48000.
+2022-8-6 0-50-44-722 					[  ] Server is listening
+2022-8-6 0-50-44-722 					[  ] Found heandler damage.js
+2022-8-6 0-50-44-723 					[  ] Found heandler dead.js
+2022-8-6 0-50-44-723 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-50-44-724 					[  ] Found heandler fire.js
+2022-8-6 0-50-44-724 					[  ] Found heandler loaded.js
+2022-8-6 0-50-44-724 					[  ] Found heandler matchmaking.js
+2022-8-6 0-50-44-725 					[  ] Found heandler move.js
+2022-8-6 0-50-44-725 					[  ] Found heandler skillselected.js
+2022-8-6 0-50-45-5 					
+2022-8-6 0-50-45-6 					[II] Server started on port 48000.
+2022-8-6 0-50-45-6 					[  ] Server is listening
+2022-8-6 0-50-45-7 					[  ] Found heandler damage.js
+2022-8-6 0-50-45-8 					[  ] Found heandler dead.js
+2022-8-6 0-50-45-8 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-50-45-9 					[  ] Found heandler fire.js
+2022-8-6 0-50-45-9 					[  ] Found heandler loaded.js
+2022-8-6 0-50-45-10 					[  ] Found heandler matchmaking.js
+2022-8-6 0-50-45-10 					[  ] Found heandler move.js
+2022-8-6 0-50-45-11 					[  ] Found heandler skillselected.js
+2022-8-6 0-50-49-857 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 0-50-52-805 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-50-52-807 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-50-56-630 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 0-50-58-754 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-50-58-754 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-50-58-755 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-50-58-755 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-50-58-805 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 0-51-41-886 					
+2022-8-6 0-51-41-887 					[II] Server started on port 48000.
+2022-8-6 0-51-41-887 					[  ] Server is listening
+2022-8-6 0-51-41-887 					[  ] Found heandler damage.js
+2022-8-6 0-51-41-888 					[  ] Found heandler dead.js
+2022-8-6 0-51-41-888 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-51-41-889 					[  ] Found heandler fire.js
+2022-8-6 0-51-41-889 					[  ] Found heandler loaded.js
+2022-8-6 0-51-41-889 					[  ] Found heandler matchmaking.js
+2022-8-6 0-51-41-890 					[  ] Found heandler move.js
+2022-8-6 0-51-41-890 					[  ] Found heandler skillselected.js
+2022-8-6 0-51-46-37 					
+2022-8-6 0-51-46-38 					[II] Server started on port 48000.
+2022-8-6 0-51-46-38 					[  ] Server is listening
+2022-8-6 0-51-46-39 					[  ] Found heandler damage.js
+2022-8-6 0-51-46-39 					[  ] Found heandler dead.js
+2022-8-6 0-51-46-40 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-51-46-40 					[  ] Found heandler fire.js
+2022-8-6 0-51-46-40 					[  ] Found heandler loaded.js
+2022-8-6 0-51-46-41 					[  ] Found heandler matchmaking.js
+2022-8-6 0-51-46-41 					[  ] Found heandler move.js
+2022-8-6 0-51-46-42 					[  ] Found heandler skillselected.js
+2022-8-6 0-51-52-921 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 0-51-54-489 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-51-54-490 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-51-59-633 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 0-52-2-738 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-52-2-739 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-52-2-739 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-52-2-740 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-52-2-784 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 0-52-16-295 					
+2022-8-6 0-52-16-296 					[II] Server started on port 48000.
+2022-8-6 0-52-16-296 					[  ] Server is listening
+2022-8-6 0-52-16-297 					[  ] Found heandler damage.js
+2022-8-6 0-52-16-297 					[  ] Found heandler dead.js
+2022-8-6 0-52-16-297 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-52-16-298 					[  ] Found heandler fire.js
+2022-8-6 0-52-16-298 					[  ] Found heandler loaded.js
+2022-8-6 0-52-16-299 					[  ] Found heandler matchmaking.js
+2022-8-6 0-52-16-299 					[  ] Found heandler move.js
+2022-8-6 0-52-16-299 					[  ] Found heandler skillselected.js
+2022-8-6 0-52-35-59 					
+2022-8-6 0-52-35-60 					[II] Server started on port 48000.
+2022-8-6 0-52-35-60 					[  ] Server is listening
+2022-8-6 0-52-35-61 					[  ] Found heandler damage.js
+2022-8-6 0-52-35-62 					[  ] Found heandler dead.js
+2022-8-6 0-52-35-62 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-52-35-62 					[  ] Found heandler fire.js
+2022-8-6 0-52-35-63 					[  ] Found heandler matchmaking.js
+2022-8-6 0-52-35-63 					[  ] Found heandler loaded.js
+2022-8-6 0-52-35-63 					[  ] Found heandler move.js
+2022-8-6 0-52-35-64 					[  ] Found heandler skillselected.js
+2022-8-6 0-52-40-832 					
+2022-8-6 0-52-40-833 					[II] Server started on port 48000.
+2022-8-6 0-52-40-833 					[  ] Server is listening
+2022-8-6 0-52-40-834 					[  ] Found heandler damage.js
+2022-8-6 0-52-40-834 					[  ] Found heandler dead.js
+2022-8-6 0-52-40-835 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-52-40-835 					[  ] Found heandler fire.js
+2022-8-6 0-52-40-835 					[  ] Found heandler loaded.js
+2022-8-6 0-52-40-836 					[  ] Found heandler matchmaking.js
+2022-8-6 0-52-40-837 					[  ] Found heandler move.js
+2022-8-6 0-52-40-837 					[  ] Found heandler skillselected.js
+2022-8-6 0-52-42-623 					
+2022-8-6 0-52-42-625 					[II] Server started on port 48000.
+2022-8-6 0-52-42-626 					[  ] Server is listening
+2022-8-6 0-52-42-626 					[  ] Found heandler damage.js
+2022-8-6 0-52-42-627 					[  ] Found heandler dead.js
+2022-8-6 0-52-42-628 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-52-42-628 					[  ] Found heandler fire.js
+2022-8-6 0-52-42-629 					[  ] Found heandler loaded.js
+2022-8-6 0-52-42-629 					[  ] Found heandler matchmaking.js
+2022-8-6 0-52-42-630 					[  ] Found heandler move.js
+2022-8-6 0-52-42-630 					[  ] Found heandler skillselected.js
+2022-8-6 0-52-49-815 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 0-52-50-813 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-52-50-814 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-52-56-489 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 0-52-59-809 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-52-59-810 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-52-59-811 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-52-59-812 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-52-59-861 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 0-52-59-935 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 0-52-59-936 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 0-52-59-936 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 0-52-59-936 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":0,\"skill\":1},{\"type\":1,\"skill\":0},{\"type\":3,\"skill\":0},{\"type\":0,\"skill\":2},{\"type\":2,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 0-52-59-936 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":0,\"skill\":1},{\"type\":1,\"skill\":0},{\"type\":3,\"skill\":0},{\"type\":0,\"skill\":2},{\"type\":2,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 0-53-7-609 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":2,\"skill\":1}"}
+2022-8-6 0-53-16-512 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":2,\"skill\":1}"}
+2022-8-6 0-53-16-513 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-53-16-513 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-53-16-514 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-53-16-514 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-53-19-889 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 0-53-19-890 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 0-53-19-890 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 0-53-22-179 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 0-53-22-179 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 0-53-22-180 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 0-53-22-180 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":1,\"skillList\":[{\"type\":4,\"skill\":1},{\"type\":4,\"skill\":0},{\"type\":2,\"skill\":0},{\"type\":2,\"skill\":1},{\"type\":4,\"skill\":3}]}"} to 127.0.0.1:48000
+2022-8-6 0-53-22-180 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":1,\"skillList\":[{\"type\":4,\"skill\":1},{\"type\":4,\"skill\":0},{\"type\":2,\"skill\":0},{\"type\":2,\"skill\":1},{\"type\":4,\"skill\":3}]}"} to 127.0.0.1:48000
+2022-8-6 0-54-1-583 					
+2022-8-6 0-54-1-584 					[II] Server started on port 48000.
+2022-8-6 0-54-1-585 					[  ] Server is listening
+2022-8-6 0-54-1-585 					[  ] Found heandler damage.js
+2022-8-6 0-54-1-587 					[  ] Found heandler dead.js
+2022-8-6 0-54-1-587 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-54-1-587 					[  ] Found heandler fire.js
+2022-8-6 0-54-1-588 					[  ] Found heandler loaded.js
+2022-8-6 0-54-1-589 					[  ] Found heandler matchmaking.js
+2022-8-6 0-54-1-589 					[  ] Found heandler move.js
+2022-8-6 0-54-1-590 					[  ] Found heandler skillselected.js
+2022-8-6 0-54-17-515 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 0-54-18-806 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-54-18-808 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-54-20-232 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 0-54-28-316 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-54-28-316 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-54-28-316 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-54-28-317 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-54-28-369 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 0-54-28-418 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 0-54-28-419 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 0-54-28-420 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 0-54-28-420 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":0,\"skill\":1},{\"type\":4,\"skill\":1},{\"type\":0,\"skill\":0},{\"type\":2,\"skill\":1},{\"type\":2,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 0-54-28-420 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":0,\"skill\":1},{\"type\":4,\"skill\":1},{\"type\":0,\"skill\":0},{\"type\":2,\"skill\":1},{\"type\":2,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 0-54-32-320 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":1}"}
+2022-8-6 0-54-33-557 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":1}"}
+2022-8-6 0-54-33-557 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-54-33-558 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-54-33-558 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-54-33-558 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-54-36-141 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 0-54-36-141 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 0-54-36-141 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 0-54-45-274 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 0-54-45-274 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":1,\"jumpPower\":5}"} to 127.0.0.1:48000
+2022-8-6 0-54-45-275 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":0,\"jumpPower\":5}"} to 127.0.0.1:48000
+2022-8-6 0-54-45-275 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":1,\"skillList\":[{\"type\":2,\"skill\":1},{\"type\":0,\"skill\":2},{\"type\":0,\"skill\":0},{\"type\":5,\"skill\":0},{\"type\":4,\"skill\":4}]}"} to 127.0.0.1:48000
+2022-8-6 0-54-45-275 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":1,\"skillList\":[{\"type\":2,\"skill\":1},{\"type\":0,\"skill\":2},{\"type\":0,\"skill\":0},{\"type\":5,\"skill\":0},{\"type\":4,\"skill\":4}]}"} to 127.0.0.1:48000
+2022-8-6 0-54-49-224 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":4}"}
+2022-8-6 0-54-49-225 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-54-49-225 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-54-49-225 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-54-49-225 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-55-37-286 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 0-55-37-286 					[  ] Sending {"type":"left","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-6 0-55-37-286 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 0-56-46-298 					
+2022-8-6 0-56-46-300 					[II] Server started on port 48000.
+2022-8-6 0-56-46-300 					[  ] Server is listening
+2022-8-6 0-56-46-301 					[  ] Found heandler damage.js
+2022-8-6 0-56-46-301 					[  ] Found heandler dead.js
+2022-8-6 0-56-46-302 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-56-46-302 					[  ] Found heandler fire.js
+2022-8-6 0-56-46-303 					[  ] Found heandler loaded.js
+2022-8-6 0-56-46-304 					[  ] Found heandler matchmaking.js
+2022-8-6 0-56-46-304 					[  ] Found heandler move.js
+2022-8-6 0-56-46-305 					[  ] Found heandler skillselected.js
+2022-8-6 0-57-7-527 					
+2022-8-6 0-57-7-528 					[II] Server started on port 48000.
+2022-8-6 0-57-7-528 					[  ] Server is listening
+2022-8-6 0-57-7-529 					[  ] Found heandler damage.js
+2022-8-6 0-57-7-530 					[  ] Found heandler dead.js
+2022-8-6 0-57-7-530 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-57-7-531 					[  ] Found heandler fire.js
+2022-8-6 0-57-7-531 					[  ] Found heandler loaded.js
+2022-8-6 0-57-7-532 					[  ] Found heandler matchmaking.js
+2022-8-6 0-57-7-533 					[  ] Found heandler move.js
+2022-8-6 0-57-7-534 					[  ] Found heandler skillselected.js
+2022-8-6 0-57-15-613 					
+2022-8-6 0-57-15-614 					[II] Server started on port 48000.
+2022-8-6 0-57-15-615 					[  ] Server is listening
+2022-8-6 0-57-15-616 					[  ] Found heandler damage.js
+2022-8-6 0-57-15-617 					[  ] Found heandler dead.js
+2022-8-6 0-57-15-617 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-57-15-617 					[  ] Found heandler fire.js
+2022-8-6 0-57-15-618 					[  ] Found heandler loaded.js
+2022-8-6 0-57-15-618 					[  ] Found heandler matchmaking.js
+2022-8-6 0-57-15-619 					[  ] Found heandler move.js
+2022-8-6 0-57-15-619 					[  ] Found heandler skillselected.js
+2022-8-6 0-57-33-46 					
+2022-8-6 0-57-33-48 					[II] Server started on port 48000.
+2022-8-6 0-57-33-48 					[  ] Server is listening
+2022-8-6 0-57-33-49 					[  ] Found heandler damage.js
+2022-8-6 0-57-33-49 					[  ] Found heandler dead.js
+2022-8-6 0-57-33-50 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-57-33-50 					[  ] Found heandler fire.js
+2022-8-6 0-57-33-51 					[  ] Found heandler loaded.js
+2022-8-6 0-57-33-51 					[  ] Found heandler matchmaking.js
+2022-8-6 0-57-33-52 					[  ] Found heandler move.js
+2022-8-6 0-57-33-52 					[  ] Found heandler skillselected.js
+2022-8-6 0-57-58-142 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 0-58-0-32 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-58-0-34 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-58-1-406 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 0-58-3-817 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 0-58-3-817 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 0-58-3-818 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-58-3-818 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 0-58-3-854 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 0-58-3-921 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 0-58-3-922 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":1},{\"type\":0,\"skill\":0},{\"type\":4,\"skill\":1},{\"type\":3,\"skill\":0},{\"type\":4,\"skill\":5}]}"} to 127.0.0.1:48000
+2022-8-6 0-58-3-922 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":1},{\"type\":0,\"skill\":0},{\"type\":4,\"skill\":1},{\"type\":3,\"skill\":0},{\"type\":4,\"skill\":5}]}"} to 127.0.0.1:48000
+2022-8-6 0-58-5-844 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":1}"}
+2022-8-6 0-58-8-887 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":5}"}
+2022-8-6 0-58-8-899 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":1,\"jumpPower\":5}"} to 127.0.0.1:48000
+2022-8-6 0-58-8-903 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":0,\"jumpPower\":5}"} to 127.0.0.1:48000
+2022-8-6 0-58-8-903 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-58-8-904 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-58-8-904 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-58-8-904 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 0-58-15-490 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 0-58-15-490 					[  ] Sending {"type":"left","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-6 0-58-15-491 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 0-58-16-559 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 0-59-15-77 					
+2022-8-6 0-59-15-78 					[II] Server started on port 48000.
+2022-8-6 0-59-15-79 					[  ] Server is listening
+2022-8-6 0-59-15-79 					[  ] Found heandler damage.js
+2022-8-6 0-59-15-80 					[  ] Found heandler dead.js
+2022-8-6 0-59-15-80 					[  ] Found heandler exampleHandler.js
+2022-8-6 0-59-15-80 					[  ] Found heandler fire.js
+2022-8-6 0-59-15-81 					[  ] Found heandler loaded.js
+2022-8-6 0-59-15-81 					[  ] Found heandler matchmaking.js
+2022-8-6 0-59-15-81 					[  ] Found heandler move.js
+2022-8-6 0-59-15-82 					[  ] Found heandler skillselected.js
+2022-8-6 1-0-3-430 					
+2022-8-6 1-0-3-431 					[II] Server started on port 48000.
+2022-8-6 1-0-3-431 					[  ] Server is listening
+2022-8-6 1-0-3-432 					[  ] Found heandler damage.js
+2022-8-6 1-0-3-432 					[  ] Found heandler dead.js
+2022-8-6 1-0-3-433 					[  ] Found heandler exampleHandler.js
+2022-8-6 1-0-3-433 					[  ] Found heandler fire.js
+2022-8-6 1-0-3-434 					[  ] Found heandler loaded.js
+2022-8-6 1-0-3-435 					[  ] Found heandler matchmaking.js
+2022-8-6 1-0-3-436 					[  ] Found heandler move.js
+2022-8-6 1-0-3-437 					[  ] Found heandler skillselected.js
+2022-8-6 1-0-17-535 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 1-0-18-478 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-0-18-479 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-0-20-894 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 1-0-22-972 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-0-22-973 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-0-22-973 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-0-22-973 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-0-23-14 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-0-23-98 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-0-23-99 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":0},{\"type\":4,\"skill\":5},{\"type\":4,\"skill\":3},{\"type\":0,\"skill\":0},{\"type\":2,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 1-0-23-99 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":0},{\"type\":4,\"skill\":5},{\"type\":4,\"skill\":3},{\"type\":0,\"skill\":0},{\"type\":2,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 1-0-25-961 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":3}"}
+2022-8-6 1-0-27-931 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":5}"}
+2022-8-6 1-0-27-941 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":0,\"jumpPower\":5}"} to 127.0.0.1:48000
+2022-8-6 1-0-27-945 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":1,\"jumpPower\":5}"} to 127.0.0.1:48000
+2022-8-6 1-0-27-946 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-0-27-946 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-0-27-946 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-0-27-947 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-0-42-572 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-0-42-573 					[  ] Sending {"type":"left","payload":"{\"id\":1}"} to 127.0.0.1:48000
+2022-8-6 1-0-42-573 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":0,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 1-0-42-578 		[127.0.0.1:48000]	move: 게임 중이 아닌 클라이언트의 요청
+2022-8-6 1-0-43-117 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-0-56-807 					
+2022-8-6 1-0-56-808 					[II] Server started on port 48000.
+2022-8-6 1-0-56-808 					[  ] Server is listening
+2022-8-6 1-0-56-809 					[  ] Found heandler damage.js
+2022-8-6 1-0-56-810 					[  ] Found heandler dead.js
+2022-8-6 1-0-56-810 					[  ] Found heandler exampleHandler.js
+2022-8-6 1-0-56-810 					[  ] Found heandler fire.js
+2022-8-6 1-0-56-811 					[  ] Found heandler loaded.js
+2022-8-6 1-0-56-811 					[  ] Found heandler matchmaking.js
+2022-8-6 1-0-56-812 					[  ] Found heandler move.js
+2022-8-6 1-0-56-813 					[  ] Found heandler skillselected.js
+2022-8-6 1-1-8-532 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 1-1-9-807 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-1-9-809 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-1-11-853 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 1-1-13-730 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-1-13-730 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-1-13-731 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-1-13-731 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-1-13-779 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-1-13-867 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-1-13-868 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":4},{\"type\":4,\"skill\":1},{\"type\":4,\"skill\":3},{\"type\":0,\"skill\":1},{\"type\":4,\"skill\":2}]}"} to 127.0.0.1:48000
+2022-8-6 1-1-13-868 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":4},{\"type\":4,\"skill\":1},{\"type\":4,\"skill\":3},{\"type\":0,\"skill\":1},{\"type\":4,\"skill\":2}]}"} to 127.0.0.1:48000
+2022-8-6 1-1-15-976 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":1}"}
+2022-8-6 1-1-16-536 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":3}"}
+2022-8-6 1-1-16-539 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":0,\"jumpPower\":5}"} to 127.0.0.1:48000
+2022-8-6 1-1-16-539 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":1,\"jumpPower\":5}"} to 127.0.0.1:48000
+2022-8-6 1-1-16-540 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-1-16-540 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-1-16-541 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-1-16-541 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-1-19-940 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-1-19-940 					[  ] Sending {"type":"left","payload":"{\"id\":1}"} to 127.0.0.1:48000
+2022-8-6 1-1-19-941 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":0,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 1-1-21-97 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-1-38-884 					
+2022-8-6 1-1-38-886 					[II] Server started on port 48000.
+2022-8-6 1-1-38-886 					[  ] Server is listening
+2022-8-6 1-1-38-887 					[  ] Found heandler damage.js
+2022-8-6 1-1-38-887 					[  ] Found heandler dead.js
+2022-8-6 1-1-38-888 					[  ] Found heandler exampleHandler.js
+2022-8-6 1-1-38-888 					[  ] Found heandler fire.js
+2022-8-6 1-1-38-888 					[  ] Found heandler loaded.js
+2022-8-6 1-1-38-889 					[  ] Found heandler matchmaking.js
+2022-8-6 1-1-38-889 					[  ] Found heandler move.js
+2022-8-6 1-1-38-890 					[  ] Found heandler skillselected.js
+2022-8-6 1-1-50-45 					
+2022-8-6 1-1-50-47 					[II] Server started on port 48000.
+2022-8-6 1-1-50-47 					[  ] Server is listening
+2022-8-6 1-1-50-48 					[  ] Found heandler damage.js
+2022-8-6 1-1-50-49 					[  ] Found heandler dead.js
+2022-8-6 1-1-50-49 					[  ] Found heandler exampleHandler.js
+2022-8-6 1-1-50-50 					[  ] Found heandler fire.js
+2022-8-6 1-1-50-50 					[  ] Found heandler loaded.js
+2022-8-6 1-1-50-51 					[  ] Found heandler matchmaking.js
+2022-8-6 1-1-50-51 					[  ] Found heandler move.js
+2022-8-6 1-1-50-52 					[  ] Found heandler skillselected.js
+2022-8-6 1-1-59-53 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 1-1-59-947 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-1-59-949 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-2-2-412 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 1-2-4-426 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-2-4-426 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-2-4-427 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-2-4-427 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-2-4-479 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-2-4-549 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-2-4-550 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":1},{\"type\":4,\"skill\":0},{\"type\":4,\"skill\":2},{\"type\":4,\"skill\":5},{\"type\":4,\"skill\":4}]}"} to 127.0.0.1:48000
+2022-8-6 1-2-4-550 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":1},{\"type\":4,\"skill\":0},{\"type\":4,\"skill\":2},{\"type\":4,\"skill\":5},{\"type\":4,\"skill\":4}]}"} to 127.0.0.1:48000
+2022-8-6 1-2-6-24 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":0}"}
+2022-8-6 1-2-7-614 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":2}"}
+2022-8-6 1-2-7-615 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":0,\"damage\":30,\"hp\":100,\"speed\":20,\"jumpPower\":5,\"blockSize\":8,\"blockRateFire\":0.25,\"blockSpeed\":4.5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-2-7-615 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":1,\"damage\":20,\"hp\":150,\"speed\":20,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-2-7-615 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-2-7-615 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-2-7-616 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-2-7-616 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-2-21-274 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-2-21-275 					[  ] Sending {"type":"left","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-6 1-2-21-275 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 1-2-23-878 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-7-48-849 					
+2022-8-6 1-7-48-850 					[II] Server started on port 48000.
+2022-8-6 1-7-48-850 					[  ] Server is listening
+2022-8-6 1-7-48-851 					[  ] Found heandler damage.js
+2022-8-6 1-7-48-851 					[  ] Found heandler dead.js
+2022-8-6 1-7-48-852 					[  ] Found heandler exampleHandler.js
+2022-8-6 1-7-48-852 					[  ] Found heandler fire.js
+2022-8-6 1-7-48-853 					[  ] Found heandler loaded.js
+2022-8-6 1-7-48-853 					[  ] Found heandler matchmaking.js
+2022-8-6 1-7-48-854 					[  ] Found heandler move.js
+2022-8-6 1-7-48-854 					[  ] Found heandler skillselected.js
+2022-8-6 1-7-54-787 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 1-7-58-622 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-7-58-624 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-8-5-581 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 1-8-8-639 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-8-8-639 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-8-8-640 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-8-8-640 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-8-8-684 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-8-8-761 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-8-8-762 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":3,\"skill\":0},{\"type\":1,\"skill\":0},{\"type\":4,\"skill\":5},{\"type\":5,\"skill\":0},{\"type\":2,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 1-8-8-762 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":3,\"skill\":0},{\"type\":1,\"skill\":0},{\"type\":4,\"skill\":5},{\"type\":5,\"skill\":0},{\"type\":2,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 1-8-10-706 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":5}"}
+2022-8-6 1-8-14-247 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":2,\"skill\":0}"}
+2022-8-6 1-8-14-248 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":1,\"damage\":16,\"hp\":100,\"speed\":20,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-8-14-248 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-8-14-249 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-8-14-249 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-8-14-249 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-8-14-250 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-8-19-811 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":4,\"startPos\":{\"x\":-1.8651013374328614,\"y\":-1.648314118385315},\"dir\":{\"x\":0.9960616230964661,\"y\":0.0886632651090622},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-6 1-8-19-811 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":4,\"startPos\":{\"x\":-1.8651013374328614,\"y\":-1.648314118385315},\"dir\":{\"x\":0.9960616230964661,\"y\":0.0886632651090622},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 1-8-22-878 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-8-22-878 					[  ] Sending {"type":"left","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-6 1-8-22-878 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 1-8-24-224 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-10-3-300 					
+2022-8-6 1-10-3-301 					[II] Server started on port 48000.
+2022-8-6 1-10-3-301 					[  ] Server is listening
+2022-8-6 1-10-3-302 					[  ] Found heandler damage.js
+2022-8-6 1-10-3-303 					[  ] Found heandler dead.js
+2022-8-6 1-10-3-303 					[  ] Found heandler exampleHandler.js
+2022-8-6 1-10-3-303 					[  ] Found heandler fire.js
+2022-8-6 1-10-3-304 					[  ] Found heandler loaded.js
+2022-8-6 1-10-3-304 					[  ] Found heandler matchmaking.js
+2022-8-6 1-10-3-305 					[  ] Found heandler move.js
+2022-8-6 1-10-3-306 					[  ] Found heandler skillselected.js
+2022-8-6 1-10-7-897 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 1-10-15-369 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 1-10-18-852 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-10-18-855 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-10-19-516 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-10-19-517 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-10-19-517 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-10-19-518 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-10-19-569 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-10-19-639 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-10-19-640 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-10-19-640 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-10-19-641 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":5},{\"type\":4,\"skill\":3},{\"type\":2,\"skill\":0},{\"type\":1,\"skill\":0},{\"type\":0,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 1-10-19-641 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":5},{\"type\":4,\"skill\":3},{\"type\":2,\"skill\":0},{\"type\":1,\"skill\":0},{\"type\":0,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 1-10-20-854 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":3}"}
+2022-8-6 1-10-21-861 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":5}"}
+2022-8-6 1-10-21-862 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":1,\"damage\":16,\"hp\":100,\"speed\":20,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-10-21-862 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":0,\"damage\":16,\"hp\":100,\"speed\":20.5,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.04999999999999999,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-10-21-863 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-10-21-863 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-10-21-863 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-10-21-863 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-10-28-412 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":2,\"startPos\":{\"x\":-4.052475929260254,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.0473800003528595,\"y\":0.9988769292831421},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-6 1-10-28-412 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":2,\"startPos\":{\"x\":-4.052475929260254,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.0473800003528595,\"y\":0.9988769292831421},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 1-10-28-433 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 1-10-28-434 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":80,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 1-10-28-434 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":80,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 1-10-38-562 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":5,\"startPos\":{\"x\":-1.2448461055755616,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9437544941902161,\"y\":0.33064699172973635},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-6 1-10-38-562 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":5,\"startPos\":{\"x\":-1.2448461055755616,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9437544941902161,\"y\":0.33064699172973635},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 1-10-38-576 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 1-10-38-577 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"maxhp\":100,\"hp\":80,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 1-10-38-577 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"maxhp\":100,\"hp\":80,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 1-11-10-722 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-11-10-723 					[  ] Sending {"type":"left","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-6 1-11-10-723 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 1-11-10-728 		[127.0.0.1:48000]	move: 게임 중이 아닌 클라이언트의 요청
+2022-8-6 1-11-12-585 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-13-8-960 		[127.0.0.1:48000]	[II] New client joined. ID:2
+2022-8-6 1-13-15-141 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-13-15-141 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-13-22-270 		[127.0.0.1:48000]	[II] New client joined. ID:3
+2022-8-6 1-13-24-878 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-13-24-878 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-13-24-878 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-13-24-878 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-13-24-921 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-13-24-973 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-13-24-973 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[3,2],\"myId\":3,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-13-24-974 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[3,2],\"myId\":2,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-13-24-974 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":1},{\"type\":2,\"skill\":0},{\"type\":4,\"skill\":3},{\"type\":4,\"skill\":2},{\"type\":0,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 1-13-24-975 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":1},{\"type\":2,\"skill\":0},{\"type\":4,\"skill\":3},{\"type\":4,\"skill\":2},{\"type\":0,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 1-13-26-949 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":3}"}
+2022-8-6 1-13-27-954 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":2}"}
+2022-8-6 1-13-27-955 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[3,2],\"myId\":3,\"damage\":16,\"hp\":100,\"speed\":20.5,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.04999999999999999,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-13-27-955 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[3,2],\"myId\":2,\"damage\":20,\"hp\":150,\"speed\":20,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-13-27-955 					[  ] Sending {"type":"gamestart","payload":"{\"id\":3,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-13-27-955 					[  ] Sending {"type":"gamestart","payload":"{\"id\":3,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-13-27-955 					[  ] Sending {"type":"gamestart","payload":"{\"id\":2,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-13-27-955 					[  ] Sending {"type":"gamestart","payload":"{\"id\":2,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-13-57-357 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-13-57-357 					[  ] Sending {"type":"left","payload":"{\"id\":2}"} to 127.0.0.1:48000
+2022-8-6 1-13-57-357 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":3,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 1-13-58-606 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-14-26-904 					
+2022-8-6 1-14-26-905 					[II] Server started on port 48000.
+2022-8-6 1-14-26-905 					[  ] Server is listening
+2022-8-6 1-14-26-906 					[  ] Found heandler damage.js
+2022-8-6 1-14-26-907 					[  ] Found heandler dead.js
+2022-8-6 1-14-26-907 					[  ] Found heandler exampleHandler.js
+2022-8-6 1-14-26-907 					[  ] Found heandler fire.js
+2022-8-6 1-14-26-908 					[  ] Found heandler loaded.js
+2022-8-6 1-14-26-908 					[  ] Found heandler matchmaking.js
+2022-8-6 1-14-26-908 					[  ] Found heandler move.js
+2022-8-6 1-14-26-909 					[  ] Found heandler skillselected.js
+2022-8-6 1-14-41-691 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 1-14-43-824 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 1-14-44-982 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-14-44-983 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-14-46-277 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-14-46-278 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-14-46-279 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-14-46-279 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-14-46-322 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-14-46-398 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-14-46-398 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-14-46-398 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-14-46-399 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":0},{\"type\":1,\"skill\":0},{\"type\":0,\"skill\":0},{\"type\":0,\"skill\":2},{\"type\":4,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 1-14-46-399 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":0},{\"type\":1,\"skill\":0},{\"type\":0,\"skill\":0},{\"type\":0,\"skill\":2},{\"type\":4,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 1-14-48-109 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":1}"}
+2022-8-6 1-14-49-69 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":1}"}
+2022-8-6 1-14-49-69 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":1,\"damage\":14,\"hp\":100,\"speed\":20,\"jumpPower\":5,\"blockSize\":3,\"blockRateFire\":0.25,\"blockSpeed\":5.5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-14-49-69 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":0,\"damage\":14,\"hp\":100,\"speed\":20,\"jumpPower\":5,\"blockSize\":3,\"blockRateFire\":0.25,\"blockSpeed\":5.5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-14-49-70 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-14-49-70 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-14-49-70 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-14-49-70 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-15-15-413 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-15-15-414 					[  ] Sending {"type":"left","payload":"{\"id\":1}"} to 127.0.0.1:48000
+2022-8-6 1-15-15-414 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":0,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 1-15-16-408 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-16-5-868 		[127.0.0.1:48000]	[II] New client joined. ID:2
+2022-8-6 1-16-6-996 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-16-6-996 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-16-22-5 		[127.0.0.1:48000]	[II] New client joined. ID:3
+2022-8-6 1-16-24-507 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-16-24-508 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-16-24-508 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-16-24-508 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-16-24-553 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-16-24-609 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-16-24-610 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[3,2],\"myId\":3,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-16-24-610 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[3,2],\"myId\":2,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-16-24-610 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":1},{\"type\":4,\"skill\":5},{\"type\":4,\"skill\":4},{\"type\":5,\"skill\":0},{\"type\":4,\"skill\":2}]}"} to 127.0.0.1:48000
+2022-8-6 1-16-24-610 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":1},{\"type\":4,\"skill\":5},{\"type\":4,\"skill\":4},{\"type\":5,\"skill\":0},{\"type\":4,\"skill\":2}]}"} to 127.0.0.1:48000
+2022-8-6 1-16-26-376 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":2}"}
+2022-8-6 1-16-27-528 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":4}"}
+2022-8-6 1-16-27-528 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[3,2],\"myId\":3,\"damage\":20,\"hp\":150,\"speed\":20,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-16-27-528 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[3,2],\"myId\":2,\"damage\":20,\"hp\":100,\"speed\":20,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":6,\"rotationSpeed\":8}"} to 127.0.0.1:48000
+2022-8-6 1-16-27-529 					[  ] Sending {"type":"gamestart","payload":"{\"id\":3,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-16-27-529 					[  ] Sending {"type":"gamestart","payload":"{\"id\":3,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-16-27-529 					[  ] Sending {"type":"gamestart","payload":"{\"id\":2,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-16-27-529 					[  ] Sending {"type":"gamestart","payload":"{\"id\":2,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-16-38-666 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-16-38-666 					[  ] Sending {"type":"left","payload":"{\"id\":2}"} to 127.0.0.1:48000
+2022-8-6 1-16-38-666 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":3,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 1-16-40-361 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-17-38-392 					
+2022-8-6 1-17-38-394 					[II] Server started on port 48000.
+2022-8-6 1-17-38-394 					[  ] Server is listening
+2022-8-6 1-17-38-394 					[  ] Found heandler damage.js
+2022-8-6 1-17-38-395 					[  ] Found heandler dead.js
+2022-8-6 1-17-38-395 					[  ] Found heandler exampleHandler.js
+2022-8-6 1-17-38-395 					[  ] Found heandler fire.js
+2022-8-6 1-17-38-396 					[  ] Found heandler loaded.js
+2022-8-6 1-17-38-396 					[  ] Found heandler matchmaking.js
+2022-8-6 1-17-38-397 					[  ] Found heandler move.js
+2022-8-6 1-17-38-397 					[  ] Found heandler skillselected.js
+2022-8-6 1-17-39-332 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 1-17-40-597 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-17-40-598 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-17-56-435 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 1-17-58-875 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-17-58-876 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-17-58-876 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-17-58-876 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-17-58-919 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-17-58-982 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-17-58-983 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-17-58-983 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-17-58-984 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":5},{\"type\":0,\"skill\":2},{\"type\":2,\"skill\":0},{\"type\":4,\"skill\":4},{\"type\":0,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 1-17-58-984 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":5},{\"type\":0,\"skill\":2},{\"type\":2,\"skill\":0},{\"type\":4,\"skill\":4},{\"type\":0,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 1-18-0-512 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":4}"}
+2022-8-6 1-18-1-364 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":4}"}
+2022-8-6 1-18-1-364 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":1,\"damage\":20,\"hp\":100,\"speed\":20,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":6,\"rotationSpeed\":8}"} to 127.0.0.1:48000
+2022-8-6 1-18-1-365 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":0,\"damage\":20,\"hp\":100,\"speed\":20,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":6,\"rotationSpeed\":8}"} to 127.0.0.1:48000
+2022-8-6 1-18-1-365 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-18-1-365 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-18-1-366 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-18-1-366 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-18-10-836 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-18-10-837 					[  ] Sending {"type":"left","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-6 1-18-10-837 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 1-18-12-20 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-19-9-251 		[127.0.0.1:48000]	[II] New client joined. ID:2
+2022-8-6 1-19-11-85 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-19-11-85 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-19-11-735 		[127.0.0.1:48000]	[II] New client joined. ID:3
+2022-8-6 1-19-14-802 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-19-14-802 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-19-14-802 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-19-14-803 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 1-19-14-846 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-19-14-922 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 1-19-14-922 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[2,3],\"myId\":2,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-19-14-923 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[2,3],\"myId\":3,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-19-14-923 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":1},{\"type\":4,\"skill\":0},{\"type\":4,\"skill\":2},{\"type\":0,\"skill\":1},{\"type\":4,\"skill\":5}]}"} to 127.0.0.1:48000
+2022-8-6 1-19-14-923 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":1},{\"type\":4,\"skill\":0},{\"type\":4,\"skill\":2},{\"type\":0,\"skill\":1},{\"type\":4,\"skill\":5}]}"} to 127.0.0.1:48000
+2022-8-6 1-19-16-284 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":0}"}
+2022-8-6 1-19-17-920 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":2}"}
+2022-8-6 1-19-17-921 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[2,3],\"myId\":2,\"damage\":20,\"hp\":150,\"speed\":20,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-19-17-921 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[2,3],\"myId\":3,\"damage\":30,\"hp\":100,\"speed\":20,\"jumpPower\":5,\"blockSize\":8,\"blockRateFire\":0.25,\"blockSpeed\":4.5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 1-19-17-921 					[  ] Sending {"type":"gamestart","payload":"{\"id\":2,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-19-17-922 					[  ] Sending {"type":"gamestart","payload":"{\"id\":2,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-19-17-922 					[  ] Sending {"type":"gamestart","payload":"{\"id\":3,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-19-17-922 					[  ] Sending {"type":"gamestart","payload":"{\"id\":3,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 1-19-53-195 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-19-53-195 					[  ] Sending {"type":"left","payload":"{\"id\":2}"} to 127.0.0.1:48000
+2022-8-6 1-19-53-195 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":3,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 1-19-55-566 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 1-20-14-34 					
+2022-8-6 1-20-14-35 					[II] Server started on port 48000.
+2022-8-6 1-20-14-35 					[  ] Server is listening
+2022-8-6 1-20-14-36 					[  ] Found heandler damage.js
+2022-8-6 1-20-14-36 					[  ] Found heandler dead.js
+2022-8-6 1-20-14-36 					[  ] Found heandler exampleHandler.js
+2022-8-6 1-20-14-37 					[  ] Found heandler fire.js
+2022-8-6 1-20-14-37 					[  ] Found heandler loaded.js
+2022-8-6 1-20-14-38 					[  ] Found heandler matchmaking.js
+2022-8-6 1-20-14-38 					[  ] Found heandler move.js
+2022-8-6 1-20-14-39 					[  ] Found heandler skillselected.js
+2022-8-6 1-20-36-816 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 1-20-38-9 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 1-20-38-11 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 1-20-43-466 		[127.0.0.1:48000]	[II] New client joined. ID:1

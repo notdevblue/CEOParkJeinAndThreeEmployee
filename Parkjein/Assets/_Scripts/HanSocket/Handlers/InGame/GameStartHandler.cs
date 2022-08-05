@@ -16,6 +16,7 @@ namespace HanSocket.Handlers.InGame
         public GameObject cvsSkill;
         public MainPanel mainPanel;
 
+
         protected override void OnArrived(string payload)
         {
             vos.Enqueue(JsonUtility.FromJson<RespawnVO>(payload));

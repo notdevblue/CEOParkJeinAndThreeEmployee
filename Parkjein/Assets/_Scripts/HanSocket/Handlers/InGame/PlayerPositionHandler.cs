@@ -28,11 +28,16 @@ namespace HanSocket.Handlers.InGame
                 if (vos.TryDequeue(out var vo))
                 {
                     if (!UserData.Instance.users.ContainsKey(vo.id))
+                    {
+                        Debug.LogError($"Cannot find user: ${vo.id}");
                         return;
+                    }
 
                     UserData.Instance.users[vo.id]
                         .GetComponent<Remote>()
                         .SetTarget(vo.pos);
+
+                    Debug.Log(UserData.Instance.users[vo.id].name + " " + vo.pos);
                 }
             }
         }

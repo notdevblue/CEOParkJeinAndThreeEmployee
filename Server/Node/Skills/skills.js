@@ -4,14 +4,14 @@ class skills {
 
     constructor(instance, ws) {
         if (instance == null) {
-            this.damage = 20;
-            this.speed = 4;
+            this.damage = ws == null ? 20 : ws.damage;
+            this.speed = ws == null ? 4 : ws.damage;
             this.jumpPower = 5;
-            this.blocksize = 5;
-            this.ratefire = 0.25;
-            this.blockspeed = 5;
-            this.rotationspeed = 7;
-            this.pushpower = 10;
+            this.blocksize = ws == null ? 5 : ws.blocksize;
+            this.ratefire = ws == null ? 0.25 : ws.ratefire;
+            this.blockspeed = ws == null ? 5 : ws.blockspeed;
+            this.rotationspeed = ws == null ? 7 : ws.rotationspeed;
+            this.pushpower = ws == null ? 10 : ws.pushpower;
             
             this.hpReturn = 0;
             this.specialCommands = [];
@@ -31,6 +31,7 @@ class skills {
         }
 
         this.hp = ws == null ? 100 : ws.hp;
+
 
         this.atk = [
             // 공격
@@ -89,6 +90,7 @@ class skills {
         this.abil = [
             // 능력치
             () => { // 큰 블록
+                console.log("bigblock");
                 this.damage     += 10;
                 this.blocksize  += 3;
                 this.blockspeed -= 0.5;
@@ -96,6 +98,7 @@ class skills {
                 return this;
             },
             () => { // 작은 블록
+                console.log("smallblock");
                 this.damage     -= 6;
                 this.blocksize  -= 2;
                 this.blockspeed += 0.5;
@@ -103,6 +106,7 @@ class skills {
                 return this;
             },
             () => { // 건강한 신체
+                console.log("healthyblock");
                 this.hp += 50;
 
                 return this;
@@ -122,7 +126,7 @@ class skills {
             },
             () => { // 넉백
                 this.damage    -= 4;
-                this.knockback += 10;
+                this.pushpower += 10;
 
                 return this;
             },
