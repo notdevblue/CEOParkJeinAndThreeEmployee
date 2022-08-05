@@ -10,6 +10,7 @@ public class PlayerMove : MonoBehaviour
     private const KeyCode JUMP = KeyCode.Space;
 
     private SpriteRenderer sr;
+    public SpriteRenderer Sr => sr;
     private Rigidbody2D rigid;
     private PlayerAnimation anim;
 

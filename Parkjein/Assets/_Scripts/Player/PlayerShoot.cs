@@ -11,6 +11,7 @@ public class PlayerShoot : MonoBehaviour
     private const KeyCode SHOOT = KeyCode.Mouse0;
 
     private PlayerAnimation anim;
+    private PlayerMove move;
 
     [SerializeField]
     private float bulletSpeed = 3f;
@@ -20,27 +21,30 @@ public class PlayerShoot : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<PlayerAnimation>();
+        move = GetComponent<PlayerMove>();
 
         mainCam = Camera.main;
     }
 
     private void Update()
     {
-        if(Input.GetKeyDown(SHOOT))
+        if (Input.GetKeyDown(SHOOT))
         {
             Shoot();
         }
     }
 
-    private void Attack()
-    {
-        anim.Anim.SetTrigger(anim.ANIM_ATTACK);
-    }
-
     public void Shoot()
     {
-        TetrisBullet bullet = BulletPool.Instance.GetBullet();
         Vector2 dir = mainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        dir = dir.normalized;
+
+        if ((dir.x > 0 && move.Sr.flipX) || (dir.x < 0 && !move.Sr.flipX))
+        {
+            return;
+        }
+
+        TetrisBullet bullet = BulletPool.Instance.GetBullet();
 
         //WebSocketClient.Instance.Send("fire",
         //    new FireVO( bullet.bulletIdx, transform.position, dir, bulletSpeed).ToJson());

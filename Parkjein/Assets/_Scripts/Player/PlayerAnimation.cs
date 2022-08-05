@@ -10,11 +10,18 @@ public class PlayerAnimation : MonoBehaviour
     public readonly string ANIM_DIE = "die";
     public readonly string ANIM_HURT = "hurt";
 
+    private const string ANIM_THROW = "Throw";
+
     private Animator anim;
     public Animator Anim => anim;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
+    }
+
+    public bool IsThrow()
+    {
+        return anim.GetCurrentAnimatorStateInfo(0).IsName(ANIM_THROW);
     }
 }
