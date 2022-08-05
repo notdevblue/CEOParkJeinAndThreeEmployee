@@ -1,3 +1,4 @@
+using HanSocket;
 using HanSocket.VO.InGame;
 using System.Collections;
 using System.Collections.Generic;
@@ -42,15 +43,11 @@ public class TetrisBullet : MonoBehaviour
         return Quaternion.Euler(0, 0, Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg);
     }
 
-    //private void TriggerEnterEvent(GameObject obj)
-    //{
-    //    if(obj.CompareTag("PLAYER"))
-    //    {
-            
-    //    }
-    //    else if(obj.CompareTag("Ground"))
-    //    {
-
-    //    }
-    //}
+    public void CollisionEnter(GameObject obj)
+    {
+        if(obj.CompareTag("PLAYER") || obj.CompareTag("GROUND"))
+        {
+            WebSocketClient.Instance.Send("collision", null);
+        }
+    }
 }
