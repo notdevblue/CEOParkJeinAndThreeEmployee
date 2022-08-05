@@ -41,13 +41,6 @@ class game
         let randomSkills = [];
         let sendList     = [];
 
-        // for (let i = 0; i < skill.skills.length; ++i) {
-        //     randomSkills.push([]);
-        //     for (let j = 0; j < skill.skills[i].length; ++j) {
-        //         randomSkills[i].push(j);
-        //     }
-        // }
-
         skill.skills.forEach(x => {
             x.forEach(y => {
                 randomSkills.push(randomSkills.length);
@@ -90,34 +83,6 @@ class game
                 skill: skill,
             });
         }
-
-        /*
-        3 : 0  : 3  : 0 1 2
-        1 : 3  : 4  : 0
-        2 : 4  : 6  : 0 1
-        1 : 6  : 7  : 0 
-        6 : 7  : 13 : 0 1 2 3 4 5
-        2 : 13 : 15 : 0 1
-        */
-
-        // this.justDiedPlayer.skills.forEach(e => {
-        //     e.type;
-        //     e.skill;
-        // });
-        
-        // for (let i = 0; i < 5; ++i) {
-        //     let idx1 = Math.floor(Math.random() * (randomSkills.length - 1));
-        //     let idx2 = Math.floor(Math.random() * (randomSkills[idx1].length - 1));
-
-        //     sendList.push({
-        //         type: idx1,
-        //         skill: randomSkills[idx1].splice(idx2, 1)[0]
-        //     });
-
-        //     if (randomSkills[idx1].length <= 0) {
-        //         delete randomSkills[idx1];
-        //     }
-        // }
 
         // TODO:
         // 스킬 픽 구현 중
@@ -225,39 +190,36 @@ class game
 
     damage(damagedws) {
         let attackws = this.players.find(x => x != damagedws);
-        let atkinstance = new skills(null, attackws);
-        let definstance = new skills(null, damagedws);
+        let sk = new skills();
         let damage;
 
         attackws.skills
             ?.filter(x => x.type == 0)
             ?.forEach(skill => {
-                atkinstance =
-                    new skills(atkinstance, attackws)
+                sk = new skills(sk, attackws)
                         .skills[0][skill.index]();
             });
         
-        damage = atkinstance.damage;
+        damage = sk.damage;
 
         damagedws.skills
             ?.filter(x => x.type == 2)
             ?.forEach(skill => {
-                definstance
-                    = new skills(definstance, damagedws)
-                        .skills[1][skill.index](damage);
-                damage -= definstance.damage;
+                sk = new skills(sk, damagedws)
+                        .skills[2][skill.index](damage);
             });
+        
+        damage = sk.damage;
         
         attackws.skills
-            ?.find(x => x.type == 2)
+            ?.find(x => x.type == 1)
             ?.forEach(skill => {
-                atkinstance =
-                    new skills(atkinstance, attackws)
-                        .skills[2][skill.index]();
+                sk = new skills(sk, attackws)
+                        .skills[1][skill.index]();
             });
         
-        attackws.hp += atkinstance.hpReturn;
-        damagedws.hp = definstance.hp;
+        attackws.hp += sk.hpReturn;
+        damagedws.hp -= damage;
 
         if (damagedws.hp <= 0) {
             this.dead(damagedws);
@@ -270,7 +232,7 @@ class game
                 id: damagedws.id,
                 maxhp: damagedws.maxhp,
                 hp: damagedws.hp,
-                specialCommands: atkinstance.specialCommands,
+                specialCommands: sk.specialCommands,
             })
         ));
     }

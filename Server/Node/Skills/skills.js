@@ -5,7 +5,6 @@ class skills {
     constructor(instance, ws) {
         if (instance == null) {
             this.damage = 20;
-            this.hp = 100;
             this.speed = 4;
             this.jumpPower = 5;
             this.blocksize = 5;
@@ -19,7 +18,6 @@ class skills {
 
         } else {
             this.damage = instance.damage;
-            this.hp = ws.hp;
             this.speed = instance.speed;
             this.jumpPower = instance.jumpPower;
             this.blocksize = instance.blocksize;
@@ -31,6 +29,8 @@ class skills {
             this.hpReturn = instance.hpReturn;
             this.specialCommands = instance.specialCommands;
         }
+
+        this.hp = ws == null ? 100 : ws.hp;
 
         this.atk = [
             // 공격
@@ -65,16 +65,14 @@ class skills {
             // 방어
             (damage) => { // 단단한 신체
                 if (Math.random() >= 0.6) {
-                    damage = damage / 2.0;
+                    damage /=  2.0;
                 }
-                this.hp -= damage;
-                this.damage = 0;
+                this.damage = damage;
 
                 return this;
             },
             (damage) => { // 끈질긴 생명력
                 if (damage - this.hp <= 0) {
-                    this.hp = 1;
                 }
                 this.damage = hp - 1;
 
