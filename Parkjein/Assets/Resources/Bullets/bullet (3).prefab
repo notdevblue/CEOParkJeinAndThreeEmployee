@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7504517069178434097}
   - component: {fileID: 7504517069178434098}
   - component: {fileID: 7504517069178434099}
-  - component: {fileID: 7504517069178434109}
   - component: {fileID: 7504517069178434103}
   m_Layer: 0
   m_Name: bullet (3)
@@ -123,43 +122,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7504517069178434109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7504517069178434110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83185d2616cdb31b880a0fdde34fe5f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _callbacks:
-  - key: 
-    OnActive:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 7504517069178434098}
-          m_TargetAssemblyTypeName: TetrisBullet, Assembly-CSharp
-          m_MethodName: Active
-          m_Mode: 0
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    OnDeactive:
-      m_PersistentCalls:
-        m_Calls: []
-  <EventIsToggle>k__BackingField: 0
-  <InitalActiveStatus>k__BackingField: 1
-  colNormalVec: {x: 0, y: 0, z: 0}
-  colVelocity: {x: 0, y: 0, z: 0}
-  colPosition: {x: 0, y: 0, z: 0}
 --- !u!60 &7504517069178434103
 PolygonCollider2D:
   m_ObjectHideFlags: 0

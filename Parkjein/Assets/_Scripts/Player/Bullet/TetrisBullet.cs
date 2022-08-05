@@ -6,7 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TetrisBullet : MonoBehaviour, IEventable
+public class TetrisBullet : MonoBehaviour
 {
     [SerializeField]
     private Rigidbody2D rigid;
@@ -44,31 +44,24 @@ public class TetrisBullet : MonoBehaviour, IEventable
     {
         return Quaternion.Euler(0, 0, Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg);
     }
-    public void Active(GameObject other)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        print(other.tag);
-
         if (fireVO.shooterId.Equals(UserData.Instance.myId))
         {
-            if (other.CompareTag("GROUND"))
-            {
-                BulletObj bulletObj = BulletPool.Instance.GetObj(bulletIdx);
-                bulletObj.SetSpawn(transform.position);
+            //if (col.gameObject.CompareTag("GROUND"))
+            //{
+            //    BulletObj bulletObj = BulletPool.Instance.GetObj(bulletIdx);
+            //    bulletObj.SetSpawn(transform.position);
 
-                BulletPool.Instance.Enqueue(this);
-                SetActive(false);
-            }
+            //    BulletPool.Instance.Enqueue(this);
+            //    SetActive(false);
+            //}
             return;
         }
 
-        if (other.CompareTag("PLAYER") || other.CompareTag("GROUND"))
+        if (col.gameObject.CompareTag("PLAYER") || col.gameObject.CompareTag("GROUND"))
         {
             WebSocketClient.Instance.Send("collision", null);
         }
-    }
-
-    public void Deactive(GameObject other)
-    {
-        
     }
 }
