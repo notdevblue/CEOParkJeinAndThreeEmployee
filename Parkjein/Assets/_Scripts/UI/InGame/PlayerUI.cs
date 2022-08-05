@@ -17,14 +17,21 @@ public class PlayerUI : MonoBehaviour
     [SerializeField]
     private List<Image> iconList;
 
+    [SerializeField]
+    private Sprite defaultWinSprite;
+    [SerializeField]
+    private Sprite winSprite;
 
-    public void Init(Sprite playerSprite,Sprite defaultWinImg)
+    public void Init(Sprite playerSprite = null)
     {
-        this.playerFace.sprite = playerSprite;
+        if(playerSprite != null)
+        {
+            this.playerFace.sprite = playerSprite;
+        }
 
         for (int i = 0; i < winImg.Length; i++)
         {
-            winImg[i].sprite = defaultWinImg;
+            winImg[i].sprite = defaultWinSprite;
         }
 
         for (int i = 0; i < iconList.Count; i++)
@@ -40,7 +47,7 @@ public class PlayerUI : MonoBehaviour
         hpSlider.value = hpAmount;
     }
 
-    public void SetWinImg(Sprite winSprite, int win)
+    public void SetWinImg(int win)
     {
         for (int i = 0; i < win; i++)
         {
