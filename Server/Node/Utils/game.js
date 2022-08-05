@@ -35,13 +35,103 @@ class game
         this.deadPlayers = 0;
         let targetId =
             (this.justDiedPlayer == null) ? -1 : this.justDiedPlayer.id;
+        
+        const skill = new skills();
+
+        let randomSkills = [];
+        let sendList     = [];
+
+        // for (let i = 0; i < skill.skills.length; ++i) {
+        //     randomSkills.push([]);
+        //     for (let j = 0; j < skill.skills[i].length; ++j) {
+        //         randomSkills[i].push(j);
+        //     }
+        // }
+
+        skill.skills.forEach(x => {
+            x.forEach(y => {
+                randomSkills.push(randomSkills.length);
+            });
+        });
+
+        console.log(randomSkills);
+        
+        for (let i = 0; i < 5; ++i) {
+            let idx = Math.floor(Math.random() * (randomSkills.length - 1));
+            let skill = randomSkills.splice(idx, 1)[0];
+            let type = -1;
+
+            if (skill >= 13) {
+                type = 5;
+                skill -= 13;
+            }
+            else if (skill >= 7) {
+                type = 4;
+                skill -= 7;
+            }
+            else if (skill >= 6) {
+                type = 3;
+                skill -= 6;
+            }
+            else if (skill >= 4) {
+                type = 2;
+                skill -= 4;
+            }
+            else if (skill >= 3) {
+                type = 1;
+                skill -= 3;
+            }
+            else {
+                type = 0;
+            }
+            
+            sendList.push({
+                type: type,
+                skill: skill,
+            });
+        }
+
+        /*
+        3 : 0  : 3  : 0 1 2
+        1 : 3  : 4  : 0
+        2 : 4  : 6  : 0 1
+        1 : 6  : 7  : 0 
+        6 : 7  : 13 : 0 1 2 3 4 5
+        2 : 13 : 15 : 0 1
+        */
+
+        // this.justDiedPlayer.skills.forEach(e => {
+        //     e.type;
+        //     e.skill;
+        // });
+        
+        // for (let i = 0; i < 5; ++i) {
+        //     let idx1 = Math.floor(Math.random() * (randomSkills.length - 1));
+        //     let idx2 = Math.floor(Math.random() * (randomSkills[idx1].length - 1));
+
+        //     sendList.push({
+        //         type: idx1,
+        //         skill: randomSkills[idx1].splice(idx2, 1)[0]
+        //     });
+
+        //     if (randomSkills[idx1].length <= 0) {
+        //         delete randomSkills[idx1];
+        //     }
+        // }
+
+        // TODO:
+        // 스킬 픽 구현 중
+        // 아레쪽에 데미지 스킬 적용시켜서 하는거 테스트 안함
+        // random 으로 skill 중에 하나 뽑고
+        // skill[random] 에서 하나 또 뽑고
 
         this.broadcast(hs.toJson(
             "newloop",
             JSON.stringify({
                 skill: targetId,
                 selectCount: this.skillSelectCount,
-            }),
+                skillList: sendList
+            })
         ));
 
 
@@ -135,16 +225,39 @@ class game
 
     damage(damagedws) {
         let attackws = this.players.find(x => x != damagedws);
-        let instance = null;
+        let atkinstance = new skills(null, attackws);
+        let definstance = new skills(null, damagedws);
+        let damage;
 
-        // attackws.skills
-        //     .filter(x => x.type == 0)
-        //     .forEach(skill => {
-        //         instance =
-        //             new skills(instance, attackws).skills[0][skills]();
-        //     });
+        attackws.skills
+            ?.filter(x => x.type == 0)
+            ?.forEach(skill => {
+                atkinstance =
+                    new skills(atkinstance, attackws)
+                        .skills[0][skill.index]();
+            });
+        
+        damage = atkinstance.damage;
 
-        damagedws.hp -= 20;
+        damagedws.skills
+            ?.filter(x => x.type == 2)
+            ?.forEach(skill => {
+                definstance
+                    = new skills(definstance, damagedws)
+                        .skills[1][skill.index](damage);
+                damage -= definstance.damage;
+            });
+        
+        attackws.skills
+            ?.find(x => x.type == 2)
+            ?.forEach(skill => {
+                atkinstance =
+                    new skills(atkinstance, attackws)
+                        .skills[2][skill.index]();
+            });
+        
+        attackws.hp += atkinstance.hpReturn;
+        damagedws.hp = definstance.hp;
 
         if (damagedws.hp <= 0) {
             this.dead(damagedws);
@@ -156,7 +269,8 @@ class game
             JSON.stringify({
                 id: damagedws.id,
                 maxhp: damagedws.maxhp,
-                hp: damagedws.hp // FIXME: 임시
+                hp: damagedws.hp,
+                specialCommands: atkinstance.specialCommands,
             })
         ));
     }
@@ -196,7 +310,7 @@ class game
                         id: deadws.id,
                         pos: new Vector2(0.0, 0.0),
                         wonId: ws.id,
-                        setWon : ws.setWon
+                        setWon: ws.setWon
                     }),
                 ));
 

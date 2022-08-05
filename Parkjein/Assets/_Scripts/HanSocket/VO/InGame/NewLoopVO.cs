@@ -17,5 +17,11 @@ namespace HanSocket.VO.InGame
     {
         public int type;
         public int skill;
+
+        public SkillVO(int type, int skill)
+        {
+            this.type = type;
+            this.skill = skill;
+        }
     }
 }

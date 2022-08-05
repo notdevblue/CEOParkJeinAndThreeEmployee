@@ -38,23 +38,26 @@ class skills {
                 if (Math.random() >= 0.6) {
                     this.damage *= 2.0;
                 }
-                return new skills(this, ws);
-            },
-            (damage) => { // 흡혈
-                this.hpReturn += damage / 2.0;
-                return new skills(this, ws);
+                return this;
             },
             () => { // 기절
                 this.specialCommands.push(
                     JSON.stringify(new SkillVO("knockout", 0.5))
                 );
-                return new skills(this, ws);
+                return this;
             },
             () => { // 무력화
                 this.specialCommands.push(
                     JSON.stringify(new SkillVO("neutralize", 1.5))
                 );
-                return new skills(this, ws);
+                return this;
+            },
+        ]
+
+        this.atkPas = [
+            (damage) => { // 흡혈
+                this.hpReturn += damage / 2.0;
+                return this;
             },
         ]
 
@@ -65,21 +68,23 @@ class skills {
                     damage = damage / 2.0;
                 }
                 this.hp -= damage;
+                this.damage = 0;
 
-                return new skills(this, ws);
+                return this;
             },
             (damage) => { // 끈질긴 생명력
                 if (damage - this.hp <= 0) {
                     this.hp = 1;
                 }
+                this.damage = hp - 1;
 
-                return new skills(this, ws);
+                return this;
             },
         ]
 
         this.defPas = [ // 페시브 방어 스킬
             (damage) => { // 쉴드
-                return new skills(this, ws);
+                return this;
             },
         ]
 
@@ -90,38 +95,38 @@ class skills {
                 this.blocksize  += 3;
                 this.blockspeed -= 0.5;
 
-                return new skills(this, ws);
+                return this;
             },
             () => { // 작은 블록
                 this.damage     -= 6;
                 this.blocksize  -= 2;
                 this.blockspeed += 0.5;
 
-                return new skills(this, ws);
+                return this;
             },
             () => { // 건강한 신체
                 this.hp += 50;
 
-                return new skills(this, ws);
+                return this;
             },
             () => { // 빠른 속도
                 this.damage   -= 4;
                 this.speed    += 0.5;
                 this.ratefire -= 0.2;
                 
-                return new skills(this, ws);
+                return this;
             },
             () => { // 빠른 회전
                 this.blockspeed    += 1;
                 this.rotationspeed += 1;
 
-                return new skills(this, ws);
+                return this;
             },
             () => { // 넉백
                 this.damage    -= 4;
                 this.knockback += 10;
 
-                return new skills(this, ws);
+                return this;
             },
         ]
 
@@ -131,18 +136,19 @@ class skills {
                 this.specialCommands.push(
                     JSON.stringify(new SkillVO("penetrate", null))
                 );
-                return new skills(this, ws);
+                return this;
             },
             () => { // 폭탄
                 this.specialCommands.push(
                     JSON.stringify(new SkillVO("bomb", 10.0))
                 );
-                return new skills(this, ws);
+                return this;
             }
         ]
 
         this.skills = [
             this.atk,
+            this.atkPas,
             this.def,
             this.defPas,
             this.abil,
