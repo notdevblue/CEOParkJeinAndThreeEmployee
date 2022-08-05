@@ -60,6 +60,7 @@ namespace HanSocket.Data
                     MonoBehaviour.Destroy(obj.GetComponent<PositionSender>());
                     MonoBehaviour.Destroy(obj.GetComponent<Rigidbody2D>());
                     MonoBehaviour.Destroy(obj.GetComponent<BoxCollider2D>());
+                    MonoBehaviour.Destroy(obj.transform.Find("ME").gameObject);
                 }
                 else
                 {
@@ -78,8 +79,6 @@ namespace HanSocket.Data
 
                     obj.GetComponent<Rigidbody2D>().gravityScale = 1;
                     obj.GetComponent<Remote>().enabled = false;
-                    
-                    // InitValue
                 }
 
                 users.Add(e, obj);
