@@ -51,16 +51,23 @@ namespace HanSocket.Data
                 obj.AddComponent<User>().id = e;
                 obj.SetActive(false);
 
-                PlayerMove move = obj.GetComponent<PlayerMove>();
-                PlayerShoot shoot = obj.GetComponent<PlayerShoot>();
+                PlayerData data = obj.GetComponent<PlayerData>();
+
+                data.InitValue(
+                        vo.jumpPower,
+                        vo.speed,
+                         vo.blockSpeed,
+                        vo.blockRateFire,
+                        vo.rotationSpeed
+                    );
 
                 if (e != myId)
                 {
                     obj.name = $"RemotePlayer {e}";
 
                     isLeftUI = myId > e ? false : true;
-                    move.enabled = false;
-                    shoot.enabled = false;
+                    obj.GetComponent<PlayerMove>().enabled = false;
+                    obj.GetComponent<PlayerShoot>().enabled = false;
                     MonoBehaviour.Destroy(obj.GetComponent<PositionSender>());
                     MonoBehaviour.Destroy(obj.GetComponent<Rigidbody2D>());
                     MonoBehaviour.Destroy(obj.transform.Find("ME").gameObject);
@@ -68,17 +75,6 @@ namespace HanSocket.Data
                 else
                 {
                     obj.name = $"Player {e}";
-
-                    move.InitValue(
-                        vo.jumpPower,
-                        vo.speed
-                    );
-
-                    shoot.InitValue(
-                        vo.blockSpeed,
-                        vo.blockRateFire,
-                        vo.rotationSpeed
-                    );
 
                     obj.GetComponent<Rigidbody2D>().gravityScale = 1;
                     obj.GetComponent<Remote>().enabled = false;
@@ -92,13 +88,12 @@ namespace HanSocket.Data
             {
                 if (e != myId)
                 {
-                    users[e].GetComponent<PlayerSetUI>().MyUI = uis.Find(x => x.gameObject.name == (isLeftUI ? "Right" : "Left"));
+                    users[e].GetComponent<PlayerData>().MyUI = uis.Find(x => x.gameObject.name == (isLeftUI ? "Right" : "Left"));
                 }
                 else
                 {
-                    users[e].GetComponent<PlayerSetUI>().MyUI = uis.Find(x => x.gameObject.name == (isLeftUI ? "Left" : "Right"));
+                    users[e].GetComponent<PlayerData>().MyUI = uis.Find(x => x.gameObject.name == (isLeftUI ? "Left" : "Right"));
                 }
-                Debug.Log(users[e].GetComponent<PlayerSetUI>().MyUI == null);
             });
         }
     }

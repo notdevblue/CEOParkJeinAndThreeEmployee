@@ -454,11 +454,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e933160ba228ee40a4af67f532573da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 8078772769149664101}
   leftBulletPos: {fileID: 812466403}
   rightBulletPos: {fileID: 6850242540987276751}
-  bulletSpeed: 10
-  attackSpeed: 3
-  rotationSpeed: 0
   attackCoolTime: 1
 --- !u!114 &1563951406
 MonoBehaviour:
@@ -472,8 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa039d2e131025b48aa0c45e485e5804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpSpeed: 3
+  data: {fileID: 8078772769149664101}
   jumpCount: 2
 --- !u!114 &2578824269492649067
 MonoBehaviour:
@@ -514,6 +511,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myUI: {fileID: 0}
+  moveSpeed: 5
+  jumpSpeed: 3
+  bulletSpeed: 10
+  attackSpeed: 3
+  rotationSpeed: 0
+  shoot: {fileID: 1563951405}
+  anim: {fileID: 5596447098816711865}
 --- !u!1 &8480753153733644698
 GameObject:
   m_ObjectHideFlags: 0
