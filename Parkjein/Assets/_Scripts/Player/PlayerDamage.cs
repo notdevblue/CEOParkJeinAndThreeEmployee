@@ -11,7 +11,6 @@ public class PlayerDamage : MonoBehaviour
            other.gameObject.GetComponent<TetrisBullet>()
             .FireVO.shooterId != GetComponent<User>().id)
         {
-            other.gameObject.tag = "GROUND";
             WebSocketClient.Instance.Send("damage", "");
         }
     }

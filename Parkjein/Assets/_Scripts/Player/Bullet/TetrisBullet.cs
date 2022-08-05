@@ -28,6 +28,7 @@ public class TetrisBullet : MonoBehaviour
         this.fireVO = fireVO;
         this.SetActive(true);
         rigid.AddForce(fireVO.dir * fireVO.bulletSpeed, ForceMode2D.Impulse);
+        rigid.AddTorque(fireVO.rotationSpeed);
     }
 
     private Quaternion LookAt2D(Vector2 forward)
@@ -38,7 +39,8 @@ public class TetrisBullet : MonoBehaviour
     {
         User user = col.gameObject.GetComponent<User>();
         if (user != null && user.id == fireVO.shooterId) return;
-        
+
+        this.gameObject.tag = "GROUND";
         Destroy(this.GetComponent<Rigidbody2D>());
     }
 }

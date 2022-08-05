@@ -47,12 +47,16 @@ namespace HanSocket.Data
                 var obj = MonoBehaviour.Instantiate(prefab);
                 obj.AddComponent<User>().id = e;
                 obj.SetActive(false);
+
+                PlayerMove move = obj.GetComponent<PlayerMove>();
+                PlayerShoot shoot = obj.GetComponent<PlayerShoot>();
+
                 if (e != myId)
                 {
                     obj.name = $"RemotePlayer {e}";
 
-                    obj.GetComponent<PlayerMove>().enabled = false;
-                    obj.GetComponent<PlayerShoot>().enabled = false;
+                    move.enabled = false;
+                    shoot.enabled = false;
                     obj.GetComponent<PositionSender>().enabled = false;
                     obj.GetComponent<PlayerDamage>().enabled = false;
                     obj.GetComponent<Rigidbody2D>().gravityScale = 0;
@@ -61,8 +65,21 @@ namespace HanSocket.Data
                 {
                     obj.name = $"Player {e}";
 
+                    move.InitValue(
+                        vo.jumpPower,
+                        vo.speed
+                    );
+                    
+                    shoot.InitValue(
+                        vo.blockSpeed,
+                        vo.blockRateFire,
+                        vo.rotationSpeed
+                    );
+
                     obj.GetComponent<Rigidbody2D>().gravityScale = 1;
                     obj.GetComponent<Remote>().enabled = false;
+                    
+                    // InitValue
                 }
 
                 users.Add(e, obj);

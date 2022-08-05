@@ -25,6 +25,9 @@ public class PlayerShoot : MonoBehaviour
     private float attackSpeed = 1f;
 
     [SerializeField]
+    private float rotationSpeed = 0.0f;
+
+    [SerializeField]
     private float attackCoolTime = 1f;
     private float curAttackCoolTime = 1f;
 
@@ -40,6 +43,13 @@ public class PlayerShoot : MonoBehaviour
         mainCam = Camera.main;
 
         SetAttackSpeed(attackSpeed);
+    }
+
+    public void InitValue(float bulletSpeed, float atkspeed, float rotationSpeed)
+    {
+        this.attackSpeed = atkspeed;
+        this.bulletSpeed = bulletSpeed;
+        this.rotationSpeed = rotationSpeed;
     }
 
     private void Update()
@@ -85,7 +95,7 @@ public class PlayerShoot : MonoBehaviour
         }
 
         TetrisBullet bullet = BulletPool.Instance.GetBullet();
-        FireVO vo = new FireVO(UserData.Instance.myId,bullet.bulletIdx, startPos, dir, bulletSpeed);
+        FireVO vo = new FireVO(UserData.Instance.myId,bullet.bulletIdx, startPos, dir, bulletSpeed, rotationSpeed);
 
         WebSocketClient.Instance.Send("fire",
             vo.ToJson());

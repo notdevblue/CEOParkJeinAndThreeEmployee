@@ -12,14 +12,22 @@ namespace HanSocket.VO.InGame
         public Vector2 startPos;
         public Vector2 dir;
         public float bulletSpeed;
+        public float rotationSpeed;
 
-        public FireVO(int shooterId, int bulletIdx,Vector2 startPos, Vector2 dir, float bulletSpeed)
+        public FireVO(
+            int shooterId,
+            int bulletIdx,
+            Vector2 startPos,
+            Vector2 dir,
+            float bulletSpeed,
+            float rotationSpeed)
         {
             this.shooterId = shooterId;
             this.bulletIdx = bulletIdx;
             this.startPos = startPos;
             this.dir = dir;
             this.bulletSpeed = bulletSpeed;
+            this.rotationSpeed = rotationSpeed;
         }
     }
 }

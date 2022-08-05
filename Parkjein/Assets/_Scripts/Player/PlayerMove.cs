@@ -36,6 +36,12 @@ public class PlayerMove : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
     }
 
+    public void InitValue(float jump, float speed)
+    {
+        this.jumpSpeed = jump;
+        this.moveSpeed = speed;
+    }
+
     private void Update()
     {
         Move();
