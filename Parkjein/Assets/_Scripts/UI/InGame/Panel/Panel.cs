@@ -10,9 +10,7 @@ public class Panel : MonoBehaviour
     {
         cvs = GetComponent<CanvasGroup>();
 
-        cvs.alpha = 0f;
-        cvs.blocksRaycasts = false;
-        cvs.interactable = false;
+        Close();
     }
 
     protected virtual void Start()

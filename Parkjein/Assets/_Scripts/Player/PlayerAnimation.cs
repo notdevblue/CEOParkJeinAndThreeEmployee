@@ -27,4 +27,9 @@ public class PlayerAnimation : MonoBehaviour
     //    AnimatorStateInfo a = anim.GetCurrentAnimatorStateInfo(0);
     //    return a.IsName(ANIM_THROW) && a.normalizedTime <= 0.6f;
     //}
+
+    public void SetHurt()
+    {
+        anim.SetTrigger(ANIM_HURT);
+    }
 }

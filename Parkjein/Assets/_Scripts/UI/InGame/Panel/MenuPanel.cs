@@ -33,6 +33,8 @@ public class MenuPanel : Panel
     {
         base.Start();
         InitUI();
+
+        DontDestroyOnLoad(transform.parent.gameObject);
     }
 
     private void Update()
@@ -59,7 +61,9 @@ public class MenuPanel : Panel
     {
         for (int i = 0; i < Screen.resolutions.Length; i++)
         {
-            if(Screen.resolutions[i].refreshRate.Equals(60))
+            int width = Screen.resolutions[i].width;
+            int height = Screen.resolutions[i].height;
+            if (Screen.resolutions[i].refreshRate.Equals(60) && ((float)width / height) >= 1.7f)
             {
                 resolutionList.Add(Screen.resolutions[i]);
             }
@@ -112,6 +116,9 @@ public class MenuPanel : Panel
         resolutionNum = value;
         screenMode = resolutionDropdown.options[resolutionNum].text.Contains("Full Screen") ? FullScreenMode.ExclusiveFullScreen : FullScreenMode.Windowed;
 
-        Screen.SetResolution(resolutionList[resolutionNum].width, resolutionList[resolutionNum].height,screenMode);
+        int width = resolutionList[resolutionNum].width;
+        int height = resolutionList[resolutionNum].height;
+
+        Screen.SetResolution(width, height, screenMode);
     }
 }
