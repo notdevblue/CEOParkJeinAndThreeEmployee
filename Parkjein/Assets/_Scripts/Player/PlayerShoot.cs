@@ -14,6 +14,11 @@ public class PlayerShoot : MonoBehaviour
     private PlayerMove move;
 
     [SerializeField]
+    private Transform leftBulletPos;
+    [SerializeField]
+    private Transform rightBulletPos;
+
+    [SerializeField]
     private float bulletSpeed = 3f;
 
     [SerializeField]
@@ -33,6 +38,7 @@ public class PlayerShoot : MonoBehaviour
         move = GetComponent<PlayerMove>();
 
         mainCam = Camera.main;
+
         SetAttackSpeed(attackSpeed);
     }
 
@@ -70,6 +76,7 @@ public class PlayerShoot : MonoBehaviour
     public void Shoot()
     {
         Vector2 dir = mainCam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        Vector2 startPos = move.Sr.flipX ? leftBulletPos.position : rightBulletPos.position;
         dir = dir.normalized;
 
         if ((dir.x > 0 && move.Sr.flipX) || (dir.x < 0 && !move.Sr.flipX))
@@ -84,6 +91,6 @@ public class PlayerShoot : MonoBehaviour
 
         anim.Anim.SetTrigger(anim.ANIM_ATTACK);
         isAttackAble = false;
-        bullet.Shoot(transform.position, dir, bulletSpeed);
+        bullet.Shoot(startPos, dir, bulletSpeed);
     }
 }

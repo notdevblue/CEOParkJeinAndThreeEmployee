@@ -1,3 +1,4 @@
+using HanSocket.VO.InGame;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,8 @@ public class TetrisBullet : MonoBehaviour
     private Rigidbody2D rigid;
 
     public int bulletIdx;
+
+    private FireVO fireVO;
 
     public void SetActive(bool active)
     {
@@ -24,9 +27,30 @@ public class TetrisBullet : MonoBehaviour
         rigid.AddForce(dir * speed, ForceMode2D.Impulse);
     }
 
+    public void Shoot(FireVO fireVO)
+    {
+        this.fireVO = fireVO;
+
+        transform.position = fireVO.startPos;
+        this.SetActive(true);
+
+        rigid.AddForce(fireVO.dir * fireVO.bulletSpeed, ForceMode2D.Impulse);
+    }
+
     private Quaternion LookAt2D(Vector2 forward)
     {
         return Quaternion.Euler(0, 0, Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg);
     }
 
+    //private void TriggerEnterEvent(GameObject obj)
+    //{
+    //    if(obj.CompareTag("PLAYER"))
+    //    {
+            
+    //    }
+    //    else if(obj.CompareTag("Ground"))
+    //    {
+
+    //    }
+    //}
 }
