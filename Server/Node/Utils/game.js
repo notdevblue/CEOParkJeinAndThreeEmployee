@@ -56,6 +56,7 @@ class game
         ws.invincible  = false;
         ws.selectCount = 1;
         ws.hp          = 100;
+        ws.maxhp       = 100;
         ws.skills = [];
 
         // 모든 클라이언트가 로딩 완료된 경우
@@ -154,6 +155,7 @@ class game
             "damage",
             JSON.stringify({
                 id: damagedws.id,
+                maxhp: damagedws.maxhp,
                 hp: damagedws.hp // FIXME: 임시
             })
         ));

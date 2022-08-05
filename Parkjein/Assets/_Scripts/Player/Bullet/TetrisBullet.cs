@@ -37,17 +37,36 @@ public class TetrisBullet : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D col)
     {
+        if (rigid == null)
+            return;
+
         User user = col.gameObject.GetComponent<User>();
 
-        this.gameObject.tag = "GROUND";
-        rigid.velocity = Vector2.zero;
+        bool stopBullet = false;
 
-        Destroy(rigid);
+        if (user != null && fireVO.shooterId != user.id)
+        {
+            if (user.id != UserData.Instance.myId)
+            {
+                stopBullet = true;
+                WebSocketClient.Instance.Send("damage", "");
+                // WebSocketClient.Instance.Send(
+                //     "bulletstop",
+                //     new BulletStopVO(transform.position, transform.rotation).ToJson()
+                // );
+            }
+        }
+        else if (col.gameObject.CompareTag("GROUND")
+              || col.gameObject.CompareTag("BULLET"))
+        {
+            stopBullet = true;
+        }
 
-        if (user == null) return;
-        if (user.id == fireVO.shooterId) return;
-
-        WebSocketClient.Instance.Send("damage", "");
-        
+        if (stopBullet)
+        {
+            this.gameObject.tag = "GROUND";
+            rigid.velocity = Vector2.zero;
+            Destroy(rigid);
+        }
     }
 }
