@@ -12,11 +12,6 @@ public class MainPanel : Panel
     [SerializeField]
     private Sprite[] winImgs; // default - 0, win - 1
 
-    [SerializeField]
-    private PlayerUI leftPlayer;
-    [SerializeField]
-    private PlayerUI rightPlayer;
-
     public override void Open()
     {
         cvs.alpha = 1f;

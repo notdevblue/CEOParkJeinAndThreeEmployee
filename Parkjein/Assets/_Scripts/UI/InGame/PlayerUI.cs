@@ -7,7 +7,7 @@ using TMPro;
 public class PlayerUI : MonoBehaviour
 {
     [SerializeField]
-    private Image playerFace;
+    private Image playerFace; // 사실상 없는것
     [SerializeField]
     private Image[] winImg;
 

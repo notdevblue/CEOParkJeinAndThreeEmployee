@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using HanSocket.Sender.InGame;
 using HanSocket.VO.InGame;
 using UnityEngine;
@@ -42,6 +43,8 @@ namespace HanSocket.Data
             blockRateFire      = vo.blockRateFire;
 
             users = new Dictionary<int, GameObject>();
+            bool isLeftUI = false;
+
             vo.players.ForEach(e => {
 
                 var obj = MonoBehaviour.Instantiate(prefab);
@@ -55,6 +58,7 @@ namespace HanSocket.Data
                 {
                     obj.name = $"RemotePlayer {e}";
 
+                    isLeftUI = myId > e ? false : true;
                     move.enabled = false;
                     shoot.enabled = false;
                     MonoBehaviour.Destroy(obj.GetComponent<PositionSender>());
@@ -79,8 +83,22 @@ namespace HanSocket.Data
                     obj.GetComponent<Rigidbody2D>().gravityScale = 1;
                     obj.GetComponent<Remote>().enabled = false;
                 }
-
                 users.Add(e, obj);
+            });
+
+            List<PlayerUI> uis = MonoBehaviour.FindObjectsOfType<PlayerUI>().ToList();
+            Debug.Log(uis.Count);
+            vo.players.ForEach(e =>
+            {
+                if (e != myId)
+                {
+                    users[e].GetComponent<PlayerSetUI>().MyUI = uis.Find(x => x.gameObject.name == (isLeftUI ? "Right" : "Left"));
+                }
+                else
+                {
+                    users[e].GetComponent<PlayerSetUI>().MyUI = uis.Find(x => x.gameObject.name == (isLeftUI ? "Left" : "Right"));
+                }
+                Debug.Log(users[e].GetComponent<PlayerSetUI>().MyUI == null);
             });
         }
     }
