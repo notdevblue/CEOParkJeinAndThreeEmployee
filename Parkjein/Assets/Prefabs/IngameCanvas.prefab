@@ -230,6 +230,8 @@ MonoBehaviour:
   - {fileID: 8109258111420171812}
   - {fileID: 1928481126856908003}
   - {fileID: 8040777604131156961}
+  defaultWinSprite: {fileID: 21300000, guid: 9411c12f93fbda143a9a1d7c02c9e378, type: 3}
+  winSprite: {fileID: 21300000, guid: 9eba597d30b7a114ea7924c3748871ed, type: 3}
 --- !u!1 &179324600
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,6 +700,8 @@ MonoBehaviour:
   - {fileID: 6557643888304108082}
   - {fileID: 6668122234520816235}
   - {fileID: 603738919140360628}
+  defaultWinSprite: {fileID: 21300000, guid: 9411c12f93fbda143a9a1d7c02c9e378, type: 3}
+  winSprite: {fileID: 21300000, guid: 9eba597d30b7a114ea7924c3748871ed, type: 3}
 --- !u!1 &749720685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2815,8 +2819,6 @@ MonoBehaviour:
   winImgs:
   - {fileID: 21300000, guid: 9411c12f93fbda143a9a1d7c02c9e378, type: 3}
   - {fileID: 21300000, guid: 9eba597d30b7a114ea7924c3748871ed, type: 3}
-  leftPlayer: {fileID: 164832074}
-  rightPlayer: {fileID: 614646472}
 --- !u!1 &7690812007617720728
 GameObject:
   m_ObjectHideFlags: 0

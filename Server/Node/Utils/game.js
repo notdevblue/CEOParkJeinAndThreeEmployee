@@ -195,6 +195,8 @@ class game
                     JSON.stringify({
                         id: deadws.id,
                         pos: new Vector2(0.0, 0.0),
+                        wonId: ws.id,
+                        setWon : ws.setWon
                     }),
                 ));
 

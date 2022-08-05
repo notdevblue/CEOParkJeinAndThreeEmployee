@@ -28,6 +28,7 @@ namespace HanSocket.Handlers.InGame
                 if (vos.TryDequeue(out var vo))
                 {
                     GameObject user = UserData.Instance.users[vo.id];
+                    GameObject wUser = UserData.Instance.users[vo.wonId];
                     Rigidbody2D rigid = user.GetComponent<Rigidbody2D>();
 
                     if (rigid != null)
@@ -35,9 +36,12 @@ namespace HanSocket.Handlers.InGame
 
                     user.GetComponent<Remote>()
                         ?.SetTarget(vo.pos);
+                    user.GetComponent<PlayerSetUI>().MyUI.SetHp(1);
                         
                     user.transform.position = vo.pos;
                     user.SetActive(true);
+
+                    wUser.GetComponent<PlayerSetUI>().MyUI.SetWinImg(vo.setWon);
                 }
             }
         }

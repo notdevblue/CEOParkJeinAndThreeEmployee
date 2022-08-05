@@ -8,5 +8,7 @@ namespace HanSocket.VO.InGame
     {
         public int id;
         public Vector2 pos;
+        public int wonId;
+        public int setWon;
     }
 }

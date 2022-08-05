@@ -14,6 +14,7 @@ namespace HanSocket.Handlers.InGame
             = new ConcurrentQueue<RespawnVO>();
 
         public GameObject cvsSkill;
+        public MainPanel mainPanel;
 
         protected override void OnArrived(string payload)
         {
@@ -23,6 +24,7 @@ namespace HanSocket.Handlers.InGame
         protected override void OnFlag()
         {
             cvsSkill.SetActive(false);
+            mainPanel.Open();
         }
 
         private void Update()
