@@ -31,9 +31,12 @@ namespace HanSocket.Handlers.InGame
 
                     obj.GetComponent<PlayerData>().MyUI.SetHp((float)vo.hp / vo.maxhp);
                     obj.GetComponent<PlayerAnimation>().SetHurt();
+                    
 
                     Debug.LogWarning($"AtkHP: {vo.atkhp}/{vo.atkmaxhp}, Damaged: {vo.id}, HP: {vo.hp}/{vo.maxhp}");
                     vo.specialCommands?.ForEach(x => {
+                        if (x.command.CompareTo("knockout") == 0)
+                            obj.GetComponent<PlayerMove>().Knockout(x.param);
                         Debug.LogWarning($"{x.command}:{x.param}");
                         // Debug.Log(x);
                     });
