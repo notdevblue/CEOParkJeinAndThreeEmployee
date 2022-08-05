@@ -50,10 +50,10 @@ public class TetrisBullet : MonoBehaviour
             {
                 stopBullet = true;
                 WebSocketClient.Instance.Send("damage", "");
-                WebSocketClient.Instance.Send(
-                    "bulletstop",
-                    new BulletStopVO(transform.position, transform.rotation).ToJson()
-                );
+                // WebSocketClient.Instance.Send(
+                //     "bulletstop",
+                //     new BulletStopVO(transform.position, transform.rotation).ToJson()
+                // );
             }
         }
         else if (col.gameObject.CompareTag("GROUND")
