@@ -1,0 +1,14 @@
+2022-8-6 0-0-3-270 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":4,\"bulletIdx\":5,\"startPos\":{\"x\":-0.261141836643219,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9417133331298828,\"y\":0.3364163637161255},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-6 0-0-3-270 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":4,\"bulletIdx\":5,\"startPos\":{\"x\":-0.261141836643219,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9417133331298828,\"y\":0.3364163637161255},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 0-0-3-349 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 0-0-3-349 					[  ] Sending {"type":"damage","payload":"{\"id\":5,\"maxhp\":100,\"hp\":90,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 0-0-3-349 					[  ] Sending {"type":"damage","payload":"{\"id\":5,\"maxhp\":100,\"hp\":90,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 0-0-8-101 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":4,\"bulletIdx\":0,\"startPos\":{\"x\":-1.5822961330413819,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.8021578192710877,\"y\":0.5971120595932007},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-6 0-0-8-102 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":4,\"bulletIdx\":0,\"startPos\":{\"x\":-1.5822961330413819,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.8021578192710877,\"y\":0.5971120595932007},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 0-0-8-328 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 0-0-8-329 					[  ] Sending {"type":"damage","payload":"{\"id\":5,\"maxhp\":100,\"hp\":70,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 0-0-8-329 					[  ] Sending {"type":"damage","payload":"{\"id\":5,\"maxhp\":100,\"hp\":70,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 0-0-11-280 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 0-0-11-281 					[  ] Sending {"type":"left","payload":"{\"id\":4}"} to 127.0.0.1:48000
+2022-8-6 0-0-11-281 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":5,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 0-0-12-678 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected

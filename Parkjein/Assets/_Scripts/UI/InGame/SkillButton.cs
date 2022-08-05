@@ -47,6 +47,7 @@ namespace UI.InGame
 
             var obj   = SkillImageSetter.Instance.Get(type, index);
             text.text = obj.text;
+            skillImage.sprite = obj.sprite;
         }
     }
 }

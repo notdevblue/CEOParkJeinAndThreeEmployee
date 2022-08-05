@@ -24,6 +24,9 @@ public class TetrisBullet : MonoBehaviour
 
     public void Shoot(FireVO fireVO)
     {
+        if (rigid == null)
+            rigid = gameObject.AddComponent<Rigidbody2D>();
+
         transform.position = fireVO.startPos;
         this.fireVO = fireVO;
         this.SetActive(true);

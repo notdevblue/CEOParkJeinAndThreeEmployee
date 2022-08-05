@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8466564125920335174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8466564125920335168}
+  - component: {fileID: 8466564125920335169}
+  m_Layer: 0
+  m_Name: SkillImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8466564125920335168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8466564125920335174}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8466564125920335169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8466564125920335174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd1e6ec27db0cb0e883c2fc73cb0e4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillImages:
+  - type: 0
+    skill: 0
+    sprite: {fileID: 439637130, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Critical
+  - type: 0
+    skill: 1
+    sprite: {fileID: -1914124732, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Knockout
+  - type: 0
+    skill: 2
+    sprite: {fileID: 1995496425, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Neutralize
+  - type: 1
+    skill: 0
+    sprite: {fileID: -1596755683, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Vampire
+  - type: 2
+    skill: 0
+    sprite: {fileID: -1231767323, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Skin Of Steel
+  - type: 2
+    skill: 1
+    sprite: {fileID: -348045936, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Long Life
+  - type: 3
+    skill: 0
+    sprite: {fileID: 141878745, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Shield
+  - type: 4
+    skill: 0
+    sprite: {fileID: -489798912, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Big  Block
+  - type: 4
+    skill: 1
+    sprite: {fileID: -1101624770, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Small Block
+  - type: 4
+    skill: 2
+    sprite: {fileID: 2057677218, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Health
+  - type: 4
+    skill: 3
+    sprite: {fileID: -1150963690, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Sonic
+  - type: 4
+    skill: 4
+    sprite: {fileID: -442748617, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Rotation
+  - type: 4
+    skill: 5
+    sprite: {fileID: -1582201585, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Knockback
+  - type: 5
+    skill: 0
+    sprite: {fileID: 977970360, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Penetrate
+  - type: 5
+    skill: 1
+    sprite: {fileID: 1041590934, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    text: Bomb
