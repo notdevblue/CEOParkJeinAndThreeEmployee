@@ -70,7 +70,7 @@ class game
 
     sendGamedata() {
         const stat = new skills();
-        
+
         let ids = [];
         this.players.forEach(ws => {
             ids.push(ws.id);
@@ -135,7 +135,6 @@ class game
     damage(damagedws) {
         let attackws = this.players.find(x => x != damagedws);
         let instance = null;
-        console.log("Damaged");
 
         // attackws.skills
         //     .filter(x => x.type == 0)
@@ -143,13 +142,27 @@ class game
         //         instance =
         //             new skills(instance, attackws).skills[0][skills]();
         //     });
+
+        damagedws.hp -= 20;
+
+        if (damagedws.hp <= 0) {
+            this.dead(damagedws);
+            return;
+        }
         
-        console.log(instance);
+        this.broadcast(hs.toJson(
+            "damaged",
+            JSON.stringify({
+                id: damagedws.id,
+                hp: damagedws.hp // FIXME: 임시
+            })
+        ));
     }
     
     dead(deadws) {
         ++this.deadPlayers;
         this.justDiedPlayer = deadws;
+        deadws.hp = 100;
 
         if (this.deadPlayers >= this.players.length - 1) {
             let ws = this.players.find(x => x != deadws);

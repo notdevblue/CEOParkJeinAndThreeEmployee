@@ -15,6 +15,8 @@ public class TetrisBullet : MonoBehaviour
 
     private FireVO fireVO;
 
+    public bool firedByMe = false;
+
     public void SetActive(bool active)
     {
         gameObject.SetActive(active);
@@ -23,6 +25,7 @@ public class TetrisBullet : MonoBehaviour
     public void Shoot(Vector3 curPos,Vector2 dir,float speed)
     {
         transform.position = curPos;
+        
         this.SetActive(true);
         
         //float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
@@ -33,6 +36,7 @@ public class TetrisBullet : MonoBehaviour
     public void Shoot(FireVO fireVO)
     {
         this.fireVO = fireVO;
+        firedByMe = true;
 
         transform.position = fireVO.startPos;
         this.SetActive(true);
@@ -46,22 +50,22 @@ public class TetrisBullet : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (fireVO.shooterId.Equals(UserData.Instance.myId))
-        {
-            //if (col.gameObject.CompareTag("GROUND"))
-            //{
-            //    BulletObj bulletObj = BulletPool.Instance.GetObj(bulletIdx);
-            //    bulletObj.SetSpawn(transform.position);
+        // if (fireVO.shooterId.Equals(UserData.Instance.myId))
+        // {
+        //     //if (col.gameObject.CompareTag("GROUND"))
+        //     //{
+        //     //    BulletObj bulletObj = BulletPool.Instance.GetObj(bulletIdx);
+        //     //    bulletObj.SetSpawn(transform.position);
 
-            //    BulletPool.Instance.Enqueue(this);
-            //    SetActive(false);
-            //}
-            return;
-        }
+        //     //    BulletPool.Instance.Enqueue(this);
+        //     //    SetActive(false);
+        //     //}
+        //     return;
+        // }
 
-        if (col.gameObject.CompareTag("PLAYER") || col.gameObject.CompareTag("GROUND"))
-        {
-            WebSocketClient.Instance.Send("collision", null);
-        }
+        // if (col.gameObject.CompareTag("PLAYER") || col.gameObject.CompareTag("GROUND"))
+        // {
+        //     WebSocketClient.Instance.Send("collision", null);
+        // }
     }
 }
