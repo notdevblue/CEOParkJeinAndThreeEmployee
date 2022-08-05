@@ -28,17 +28,16 @@ public class BulletPool : MonoSingleton<BulletPool>
         for (int i = 0; i < initCount; i++)
         {
             TetrisBullet bullet = InstantiateBullet();
-            bulletList.Add(bullet);
             bullet.SetActive(false);
         }
 
-        for (int i = 0; i < bulletObjPrefab.Length; i++)
-        {
-            for (int j = 0; j < bulletObjInitcount; j++)
-            {
-                AddObj(i, InstantiateObj(i));
-            }
-        }
+        //for (int i = 0; i < bulletObjPrefab.Length; i++)
+        //{
+        //    for (int j = 0; j < bulletObjInitcount; j++)
+        //    {
+        //        AddObj(i, InstantiateObj(i));
+        //    }
+        //}
     }
 
     #region Bullet
@@ -47,6 +46,7 @@ public class BulletPool : MonoSingleton<BulletPool>
         int idx = Random.Range(0, bulletPrefab.Length);
         TetrisBullet bul = Instantiate(bulletPrefab[idx], bulletParent);
         bul.bulletIdx = idx;
+        bulletList.Add(bul);
         return bul;
     }
 
@@ -54,6 +54,7 @@ public class BulletPool : MonoSingleton<BulletPool>
     {
         TetrisBullet bul = Instantiate(bulletPrefab[bulletIdx], bulletParent);
         bul.bulletIdx = bulletIdx;
+        bulletList.Add(bul);
         return bul;
     }
 
