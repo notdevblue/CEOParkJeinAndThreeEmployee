@@ -8,6 +8,6 @@ module.exports = {
             return;
         }
 
-        ws.game.loaded(ws.id);
+        ws.game.loaded(ws);
     }
 };

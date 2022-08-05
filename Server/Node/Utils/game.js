@@ -1,4 +1,5 @@
 const hs = require("../HanSocket/HanSocket");
+const skills = require("../Skills/skills");
 const Vector2 = require("./Vector2");
 
 class game
@@ -11,27 +12,12 @@ class game
 
         this.loadedCount = 0;
         this.deadPlayers = 0;
-
-        this.initialHp            = 100;
-        this.initialAtk           = 20;
-        this.initialSpeed         = 1;
-        this.initialJump          = 5;
         
-        this.initialblockSize     = 5;
-        this.initialBlockRateFire = 0.5;
-        this.initialBlockSpeed    = 1;
-        this.initialRotationSpeed = 1;
-        
-        this.initialPushPower     = 10; // 피격 시
-        
-        this.skillSelectCount     = 0; // 스킬 선택 카운트
-        this.lastLostPlayerId     = -1; // 마지막으로 (세트)진 플레이어 아이디
-        this.gameWonStackToWin    = 3;
-        this.setWonStackToWin     = 2;
-        this.invincibleTimeMs     = 5000;
-
-        // (3판 2선승제) => 5판 3선승
-        // 한 세트 끝 마다 능력
+        this.skillSelectCount  = 0; // 스킬 선택 카운트
+        this.lastLostPlayerId  = -1; // 마지막으로 (세트)진 플레이어 아이디
+        this.gameWonStackToWin = 3;
+        this.setWonStackToWin  = 2;
+        this.invincibleTimeMs  = 5000;
     }
 
     broadcast(payload, excludeIds = [-1,]) {
@@ -43,29 +29,6 @@ class game
             
             hs.send(ws, payload);
         });
-    }
-
-    init(
-        ws,
-        atk           = this.initialAtk,
-        hp            = this.initialHp,
-        speed         = this.initialSpeed,
-        jump          = this.initialJump,
-        blocksize     = this.initialblockSize,
-        blockRateFire = this.blockRateFire,
-        blockspeed    = this.initialBlockSpeed,
-        rotationspeed = this.initialRotationSpeed,
-        pushpower     = this.initialPushPower) {
-        
-        ws.hp            = hp
-        ws.atk           = atk;
-        ws.speed         = speed;
-        ws.jump          = jump;
-        ws.blocksize     = blocksize;
-        ws.blockRateFire = blockRateFire;
-        ws.blockspeed    = blockspeed;
-        ws.rotationspeed = rotationspeed;
-        ws.pushpower     = pushpower;
     }
 
     newLoop() {
@@ -85,60 +48,60 @@ class game
         this.justDiedPlayer   = null;
     }
 
-    loaded() {
+    loaded(ws) {
         ++this.loadedCount;
+        
+        ws.setWon      = 0;
+        ws.gameWon     = 0;
+        ws.invincible  = false;
+        ws.selectCount = 1;
 
         // 모든 클라이언트가 로딩 완료된 경우
         if (this.loadedCount >= this.players.length) {
+            const stat = new skills();
 
-            let ids = [];
-            this.players.forEach(ws => {
-                this.init(ws);
-
-                ws.onDamage    = [];
-                ws.setWon      = 0;
-                ws.gameWon     = 0;
-                ws.invincible  = false;
-                ws.selectCount = 1;
-
-                ids.push(ws.id);
-            });
-
-
-            let inGameData = {
-                // 플레이어 아이디 데이터
-                players: ids,
-
-                // 자신 아이디
-                myId: -1,
-
-                // 기본값
-                hp: this.initialHp,
-                
-                // 이동
-                speed:      this.initialSpeed,
-                jumpPower:  this.initialJump,
-                
-                // 블럭 관련
-                blockSize:      this.initialblockSize,
-                blockRateFire:  this.initialBlockRateFire,
-                blockSpeed:     this.initialBlockSpeed,
-                rotationSpeed:  this.initialRotationSpeed,
-            };
-
-            this.players.forEach(ws => {
-                inGameData.myId = ws.id;
-                hs.send(ws, hs.toJson(
-                    "gamedata",
-                    JSON.stringify(inGameData)
-                ));
-            });
+            this.sendGamedata();
 
             this.skillSelectCount = 2;
             this.newLoop();
         }
         
+    }
 
+    sendGamedata() {
+        let ids = [];
+        this.players.forEach(ws => {
+            ids.push(ws.id);
+        });
+
+        let gamedata = {
+            // 플레이어 아이디 데이터
+            players: ids,
+
+            // 자신 아이디
+            myId: -1,
+
+            // 기본값
+            hp: stat.hp,
+
+            // 이동
+            speed: stat.speed,
+            jumpPower: stat.jumpPower,
+
+            // 블럭 관련
+            blockSize: stat.blocksize,
+            blockRateFire: stat.ratefire,
+            blockSpeed: stat.blockspeed,
+            rotationSpeed: stat.rotationspeed,
+        };
+
+        this.players.forEach(ws => {
+            gamedata.myId = ws.id;
+            hs.send(ws, hs.toJson(
+                "gamedata",
+                JSON.stringify(gamedata)
+            ));
+        });
     }
 
     skillselected(ws, index) {
