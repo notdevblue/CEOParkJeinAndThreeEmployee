@@ -142,7 +142,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2329496399768910919}
           m_TargetAssemblyTypeName: TetrisBullet, Assembly-CSharp
-          m_MethodName: CollisionEnter
+          m_MethodName: Active
           m_Mode: 0
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
