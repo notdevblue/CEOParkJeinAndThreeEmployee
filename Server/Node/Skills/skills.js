@@ -6,12 +6,12 @@ class skills {
         if (instance == null) {
             this.damage = 20;
             this.hp = 100;
-            this.speed = 1;
+            this.speed = 4;
             this.jumpPower = 5;
             this.blocksize = 5;
-            this.ratefire = 0.5;
-            this.blockspeed = 1;
-            this.rotationspeed = 1;
+            this.ratefire = 0.25;
+            this.blockspeed = 5;
+            this.rotationspeed = 7;
             this.pushpower = 10;
             
             this.hpReturn = 0;

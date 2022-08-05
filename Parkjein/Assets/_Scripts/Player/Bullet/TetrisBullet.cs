@@ -38,9 +38,16 @@ public class TetrisBullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D col)
     {
         User user = col.gameObject.GetComponent<User>();
-        if (user != null && user.id == fireVO.shooterId) return;
 
         this.gameObject.tag = "GROUND";
-        Destroy(this.GetComponent<Rigidbody2D>());
+        rigid.velocity = Vector2.zero;
+
+        Destroy(rigid);
+
+        if (user == null) return;
+        if (user.id == fireVO.shooterId) return;
+
+        WebSocketClient.Instance.Send("damage", "");
+        
     }
 }

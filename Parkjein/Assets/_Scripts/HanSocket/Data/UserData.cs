@@ -57,9 +57,9 @@ namespace HanSocket.Data
 
                     move.enabled = false;
                     shoot.enabled = false;
-                    obj.GetComponent<PositionSender>().enabled = false;
-                    obj.GetComponent<PlayerDamage>().enabled = false;
-                    obj.GetComponent<Rigidbody2D>().gravityScale = 0;
+                    MonoBehaviour.Destroy(obj.GetComponent<PositionSender>());
+                    MonoBehaviour.Destroy(obj.GetComponent<Rigidbody2D>());
+                    MonoBehaviour.Destroy(obj.GetComponent<BoxCollider2D>());
                 }
                 else
                 {
@@ -69,7 +69,7 @@ namespace HanSocket.Data
                         vo.jumpPower,
                         vo.speed
                     );
-                    
+
                     shoot.InitValue(
                         vo.blockSpeed,
                         vo.blockRateFire,

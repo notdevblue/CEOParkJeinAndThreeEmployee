@@ -2134,3 +2134,909 @@
 2022-8-5 16-22-49-849 					[  ] Sending {"type":"left","payload":"{\"id\":5}"} to 127.0.0.1:48000
 2022-8-5 16-22-49-849 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":6,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
 2022-8-5 16-22-51-76 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-25-4-940 		[127.0.0.1:48000]	[II] New client joined. ID:7
+2022-8-5 16-25-8-701 		[127.0.0.1:48000]	[II] New client joined. ID:8
+2022-8-5 16-25-10-121 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-25-10-121 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-25-10-943 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-25-10-943 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-25-10-943 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-25-10-944 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-25-11-3 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-25-11-44 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-25-11-45 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[7,8],\"myId\":7,\"hp\":100,\"damage\":20,\"speed\":1,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.5,\"blockSpeed\":1,\"rotationSpeed\":1}"} to 127.0.0.1:48000
+2022-8-5 16-25-11-45 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[7,8],\"myId\":8,\"hp\":100,\"damage\":20,\"speed\":1,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.5,\"blockSpeed\":1,\"rotationSpeed\":1}"} to 127.0.0.1:48000
+2022-8-5 16-25-11-45 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-25-11-45 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-25-11-632 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-25-12-228 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-25-12-228 					[  ] Sending {"type":"gamestart","payload":"{\"id\":7,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-25-12-229 					[  ] Sending {"type":"gamestart","payload":"{\"id\":7,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-25-12-229 					[  ] Sending {"type":"gamestart","payload":"{\"id\":8,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-25-12-229 					[  ] Sending {"type":"gamestart","payload":"{\"id\":8,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-25-13-987 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":3,\"startPos\":{\"x\":-3.5628340244293215,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9998548626899719,\"y\":0.017037425190210344},\"bulletSpeed\":10.0}"}
+2022-8-5 16-25-13-987 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":3,\"startPos\":{\"x\":-3.5628340244293215,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9998548626899719,\"y\":0.017037425190210344},\"bulletSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-25-14-964 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":2,\"startPos\":{\"x\":-3.5628340244293215,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9882554411888123,\"y\":0.15281108021736146},\"bulletSpeed\":10.0}"}
+2022-8-5 16-25-14-964 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":2,\"startPos\":{\"x\":-3.5628340244293215,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9882554411888123,\"y\":0.15281108021736146},\"bulletSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-25-17-596 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":5,\"startPos\":{\"x\":-1.7367212772369385,\"y\":-2.6755876541137697},\"dir\":{\"x\":0.879182755947113,\"y\":0.47648465633392336},\"bulletSpeed\":10.0}"}
+2022-8-5 16-25-17-596 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":5,\"startPos\":{\"x\":-1.7367212772369385,\"y\":-2.6755876541137697},\"dir\":{\"x\":0.879182755947113,\"y\":0.47648465633392336},\"bulletSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-25-20-82 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":0,\"startPos\":{\"x\":-3.9226467609405519,\"y\":-2.6774353981018068},\"dir\":{\"x\":0.9538410902023315,\"y\":0.30031177401542666},\"bulletSpeed\":10.0}"}
+2022-8-5 16-25-20-82 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":0,\"startPos\":{\"x\":-3.9226467609405519,\"y\":-2.6774353981018068},\"dir\":{\"x\":0.9538410902023315,\"y\":0.30031177401542666},\"bulletSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-25-22-742 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":3,\"startPos\":{\"x\":-0.042620301246643069,\"y\":-2.677464723587036},\"dir\":{\"x\":0.9984812140464783,\"y\":0.05509328469634056},\"bulletSpeed\":10.0}"}
+2022-8-5 16-25-22-742 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":3,\"startPos\":{\"x\":-0.042620301246643069,\"y\":-2.677464723587036},\"dir\":{\"x\":0.9984812140464783,\"y\":0.05509328469634056},\"bulletSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-25-24-130 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":5,\"startPos\":{\"x\":0.4950265884399414,\"y\":-2.216609239578247},\"dir\":{\"x\":0.9972728490829468,\"y\":0.07380320876836777},\"bulletSpeed\":10.0}"}
+2022-8-5 16-25-24-131 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":5,\"startPos\":{\"x\":0.4950265884399414,\"y\":-2.216609239578247},\"dir\":{\"x\":0.9972728490829468,\"y\":0.07380320876836777},\"bulletSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-25-24-788 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-25-24-788 					[  ] Sending {"type":"left","payload":"{\"id\":7}"} to 127.0.0.1:48000
+2022-8-5 16-25-24-788 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":8,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-5 16-25-26-34 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-34-35-956 					
+2022-8-5 16-34-35-957 					[II] Server started on port 48000.
+2022-8-5 16-34-35-957 					[  ] Server is listening
+2022-8-5 16-34-35-958 					[  ] Found heandler damage.js
+2022-8-5 16-34-35-958 					[  ] Found heandler dead.js
+2022-8-5 16-34-35-959 					[  ] Found heandler exampleHandler.js
+2022-8-5 16-34-35-959 					[  ] Found heandler fire.js
+2022-8-5 16-34-35-959 					[  ] Found heandler loaded.js
+2022-8-5 16-34-35-960 					[  ] Found heandler matchmaking.js
+2022-8-5 16-34-35-960 					[  ] Found heandler move.js
+2022-8-5 16-34-35-961 					[  ] Found heandler skillselected.js
+2022-8-5 16-34-48-997 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-5 16-34-50-803 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-34-50-805 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-34-52-870 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-5 16-34-55-425 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-34-55-426 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-34-55-426 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-34-55-427 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-34-55-472 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-34-55-525 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-34-55-526 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":0,\"hp\":100,\"damage\":20,\"speed\":1,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.5,\"blockSpeed\":1,\"rotationSpeed\":1}"} to 127.0.0.1:48000
+2022-8-5 16-34-55-526 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":1,\"hp\":100,\"damage\":20,\"speed\":1,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.5,\"blockSpeed\":1,\"rotationSpeed\":1}"} to 127.0.0.1:48000
+2022-8-5 16-34-55-526 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-34-55-527 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-35-34-395 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-35-34-396 					[  ] Sending {"type":"left","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-5 16-35-34-396 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-5 16-35-35-558 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-36-32-423 					
+2022-8-5 16-36-32-424 					[II] Server started on port 48000.
+2022-8-5 16-36-32-424 					[  ] Server is listening
+2022-8-5 16-36-32-425 					[  ] Found heandler damage.js
+2022-8-5 16-36-32-425 					[  ] Found heandler dead.js
+2022-8-5 16-36-32-425 					[  ] Found heandler exampleHandler.js
+2022-8-5 16-36-32-426 					[  ] Found heandler fire.js
+2022-8-5 16-36-32-426 					[  ] Found heandler loaded.js
+2022-8-5 16-36-32-427 					[  ] Found heandler matchmaking.js
+2022-8-5 16-36-32-427 					[  ] Found heandler move.js
+2022-8-5 16-36-32-427 					[  ] Found heandler skillselected.js
+2022-8-5 16-36-45-461 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-5 16-36-47-74 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-36-47-75 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-36-48-533 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-5 16-36-49-716 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-36-49-717 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-36-49-717 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-36-49-718 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-36-49-769 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-36-49-817 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-36-49-818 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":0,\"hp\":100,\"damage\":20,\"speed\":1,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.5,\"blockSpeed\":1,\"rotationSpeed\":1}"} to 127.0.0.1:48000
+2022-8-5 16-36-49-818 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":1,\"hp\":100,\"damage\":20,\"speed\":1,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.5,\"blockSpeed\":1,\"rotationSpeed\":1}"} to 127.0.0.1:48000
+2022-8-5 16-36-49-818 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-36-49-819 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-36-51-42 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-36-51-729 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-36-51-730 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-36-51-730 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-36-51-731 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-36-51-731 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-37-4-258 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":4,\"startPos\":{\"x\":3.4780030250549318,\"y\":-2.6776299476623537},\"dir\":{\"x\":-0.8650782704353333,\"y\":0.5016369819641113},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-37-4-258 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":4,\"startPos\":{\"x\":3.4780030250549318,\"y\":-2.6776299476623537},\"dir\":{\"x\":-0.8650782704353333,\"y\":0.5016369819641113},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-37-6-903 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":1,\"startPos\":{\"x\":2.9776604175567629,\"y\":-2.338207960128784},\"dir\":{\"x\":-0.9999839067459106,\"y\":0.005668891128152609},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-37-6-903 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":1,\"startPos\":{\"x\":2.9776604175567629,\"y\":-2.338207960128784},\"dir\":{\"x\":-0.9999839067459106,\"y\":0.005668891128152609},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-37-8-889 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":5,\"startPos\":{\"x\":3.004850387573242,\"y\":-2.3378195762634279},\"dir\":{\"x\":-0.9994871020317078,\"y\":0.032023314386606219},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-37-8-890 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":5,\"startPos\":{\"x\":3.004850387573242,\"y\":-2.3378195762634279},\"dir\":{\"x\":-0.9994871020317078,\"y\":0.032023314386606219},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-37-11-166 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":2,\"startPos\":{\"x\":1.5200552940368653,\"y\":-1.3113486766815186},\"dir\":{\"x\":-0.8719449639320374,\"y\":-0.4896039366722107},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-37-11-166 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":2,\"startPos\":{\"x\":1.5200552940368653,\"y\":-1.3113486766815186},\"dir\":{\"x\":-0.8719449639320374,\"y\":-0.4896039366722107},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-37-15-268 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":4,\"startPos\":{\"x\":0.8925474286079407,\"y\":-1.1867938041687012},\"dir\":{\"x\":-0.8991647958755493,\"y\":-0.4376101493835449},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-37-15-268 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":4,\"startPos\":{\"x\":0.8925474286079407,\"y\":-1.1867938041687012},\"dir\":{\"x\":-0.8991647958755493,\"y\":-0.4376101493835449},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-37-18-330 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":2,\"startPos\":{\"x\":0.9185625910758972,\"y\":-1.1927311420440674},\"dir\":{\"x\":-0.9053614139556885,\"y\":-0.42464181780815127},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-37-18-331 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":2,\"startPos\":{\"x\":0.9185625910758972,\"y\":-1.1927311420440674},\"dir\":{\"x\":-0.9053614139556885,\"y\":-0.42464181780815127},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-37-21-653 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":4,\"startPos\":{\"x\":0.18275511264801026,\"y\":-0.7203869819641113},\"dir\":{\"x\":-0.01973685435950756,\"y\":-0.9998051524162293},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-37-21-653 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":4,\"startPos\":{\"x\":0.18275511264801026,\"y\":-0.7203869819641113},\"dir\":{\"x\":-0.01973685435950756,\"y\":-0.9998051524162293},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-37-24-320 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":3,\"startPos\":{\"x\":0.7584711909294128,\"y\":-1.2550580501556397},\"dir\":{\"x\":-0.9362470507621765,\"y\":-0.3513423204421997},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-37-24-320 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":3,\"startPos\":{\"x\":0.7584711909294128,\"y\":-1.2550580501556397},\"dir\":{\"x\":-0.9362470507621765,\"y\":-0.3513423204421997},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-37-26-680 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":4,\"startPos\":{\"x\":0.7630816102027893,\"y\":-1.2808167934417725},\"dir\":{\"x\":-0.9412493109703064,\"y\":-0.3377123773097992},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-37-26-681 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":4,\"startPos\":{\"x\":0.7630816102027893,\"y\":-1.2808167934417725},\"dir\":{\"x\":-0.9412493109703064,\"y\":-0.3377123773097992},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-37-34-376 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-37-34-376 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-37-34-376 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-37-34-445 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-37-34-446 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-37-34-446 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-37-35-716 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-37-35-716 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-37-35-716 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-37-35-786 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-37-35-787 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-37-35-787 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-37-35-855 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-37-35-855 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-37-35-855 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-37-35-944 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-37-35-944 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-37-35-944 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-37-40-278 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-37-40-278 					[  ] Sending {"type":"left","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-5 16-37-40-278 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-5 16-37-41-559 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-39-8-27 					
+2022-8-5 16-39-8-29 					[II] Server started on port 48000.
+2022-8-5 16-39-8-29 					[  ] Server is listening
+2022-8-5 16-39-8-29 					[  ] Found heandler damage.js
+2022-8-5 16-39-8-30 					[  ] Found heandler dead.js
+2022-8-5 16-39-8-30 					[  ] Found heandler exampleHandler.js
+2022-8-5 16-39-8-30 					[  ] Found heandler fire.js
+2022-8-5 16-39-8-31 					[  ] Found heandler loaded.js
+2022-8-5 16-39-8-31 					[  ] Found heandler matchmaking.js
+2022-8-5 16-39-8-32 					[  ] Found heandler move.js
+2022-8-5 16-39-8-32 					[  ] Found heandler skillselected.js
+2022-8-5 16-39-29-182 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-5 16-39-30-341 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-39-30-343 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-39-32-275 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-5 16-39-34-254 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-39-34-254 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-39-34-255 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-39-34-255 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-39-34-312 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-39-34-346 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-39-34-347 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":1,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.5,\"blockSpeed\":1,\"rotationSpeed\":1}"} to 127.0.0.1:48000
+2022-8-5 16-39-34-347 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[1,0],\"myId\":0,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.5,\"blockSpeed\":1,\"rotationSpeed\":1}"} to 127.0.0.1:48000
+2022-8-5 16-39-34-348 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-39-34-348 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-39-35-11 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-39-36-31 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-39-36-32 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-39-36-32 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-39-36-32 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-39-36-33 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-39-42-900 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":2,\"startPos\":{\"x\":3.48061466217041,\"y\":-1.4548226594924927},\"dir\":{\"x\":-0.9642822742462158,\"y\":0.26487690210342409},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-39-42-900 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":2,\"startPos\":{\"x\":3.48061466217041,\"y\":-1.4548226594924927},\"dir\":{\"x\":-0.9642822742462158,\"y\":0.26487690210342409},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-39-46-17 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":0,\"startPos\":{\"x\":-0.030495822429656984,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9996827840805054,\"y\":-0.025186190381646158},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-39-46-18 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":0,\"startPos\":{\"x\":-0.030495822429656984,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9996827840805054,\"y\":-0.025186190381646158},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-39-49-373 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":5,\"startPos\":{\"x\":1.5079107284545899,\"y\":-1.452734351158142},\"dir\":{\"x\":-0.9999176859855652,\"y\":0.012834426946938038},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-39-49-373 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":5,\"startPos\":{\"x\":1.5079107284545899,\"y\":-1.452734351158142},\"dir\":{\"x\":-0.9999176859855652,\"y\":0.012834426946938038},\"bulletSpeed\":1.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-39-50-219 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-39-50-220 					[  ] Sending {"type":"left","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-5 16-39-50-221 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-5 16-39-51-228 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-40-16-169 					
+2022-8-5 16-40-16-170 					[II] Server started on port 48000.
+2022-8-5 16-40-16-170 					[  ] Server is listening
+2022-8-5 16-40-16-170 					[  ] Found heandler damage.js
+2022-8-5 16-40-16-171 					[  ] Found heandler dead.js
+2022-8-5 16-40-16-171 					[  ] Found heandler exampleHandler.js
+2022-8-5 16-40-16-171 					[  ] Found heandler fire.js
+2022-8-5 16-40-16-172 					[  ] Found heandler loaded.js
+2022-8-5 16-40-16-172 					[  ] Found heandler matchmaking.js
+2022-8-5 16-40-16-173 					[  ] Found heandler move.js
+2022-8-5 16-40-16-173 					[  ] Found heandler skillselected.js
+2022-8-5 16-40-23-684 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-5 16-40-24-657 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-40-24-659 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-40-26-677 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-5 16-40-27-882 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-40-27-883 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-40-27-883 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-40-27-883 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-40-27-925 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-40-27-973 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-40-27-974 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":0,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.5,\"blockSpeed\":2,\"rotationSpeed\":1}"} to 127.0.0.1:48000
+2022-8-5 16-40-27-974 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":1,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.5,\"blockSpeed\":2,\"rotationSpeed\":1}"} to 127.0.0.1:48000
+2022-8-5 16-40-27-975 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-40-27-975 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-40-28-582 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-40-29-109 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-40-29-110 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-40-29-110 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-40-29-110 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-40-29-111 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-40-31-181 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":5,\"startPos\":{\"x\":-0.7804483771324158,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9876313805580139,\"y\":0.15679384768009187},\"bulletSpeed\":2.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-40-31-181 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":5,\"startPos\":{\"x\":-0.7804483771324158,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9876313805580139,\"y\":0.15679384768009187},\"bulletSpeed\":2.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-40-34-303 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":3,\"startPos\":{\"x\":-0.2898269295692444,\"y\":-1.408639907836914},\"dir\":{\"x\":0.9972437620162964,\"y\":-0.07419475167989731},\"bulletSpeed\":2.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-40-34-303 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":3,\"startPos\":{\"x\":-0.2898269295692444,\"y\":-1.408639907836914},\"dir\":{\"x\":0.9972437620162964,\"y\":-0.07419475167989731},\"bulletSpeed\":2.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-40-38-507 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":4,\"startPos\":{\"x\":-1.6790645122528077,\"y\":-2.677434206008911},\"dir\":{\"x\":0.818690299987793,\"y\":0.5742353200912476},\"bulletSpeed\":2.0,\"rotationSpeed\":1.0}"}
+2022-8-5 16-40-38-507 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":4,\"startPos\":{\"x\":-1.6790645122528077,\"y\":-2.677434206008911},\"dir\":{\"x\":0.818690299987793,\"y\":0.5742353200912476},\"bulletSpeed\":2.0,\"rotationSpeed\":1.0}"} to 127.0.0.1:48000
+2022-8-5 16-40-39-421 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-40-39-421 					[  ] Sending {"type":"left","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-5 16-40-39-421 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-5 16-40-40-698 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-41-0-741 					
+2022-8-5 16-41-0-743 					[II] Server started on port 48000.
+2022-8-5 16-41-0-743 					[  ] Server is listening
+2022-8-5 16-41-0-744 					[  ] Found heandler damage.js
+2022-8-5 16-41-0-745 					[  ] Found heandler dead.js
+2022-8-5 16-41-0-746 					[  ] Found heandler exampleHandler.js
+2022-8-5 16-41-0-747 					[  ] Found heandler fire.js
+2022-8-5 16-41-0-748 					[  ] Found heandler loaded.js
+2022-8-5 16-41-0-748 					[  ] Found heandler matchmaking.js
+2022-8-5 16-41-0-749 					[  ] Found heandler move.js
+2022-8-5 16-41-0-750 					[  ] Found heandler skillselected.js
+2022-8-5 16-41-15-212 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-5 16-41-15-498 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-5 16-41-16-451 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-41-16-453 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-41-16-982 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-41-16-983 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-41-16-983 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-41-16-984 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-41-17-53 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-41-17-54 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-41-17-55 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":0,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.5,\"blockSpeed\":4,\"rotationSpeed\":10}"} to 127.0.0.1:48000
+2022-8-5 16-41-17-56 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":1,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.5,\"blockSpeed\":4,\"rotationSpeed\":10}"} to 127.0.0.1:48000
+2022-8-5 16-41-17-56 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-41-17-57 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-41-17-910 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-41-18-519 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-41-18-520 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-41-18-520 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-41-18-521 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-41-18-521 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-41-20-527 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":0,\"startPos\":{\"x\":-2.0422911643981935,\"y\":-1.4838778972625733},\"dir\":{\"x\":0.9718848466873169,\"y\":0.23545663058757783},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-41-20-527 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":0,\"startPos\":{\"x\":-2.0422911643981935,\"y\":-1.4838778972625733},\"dir\":{\"x\":0.9718848466873169,\"y\":0.23545663058757783},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-41-23-81 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":-0.14121371507644654,\"y\":-1.689454197883606},\"dir\":{\"x\":0.9860789179801941,\"y\":0.16627800464630128},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-41-23-82 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":-0.14121371507644654,\"y\":-1.689454197883606},\"dir\":{\"x\":0.9860789179801941,\"y\":0.16627800464630128},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-41-25-223 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":-0.9349570870399475,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9439536333084106,\"y\":0.330078125},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-41-25-223 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":-0.9349570870399475,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9439536333084106,\"y\":0.330078125},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-41-27-715 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":4,\"startPos\":{\"x\":0.7732638716697693,\"y\":-1.1106446981430054},\"dir\":{\"x\":0.9983644485473633,\"y\":0.05717039108276367},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-41-27-715 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":4,\"startPos\":{\"x\":0.7732638716697693,\"y\":-1.1106446981430054},\"dir\":{\"x\":0.9983644485473633,\"y\":0.05717039108276367},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-41-29-735 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":2.027578830718994,\"y\":-1.0332891941070557},\"dir\":{\"x\":0.9999974370002747,\"y\":0.002266006078571081},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-41-29-735 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":2.027578830718994,\"y\":-1.0332891941070557},\"dir\":{\"x\":0.9999974370002747,\"y\":0.002266006078571081},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-41-30-242 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-41-30-243 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-41-30-243 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-41-35-43 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":2,\"startPos\":{\"x\":3.585280656814575,\"y\":-0.5256463289260864},\"dir\":{\"x\":-0.9886876344680786,\"y\":0.1499895602464676},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-41-35-43 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":2,\"startPos\":{\"x\":3.585280656814575,\"y\":-0.5256463289260864},\"dir\":{\"x\":-0.9886876344680786,\"y\":0.1499895602464676},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-41-37-603 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":2,\"startPos\":{\"x\":1.8193485736846924,\"y\":-0.5258945226669312},\"dir\":{\"x\":-0.8609151840209961,\"y\":0.5087485313415527},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-41-37-603 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":2,\"startPos\":{\"x\":1.8193485736846924,\"y\":-0.5258945226669312},\"dir\":{\"x\":-0.8609151840209961,\"y\":0.5087485313415527},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-41-40-444 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":3,\"startPos\":{\"x\":3.397836923599243,\"y\":-0.7651538848876953},\"dir\":{\"x\":-0.955064594745636,\"y\":0.29639771580696108},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-41-40-444 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":3,\"startPos\":{\"x\":3.397836923599243,\"y\":-0.7651538848876953},\"dir\":{\"x\":-0.955064594745636,\"y\":0.29639771580696108},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-41-42-763 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":2,\"startPos\":{\"x\":3.0677125453948976,\"y\":-0.6488853693008423},\"dir\":{\"x\":-0.9973240494728088,\"y\":0.07310749590396881},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-41-42-764 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":2,\"startPos\":{\"x\":3.0677125453948976,\"y\":-0.6488853693008423},\"dir\":{\"x\":-0.9973240494728088,\"y\":0.07310749590396881},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-41-45-999 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":3,\"startPos\":{\"x\":3.6187798976898195,\"y\":-1.4445947408676148},\"dir\":{\"x\":-0.9563511610031128,\"y\":0.2922198176383972},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-41-45-999 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":3,\"startPos\":{\"x\":3.6187798976898195,\"y\":-1.4445947408676148},\"dir\":{\"x\":-0.9563511610031128,\"y\":0.2922198176383972},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-41-48-41 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":4,\"startPos\":{\"x\":1.9954938888549805,\"y\":-0.6193172931671143},\"dir\":{\"x\":-0.9946961998939514,\"y\":0.10285631567239762},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-41-48-41 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":4,\"startPos\":{\"x\":1.9954938888549805,\"y\":-0.6193172931671143},\"dir\":{\"x\":-0.9946961998939514,\"y\":0.10285631567239762},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-41-48-655 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-41-48-655 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-41-48-655 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-41-52-625 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":5,\"startPos\":{\"x\":-1.5375032424926758,\"y\":-1.4547587633132935},\"dir\":{\"x\":0.9691436886787415,\"y\":0.24649639427661897},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-41-52-625 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":5,\"startPos\":{\"x\":-1.5375032424926758,\"y\":-1.4547587633132935},\"dir\":{\"x\":0.9691436886787415,\"y\":0.24649639427661897},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-41-54-986 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":-0.17699545621871949,\"y\":-0.6104872226715088},\"dir\":{\"x\":0.9847758412361145,\"y\":0.17382918298244477},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-41-54-986 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":-0.17699545621871949,\"y\":-0.6104872226715088},\"dir\":{\"x\":0.9847758412361145,\"y\":0.17382918298244477},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-41-55-564 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-41-55-564 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-41-55-564 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-41-57-513 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":4,\"startPos\":{\"x\":-0.17740696668624879,\"y\":-1.1056978702545167},\"dir\":{\"x\":0.9859229326248169,\"y\":0.16720014810562135},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-41-57-514 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":4,\"startPos\":{\"x\":-0.17740696668624879,\"y\":-1.1056978702545167},\"dir\":{\"x\":0.9859229326248169,\"y\":0.16720014810562135},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-41-58-55 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-41-58-55 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-41-58-55 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-42-1-83 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":6,\"startPos\":{\"x\":2.2741472721099855,\"y\":-0.5939834117889404},\"dir\":{\"x\":-0.975963294506073,\"y\":-0.21793489158153535},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-42-1-83 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":6,\"startPos\":{\"x\":2.2741472721099855,\"y\":-0.5939834117889404},\"dir\":{\"x\":-0.975963294506073,\"y\":-0.21793489158153535},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-42-3-716 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":1,\"startPos\":{\"x\":0.25192171335220339,\"y\":-1.4544906616210938},\"dir\":{\"x\":-0.9924290180206299,\"y\":0.1228199154138565},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-42-3-716 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":1,\"startPos\":{\"x\":0.25192171335220339,\"y\":-1.4544906616210938},\"dir\":{\"x\":-0.9924290180206299,\"y\":0.1228199154138565},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-42-3-812 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-42-3-812 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-42-3-813 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-42-6-840 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":6,\"startPos\":{\"x\":-1.5035147666931153,\"y\":-1.4844022989273072},\"dir\":{\"x\":0.7772777676582336,\"y\":-0.6291576623916626},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-42-6-841 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":6,\"startPos\":{\"x\":-1.5035147666931153,\"y\":-1.4844022989273072},\"dir\":{\"x\":0.7772777676582336,\"y\":-0.6291576623916626},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-42-6-973 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-42-6-973 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-42-6-973 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-42-13-736 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":2,\"startPos\":{\"x\":-2.529340982437134,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9635778665542603,\"y\":0.26742810010910036},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-42-13-736 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":2,\"startPos\":{\"x\":-2.529340982437134,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9635778665542603,\"y\":0.26742810010910036},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-42-13-778 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-42-13-778 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-42-13-778 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-42-15-887 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":1,\"startPos\":{\"x\":-2.604273557662964,\"y\":-1.5485481023788453},\"dir\":{\"x\":0.5322365164756775,\"y\":-0.8465957045555115},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-42-15-887 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":1,\"startPos\":{\"x\":-2.604273557662964,\"y\":-1.5485481023788453},\"dir\":{\"x\":0.5322365164756775,\"y\":-0.8465957045555115},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-42-16-12 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-42-16-13 					[  ] Sending {"type":"respawn","payload":"{\"id\":0,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-42-16-13 					[  ] Sending {"type":"respawn","payload":"{\"id\":0,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-42-21-471 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":3,\"startPos\":{\"x\":-2.6032068729400636,\"y\":-2.5843329429626467},\"dir\":{\"x\":0.9811457395553589,\"y\":0.19326910376548768},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-42-21-471 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":3,\"startPos\":{\"x\":-2.6032068729400636,\"y\":-2.5843329429626467},\"dir\":{\"x\":0.9811457395553589,\"y\":0.19326910376548768},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-42-21-486 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-42-21-486 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-42-21-486 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-42-24-349 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":4,\"startPos\":{\"x\":-2.6798980236053469,\"y\":-2.0895373821258547},\"dir\":{\"x\":0.9579784274101257,\"y\":-0.2868402600288391},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-42-24-350 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":4,\"startPos\":{\"x\":-2.6798980236053469,\"y\":-2.0895373821258547},\"dir\":{\"x\":0.9579784274101257,\"y\":-0.2868402600288391},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-42-24-393 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-42-24-393 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-42-24-393 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-42-28-173 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":5,\"startPos\":{\"x\":-2.6804842948913576,\"y\":-2.6757919788360597},\"dir\":{\"x\":0.964418888092041,\"y\":0.2643788456916809},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-42-28-173 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":5,\"startPos\":{\"x\":-2.6804842948913576,\"y\":-2.6757919788360597},\"dir\":{\"x\":0.964418888092041,\"y\":0.2643788456916809},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-42-28-195 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-42-28-195 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-42-28-196 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-42-32-918 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":0,\"startPos\":{\"x\":-2.2889835834503176,\"y\":-2.5843329429626467},\"dir\":{\"x\":-0.9618160128593445,\"y\":0.2736968398094177},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-42-32-918 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":0,\"startPos\":{\"x\":-2.2889835834503176,\"y\":-2.5843329429626467},\"dir\":{\"x\":-0.9618160128593445,\"y\":0.2736968398094177},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-42-32-930 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-42-32-931 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-42-32-931 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-42-35-815 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":1,\"startPos\":{\"x\":-2.15930438041687,\"y\":-1.9561384916305543},\"dir\":{\"x\":-0.8582152128219605,\"y\":-0.5132899880409241},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-42-35-815 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":1,\"startPos\":{\"x\":-2.15930438041687,\"y\":-1.9561384916305543},\"dir\":{\"x\":-0.8582152128219605,\"y\":-0.5132899880409241},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-42-35-825 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-42-35-826 					[  ] Sending {"type":"newloop","payload":"{\"skill\":0,\"selectCount\":1}"} to 127.0.0.1:48000
+2022-8-5 16-42-35-826 					[  ] Sending {"type":"newloop","payload":"{\"skill\":0,\"selectCount\":1}"} to 127.0.0.1:48000
+2022-8-5 16-42-38-92 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":4,\"startPos\":{\"x\":-2.083491563796997,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9316418766975403,\"y\":0.3633778393268585},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-42-38-93 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":4,\"startPos\":{\"x\":-2.083491563796997,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9316418766975403,\"y\":0.3633778393268585},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-42-41-112 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":0.2535552382469177,\"y\":-0.36267852783203127},\"dir\":{\"x\":0.9795265793800354,\"y\":0.2013147622346878},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-42-41-112 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":0.2535552382469177,\"y\":-0.36267852783203127},\"dir\":{\"x\":0.9795265793800354,\"y\":0.2013147622346878},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-42-44-827 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":-0.684870719909668,\"y\":-0.009739279747009278},\"dir\":{\"x\":-0.9314244389533997,\"y\":0.3639347553253174},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-42-44-827 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":-0.684870719909668,\"y\":-0.009739279747009278},\"dir\":{\"x\":-0.9314244389533997,\"y\":0.3639347553253174},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-42-47-975 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":0,\"startPos\":{\"x\":-0.6735513210296631,\"y\":0.11178961396217346},\"dir\":{\"x\":-0.6232080459594727,\"y\":-0.7820560932159424},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"}
+2022-8-5 16-42-47-975 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":0,\"startPos\":{\"x\":-0.6735513210296631,\"y\":0.11178961396217346},\"dir\":{\"x\":-0.6232080459594727,\"y\":-0.7820560932159424},\"bulletSpeed\":4.0,\"rotationSpeed\":10.0}"} to 127.0.0.1:48000
+2022-8-5 16-42-59-312 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-42-59-313 					[  ] Sending {"type":"left","payload":"{\"id\":1}"} to 127.0.0.1:48000
+2022-8-5 16-42-59-313 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":0,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-5 16-43-0-696 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-43-34-741 					
+2022-8-5 16-43-34-742 					[II] Server started on port 48000.
+2022-8-5 16-43-34-742 					[  ] Server is listening
+2022-8-5 16-43-34-743 					[  ] Found heandler damage.js
+2022-8-5 16-43-34-743 					[  ] Found heandler dead.js
+2022-8-5 16-43-34-743 					[  ] Found heandler exampleHandler.js
+2022-8-5 16-43-34-744 					[  ] Found heandler fire.js
+2022-8-5 16-43-34-744 					[  ] Found heandler loaded.js
+2022-8-5 16-43-34-745 					[  ] Found heandler matchmaking.js
+2022-8-5 16-43-34-745 					[  ] Found heandler move.js
+2022-8-5 16-43-34-745 					[  ] Found heandler skillselected.js
+2022-8-5 16-45-58-80 					
+2022-8-5 16-45-58-81 					[II] Server started on port 48000.
+2022-8-5 16-45-58-81 					[  ] Server is listening
+2022-8-5 16-45-58-82 					[  ] Found heandler damage.js
+2022-8-5 16-45-58-82 					[  ] Found heandler dead.js
+2022-8-5 16-45-58-82 					[  ] Found heandler exampleHandler.js
+2022-8-5 16-45-58-83 					[  ] Found heandler fire.js
+2022-8-5 16-45-58-83 					[  ] Found heandler loaded.js
+2022-8-5 16-45-58-83 					[  ] Found heandler matchmaking.js
+2022-8-5 16-45-58-84 					[  ] Found heandler move.js
+2022-8-5 16-45-58-84 					[  ] Found heandler skillselected.js
+2022-8-5 16-46-16-810 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-5 16-46-18-214 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-46-18-215 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-46-21-784 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-5 16-46-23-145 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-46-23-145 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-46-23-146 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-46-23-146 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-46-23-198 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-46-23-247 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-46-23-248 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":0,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 16-46-23-248 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":1,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 16-46-23-249 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-46-23-249 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-46-24-256 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-46-24-944 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-46-24-944 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-46-24-944 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-46-24-944 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-46-24-945 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-46-29-17 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-46-29-18 					[  ] Sending {"type":"left","payload":"{\"id\":1}"} to 127.0.0.1:48000
+2022-8-5 16-46-29-18 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":0,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-5 16-47-33-11 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-50-6-511 		[127.0.0.1:48000]	[II] New client joined. ID:2
+2022-8-5 16-50-7-322 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-50-7-323 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-50-9-422 		[127.0.0.1:48000]	[II] New client joined. ID:3
+2022-8-5 16-50-12-120 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-50-12-120 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-50-12-120 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-50-12-120 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-50-12-152 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-50-12-221 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-50-12-222 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[3,2],\"myId\":3,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 16-50-12-222 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[3,2],\"myId\":2,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 16-50-12-222 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-50-12-222 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-50-12-775 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-50-13-559 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-50-13-560 					[  ] Sending {"type":"gamestart","payload":"{\"id\":3,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-50-13-560 					[  ] Sending {"type":"gamestart","payload":"{\"id\":3,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-50-13-560 					[  ] Sending {"type":"gamestart","payload":"{\"id\":2,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-50-13-560 					[  ] Sending {"type":"gamestart","payload":"{\"id\":2,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-50-22-199 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":3,\"bulletIdx\":6,\"startPos\":{\"x\":-2.685600519180298,\"y\":-1.7345181703567505},\"dir\":{\"x\":0.9327666759490967,\"y\":0.3604806065559387},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-50-22-199 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":3,\"bulletIdx\":6,\"startPos\":{\"x\":-2.685600519180298,\"y\":-1.7345181703567505},\"dir\":{\"x\":0.9327666759490967,\"y\":0.3604806065559387},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-50-28-608 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":3,\"bulletIdx\":2,\"startPos\":{\"x\":2.166229486465454,\"y\":-2.0895373821258547},\"dir\":{\"x\":0.7936525344848633,\"y\":0.6083711981773377},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-50-28-609 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":3,\"bulletIdx\":2,\"startPos\":{\"x\":2.166229486465454,\"y\":-2.0895373821258547},\"dir\":{\"x\":0.7936525344848633,\"y\":0.6083711981773377},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-50-32-615 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":3,\"bulletIdx\":1,\"startPos\":{\"x\":2.166229486465454,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9970756769180298,\"y\":0.0764206051826477},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-50-32-615 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":3,\"bulletIdx\":1,\"startPos\":{\"x\":2.166229486465454,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9970756769180298,\"y\":0.0764206051826477},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-50-36-720 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":3,\"bulletIdx\":0,\"startPos\":{\"x\":0.439042329788208,\"y\":-1.6122136116027833},\"dir\":{\"x\":0.9150624871253967,\"y\":0.4033120572566986},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-50-36-721 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":3,\"bulletIdx\":0,\"startPos\":{\"x\":0.439042329788208,\"y\":-1.6122136116027833},\"dir\":{\"x\":0.9150624871253967,\"y\":0.4033120572566986},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-50-48-983 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":2,\"bulletIdx\":0,\"startPos\":{\"x\":2.383949041366577,\"y\":-0.9654799699783325},\"dir\":{\"x\":-0.8129504919052124,\"y\":-0.5823328495025635},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-50-48-983 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":2,\"bulletIdx\":0,\"startPos\":{\"x\":2.383949041366577,\"y\":-0.9654799699783325},\"dir\":{\"x\":-0.8129504919052124,\"y\":-0.5823328495025635},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-50-53-233 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":2,\"bulletIdx\":2,\"startPos\":{\"x\":2.3839242458343508,\"y\":-0.9418346881866455},\"dir\":{\"x\":-0.8943667411804199,\"y\":-0.4473344385623932},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-50-53-233 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":2,\"bulletIdx\":2,\"startPos\":{\"x\":2.3839242458343508,\"y\":-0.9418346881866455},\"dir\":{\"x\":-0.8943667411804199,\"y\":-0.4473344385623932},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-50-58-268 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":2,\"bulletIdx\":6,\"startPos\":{\"x\":2.3903086185455324,\"y\":-0.9357602596282959},\"dir\":{\"x\":-0.9095898866653442,\"y\":-0.4155072271823883},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-50-58-268 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":2,\"bulletIdx\":6,\"startPos\":{\"x\":2.3903086185455324,\"y\":-0.9357602596282959},\"dir\":{\"x\":-0.9095898866653442,\"y\":-0.4155072271823883},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-51-4-886 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":2,\"bulletIdx\":5,\"startPos\":{\"x\":-0.6357648968696594,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9580656290054321,\"y\":0.2865486741065979},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-51-4-887 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":2,\"bulletIdx\":5,\"startPos\":{\"x\":-0.6357648968696594,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9580656290054321,\"y\":0.2865486741065979},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-51-5-801 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-51-5-802 					[  ] Sending {"type":"left","payload":"{\"id\":2}"} to 127.0.0.1:48000
+2022-8-5 16-51-5-802 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":3,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-5 16-51-6-814 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-53-47-7 		[127.0.0.1:48000]	[II] New client joined. ID:4
+2022-8-5 16-53-49-803 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-53-49-804 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-53-50-436 		[127.0.0.1:48000]	[II] New client joined. ID:5
+2022-8-5 16-53-52-299 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-53-52-300 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-53-52-300 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-53-52-300 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-53-52-339 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-53-52-393 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-53-52-394 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[4,5],\"myId\":4,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 16-53-52-394 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[4,5],\"myId\":5,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 16-53-52-394 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-53-52-394 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-53-53-579 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-53-54-328 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-53-54-328 					[  ] Sending {"type":"gamestart","payload":"{\"id\":4,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-53-54-328 					[  ] Sending {"type":"gamestart","payload":"{\"id\":4,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-53-54-329 					[  ] Sending {"type":"gamestart","payload":"{\"id\":5,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-53-54-329 					[  ] Sending {"type":"gamestart","payload":"{\"id\":5,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-53-56-191 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":4,\"bulletIdx\":3,\"startPos\":{\"x\":-3.0920639038085939,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9965836405754089,\"y\":0.08258901536464691},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-53-56-191 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":4,\"bulletIdx\":3,\"startPos\":{\"x\":-3.0920639038085939,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9965836405754089,\"y\":0.08258901536464691},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-53-56-403 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-53-56-404 					[  ] Sending {"type":"damage","payload":"{\"id\":5,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-53-56-404 					[  ] Sending {"type":"damage","payload":"{\"id\":5,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-53-56-405 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-53-56-405 					[  ] Sending {"type":"damage","payload":"{\"id\":4,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-53-56-405 					[  ] Sending {"type":"damage","payload":"{\"id\":4,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-53-56-482 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-53-56-482 					[  ] Sending {"type":"damage","payload":"{\"id\":5,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-53-56-482 					[  ] Sending {"type":"damage","payload":"{\"id\":5,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-53-56-482 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-53-56-482 					[  ] Sending {"type":"damage","payload":"{\"id\":4,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-53-56-482 					[  ] Sending {"type":"damage","payload":"{\"id\":4,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-54-2-105 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":4,\"bulletIdx\":4,\"startPos\":{\"x\":-1.4334173202514649,\"y\":-1.5021284818649293},\"dir\":{\"x\":0.9645781517028809,\"y\":0.26379725337028506},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-54-2-106 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":4,\"bulletIdx\":4,\"startPos\":{\"x\":-1.4334173202514649,\"y\":-1.5021284818649293},\"dir\":{\"x\":0.9645781517028809,\"y\":0.26379725337028506},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-54-2-800 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-54-2-800 					[  ] Sending {"type":"damage","payload":"{\"id\":4,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-54-2-800 					[  ] Sending {"type":"damage","payload":"{\"id\":4,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-54-2-802 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-54-2-802 					[  ] Sending {"type":"damage","payload":"{\"id\":5,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-54-2-802 					[  ] Sending {"type":"damage","payload":"{\"id\":5,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-54-6-606 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":4,\"bulletIdx\":4,\"startPos\":{\"x\":0.9864239692687988,\"y\":-2.677434206008911},\"dir\":{\"x\":0.36779534816741946,\"y\":0.9299067854881287},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-54-6-606 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":4,\"bulletIdx\":4,\"startPos\":{\"x\":0.9864239692687988,\"y\":-2.677434206008911},\"dir\":{\"x\":0.36779534816741946,\"y\":0.9299067854881287},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-54-7-640 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-54-7-641 					[  ] Sending {"type":"damage","payload":"{\"id\":5,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-54-7-641 					[  ] Sending {"type":"damage","payload":"{\"id\":5,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-54-7-821 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-54-7-821 					[  ] Sending {"type":"damage","payload":"{\"id\":4,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-54-7-821 					[  ] Sending {"type":"damage","payload":"{\"id\":4,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-54-7-960 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-54-7-961 					[  ] Sending {"type":"respawn","payload":"{\"id\":4,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-54-7-961 					[  ] Sending {"type":"respawn","payload":"{\"id\":4,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-54-13-831 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-54-13-832 					[  ] Sending {"type":"left","payload":"{\"id\":4}"} to 127.0.0.1:48000
+2022-8-5 16-54-13-832 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":5,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-5 16-55-19-529 		[127.0.0.1:48000]	[II] Client disconnected, code: 1006, reason: 
+2022-8-5 16-55-42-979 		[127.0.0.1:48000]	[II] New client joined. ID:6
+2022-8-5 16-55-45-168 		[127.0.0.1:48000]	[II] New client joined. ID:7
+2022-8-5 16-55-47-615 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-55-47-616 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-55-48-483 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-55-48-484 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-55-48-484 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-55-48-484 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-55-48-523 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-55-48-576 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-55-48-576 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[6,7],\"myId\":6,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 16-55-48-576 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[6,7],\"myId\":7,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 16-55-48-577 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-55-48-577 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-55-49-365 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-55-50-46 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-55-50-46 					[  ] Sending {"type":"gamestart","payload":"{\"id\":6,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-55-50-46 					[  ] Sending {"type":"gamestart","payload":"{\"id\":6,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-55-50-46 					[  ] Sending {"type":"gamestart","payload":"{\"id\":7,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-55-50-47 					[  ] Sending {"type":"gamestart","payload":"{\"id\":7,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-55-53-80 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":6,\"startPos\":{\"x\":2.9701807498931886,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.24829557538032533,\"y\":0.9686843156814575},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-55-53-81 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":6,\"startPos\":{\"x\":2.9701807498931886,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.24829557538032533,\"y\":0.9686843156814575},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-56-11-144 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-5 16-56-11-145 					[  ] Sending {"type":"respawn","payload":"{\"id\":6,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-56-11-145 					[  ] Sending {"type":"respawn","payload":"{\"id\":6,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-56-13-425 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":6,\"bulletIdx\":2,\"startPos\":{\"x\":-1.0794517993927003,\"y\":-2.677434206008911},\"dir\":{\"x\":0.4539535641670227,\"y\":0.8910254240036011},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-56-13-425 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":6,\"bulletIdx\":2,\"startPos\":{\"x\":-1.0794517993927003,\"y\":-2.677434206008911},\"dir\":{\"x\":0.4539535641670227,\"y\":0.8910254240036011},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-56-14-601 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-56-14-602 					[  ] Sending {"type":"damage","payload":"{\"id\":7,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-56-14-602 					[  ] Sending {"type":"damage","payload":"{\"id\":7,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-56-14-931 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-56-14-931 					[  ] Sending {"type":"damage","payload":"{\"id\":6,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-56-14-931 					[  ] Sending {"type":"damage","payload":"{\"id\":6,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-56-20-199 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":6,\"bulletIdx\":5,\"startPos\":{\"x\":-2.806307077407837,\"y\":-2.677434206008911},\"dir\":{\"x\":0.2987852096557617,\"y\":0.9543203711509705},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-56-20-199 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":6,\"bulletIdx\":5,\"startPos\":{\"x\":-2.806307077407837,\"y\":-2.677434206008911},\"dir\":{\"x\":0.2987852096557617,\"y\":0.9543203711509705},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-56-24-283 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":6,\"bulletIdx\":4,\"startPos\":{\"x\":-1.9240474700927735,\"y\":-2.677434206008911},\"dir\":{\"x\":0.5588923096656799,\"y\":0.8292402625083923},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-56-24-283 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":6,\"bulletIdx\":4,\"startPos\":{\"x\":-1.9240474700927735,\"y\":-2.677434206008911},\"dir\":{\"x\":0.5588923096656799,\"y\":0.8292402625083923},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-56-27-270 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":1,\"startPos\":{\"x\":1.6193711757659913,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.3625771999359131,\"y\":0.9319536685943604},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-56-27-270 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":7,\"bulletIdx\":1,\"startPos\":{\"x\":1.6193711757659913,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.3625771999359131,\"y\":0.9319536685943604},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-56-30-914 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-56-30-914 					[  ] Sending {"type":"damage","payload":"{\"id\":6,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-56-30-914 					[  ] Sending {"type":"damage","payload":"{\"id\":6,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-56-30-970 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-56-30-970 					[  ] Sending {"type":"damage","payload":"{\"id\":7,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-56-30-970 					[  ] Sending {"type":"damage","payload":"{\"id\":7,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-56-31-622 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-56-31-623 					[  ] Sending {"type":"damage","payload":"{\"id\":7,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-56-31-623 					[  ] Sending {"type":"damage","payload":"{\"id\":7,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-56-31-623 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-56-31-624 					[  ] Sending {"type":"damage","payload":"{\"id\":6,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-56-31-624 					[  ] Sending {"type":"damage","payload":"{\"id\":6,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-56-35-486 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":6,\"bulletIdx\":0,\"startPos\":{\"x\":-1.6958246231079102,\"y\":-1.611098051071167},\"dir\":{\"x\":0.73236083984375,\"y\":0.6809167265892029},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-56-35-486 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":6,\"bulletIdx\":0,\"startPos\":{\"x\":-1.6958246231079102,\"y\":-1.611098051071167},\"dir\":{\"x\":0.73236083984375,\"y\":0.6809167265892029},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-56-36-415 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-56-36-415 					[  ] Sending {"type":"damage","payload":"{\"id\":6,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-56-36-416 					[  ] Sending {"type":"damage","payload":"{\"id\":6,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-56-36-459 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-56-36-459 					[  ] Sending {"type":"damage","payload":"{\"id\":7,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-56-36-459 					[  ] Sending {"type":"damage","payload":"{\"id\":7,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-56-36-935 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-56-36-936 					[  ] Sending {"type":"newloop","payload":"{\"skill\":6,\"selectCount\":1}"} to 127.0.0.1:48000
+2022-8-5 16-56-36-936 					[  ] Sending {"type":"newloop","payload":"{\"skill\":6,\"selectCount\":1}"} to 127.0.0.1:48000
+2022-8-5 16-56-37-54 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-56-37-54 					[  ] Sending {"type":"respawn","payload":"{\"id\":7,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-56-37-54 					[  ] Sending {"type":"respawn","payload":"{\"id\":7,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-56-39-253 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-56-39-253 					[  ] Sending {"type":"left","payload":"{\"id\":6}"} to 127.0.0.1:48000
+2022-8-5 16-56-39-254 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":7,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-5 16-57-6-782 		[127.0.0.1:48000]	[II] Client disconnected, code: 1006, reason: 
+2022-8-5 16-57-33-59 		[127.0.0.1:48000]	[II] New client joined. ID:8
+2022-8-5 16-57-34-204 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-57-34-204 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-57-36-241 		[127.0.0.1:48000]	[II] New client joined. ID:9
+2022-8-5 16-57-37-603 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-57-37-603 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-57-37-603 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-57-37-603 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-57-37-650 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-57-37-693 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-57-37-693 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[8,9],\"myId\":8,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 16-57-37-694 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[8,9],\"myId\":9,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 16-57-37-694 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-57-37-694 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-57-38-340 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-57-39-479 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-57-39-479 					[  ] Sending {"type":"gamestart","payload":"{\"id\":8,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-57-39-479 					[  ] Sending {"type":"gamestart","payload":"{\"id\":8,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-57-39-479 					[  ] Sending {"type":"gamestart","payload":"{\"id\":9,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-57-39-479 					[  ] Sending {"type":"gamestart","payload":"{\"id\":9,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-57-41-481 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":8,\"bulletIdx\":6,\"startPos\":{\"x\":-3.8913772106170656,\"y\":-2.677434206008911},\"dir\":{\"x\":0.5092211961746216,\"y\":0.8606356382369995},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-57-41-481 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":8,\"bulletIdx\":6,\"startPos\":{\"x\":-3.8913772106170656,\"y\":-2.677434206008911},\"dir\":{\"x\":0.5092211961746216,\"y\":0.8606356382369995},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-57-42-409 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-42-409 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-57-42-409 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-57-42-735 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-42-735 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-57-42-735 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-57-50-874 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":8,\"bulletIdx\":6,\"startPos\":{\"x\":-2.959592819213867,\"y\":-1.484373688697815},\"dir\":{\"x\":0.2776721715927124,\"y\":0.9606758952140808},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-57-50-875 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":8,\"bulletIdx\":6,\"startPos\":{\"x\":-2.959592819213867,\"y\":-1.484373688697815},\"dir\":{\"x\":0.2776721715927124,\"y\":0.9606758952140808},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-57-52-465 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-52-465 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-57-52-465 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-57-52-555 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-52-555 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-57-52-555 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-57-54-277 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-54-277 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-57-54-277 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-57-54-278 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-54-278 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-57-54-278 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-57-54-370 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-54-370 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-57-54-370 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-57-54-370 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-54-370 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-57-54-371 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-57-54-756 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-54-757 					[  ] Sending {"type":"respawn","payload":"{\"id\":8,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-57-54-757 					[  ] Sending {"type":"respawn","payload":"{\"id\":8,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-207 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-55-208 					[  ] Sending {"type":"respawn","payload":"{\"id\":9,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-208 					[  ] Sending {"type":"respawn","payload":"{\"id\":9,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-492 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-55-493 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-493 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-618 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-55-619 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-619 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-619 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-55-619 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-619 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-826 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-55-826 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-826 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-916 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-55-916 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-917 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-917 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-55-917 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-917 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-982 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-55-983 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-57-55-983 					[  ] Sending {"type":"damage","payload":"{\"id\":8,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-57-56-13 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-56-14 					[  ] Sending {"type":"newloop","payload":"{\"skill\":8,\"selectCount\":1}"} to 127.0.0.1:48000
+2022-8-5 16-57-56-14 					[  ] Sending {"type":"newloop","payload":"{\"skill\":8,\"selectCount\":1}"} to 127.0.0.1:48000
+2022-8-5 16-57-56-27 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-56-27 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-57-56-27 					[  ] Sending {"type":"damage","payload":"{\"id\":9,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-57-56-550 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-56-550 					[  ] Sending {"type":"respawn","payload":"{\"id\":9,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-57-56-550 					[  ] Sending {"type":"respawn","payload":"{\"id\":9,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-57-57-123 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-57-57-123 					[  ] Sending {"type":"left","payload":"{\"id\":8}"} to 127.0.0.1:48000
+2022-8-5 16-57-57-124 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":9,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-5 16-57-57-252 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-57-57-253 		[127.0.0.1:48000]	damage: 게임 중이 아닌 클라이언트의 요청
+2022-8-5 16-58-26-751 		[127.0.0.1:48000]	[II] Client disconnected, code: 1006, reason: 
+2022-8-5 16-58-50-932 		[127.0.0.1:48000]	[II] New client joined. ID:10
+2022-8-5 16-58-55-848 		[127.0.0.1:48000]	[II] New client joined. ID:11
+2022-8-5 16-58-57-179 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-58-57-179 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-58-58-182 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 16-58-58-182 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 16-58-58-182 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-58-58-183 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 16-58-58-232 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-58-58-299 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 16-58-58-300 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[11,10],\"myId\":11,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 16-58-58-300 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[11,10],\"myId\":10,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 16-58-58-301 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-58-58-301 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 16-58-59-29 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-58-59-772 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 16-58-59-772 					[  ] Sending {"type":"gamestart","payload":"{\"id\":11,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-58-59-772 					[  ] Sending {"type":"gamestart","payload":"{\"id\":11,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-58-59-772 					[  ] Sending {"type":"gamestart","payload":"{\"id\":10,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-58-59-772 					[  ] Sending {"type":"gamestart","payload":"{\"id\":10,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-59-4-656 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":10,\"bulletIdx\":4,\"startPos\":{\"x\":3.282972812652588,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.22508561611175538,\"y\":0.974338948726654},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-59-4-656 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":10,\"bulletIdx\":4,\"startPos\":{\"x\":3.282972812652588,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.22508561611175538,\"y\":0.974338948726654},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-59-5-702 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-59-5-703 					[  ] Sending {"type":"damage","payload":"{\"id\":11,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-59-5-703 					[  ] Sending {"type":"damage","payload":"{\"id\":11,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-59-6-787 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-59-6-787 					[  ] Sending {"type":"damage","payload":"{\"id\":10,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-59-6-787 					[  ] Sending {"type":"damage","payload":"{\"id\":10,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-59-19-363 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":10,\"bulletIdx\":0,\"startPos\":{\"x\":-2.5575554370880129,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9805518984794617,\"y\":0.19625993072986604},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-59-19-363 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":10,\"bulletIdx\":0,\"startPos\":{\"x\":-2.5575554370880129,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9805518984794617,\"y\":0.19625993072986604},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-59-19-597 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-59-19-597 					[  ] Sending {"type":"damage","payload":"{\"id\":11,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-59-19-597 					[  ] Sending {"type":"damage","payload":"{\"id\":11,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-59-19-701 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-59-19-701 					[  ] Sending {"type":"damage","payload":"{\"id\":10,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-59-19-701 					[  ] Sending {"type":"damage","payload":"{\"id\":10,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-59-19-740 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-59-19-740 					[  ] Sending {"type":"damage","payload":"{\"id\":11,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-59-19-740 					[  ] Sending {"type":"damage","payload":"{\"id\":11,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-59-19-791 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-59-19-791 					[  ] Sending {"type":"damage","payload":"{\"id\":10,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-59-19-792 					[  ] Sending {"type":"damage","payload":"{\"id\":10,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 16-59-19-818 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-59-19-818 					[  ] Sending {"type":"damage","payload":"{\"id\":11,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-59-19-818 					[  ] Sending {"type":"damage","payload":"{\"id\":11,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-59-19-946 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-59-19-946 					[  ] Sending {"type":"respawn","payload":"{\"id\":11,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-59-19-946 					[  ] Sending {"type":"respawn","payload":"{\"id\":11,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-59-29-362 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":10,\"bulletIdx\":5,\"startPos\":{\"x\":-1.5388128757476807,\"y\":-1.454757809638977},\"dir\":{\"x\":0.3798997700214386,\"y\":0.9250276684761047},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 16-59-29-363 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":10,\"bulletIdx\":5,\"startPos\":{\"x\":-1.5388128757476807,\"y\":-1.454757809638977},\"dir\":{\"x\":0.3798997700214386,\"y\":0.9250276684761047},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 16-59-30-537 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-59-30-537 					[  ] Sending {"type":"damage","payload":"{\"id\":10,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-59-30-537 					[  ] Sending {"type":"damage","payload":"{\"id\":10,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 16-59-30-538 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-59-30-538 					[  ] Sending {"type":"damage","payload":"{\"id\":11,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-59-30-538 					[  ] Sending {"type":"damage","payload":"{\"id\":11,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 16-59-30-655 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-59-30-655 					[  ] Sending {"type":"respawn","payload":"{\"id\":10,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-59-30-655 					[  ] Sending {"type":"respawn","payload":"{\"id\":10,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 16-59-30-655 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 16-59-30-656 					[  ] Sending {"type":"damage","payload":"{\"id\":11,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-59-30-656 					[  ] Sending {"type":"damage","payload":"{\"id\":11,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 16-59-32-71 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 16-59-32-71 					[  ] Sending {"type":"left","payload":"{\"id\":10}"} to 127.0.0.1:48000
+2022-8-5 16-59-32-71 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":11,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-5 16-59-34-364 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 17-1-28-432 					
+2022-8-5 17-1-28-434 					[II] Server started on port 48000.
+2022-8-5 17-1-28-434 					[  ] Server is listening
+2022-8-5 17-1-28-434 					[  ] Found heandler damage.js
+2022-8-5 17-1-28-435 					[  ] Found heandler dead.js
+2022-8-5 17-1-28-435 					[  ] Found heandler exampleHandler.js
+2022-8-5 17-1-28-436 					[  ] Found heandler fire.js
+2022-8-5 17-1-28-436 					[  ] Found heandler loaded.js
+2022-8-5 17-1-28-436 					[  ] Found heandler matchmaking.js
+2022-8-5 17-1-28-437 					[  ] Found heandler move.js
+2022-8-5 17-1-28-437 					[  ] Found heandler skillselected.js
+2022-8-5 17-1-39-993 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-5 17-1-41-351 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 17-1-41-353 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 17-1-41-354 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 17-1-41-434 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 17-1-41-436 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0],\"myId\":0,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 17-1-41-437 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 17-1-42-125 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 17-1-43-73 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 17-1-43-487 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 17-1-43-640 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 17-1-43-802 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 17-1-59-107 					
+2022-8-5 17-1-59-108 					[II] Server started on port 48000.
+2022-8-5 17-1-59-108 					[  ] Server is listening
+2022-8-5 17-1-59-109 					[  ] Found heandler damage.js
+2022-8-5 17-1-59-109 					[  ] Found heandler dead.js
+2022-8-5 17-1-59-110 					[  ] Found heandler exampleHandler.js
+2022-8-5 17-1-59-110 					[  ] Found heandler fire.js
+2022-8-5 17-1-59-110 					[  ] Found heandler loaded.js
+2022-8-5 17-1-59-111 					[  ] Found heandler matchmaking.js
+2022-8-5 17-1-59-112 					[  ] Found heandler move.js
+2022-8-5 17-1-59-112 					[  ] Found heandler skillselected.js
+2022-8-5 17-2-2-856 					
+2022-8-5 17-2-2-858 					[II] Server started on port 48000.
+2022-8-5 17-2-2-858 					[  ] Server is listening
+2022-8-5 17-2-2-858 					[  ] Found heandler damage.js
+2022-8-5 17-2-2-859 					[  ] Found heandler dead.js
+2022-8-5 17-2-2-859 					[  ] Found heandler exampleHandler.js
+2022-8-5 17-2-2-859 					[  ] Found heandler fire.js
+2022-8-5 17-2-2-860 					[  ] Found heandler loaded.js
+2022-8-5 17-2-2-860 					[  ] Found heandler matchmaking.js
+2022-8-5 17-2-2-861 					[  ] Found heandler move.js
+2022-8-5 17-2-2-861 					[  ] Found heandler skillselected.js
+2022-8-5 17-2-16-842 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-5 17-2-18-373 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 17-2-18-374 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 17-2-19-43 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-5 17-2-20-550 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 17-2-20-550 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 17-2-20-551 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 17-2-20-551 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 17-2-20-585 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 17-2-20-651 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 17-2-20-651 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":0,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 17-2-20-652 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[0,1],\"myId\":1,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 17-2-20-652 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 17-2-20-652 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 17-2-21-208 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 17-2-22-33 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 17-2-22-34 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 17-2-22-34 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 17-2-22-34 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 17-2-22-34 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 17-2-27-562 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":1,\"startPos\":{\"x\":-3.3664369583129885,\"y\":-1.6111533641815186},\"dir\":{\"x\":0.17469476163387299,\"y\":0.984622597694397},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 17-2-27-563 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":1,\"startPos\":{\"x\":-3.3664369583129885,\"y\":-1.6111533641815186},\"dir\":{\"x\":0.17469476163387299,\"y\":0.984622597694397},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 17-2-28-780 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-2-28-780 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 17-2-28-780 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 17-2-29-901 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-2-29-901 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 17-2-29-902 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 17-2-30-241 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-2-30-242 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 17-2-30-242 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 17-2-39-770 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":3,\"startPos\":{\"x\":-3.7114808559417726,\"y\":-1.611098051071167},\"dir\":{\"x\":0.39758574962615969,\"y\":0.9175650477409363},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 17-2-39-770 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":3,\"startPos\":{\"x\":-3.7114808559417726,\"y\":-1.611098051071167},\"dir\":{\"x\":0.39758574962615969,\"y\":0.9175650477409363},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 17-2-40-941 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-2-40-942 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 17-2-40-942 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 17-2-41-158 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-2-41-159 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 17-2-41-159 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 17-3-9-490 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":0,\"startPos\":{\"x\":2.8114776611328127,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.36638444662094118,\"y\":0.9304635524749756},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 17-3-9-490 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletIdx\":0,\"startPos\":{\"x\":2.8114776611328127,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.36638444662094118,\"y\":0.9304635524749756},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 17-3-10-465 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-10-465 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 17-3-10-465 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 17-3-11-206 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-11-206 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 17-3-11-206 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 17-3-11-380 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-11-381 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 17-3-11-381 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 17-3-12-972 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-12-972 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 17-3-12-972 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 17-3-17-840 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":-2.4160313606262209,\"y\":-1.4607057571411133},\"dir\":{\"x\":0.9826624989509583,\"y\":0.1854030191898346},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 17-3-17-840 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":-2.4160313606262209,\"y\":-1.4607057571411133},\"dir\":{\"x\":0.9826624989509583,\"y\":0.1854030191898346},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 17-3-18-423 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-18-423 					[  ] Sending {"type":"respawn","payload":"{\"id\":0,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 17-3-18-424 					[  ] Sending {"type":"respawn","payload":"{\"id\":0,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 17-3-18-424 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-18-424 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 17-3-18-424 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 17-3-18-478 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-18-478 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 17-3-18-478 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 17-3-18-581 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-18-581 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 17-3-18-582 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 17-3-18-958 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-18-959 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 17-3-18-959 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 17-3-22-249 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":1,\"startPos\":{\"x\":-3.719895601272583,\"y\":-1.5020936727523804},\"dir\":{\"x\":0.9928781986236572,\"y\":0.11913396418094635},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 17-3-22-249 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":1,\"startPos\":{\"x\":-3.719895601272583,\"y\":-1.5020936727523804},\"dir\":{\"x\":0.9928781986236572,\"y\":0.11913396418094635},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 17-3-22-805 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-22-806 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 17-3-22-806 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 17-3-22-806 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-22-806 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 17-3-22-806 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 17-3-22-819 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-22-819 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 17-3-22-820 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 17-3-22-902 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-22-903 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":1}"} to 127.0.0.1:48000
+2022-8-5 17-3-22-903 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":1}"} to 127.0.0.1:48000
+2022-8-5 17-3-22-903 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-22-903 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 17-3-22-903 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 17-3-22-944 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-22-945 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 17-3-22-946 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 17-3-23-132 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-23-132 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 17-3-23-132 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 17-3-23-263 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-3-23-264 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 17-3-23-264 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 17-3-23-814 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 17-3-23-814 					[  ] Sending {"type":"left","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-5 17-3-23-815 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-5 17-3-25-187 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 17-4-46-913 		[127.0.0.1:48000]	[II] New client joined. ID:2
+2022-8-5 17-4-49-24 		[127.0.0.1:48000]	[II] New client joined. ID:3
+2022-8-5 17-4-51-626 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 17-4-51-626 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 17-4-53-591 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-5 17-4-53-592 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-5 17-4-53-592 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 17-4-53-592 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-5 17-4-53-639 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 17-4-53-680 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-5 17-4-53-680 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[3,2],\"myId\":3,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 17-4-53-681 					[  ] Sending {"type":"gamedata","payload":"{\"players\":[3,2],\"myId\":2,\"hp\":100,\"damage\":20,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-5 17-4-53-681 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 17-4-53-681 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2}"} to 127.0.0.1:48000
+2022-8-5 17-4-54-329 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 17-4-55-37 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":""}
+2022-8-5 17-4-55-37 					[  ] Sending {"type":"gamestart","payload":"{\"id\":3,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 17-4-55-38 					[  ] Sending {"type":"gamestart","payload":"{\"id\":3,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 17-4-55-38 					[  ] Sending {"type":"gamestart","payload":"{\"id\":2,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 17-4-55-38 					[  ] Sending {"type":"gamestart","payload":"{\"id\":2,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 17-4-57-319 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":3,\"bulletIdx\":5,\"startPos\":{\"x\":-3.2578747272491457,\"y\":-1.7345181703567505},\"dir\":{\"x\":0.3594539165496826,\"y\":0.9331628084182739},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 17-4-57-319 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":3,\"bulletIdx\":5,\"startPos\":{\"x\":-3.2578747272491457,\"y\":-1.7345181703567505},\"dir\":{\"x\":0.3594539165496826,\"y\":0.9331628084182739},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 17-5-5-488 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":3,\"bulletIdx\":0,\"startPos\":{\"x\":2.86258602142334,\"y\":-1.5024255514144898},\"dir\":{\"x\":0.9355066418647766,\"y\":-0.3533090054988861},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 17-5-5-488 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":3,\"bulletIdx\":0,\"startPos\":{\"x\":2.86258602142334,\"y\":-1.5024255514144898},\"dir\":{\"x\":0.9355066418647766,\"y\":-0.3533090054988861},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 17-5-5-746 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-5-5-746 					[  ] Sending {"type":"damage","payload":"{\"id\":2,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 17-5-5-746 					[  ] Sending {"type":"damage","payload":"{\"id\":2,\"hp\":80}"} to 127.0.0.1:48000
+2022-8-5 17-5-9-928 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":3,\"bulletIdx\":4,\"startPos\":{\"x\":2.4876177310943605,\"y\":-1.45484459400177},\"dir\":{\"x\":0.8609523177146912,\"y\":-0.5086856484413147},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-5 17-5-9-928 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":3,\"bulletIdx\":4,\"startPos\":{\"x\":2.4876177310943605,\"y\":-1.45484459400177},\"dir\":{\"x\":0.8609523177146912,\"y\":-0.5086856484413147},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-5 17-5-10-212 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-5-10-212 					[  ] Sending {"type":"damage","payload":"{\"id\":2,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 17-5-10-212 					[  ] Sending {"type":"damage","payload":"{\"id\":2,\"hp\":60}"} to 127.0.0.1:48000
+2022-8-5 17-5-12-565 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-5-12-565 					[  ] Sending {"type":"damage","payload":"{\"id\":2,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 17-5-12-565 					[  ] Sending {"type":"damage","payload":"{\"id\":2,\"hp\":40}"} to 127.0.0.1:48000
+2022-8-5 17-5-14-745 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-5-14-745 					[  ] Sending {"type":"damage","payload":"{\"id\":2,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 17-5-14-746 					[  ] Sending {"type":"damage","payload":"{\"id\":2,\"hp\":20}"} to 127.0.0.1:48000
+2022-8-5 17-5-16-9 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-5 17-5-16-10 					[  ] Sending {"type":"respawn","payload":"{\"id\":2,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 17-5-16-10 					[  ] Sending {"type":"respawn","payload":"{\"id\":2,\"pos\":{\"x\":0,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-5 17-5-17-333 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-5 17-5-17-333 					[  ] Sending {"type":"left","payload":"{\"id\":2}"} to 127.0.0.1:48000
+2022-8-5 17-5-17-334 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":3,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-5 17-5-18-662 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected

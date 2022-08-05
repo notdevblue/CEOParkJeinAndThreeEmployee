@@ -28,11 +28,14 @@ namespace HanSocket.Handlers.InGame
                 if (vos.TryDequeue(out var vo))
                 {
                     GameObject user = UserData.Instance.users[vo.id];
+                    Rigidbody2D rigid = user.GetComponent<Rigidbody2D>();
+
+                    if (rigid != null)
+                        rigid.velocity = Vector2.zero;
 
                     user.GetComponent<Remote>()
-                        .SetTarget(vo.pos);
-                    user.GetComponent<Rigidbody2D>()
-                        .velocity = Vector2.zero;
+                        ?.SetTarget(vo.pos);
+                        
                     user.transform.position = vo.pos;
                     user.SetActive(true);
                 }
