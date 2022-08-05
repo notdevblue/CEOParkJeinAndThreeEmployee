@@ -16,6 +16,15 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField]
     private float bulletSpeed = 3f;
 
+    [SerializeField]
+    private float attackSpeed = 1f;
+
+    [SerializeField]
+    private float attackCoolTime = 1f;
+    private float curAttackCoolTime = 1f;
+
+    private bool isAttackAble = false;
+
     private Camera mainCam;
 
     private void Start()
@@ -24,14 +33,38 @@ public class PlayerShoot : MonoBehaviour
         move = GetComponent<PlayerMove>();
 
         mainCam = Camera.main;
+        SetAttackSpeed(attackSpeed);
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(SHOOT))
+        if(!isAttackAble)
+        {
+            curAttackCoolTime += Time.deltaTime;
+
+            if (curAttackCoolTime >= attackCoolTime)
+            {
+                curAttackCoolTime = 0f;
+                isAttackAble = true;
+            }
+        }
+       
+
+        if (Input.GetKeyDown(SHOOT) && isAttackAble)
         {
             Shoot();
         }
+    }
+
+    private void SetAttackSpeed(float attackSpeed)
+    {
+        this.attackSpeed = attackSpeed;
+
+        this.attackCoolTime = 1f / this.attackSpeed;
+
+        this.curAttackCoolTime = this.attackCoolTime;
+
+        anim.Anim.SetFloat(anim.ANIM_ATTACK_SPEED, attackSpeed > 1 ? attackSpeed : 1);
     }
 
     public void Shoot()
@@ -50,6 +83,7 @@ public class PlayerShoot : MonoBehaviour
         //    new FireVO( bullet.bulletIdx, transform.position, dir, bulletSpeed).ToJson());
 
         anim.Anim.SetTrigger(anim.ANIM_ATTACK);
+        isAttackAble = false;
         bullet.Shoot(transform.position, dir, bulletSpeed);
     }
 }
