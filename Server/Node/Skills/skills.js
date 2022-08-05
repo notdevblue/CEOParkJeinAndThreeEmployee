@@ -89,7 +89,7 @@ class skills {
             (damage) => { // 끈질긴 생명력
                 if (damage - this.hp <= 0) {
                 }
-                this.damage = hp - 1;
+                this.damage = this.hp - 1;
 
                 return this;
             },
