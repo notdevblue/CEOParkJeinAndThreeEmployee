@@ -36,12 +36,12 @@ namespace HanSocket.Handlers.InGame
 
                     user.GetComponent<Remote>()
                         ?.SetTarget(vo.pos);
-                    user.GetComponent<PlayerSetUI>().MyUI.SetHp(1);
+                    user.GetComponent<PlayerData>().MyUI.SetHp(1);
                         
                     user.transform.position = vo.pos;
                     user.SetActive(true);
 
-                    wUser.GetComponent<PlayerSetUI>().MyUI.SetWinImg(vo.setWon);
+                    wUser.GetComponent<PlayerData>().MyUI.SetWinImg(vo.setWon);
                     BulletPool.Instance.InitBullet();
                 }
             }

@@ -29,7 +29,7 @@ namespace HanSocket.Handlers.InGame
                 {
                     GameObject obj = UserData.Instance.users[vo.id];
 
-                    obj.GetComponent<PlayerSetUI>().MyUI.SetHp((float)vo.hp / vo.maxhp);
+                    obj.GetComponent<PlayerData>().MyUI.SetHp((float)vo.hp / vo.maxhp);
                     obj.GetComponent<PlayerAnimation>().SetHurt();
 
                     Debug.LogWarning($"Damaged: {vo.id}, HP: {vo.hp} maxHP {vo.maxhp}");

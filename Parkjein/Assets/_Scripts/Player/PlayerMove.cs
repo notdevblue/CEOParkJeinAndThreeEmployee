@@ -12,12 +12,11 @@ public class PlayerMove : MonoBehaviour
     private SpriteRenderer sr;
     public SpriteRenderer Sr => sr;
     private Rigidbody2D rigid;
+
     private PlayerAnimation anim;
 
     [SerializeField]
-    private float moveSpeed = 5f;
-    [SerializeField]
-    private float jumpSpeed = 3f;
+    private PlayerData data;
 
     private const int maxJumpCount = 2;
     [SerializeField]
@@ -34,12 +33,6 @@ public class PlayerMove : MonoBehaviour
     {
         anim = GetComponent<PlayerAnimation>();
         rigid = GetComponent<Rigidbody2D>();
-    }
-
-    public void InitValue(float jump, float speed)
-    {
-        this.jumpSpeed = jump;
-        this.moveSpeed = speed;
     }
 
     private void Update()
@@ -78,7 +71,7 @@ public class PlayerMove : MonoBehaviour
 
             jumpCount--;
             anim.Anim.SetTrigger(anim.ANIM_JUMP);
-            rigid.velocity = new Vector2(rigid.velocity.x, jumpSpeed);
+            rigid.velocity = new Vector2(rigid.velocity.x, data.JumpSpeed);
         }
     }
 
@@ -98,6 +91,6 @@ public class PlayerMove : MonoBehaviour
             anim.Anim.SetBool(anim.ANIM_MOVE, false);
         }
 
-        transform.position += dir * moveSpeed * Time.deltaTime;
+        transform.position += dir * data.MoveSpeed * Time.deltaTime;
     }
 }

@@ -32,4 +32,16 @@ public class PlayerAnimation : MonoBehaviour
     {
         anim.SetTrigger(ANIM_HURT);
     }
+
+    public void SetAttack()
+    {
+        anim.SetTrigger(ANIM_ATTACK);
+    }
+
+    public void SetAttackSpeed(float value)
+    {
+        print($"set = {value}");
+        anim.SetFloat(ANIM_ATTACK_SPEED, value);
+        print($"get = {anim.GetFloat(ANIM_ATTACK_SPEED)}");
+    }
 }
