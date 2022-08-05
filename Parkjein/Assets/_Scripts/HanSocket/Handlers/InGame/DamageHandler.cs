@@ -32,7 +32,11 @@ namespace HanSocket.Handlers.InGame
                     obj.GetComponent<PlayerData>().MyUI.SetHp((float)vo.hp / vo.maxhp);
                     obj.GetComponent<PlayerAnimation>().SetHurt();
 
-                    Debug.LogWarning($"Damaged: {vo.id}, HP: {vo.hp} maxHP {vo.maxhp}");
+                    Debug.LogWarning($"AtkHP: {vo.atkhp}/{vo.atkmaxhp}, Damaged: {vo.id}, HP: {vo.hp}/{vo.maxhp}");
+                    vo.specialCommands?.ForEach(x => {
+                        Debug.LogWarning($"{x.command}:{x.param}");
+                        // Debug.Log(x);
+                    });
                 }
             }
         }
