@@ -46,14 +46,10 @@ public class TetrisBullet : MonoBehaviour
 
         if (user != null && fireVO.shooterId != user.id)
         {
-            if (user.id != UserData.Instance.myId)
+            if (user.id == UserData.Instance.myId)
             {
                 stopBullet = true;
                 WebSocketClient.Instance.Send("damage", "");
-                // WebSocketClient.Instance.Send(
-                //     "bulletstop",
-                //     new BulletStopVO(transform.position, transform.rotation).ToJson()
-                // );
             }
         }
         else if (col.gameObject.CompareTag("GROUND")

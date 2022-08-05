@@ -10,4 +10,11 @@ namespace HanSocket.VO.InGame
         public int skill;
         public int selectCount;
     }
+
+    [Serializable]
+    public class SkillVO : ValueObject
+    {
+        public int type;
+        public int skill;
+    }
 }
