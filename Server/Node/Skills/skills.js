@@ -5,7 +5,7 @@ class skills {
     constructor(instance, ws) {
         if (instance == null) {
             this.damage = ws == null ? 20 : ws.damage;
-            this.speed = ws == null ? 4 : ws.damage;
+            this.speed = ws == null ? 4 : ws.speed;
             this.jumpPower = 5;
             this.blocksize = ws == null ? 5 : ws.blocksize;
             this.ratefire = ws == null ? 0.25 : ws.ratefire;
@@ -15,6 +15,8 @@ class skills {
             
             this.hpReturn = 0;
             this.specialCommands = [];
+            this.neutralize = false;
+            this.knockout = false;
 
         } else {
             this.damage = instance.damage;
@@ -28,6 +30,8 @@ class skills {
             
             this.hpReturn = instance.hpReturn;
             this.specialCommands = instance.specialCommands;
+            this.neutralize = instance.neutralize;
+            this.knockout = instance.knockout;
         }
 
         this.hp = ws == null ? 100 : ws.hp;
@@ -43,14 +47,18 @@ class skills {
             },
             () => { // 기절
                 this.specialCommands.push(
-                    JSON.stringify(new SkillVO("knockout", 0.5))
+                    new SkillVO("knockout", 0.5)
                 );
+                this.knockout = true;
+
                 return this;
             },
             () => { // 무력화
                 this.specialCommands.push(
-                    JSON.stringify(new SkillVO("neutralize", 1.5))
+                    new SkillVO("neutralize", 1.5)
                 );
+                this.neutralize = true;
+
                 return this;
             },
         ]
@@ -136,13 +144,13 @@ class skills {
             // 변형
             () => { // 관통
                 this.specialCommands.push(
-                    JSON.stringify(new SkillVO("penetrate", null))
+                    new SkillVO("penetrate", 0)
                 );
                 return this;
             },
             () => { // 폭탄
                 this.specialCommands.push(
-                    JSON.stringify(new SkillVO("bomb", 10.0))
+                    new SkillVO("bomb", 10.0)
                 );
                 return this;
             }

@@ -45,11 +45,12 @@ class HanSocket {
          ws.id = this.id++;
          ws.ipAddr = ipAddr;
          this.clients[ws.id] = ws;
-
+         
+         logger(`[II] New client joined. ID:${ws.id}`, ipAddr);
+         
          if (connectionCallback != null)
             connectionCallback(ws);
 
-         logger(`[II] New client joined. ID:${ws.id}`, ipAddr);
 
          ws.on("message", async data => {
             let object;

@@ -9,11 +9,11 @@ module.exports = {
             return;
         }
 
+        if (ws.knockedout) return;
+
         ws.game.players.forEach(s => {
             if (s.id != ws.id)
                 s.send(hs.toJson("move", data));
         });
-
-        // ws.game.broadcast(hs.toJson("move", data), [ws.id,]);
     }
 };

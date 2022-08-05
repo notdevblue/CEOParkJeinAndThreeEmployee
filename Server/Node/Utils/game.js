@@ -139,11 +139,8 @@ class game
         this.players.forEach(ws => {
             this.applyStat(ws);
             let gamedata = {
-                // 플레이어 아이디 데이터
-                players: ids,
-
-                // 자신 아이디
-                myId: ws.id,
+                // 소켓 아이디
+                id: ws.id,
 
                 // 채력
                 damage: ws.damage,
@@ -160,11 +157,10 @@ class game
                 rotationSpeed: ws.rotationspeed,
             };
 
-            
-            hs.send(ws, hs.toJson(
+            this.broadcast(hs.toJson(
                 "gamedata",
                 JSON.stringify(gamedata)
-            ));
+            ))
         });
     }
 
@@ -219,33 +215,54 @@ class game
         let sk = new skills();
         let damage;
 
-        attackws.skills
-            ?.filter(x => x.type == 0)
-            ?.forEach(skill => {
-                sk = new skills(sk, attackws)
+        if (!attackws.neutralized) {
+            attackws.skills
+                ?.filter(x => x.type == 0)
+                ?.forEach(skill => {
+                    sk = new skills(sk, attackws)
                         .skills[0][skill.index]();
-            });
+                });
+        }
         
+        damage = sk.damage;
+        
+        if (!damagedws.neutralized) {
+            damagedws.skills
+                ?.filter(x => x.type == 2)
+                ?.forEach(skill => {
+                    sk = new skills(sk, damagedws)
+                        .skills[2][skill.index](damage);
+                });
+            
+        }
+            
         damage = sk.damage;
 
-        damagedws.skills
-            ?.filter(x => x.type == 2)
-            ?.forEach(skill => {
-                sk = new skills(sk, damagedws)
-                        .skills[2][skill.index](damage);
-            });
-        
-        damage = sk.damage;
-        
-        attackws.skills
-            ?.find(x => x.type == 1)
-            ?.forEach(skill => {
-                sk = new skills(sk, attackws)
-                        .skills[1][skill.index]();
-            });
+        if (!attackws.neutralized) {
+            attackws.skills
+                ?.filter(x => x.type == 1)
+                ?.forEach(skill => {
+                    sk = new skills(sk, attackws)
+                        .skills[1][skill.index](damage);
+                });
+        }
         
         attackws.hp += sk.hpReturn;
         damagedws.hp -= damage;
+
+        if (sk.knockout) { // 기절
+            damagedws.knockedout = true;
+            setTimeout(() => {
+                damagedws.knockedout = false;
+            }, 500);
+        }
+        
+        if (sk.neutralize) { // 무력화
+            damagedws.neutralized = true;
+            setTimeout(() => {
+                damagedws.neutralized = false;
+            }, 1500);
+        }
 
         if (damagedws.hp <= 0) {
             this.dead(damagedws);
@@ -258,6 +275,8 @@ class game
                 id: damagedws.id,
                 maxhp: damagedws.maxhp,
                 hp: damagedws.hp,
+                atkhp: attackws.hp,
+                atkmaxhp: attackws.maxhp,
                 specialCommands: sk.specialCommands,
             })
         ));
