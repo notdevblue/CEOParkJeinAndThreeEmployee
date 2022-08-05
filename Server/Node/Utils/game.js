@@ -158,8 +158,9 @@ class game
                 blockRateFire: ws.ratefire,
                 blockSpeed: ws.blockspeed,
                 rotationSpeed: ws.rotationspeed,
-                bomb: ws.hasShield,
+                bomb: ws.bomb,
                 penetrate: ws.penetrate,
+                hasShield: ws.hasShield,
             };
 
             this.broadcast(hs.toJson(
@@ -260,19 +261,13 @@ class game
             damage = 0;
 
             this.broadcast(hs.toJson(
-                "skill",
-                JSON.stringify({
-                    command: "shieldoff"
-                })
+                "skill", "shieldoff"
             ));
 
-            ws.shieldTimeout = setTimeout(() => {
+            damagedws.shieldTimeout = setTimeout(() => {
                 damagedws.hasShield = true;
                 this.broadcast(hs.toJson(
-                    "skill",
-                    JSON.stringify({
-                        command: "shieldon"
-                    })
+                    "skill", "shieldon"
                 ));
             }, 7000);
         }

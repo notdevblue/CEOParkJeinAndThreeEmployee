@@ -17,5 +17,6 @@ namespace HanSocket.VO.InGame
         public float rotationSpeed;
         public bool bomb;
         public bool penetrate;
+        public bool hasShield;
     }
 }
