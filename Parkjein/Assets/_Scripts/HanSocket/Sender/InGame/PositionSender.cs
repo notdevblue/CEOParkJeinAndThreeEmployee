@@ -36,7 +36,7 @@ namespace HanSocket.Sender.InGame
                 WebSocketClient.Instance.Send(
                     "move",
                     new MoveVO(
-                        UserData.Instance.myId,
+                        WebSocketClient.Instance.id,
                         transform.position
                         ).ToJson()
                 , true);

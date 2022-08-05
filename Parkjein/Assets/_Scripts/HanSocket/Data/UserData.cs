@@ -8,78 +8,64 @@ namespace HanSocket.Data
 {
     public class UserData : Singleton<UserData>
     {
-        public int myId;
-
-        // 이동
-        public float speed;
-        public float jump;
-
-        // 채력
-        public float maxHp;
-        public float curHp;
-
-        // 블록 관련
-        public float blockSize;
-        public float blockSpeed;
-        public float blockRotationSpeed;
-        public float blockRateFire;
+        public int myId {
+            get => WebSocketClient.Instance.id;
+        }
 
         // 유저 아이디: 유저 오브젝트
-        public Dictionary<int, GameObject> users;
-
+        public Dictionary<int, GameObject> users
+            = new Dictionary<int, GameObject>();
 
         public void Init(GameDataVO vo, GameObject prefab)
         {
-            myId  = vo.myId;
+            int id = vo.id;
 
-            speed = vo.speed;
+            float speed = vo.speed;
+            float jumpPower = vo.jumpPower;
 
-            maxHp = vo.hp;
-            curHp = vo.hp;
+            float maxHp = vo.hp;
+            float curHp = vo.hp;
 
-            blockSize          = vo.blockSize;
-            blockSpeed         = vo.blockSpeed;
-            blockRotationSpeed = vo.rotationSpeed;
-            blockRateFire      = vo.blockRateFire;
+            float blockSize          = vo.blockSize;
+            float blockSpeed         = vo.blockSpeed;
+            float blockRotationSpeed = vo.rotationSpeed;
+            float blockRateFire      = vo.blockRateFire;
 
-            users = new Dictionary<int, GameObject>();
-            bool isLeftUI = false;
+            bool isLeftUI = false;            
 
-            
+            bool alreadyadded = users.ContainsKey(id);
+            GameObject obj;
 
-            vo.players.ForEach(e => {
-                bool alreadyadded = users.ContainsKey(e);
-                GameObject obj;
-
-                if (!alreadyadded)
-                    obj = MonoBehaviour.Instantiate(prefab);
-                else
-                    obj = users[e];
-
-                obj.AddComponent<User>().id = e;
+            if (!alreadyadded)
+            {
+                obj = MonoBehaviour.Instantiate(prefab);
+                obj.AddComponent<User>().id = vo.id;
                 obj.SetActive(false);
+                users.Add(id, obj);
+            }
+            else
+            {
+                obj = users[id];
+            }
 
-                PlayerData data = obj.GetComponent<PlayerData>();
+            PlayerData data = obj.GetComponent<PlayerData>();
 
-                data.InitValue(
-                        vo.jumpPower,
-                        vo.speed,
-                        vo.blockSpeed,
-                        vo.blockRateFire,
-                        vo.rotationSpeed
-                    );
+            data.InitValue(
+                vo.jumpPower,
+                vo.speed,
+                vo.blockSpeed,
+                vo.blockRateFire,
+                vo.rotationSpeed
+            );
 
-                if (alreadyadded)
+            if (!alreadyadded)
+            {
+
+                if (id != myId)
                 {
-                    Debug.Log($"User {e} already added.");
-                    return;
-                }
+                    obj.name = $"RemotePlayer {id}";
 
-                if (e != myId)
-                {
-                    obj.name = $"RemotePlayer {e}";
-
-                    isLeftUI = myId > e ? false : true;
+                    isLeftUI = myId > id ? false : true;
                     obj.GetComponent<PlayerMove>().enabled = false;
                     obj.GetComponent<PlayerShoot>().enabled = false;
                     MonoBehaviour.Destroy(obj.GetComponent<PositionSender>());
@@ -88,27 +74,22 @@ namespace HanSocket.Data
                 }
                 else
                 {
-                    obj.name = $"Player {e}";
+                    obj.name = $"Player {id}";
 
                     obj.GetComponent<Rigidbody2D>().gravityScale = 1;
                     obj.GetComponent<Remote>().enabled = false;
                 }
-                users.Add(e, obj);
-            });
+            }
 
             List<PlayerUI> uis = MonoBehaviour.FindObjectsOfType<PlayerUI>().ToList();
-            Debug.Log(uis.Count);
-            vo.players.ForEach(e =>
+            if (id != myId)
             {
-                if (e != myId)
-                {
-                    users[e].GetComponent<PlayerData>().MyUI = uis.Find(x => x.gameObject.name == (isLeftUI ? "Right" : "Left"));
-                }
-                else
-                {
-                    users[e].GetComponent<PlayerData>().MyUI = uis.Find(x => x.gameObject.name == (isLeftUI ? "Left" : "Right"));
-                }
-            });
+                users[id].GetComponent<PlayerData>().MyUI = uis.Find(x => x.gameObject.name == (isLeftUI ? "Right" : "Left"));
+            }
+            else
+            {
+                users[id].GetComponent<PlayerData>().MyUI = uis.Find(x => x.gameObject.name == (isLeftUI ? "Left" : "Right"));
+            }
         }
     }
 }

@@ -31,7 +31,7 @@ namespace HanSocket.Handlers.InGame
         {
             _cvsSkillSelect
                 .Set(
-                    (vo.skill == UserData.Instance.myId) || (vo.skill == -1),
+                    (vo.skill == WebSocketClient.Instance.id) || (vo.skill == -1),
                     vo.skillList,
                     vo.selectCount
                 );

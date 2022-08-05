@@ -32,7 +32,7 @@ namespace HanSocket.Handlers.InGame
                 sender[i].Stop();
 
             string displayText =
-                (vo.winnerId == UserData.Instance.myId ? "Victory\n" : "Lost\n")
+                (vo.winnerId == WebSocketClient.Instance.id ? "Victory\n" : "Lost\n")
                 + vo.reason;
 
             _gameEndCvs.Display(displayText);

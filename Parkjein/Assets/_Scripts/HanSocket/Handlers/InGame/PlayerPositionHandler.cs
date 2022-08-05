@@ -36,8 +36,6 @@ namespace HanSocket.Handlers.InGame
                     UserData.Instance.users[vo.id]
                         .GetComponent<Remote>()
                         .SetTarget(vo.pos);
-
-                    Debug.Log(UserData.Instance.users[vo.id].name + " " + vo.pos);
                 }
             }
         }

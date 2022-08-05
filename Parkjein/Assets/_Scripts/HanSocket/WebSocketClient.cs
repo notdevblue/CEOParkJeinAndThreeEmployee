@@ -16,6 +16,8 @@ namespace HanSocket
 
         private WebSocket ws;
 
+        public int id;
+
         protected override void Awake()
         {
             base.Awake();

@@ -1,6 +1,7 @@
 using HanSocket.Data;
 using HanSocket.VO.InGame;
 using UnityEngine;
+using System.Collections.Concurrent;
 
 namespace HanSocket.Handlers.InGame
 {
@@ -9,7 +10,10 @@ namespace HanSocket.Handlers.InGame
         protected override string Type => "gamedata";
 
         private GameObject _playerPrefab;
-        private GameDataVO vo;
+
+        private ConcurrentQueue<GameDataVO> vos
+            = new ConcurrentQueue<GameDataVO>();
+
 
         private void Start()
         {
@@ -18,12 +22,22 @@ namespace HanSocket.Handlers.InGame
 
         protected override void OnArrived(string payload)
         {
-            vo = JsonUtility.FromJson<GameDataVO>(payload);
+            vos.Enqueue(JsonUtility.FromJson<GameDataVO>(payload));
+        }
+
+        private void Update()
+        {
+            while (vos.Count > 0)
+            {
+                if (vos.TryDequeue(out var vo))
+                {
+                    UserData.Instance.Init(vo, _playerPrefab);
+                }
+            }
         }
 
         protected override void OnFlag()
         {
-            UserData.Instance.Init(vo, _playerPrefab);
         }
     }
 }

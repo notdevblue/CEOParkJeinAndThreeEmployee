@@ -3,6 +3,17 @@
 public class Remote : MonoBehaviour
 {
     private Vector2 _target;
+    private Vector2 Target
+    {
+        get
+        {
+            return _target;
+        }
+        set
+        {
+            _target = value;
+        }
+    }
 
     private PlayerAnimation anim;
     private SpriteRenderer sr;
@@ -28,24 +39,22 @@ public class Remote : MonoBehaviour
             if (dir.y > 0 && anim != null) anim.Anim.SetTrigger(anim.ANIM_JUMP);
         }
 
-        _target = pos;
-
-        Debug.Log(gameObject.name + " " + _target + " " + transform.position);
+        Target = pos;
     }
 
     private void Update()
     {
         transform.position =
-            Vector2.Lerp(transform.position, _target, _t);
+            Vector2.Lerp(transform.position, Target, _t);
 
-        // if (Vector2.Distance(_target, transform.position) <= 0.03f)
-        // {
-        //     anim.Anim.SetBool(anim.ANIM_MOVE, false);
-        // }
-        // else
-        // {
-        //     anim.Anim.SetBool(anim.ANIM_MOVE, true);
-        // }
+        if (Vector2.Distance(Target, transform.position) <= 0.03f)
+        {
+            anim.Anim.SetBool(anim.ANIM_MOVE, false);
+        }
+        else
+        {
+            anim.Anim.SetBool(anim.ANIM_MOVE, true);
+        }
 
 
     }

@@ -6,8 +6,7 @@ namespace HanSocket.VO.InGame
     [Serializable]
     public class GameDataVO : ValueObject
     {
-        public List<int> players;
-        public int myId;
+        public int id;
 
         public float hp;
         public float speed;

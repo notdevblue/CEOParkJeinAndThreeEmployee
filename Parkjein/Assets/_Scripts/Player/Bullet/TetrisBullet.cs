@@ -49,7 +49,7 @@ public class TetrisBullet : MonoBehaviour
 
         if (user != null && fireVO.shooterId != user.id)
         {
-            if (user.id == UserData.Instance.myId)
+            if (user.id == WebSocketClient.Instance.id)
             {
                 stopBullet = true;
                 WebSocketClient.Instance.Send("damage", "");
