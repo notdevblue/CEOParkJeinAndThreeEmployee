@@ -3151,3 +3151,230 @@
 2022-8-6 3-9-40-593 					[  ] Found heandler matchmaking.js
 2022-8-6 3-9-40-594 					[  ] Found heandler move.js
 2022-8-6 3-9-40-594 					[  ] Found heandler skillselected.js
+2022-8-6 3-14-16-793 					
+2022-8-6 3-14-16-795 					[II] Server started on port 48000.
+2022-8-6 3-14-16-795 					[  ] Server is listening
+2022-8-6 3-14-16-796 					[  ] Found heandler damage.js
+2022-8-6 3-14-16-796 					[  ] Found heandler dead.js
+2022-8-6 3-14-16-797 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-14-16-797 					[  ] Found heandler fire.js
+2022-8-6 3-14-16-798 					[  ] Found heandler init.js
+2022-8-6 3-14-16-798 					[  ] Found heandler loaded.js
+2022-8-6 3-14-16-799 					[  ] Found heandler matchmaking.js
+2022-8-6 3-14-16-799 					[  ] Found heandler move.js
+2022-8-6 3-14-16-800 					[  ] Found heandler skillselected.js
+2022-8-6 3-15-0-566 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 3-15-1-4 		[127.0.0.1:48000]	[  ] Received: {"type":"init","payload":""}
+2022-8-6 3-15-1-7 					[  ] Sending {"type":"init","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-6 3-15-2-78 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 3-15-2-79 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 3-15-14-256 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 3-15-14-543 		[127.0.0.1:48000]	[  ] Received: {"type":"init","payload":""}
+2022-8-6 3-15-14-544 					[  ] Sending {"type":"init","payload":"{\"id\":1}"} to 127.0.0.1:48000
+2022-8-6 3-15-20-61 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 3-15-20-61 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 3-15-20-61 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 3-15-20-62 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 3-15-20-102 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 3-15-20-158 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 3-15-20-160 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-20-160 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-20-160 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-20-161 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-20-162 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":1,\"skill\":0},{\"type\":4,\"skill\":2},{\"type\":0,\"skill\":0},{\"type\":4,\"skill\":1},{\"type\":2,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 3-15-20-162 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":1,\"skill\":0},{\"type\":4,\"skill\":2},{\"type\":0,\"skill\":0},{\"type\":4,\"skill\":1},{\"type\":2,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 3-15-23-202 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":2}"}
+2022-8-6 3-15-24-134 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":2}"}
+2022-8-6 3-15-24-135 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":150,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-24-135 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":150,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-24-135 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":150,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-24-135 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":150,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-24-136 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-24-136 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-24-136 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-24-136 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-25-563 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-15-25-564 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-15-25-564 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-15-27-286 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-15-27-286 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-27-286 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-27-287 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-27-287 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-27-287 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":1,\"skillList\":[{\"type\":4,\"skill\":2},{\"type\":4,\"skill\":5},{\"type\":2,\"skill\":0},{\"type\":4,\"skill\":3},{\"type\":3,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 3-15-27-287 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":1,\"skillList\":[{\"type\":4,\"skill\":2},{\"type\":4,\"skill\":5},{\"type\":2,\"skill\":0},{\"type\":4,\"skill\":3},{\"type\":3,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 3-15-28-356 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":5}"}
+2022-8-6 3-15-28-356 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":16,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-28-356 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":16,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-28-356 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":250,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-28-356 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":250,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-28-357 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-28-357 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-28-357 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-28-357 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-30-168 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-15-30-169 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-15-30-169 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-15-31-966 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-15-31-966 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-31-967 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-31-967 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":300,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-31-967 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":300,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-31-967 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":0},{\"type\":4,\"skill\":5},{\"type\":4,\"skill\":4},{\"type\":0,\"skill\":0},{\"type\":5,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 3-15-31-967 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":0},{\"type\":4,\"skill\":5},{\"type\":4,\"skill\":4},{\"type\":0,\"skill\":0},{\"type\":5,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 3-15-34-738 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":0,\"skill\":0}"}
+2022-8-6 3-15-35-105 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":4}"}
+2022-8-6 3-15-35-105 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":6,\"rotationSpeed\":8}"} to 127.0.0.1:48000
+2022-8-6 3-15-35-106 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":6,\"rotationSpeed\":8}"} to 127.0.0.1:48000
+2022-8-6 3-15-35-106 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":350,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-35-106 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":350,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-35-106 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-35-106 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-35-106 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-35-106 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-36-222 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-15-36-222 					[  ] Sending {"type":"respawn","payload":"{\"id\":0,\"pos\":{\"x\":0,\"y\":0},\"wonId\":1,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-15-36-222 					[  ] Sending {"type":"respawn","payload":"{\"id\":0,\"pos\":{\"x\":0,\"y\":0},\"wonId\":1,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-15-38-251 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-15-38-251 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":7,\"rotationSpeed\":9}"} to 127.0.0.1:48000
+2022-8-6 3-15-38-251 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":7,\"rotationSpeed\":9}"} to 127.0.0.1:48000
+2022-8-6 3-15-38-251 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":400,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-38-252 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":400,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-38-252 					[  ] Sending {"type":"newloop","payload":"{\"skill\":0,\"selectCount\":1,\"skillList\":[{\"type\":4,\"skill\":3},{\"type\":0,\"skill\":0},{\"type\":2,\"skill\":0},{\"type\":1,\"skill\":0},{\"type\":4,\"skill\":4}]}"} to 127.0.0.1:48000
+2022-8-6 3-15-38-252 					[  ] Sending {"type":"newloop","payload":"{\"skill\":0,\"selectCount\":1,\"skillList\":[{\"type\":4,\"skill\":3},{\"type\":0,\"skill\":0},{\"type\":2,\"skill\":0},{\"type\":1,\"skill\":0},{\"type\":4,\"skill\":4}]}"} to 127.0.0.1:48000
+2022-8-6 3-15-39-462 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":2,\"skill\":0}"}
+2022-8-6 3-15-39-462 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":8,\"rotationSpeed\":10}"} to 127.0.0.1:48000
+2022-8-6 3-15-39-462 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":8,\"rotationSpeed\":10}"} to 127.0.0.1:48000
+2022-8-6 3-15-39-463 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":450,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-39-463 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":450,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-39-463 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-39-463 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-39-464 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-39-464 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-41-494 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-15-41-495 					[  ] Sending {"type":"respawn","payload":"{\"id\":0,\"pos\":{\"x\":0,\"y\":0},\"wonId\":1,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-15-41-495 					[  ] Sending {"type":"respawn","payload":"{\"id\":0,\"pos\":{\"x\":0,\"y\":0},\"wonId\":1,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-15-43-592 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-15-43-592 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":9,\"rotationSpeed\":11}"} to 127.0.0.1:48000
+2022-8-6 3-15-43-593 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":9,\"rotationSpeed\":11}"} to 127.0.0.1:48000
+2022-8-6 3-15-43-593 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":500,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-43-593 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":500,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-43-593 					[  ] Sending {"type":"newloop","payload":"{\"skill\":0,\"selectCount\":2,\"skillList\":[{\"type\":0,\"skill\":1},{\"type\":4,\"skill\":5},{\"type\":4,\"skill\":4},{\"type\":0,\"skill\":0},{\"type\":4,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 3-15-43-594 					[  ] Sending {"type":"newloop","payload":"{\"skill\":0,\"selectCount\":2,\"skillList\":[{\"type\":0,\"skill\":1},{\"type\":4,\"skill\":5},{\"type\":4,\"skill\":4},{\"type\":0,\"skill\":0},{\"type\":4,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 3-15-44-890 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":0,\"skill\":1}"}
+2022-8-6 3-15-45-224 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":5}"}
+2022-8-6 3-15-45-224 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":10,\"rotationSpeed\":12}"} to 127.0.0.1:48000
+2022-8-6 3-15-45-224 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":200,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":10,\"rotationSpeed\":12}"} to 127.0.0.1:48000
+2022-8-6 3-15-45-225 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":16,\"hp\":500,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-45-225 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":16,\"hp\":500,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-15-45-225 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-45-225 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-45-225 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-45-225 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-15-47-711 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":1,\"startPos\":{\"x\":0.8605746626853943,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9328886866569519,\"y\":0.36016491055488589},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-6 3-15-47-711 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":1,\"startPos\":{\"x\":0.8605746626853943,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9328886866569519,\"y\":0.36016491055488589},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 3-15-48-85 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 3-15-48-86 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":200,\"hp\":180,\"atkhp\":500,\"atkmaxhp\":500,\"specialCommands\":[{\"command\":\"knockout\",\"param\":10.5}]}"} to 127.0.0.1:48000
+2022-8-6 3-15-48-86 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":200,\"hp\":180,\"atkhp\":500,\"atkmaxhp\":500,\"specialCommands\":[{\"command\":\"knockout\",\"param\":10.5}]}"} to 127.0.0.1:48000
+2022-8-6 3-16-3-341 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 3-16-3-342 					[  ] Sending {"type":"left","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-6 3-16-3-343 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 3-16-4-526 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 3-16-7-232 					
+2022-8-6 3-16-7-234 					[II] Server started on port 48000.
+2022-8-6 3-16-7-234 					[  ] Server is listening
+2022-8-6 3-16-7-235 					[  ] Found heandler damage.js
+2022-8-6 3-16-7-236 					[  ] Found heandler dead.js
+2022-8-6 3-16-7-237 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-16-7-237 					[  ] Found heandler fire.js
+2022-8-6 3-16-7-238 					[  ] Found heandler init.js
+2022-8-6 3-16-7-238 					[  ] Found heandler loaded.js
+2022-8-6 3-16-7-239 					[  ] Found heandler matchmaking.js
+2022-8-6 3-16-7-239 					[  ] Found heandler move.js
+2022-8-6 3-16-7-240 					[  ] Found heandler skillselected.js
+2022-8-6 3-20-43-542 					
+2022-8-6 3-20-43-543 					[II] Server started on port 48000.
+2022-8-6 3-20-43-543 					[  ] Server is listening
+2022-8-6 3-20-43-544 					[  ] Found heandler damage.js
+2022-8-6 3-20-43-544 					[  ] Found heandler dead.js
+2022-8-6 3-20-43-545 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-20-43-545 					[  ] Found heandler fire.js
+2022-8-6 3-20-43-545 					[  ] Found heandler init.js
+2022-8-6 3-20-43-546 					[  ] Found heandler loaded.js
+2022-8-6 3-20-43-547 					[  ] Found heandler matchmaking.js
+2022-8-6 3-20-43-547 					[  ] Found heandler move.js
+2022-8-6 3-20-43-548 					[  ] Found heandler skillselected.js
+2022-8-6 3-21-17-929 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 3-21-18-367 		[127.0.0.1:48000]	[  ] Received: {"type":"init","payload":""}
+2022-8-6 3-21-18-368 					[  ] Sending {"type":"init","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-6 3-21-21-892 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 3-21-21-893 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 3-21-38-665 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 3-21-38-972 		[127.0.0.1:48000]	[  ] Received: {"type":"init","payload":""}
+2022-8-6 3-21-38-973 					[  ] Sending {"type":"init","payload":"{\"id\":1}"} to 127.0.0.1:48000
+2022-8-6 3-21-41-803 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 3-21-41-803 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 3-21-41-803 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 3-21-41-804 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 3-21-41-840 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 3-21-41-929 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 3-21-41-930 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-41-930 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-41-931 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-41-931 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-41-932 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":1},{\"type\":2,\"skill\":0},{\"type\":0,\"skill\":1},{\"type\":4,\"skill\":4},{\"type\":4,\"skill\":3}]}"} to 127.0.0.1:48000
+2022-8-6 3-21-41-933 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":1},{\"type\":2,\"skill\":0},{\"type\":0,\"skill\":1},{\"type\":4,\"skill\":4},{\"type\":4,\"skill\":3}]}"} to 127.0.0.1:48000
+2022-8-6 3-21-46-655 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":0,\"skill\":1}"}
+2022-8-6 3-21-47-357 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":2,\"skill\":0}"}
+2022-8-6 3-21-47-358 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-47-358 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-47-359 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-47-360 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-47-360 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-21-47-361 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-21-47-361 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-21-47-361 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-21-48-761 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-21-48-762 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-21-48-762 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-21-50-489 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-21-50-490 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-50-490 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-50-490 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-50-490 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-50-490 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":1,\"skillList\":[{\"type\":5,\"skill\":0},{\"type\":2,\"skill\":1},{\"type\":4,\"skill\":4},{\"type\":4,\"skill\":3},{\"type\":4,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 3-21-50-491 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":1,\"skillList\":[{\"type\":5,\"skill\":0},{\"type\":2,\"skill\":1},{\"type\":4,\"skill\":4},{\"type\":4,\"skill\":3},{\"type\":4,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 3-21-53-79 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":3}"}
+2022-8-6 3-21-53-80 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":16,\"hp\":100,\"speed\":4.5,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.04999999999999999,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-21-53-80 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":16,\"hp\":100,\"speed\":4.5,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.04999999999999999,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-21-53-80 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-53-81 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-53-81 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-21-53-81 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-21-53-81 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-21-53-81 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-21-54-199 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-21-54-199 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-21-54-199 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-21-56-203 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-21-56-204 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":100,\"speed\":5,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":-0.15000000000000002,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-21-56-204 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":100,\"speed\":5,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":-0.15000000000000002,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-21-56-205 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-56-205 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-56-205 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":4},{\"type\":4,\"skill\":0},{\"type\":1,\"skill\":0},{\"type\":5,\"skill\":0},{\"type\":3,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 3-21-56-205 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":4},{\"type\":4,\"skill\":0},{\"type\":1,\"skill\":0},{\"type\":5,\"skill\":0},{\"type\":3,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 3-21-58-51 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":5,\"skill\":0}"}
+2022-8-6 3-21-58-850 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":3,\"skill\":0}"}
+2022-8-6 3-21-58-850 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":100,\"speed\":5,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":-0.15000000000000002,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":true}"} to 127.0.0.1:48000
+2022-8-6 3-21-58-851 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":12,\"hp\":100,\"speed\":5,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":-0.15000000000000002,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":true}"} to 127.0.0.1:48000
+2022-8-6 3-21-58-851 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-58-851 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-21-58-851 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-21-58-851 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-21-58-852 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-21-58-852 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-22-15-788 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 3-22-15-789 					[  ] Sending {"type":"left","payload":"{\"id\":1}"} to 127.0.0.1:48000
+2022-8-6 3-22-15-789 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":0,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 3-22-15-790 		[127.0.0.1:48000]	move: 게임 중이 아닌 클라이언트의 요청
+2022-8-6 3-22-16-389 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected

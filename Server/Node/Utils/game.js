@@ -155,6 +155,8 @@ class game
                 blockRateFire: ws.ratefire,
                 blockSpeed: ws.blockspeed,
                 rotationSpeed: ws.rotationspeed,
+                bomb: ws.bomb,
+                penetrate: ws.penetrate,
             };
 
             this.broadcast(hs.toJson(
@@ -170,7 +172,7 @@ class game
 
         ws.skills.push({ type, index });
 
-        if (type == 4) {
+        if (type == 4 || type == 5) {
             ws.abliSkills.push(new skills(null, ws).skills[type][index]);
         }
 
@@ -207,6 +209,8 @@ class game
             ws.ratefire = inst.ratefire;
             ws.rotationspeed = inst.rotationspeed;
             ws.pushpower = inst.pushpower;
+            ws.bomb = inst.bomb;
+            ws.penetrate = inst.penetrate;
         });
     }
 

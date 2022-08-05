@@ -17,6 +17,8 @@ class skills {
             this.specialCommands = [];
             this.neutralize = false;
             this.knockout = false;
+            this.penetrate = false;
+            this.bomb = false;
 
         } else {
             this.damage = instance.damage;
@@ -32,6 +34,8 @@ class skills {
             this.specialCommands = instance.specialCommands;
             this.neutralize = instance.neutralize;
             this.knockout = instance.knockout;
+            this.penetrate = isntance.penetrate;
+            this.bomb = isntance.bomb;
         }
 
         this.hp = ws == null ? 100 : ws.hp;
@@ -143,12 +147,14 @@ class skills {
                 this.specialCommands.push(
                     new SkillVO("penetrate", 0)
                 );
+                this.penetrate = true;
                 return this;
             },
             () => { // 폭탄
                 this.specialCommands.push(
                     new SkillVO("bomb", 10.0)
                 );
+                this.bomb = true;
                 return this;
             }
         ]
