@@ -177,7 +177,9 @@ class game
         ws.skills.push({ type, index });
 
         if (type == 3 || type == 4 || type == 5) {
-            ws.abliSkills.push(new skills(null, ws).skills[type][index]);
+            ws.abliSkills.push({ type: type, index: index });
+
+            // ws.abliSkills.push(new skills(null, ws).skills[type][index]);
         }
 
         if (--this.skillSelectCount <= 0) {
@@ -203,7 +205,7 @@ class game
     applyStat(ws) {
         this.resetPlayerValue(ws);
         ws.abliSkills?.forEach(x => {
-            let inst = x();
+            let inst = new skills(null, ws).skills[x.type][x.index]();
             ws.damage = inst.damage;
             ws.hp = inst.hp;
             ws.maxhp = inst.hp;
@@ -261,13 +263,13 @@ class game
             damage = 0;
 
             this.broadcast(hs.toJson(
-                "skill", "shieldoff"
+                "skill", JSON.stringify({ command: "shieldoff" })
             ));
 
             damagedws.shieldTimeout = setTimeout(() => {
                 damagedws.hasShield = true;
                 this.broadcast(hs.toJson(
-                    "skill", "shieldon"
+                    "skill", JSON.stringify({ command: "shieldon"})
                 ));
             }, 7000);
         }

@@ -9,12 +9,12 @@ namespace HanSocket.Handlers.InGame
     {
         protected override string Type => "skill";
 
-        ConcurrentQueue<string> vos
-            = new ConcurrentQueue<string>();
+        ConcurrentQueue<SpecialCommands> vos
+            = new ConcurrentQueue<SpecialCommands>();
 
         protected override void OnArrived(string payload)
         {
-            vos.Enqueue(JsonUtility.FromJson<string>(payload));
+            vos.Enqueue(JsonUtility.FromJson<SpecialCommands>(payload));
         }
 
         protected override void OnFlag()
@@ -27,7 +27,7 @@ namespace HanSocket.Handlers.InGame
             {
                 if (vos.TryDequeue(out var vo))
                 {
-                    Debug.LogError(vo);
+                    Debug.LogError(vo.command);
                 }
             }
         }
