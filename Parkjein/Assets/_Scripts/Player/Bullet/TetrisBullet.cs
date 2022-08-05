@@ -22,24 +22,11 @@ public class TetrisBullet : MonoBehaviour
         gameObject.SetActive(active);
     }
 
-    public void RemoteShoot(FireVO vo)
-    {
-        transform.position = vo.startPos;
-        
-        this.SetActive(true);
-        
-        //float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-
-        rigid.AddForce(vo.dir * vo.bulletSpeed, ForceMode2D.Impulse);
-    }
-
     public void Shoot(FireVO fireVO)
     {
-        this.fireVO = fireVO;
-
         transform.position = fireVO.startPos;
+        this.fireVO = fireVO;
         this.SetActive(true);
-
         rigid.AddForce(fireVO.dir * fireVO.bulletSpeed, ForceMode2D.Impulse);
     }
 
@@ -49,5 +36,6 @@ public class TetrisBullet : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D col)
     {
+        Destroy(this.GetComponent<Rigidbody2D>());
     }
 }
