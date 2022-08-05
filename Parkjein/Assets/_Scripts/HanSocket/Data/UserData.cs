@@ -45,6 +45,7 @@ namespace HanSocket.Data
             vo.players.ForEach(e => {
 
                 var obj = MonoBehaviour.Instantiate(prefab);
+                obj.AddComponent<User>().id = e;
                 obj.SetActive(false);
                 if (e != myId)
                 {

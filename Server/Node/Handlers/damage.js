@@ -1,3 +1,5 @@
+const write = require("../Utils/Logger");
+
 module.exports = {
     type: "damage",
     handle: (ws, data) => {

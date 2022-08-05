@@ -1,4 +1,5 @@
 using HanSocket;
+using HanSocket.Data;
 using UnityEngine;
 
 public class PlayerDamage : MonoBehaviour
@@ -6,11 +7,15 @@ public class PlayerDamage : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.transform.CompareTag("BULLET") &&
-           !other.gameObject.GetComponent<TetrisBullet>().firedByMe)
+
+           other.gameObject.GetComponent<TetrisBullet>()
+            .FireVO.shooterId != GetComponent<User>().id)
         {
             Rigidbody2D rigid = other.gameObject.GetComponent<Rigidbody2D>();
-            rigid.constraints = RigidbodyConstraints2D.FreezeAll;
-            rigid.simulated = false;
+            Destroy(rigid);
+            
+            other.gameObject.tag = "GROUND";
+
             WebSocketClient.Instance.Send("damage", "");
         }
     }

@@ -18,7 +18,7 @@ namespace HanSocket.Handlers.InGame
 
         protected override void OnFlag()
         {
-            BulletPool.Instance.GetBullet(fireVO.bulletIdx).Shoot(fireVO.startPos, fireVO.dir, fireVO.bulletSpeed);
+            BulletPool.Instance.GetBullet(fireVO.bulletIdx).RemoteShoot(fireVO);
         }
 
     }

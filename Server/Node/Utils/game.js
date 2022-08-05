@@ -151,7 +151,7 @@ class game
         }
         
         this.broadcast(hs.toJson(
-            "damaged",
+            "damage",
             JSON.stringify({
                 id: damagedws.id,
                 hp: damagedws.hp // FIXME: 임시
@@ -162,7 +162,7 @@ class game
     dead(deadws) {
         ++this.deadPlayers;
         this.justDiedPlayer = deadws;
-        deadws.hp = 100;
+        deadws.hp = 100; // FIXME: 임시
 
         if (this.deadPlayers >= this.players.length - 1) {
             let ws = this.players.find(x => x != deadws);
