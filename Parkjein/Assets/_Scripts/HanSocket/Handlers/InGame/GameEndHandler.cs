@@ -36,6 +36,8 @@ namespace HanSocket.Handlers.InGame
                 + vo.reason;
 
             _gameEndCvs.Display(displayText);
+
+            UserData.Instance.GameEnd();
         }
     }
 }

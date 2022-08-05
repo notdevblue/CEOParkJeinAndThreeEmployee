@@ -286,6 +286,8 @@ class game
         ++this.deadPlayers;
         this.justDiedPlayer = deadws;
         deadws.hp = deadws.maxhp; // FIXME: 임시
+        deadws.knockedout = false;
+        deadws.neutralized = false;
 
         if (this.deadPlayers >= this.players.length - 1) {
             let ws = this.players.find(x => x != deadws);
@@ -343,6 +345,9 @@ class game
 
             ws.game  = null;
             ws.match = false;
+            ws.knockedout = false;
+            ws.neutralized = false;
+            ws.invincible = false;
         });
     }
 

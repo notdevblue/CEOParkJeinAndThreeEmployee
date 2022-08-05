@@ -19,6 +19,6 @@ namespace HanSocket.VO.InGame
     public class SpecialCommands
     {
         public string command;
-        public int param;
+        public float param;
     }
 }

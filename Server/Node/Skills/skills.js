@@ -98,7 +98,6 @@ class skills {
         this.abil = [
             // 능력치
             () => { // 큰 블록
-                console.log("bigblock");
                 this.damage     += 10;
                 this.blocksize  += 3;
                 this.blockspeed -= 0.5;
@@ -106,7 +105,6 @@ class skills {
                 return this;
             },
             () => { // 작은 블록
-                console.log("smallblock");
                 this.damage     -= 6;
                 this.blocksize  -= 2;
                 this.blockspeed += 0.5;
@@ -114,7 +112,6 @@ class skills {
                 return this;
             },
             () => { // 건강한 신체
-                console.log("healthyblock");
                 this.hp += 50;
 
                 return this;

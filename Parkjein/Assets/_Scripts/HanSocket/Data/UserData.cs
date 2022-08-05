@@ -16,6 +16,11 @@ namespace HanSocket.Data
         public Dictionary<int, GameObject> users
             = new Dictionary<int, GameObject>();
 
+        public void GameEnd()
+        {
+            users = new Dictionary<int, GameObject>();
+        }
+
         public void Init(GameDataVO vo, GameObject prefab)
         {
             int id = vo.id;
