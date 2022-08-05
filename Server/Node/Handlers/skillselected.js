@@ -6,6 +6,8 @@ module.exports = {
             return;
         }
 
-        ws.game.skillselected(ws, -1, -1);
+        const payload = JSON.parse(data);
+
+        ws.game.skillselected(ws, payload.type, payload.skill);
     }
 };
