@@ -22,9 +22,12 @@ public class PlayerUI : MonoBehaviour
     [SerializeField]
     private Sprite winSprite;
 
-    public void Init(Sprite playerSprite)
+    public void Init(Sprite playerSprite = null)
     {
-        this.playerFace.sprite = playerSprite;
+        if(playerSprite != null)
+        {
+            this.playerFace.sprite = playerSprite;
+        }
 
         for (int i = 0; i < winImg.Length; i++)
         {
