@@ -42,6 +42,7 @@ namespace HanSocket.Handlers.InGame
                     user.SetActive(true);
 
                     wUser.GetComponent<PlayerSetUI>().MyUI.SetWinImg(vo.setWon);
+                    BulletPool.Instance.InitBullet();
                 }
             }
         }

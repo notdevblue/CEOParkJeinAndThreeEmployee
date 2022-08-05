@@ -15,7 +15,7 @@ public class BulletPool : MonoSingleton<BulletPool>
     [SerializeField]
     private int bulletObjInitcount = 10;
 
-    private Queue<TetrisBullet> bulletQueue = new Queue<TetrisBullet>();
+    private List<TetrisBullet> bulletList = new List<TetrisBullet>();
     private Dictionary<int, List<BulletObj>> bulletObjDic = new Dictionary<int, List<BulletObj>>();
 
     protected override void Awake()
@@ -28,7 +28,7 @@ public class BulletPool : MonoSingleton<BulletPool>
         for (int i = 0; i < initCount; i++)
         {
             TetrisBullet bullet = InstantiateBullet();
-            bulletQueue.Enqueue(bullet);
+            bulletList.Add(bullet);
             bullet.SetActive(false);
         }
 
@@ -57,14 +57,18 @@ public class BulletPool : MonoSingleton<BulletPool>
         return bul;
     }
 
-    public void Enqueue(TetrisBullet bullet)
-    {
-        bulletQueue.Enqueue(bullet);
-    }
-
     public TetrisBullet GetBullet()
     {
-        return bulletQueue.Count > 0 ? bulletQueue.Dequeue() : InstantiateBullet();
+        TetrisBullet bullet = bulletList.Find(x => !x.gameObject.activeSelf);
+        return bullet != null ? bullet : InstantiateBullet();
+    }
+
+    public void InitBullet()
+    {
+        bulletList.ForEach(x =>
+        {
+            if (x.gameObject.activeSelf) x.SetActive(false);
+        });
     }
 
     public TetrisBullet GetBullet(int bulletIdx)
