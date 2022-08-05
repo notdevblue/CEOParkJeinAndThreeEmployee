@@ -8,5 +8,6 @@ namespace HanSocket.VO.InGame
     {
         public int id;
         public float hp;
+        public float maxhp;
     }
 }
