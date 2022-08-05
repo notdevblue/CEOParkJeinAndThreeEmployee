@@ -3378,3 +3378,335 @@
 2022-8-6 3-22-15-789 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":0,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
 2022-8-6 3-22-15-790 		[127.0.0.1:48000]	move: 게임 중이 아닌 클라이언트의 요청
 2022-8-6 3-22-16-389 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 3-23-31-768 					
+2022-8-6 3-23-31-770 					[II] Server started on port 48000.
+2022-8-6 3-23-31-770 					[  ] Server is listening
+2022-8-6 3-23-31-770 					[  ] Found heandler damage.js
+2022-8-6 3-23-31-771 					[  ] Found heandler dead.js
+2022-8-6 3-23-31-771 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-23-31-771 					[  ] Found heandler fire.js
+2022-8-6 3-23-31-772 					[  ] Found heandler init.js
+2022-8-6 3-23-31-772 					[  ] Found heandler loaded.js
+2022-8-6 3-23-31-773 					[  ] Found heandler matchmaking.js
+2022-8-6 3-23-31-773 					[  ] Found heandler move.js
+2022-8-6 3-23-31-773 					[  ] Found heandler skillselected.js
+2022-8-6 3-23-37-430 					
+2022-8-6 3-23-37-432 					[II] Server started on port 48000.
+2022-8-6 3-23-37-432 					[  ] Server is listening
+2022-8-6 3-23-37-432 					[  ] Found heandler damage.js
+2022-8-6 3-23-37-433 					[  ] Found heandler dead.js
+2022-8-6 3-23-37-433 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-23-37-434 					[  ] Found heandler fire.js
+2022-8-6 3-23-37-434 					[  ] Found heandler init.js
+2022-8-6 3-23-37-434 					[  ] Found heandler loaded.js
+2022-8-6 3-23-37-435 					[  ] Found heandler matchmaking.js
+2022-8-6 3-23-37-435 					[  ] Found heandler move.js
+2022-8-6 3-23-37-436 					[  ] Found heandler skillselected.js
+2022-8-6 3-25-8-297 					
+2022-8-6 3-25-8-299 					[II] Server started on port 48000.
+2022-8-6 3-25-8-299 					[  ] Server is listening
+2022-8-6 3-25-8-300 					[  ] Found heandler damage.js
+2022-8-6 3-25-8-300 					[  ] Found heandler dead.js
+2022-8-6 3-25-8-301 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-25-8-301 					[  ] Found heandler fire.js
+2022-8-6 3-25-8-301 					[  ] Found heandler init.js
+2022-8-6 3-25-8-302 					[  ] Found heandler loaded.js
+2022-8-6 3-25-8-302 					[  ] Found heandler matchmaking.js
+2022-8-6 3-25-8-303 					[  ] Found heandler move.js
+2022-8-6 3-25-8-303 					[  ] Found heandler skillselected.js
+2022-8-6 3-25-10-36 					
+2022-8-6 3-25-10-38 					[II] Server started on port 48000.
+2022-8-6 3-25-10-38 					[  ] Server is listening
+2022-8-6 3-25-10-38 					[  ] Found heandler damage.js
+2022-8-6 3-25-10-39 					[  ] Found heandler dead.js
+2022-8-6 3-25-10-39 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-25-10-39 					[  ] Found heandler fire.js
+2022-8-6 3-25-10-40 					[  ] Found heandler init.js
+2022-8-6 3-25-10-40 					[  ] Found heandler loaded.js
+2022-8-6 3-25-10-41 					[  ] Found heandler matchmaking.js
+2022-8-6 3-25-10-41 					[  ] Found heandler move.js
+2022-8-6 3-25-10-41 					[  ] Found heandler skillselected.js
+2022-8-6 3-26-29-207 					
+2022-8-6 3-26-29-208 					[II] Server started on port 48000.
+2022-8-6 3-26-29-209 					[  ] Server is listening
+2022-8-6 3-26-29-209 					[  ] Found heandler damage.js
+2022-8-6 3-26-29-210 					[  ] Found heandler dead.js
+2022-8-6 3-26-29-211 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-26-29-211 					[  ] Found heandler fire.js
+2022-8-6 3-26-29-211 					[  ] Found heandler init.js
+2022-8-6 3-26-29-212 					[  ] Found heandler loaded.js
+2022-8-6 3-26-29-212 					[  ] Found heandler matchmaking.js
+2022-8-6 3-26-29-213 					[  ] Found heandler move.js
+2022-8-6 3-26-29-213 					[  ] Found heandler skillselected.js
+2022-8-6 3-26-41-277 					
+2022-8-6 3-26-41-279 					[II] Server started on port 48000.
+2022-8-6 3-26-41-279 					[  ] Server is listening
+2022-8-6 3-26-41-280 					[  ] Found heandler damage.js
+2022-8-6 3-26-41-280 					[  ] Found heandler dead.js
+2022-8-6 3-26-41-280 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-26-41-281 					[  ] Found heandler fire.js
+2022-8-6 3-26-41-281 					[  ] Found heandler init.js
+2022-8-6 3-26-41-281 					[  ] Found heandler loaded.js
+2022-8-6 3-26-41-282 					[  ] Found heandler matchmaking.js
+2022-8-6 3-26-41-282 					[  ] Found heandler move.js
+2022-8-6 3-26-41-283 					[  ] Found heandler skillselected.js
+2022-8-6 3-28-28-172 					
+2022-8-6 3-28-28-173 					[II] Server started on port 48000.
+2022-8-6 3-28-28-174 					[  ] Server is listening
+2022-8-6 3-28-28-174 					[  ] Found heandler damage.js
+2022-8-6 3-28-28-175 					[  ] Found heandler dead.js
+2022-8-6 3-28-28-175 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-28-28-175 					[  ] Found heandler fire.js
+2022-8-6 3-28-28-176 					[  ] Found heandler init.js
+2022-8-6 3-28-28-176 					[  ] Found heandler loaded.js
+2022-8-6 3-28-28-177 					[  ] Found heandler matchmaking.js
+2022-8-6 3-28-28-177 					[  ] Found heandler move.js
+2022-8-6 3-28-28-177 					[  ] Found heandler skillselected.js
+2022-8-6 3-28-51-921 					
+2022-8-6 3-28-51-922 					[II] Server started on port 48000.
+2022-8-6 3-28-51-922 					[  ] Server is listening
+2022-8-6 3-28-51-923 					[  ] Found heandler damage.js
+2022-8-6 3-28-51-923 					[  ] Found heandler dead.js
+2022-8-6 3-28-51-924 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-28-51-924 					[  ] Found heandler fire.js
+2022-8-6 3-28-51-925 					[  ] Found heandler init.js
+2022-8-6 3-28-51-925 					[  ] Found heandler loaded.js
+2022-8-6 3-28-51-926 					[  ] Found heandler matchmaking.js
+2022-8-6 3-28-51-926 					[  ] Found heandler move.js
+2022-8-6 3-28-51-927 					[  ] Found heandler skillselected.js
+2022-8-6 3-29-3-316 					
+2022-8-6 3-29-3-317 					[II] Server started on port 48000.
+2022-8-6 3-29-3-317 					[  ] Server is listening
+2022-8-6 3-29-3-318 					[  ] Found heandler damage.js
+2022-8-6 3-29-3-318 					[  ] Found heandler dead.js
+2022-8-6 3-29-3-318 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-29-3-319 					[  ] Found heandler fire.js
+2022-8-6 3-29-3-319 					[  ] Found heandler init.js
+2022-8-6 3-29-3-320 					[  ] Found heandler loaded.js
+2022-8-6 3-29-3-320 					[  ] Found heandler matchmaking.js
+2022-8-6 3-29-3-321 					[  ] Found heandler move.js
+2022-8-6 3-29-3-321 					[  ] Found heandler skillselected.js
+2022-8-6 3-30-42-357 					
+2022-8-6 3-30-42-358 					[II] Server started on port 48000.
+2022-8-6 3-30-42-358 					[  ] Server is listening
+2022-8-6 3-30-42-359 					[  ] Found heandler damage.js
+2022-8-6 3-30-42-359 					[  ] Found heandler dead.js
+2022-8-6 3-30-42-360 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-30-42-361 					[  ] Found heandler fire.js
+2022-8-6 3-30-42-361 					[  ] Found heandler init.js
+2022-8-6 3-30-42-362 					[  ] Found heandler loaded.js
+2022-8-6 3-30-42-363 					[  ] Found heandler matchmaking.js
+2022-8-6 3-30-42-364 					[  ] Found heandler move.js
+2022-8-6 3-30-42-364 					[  ] Found heandler skillselected.js
+2022-8-6 3-31-25-703 					
+2022-8-6 3-31-25-704 					[II] Server started on port 48000.
+2022-8-6 3-31-25-704 					[  ] Server is listening
+2022-8-6 3-31-25-705 					[  ] Found heandler damage.js
+2022-8-6 3-31-25-705 					[  ] Found heandler dead.js
+2022-8-6 3-31-25-705 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-31-25-706 					[  ] Found heandler fire.js
+2022-8-6 3-31-25-706 					[  ] Found heandler init.js
+2022-8-6 3-31-25-706 					[  ] Found heandler loaded.js
+2022-8-6 3-31-25-707 					[  ] Found heandler matchmaking.js
+2022-8-6 3-31-25-707 					[  ] Found heandler move.js
+2022-8-6 3-31-25-708 					[  ] Found heandler skillselected.js
+2022-8-6 3-32-3-377 					
+2022-8-6 3-32-3-378 					[II] Server started on port 48000.
+2022-8-6 3-32-3-379 					[  ] Server is listening
+2022-8-6 3-32-3-379 					[  ] Found heandler damage.js
+2022-8-6 3-32-3-380 					[  ] Found heandler dead.js
+2022-8-6 3-32-3-380 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-32-3-380 					[  ] Found heandler fire.js
+2022-8-6 3-32-3-381 					[  ] Found heandler init.js
+2022-8-6 3-32-3-382 					[  ] Found heandler loaded.js
+2022-8-6 3-32-3-382 					[  ] Found heandler matchmaking.js
+2022-8-6 3-32-3-383 					[  ] Found heandler move.js
+2022-8-6 3-32-3-383 					[  ] Found heandler skillselected.js
+2022-8-6 3-32-51-896 					
+2022-8-6 3-32-51-897 					[II] Server started on port 48000.
+2022-8-6 3-32-51-897 					[  ] Server is listening
+2022-8-6 3-32-51-898 					[  ] Found heandler damage.js
+2022-8-6 3-32-51-898 					[  ] Found heandler dead.js
+2022-8-6 3-32-51-899 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-32-51-899 					[  ] Found heandler fire.js
+2022-8-6 3-32-51-899 					[  ] Found heandler init.js
+2022-8-6 3-32-51-900 					[  ] Found heandler loaded.js
+2022-8-6 3-32-51-900 					[  ] Found heandler matchmaking.js
+2022-8-6 3-32-51-901 					[  ] Found heandler move.js
+2022-8-6 3-32-51-901 					[  ] Found heandler skillselected.js
+2022-8-6 3-33-14-641 					
+2022-8-6 3-33-14-642 					[II] Server started on port 48000.
+2022-8-6 3-33-14-642 					[  ] Server is listening
+2022-8-6 3-33-14-643 					[  ] Found heandler damage.js
+2022-8-6 3-33-14-643 					[  ] Found heandler dead.js
+2022-8-6 3-33-14-644 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-33-14-644 					[  ] Found heandler fire.js
+2022-8-6 3-33-14-644 					[  ] Found heandler init.js
+2022-8-6 3-33-14-645 					[  ] Found heandler loaded.js
+2022-8-6 3-33-14-645 					[  ] Found heandler matchmaking.js
+2022-8-6 3-33-14-646 					[  ] Found heandler move.js
+2022-8-6 3-33-14-646 					[  ] Found heandler skillselected.js
+2022-8-6 3-33-25-904 					
+2022-8-6 3-33-25-906 					[II] Server started on port 48000.
+2022-8-6 3-33-25-906 					[  ] Server is listening
+2022-8-6 3-33-25-906 					[  ] Found heandler damage.js
+2022-8-6 3-33-25-907 					[  ] Found heandler dead.js
+2022-8-6 3-33-25-907 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-33-25-907 					[  ] Found heandler fire.js
+2022-8-6 3-33-25-908 					[  ] Found heandler init.js
+2022-8-6 3-33-25-908 					[  ] Found heandler loaded.js
+2022-8-6 3-33-25-909 					[  ] Found heandler matchmaking.js
+2022-8-6 3-33-25-909 					[  ] Found heandler move.js
+2022-8-6 3-33-25-910 					[  ] Found heandler skillselected.js
+2022-8-6 3-33-52-0 					
+2022-8-6 3-33-52-1 					[II] Server started on port 48000.
+2022-8-6 3-33-52-1 					[  ] Server is listening
+2022-8-6 3-33-52-2 					[  ] Found heandler damage.js
+2022-8-6 3-33-52-3 					[  ] Found heandler dead.js
+2022-8-6 3-33-52-3 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-33-52-4 					[  ] Found heandler fire.js
+2022-8-6 3-33-52-5 					[  ] Found heandler init.js
+2022-8-6 3-33-52-5 					[  ] Found heandler loaded.js
+2022-8-6 3-33-52-6 					[  ] Found heandler matchmaking.js
+2022-8-6 3-33-52-7 					[  ] Found heandler move.js
+2022-8-6 3-33-52-7 					[  ] Found heandler skillselected.js
+2022-8-6 3-34-16-281 					
+2022-8-6 3-34-16-283 					[II] Server started on port 48000.
+2022-8-6 3-34-16-283 					[  ] Server is listening
+2022-8-6 3-34-16-285 					[  ] Found heandler damage.js
+2022-8-6 3-34-16-286 					[  ] Found heandler dead.js
+2022-8-6 3-34-16-287 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-34-16-287 					[  ] Found heandler fire.js
+2022-8-6 3-34-16-288 					[  ] Found heandler init.js
+2022-8-6 3-34-16-288 					[  ] Found heandler loaded.js
+2022-8-6 3-34-16-289 					[  ] Found heandler matchmaking.js
+2022-8-6 3-34-16-289 					[  ] Found heandler move.js
+2022-8-6 3-34-16-290 					[  ] Found heandler skillselected.js
+2022-8-6 3-34-22-116 					
+2022-8-6 3-34-22-118 					[II] Server started on port 48000.
+2022-8-6 3-34-22-118 					[  ] Server is listening
+2022-8-6 3-34-22-118 					[  ] Found heandler damage.js
+2022-8-6 3-34-22-119 					[  ] Found heandler dead.js
+2022-8-6 3-34-22-119 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-34-22-119 					[  ] Found heandler fire.js
+2022-8-6 3-34-22-120 					[  ] Found heandler init.js
+2022-8-6 3-34-22-120 					[  ] Found heandler loaded.js
+2022-8-6 3-34-22-120 					[  ] Found heandler matchmaking.js
+2022-8-6 3-34-22-121 					[  ] Found heandler move.js
+2022-8-6 3-34-22-121 					[  ] Found heandler skillselected.js
+2022-8-6 3-35-1-743 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 3-35-2-155 		[127.0.0.1:48000]	[  ] Received: {"type":"init","payload":""}
+2022-8-6 3-35-2-156 					[  ] Sending {"type":"init","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-6 3-35-12-542 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 3-35-12-543 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 3-35-15-38 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 3-35-15-309 		[127.0.0.1:48000]	[  ] Received: {"type":"init","payload":""}
+2022-8-6 3-35-15-309 					[  ] Sending {"type":"init","payload":"{\"id\":1}"} to 127.0.0.1:48000
+2022-8-6 3-35-22-209 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 3-35-22-210 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 3-35-22-210 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 3-35-22-210 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 3-35-22-244 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 3-35-22-329 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 3-35-22-330 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-35-22-330 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-35-22-330 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-35-22-330 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7}"} to 127.0.0.1:48000
+2022-8-6 3-35-22-331 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":1},{\"type\":0,\"skill\":2},{\"type\":4,\"skill\":4},{\"type\":0,\"skill\":0},{\"type\":4,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 3-35-22-331 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":1},{\"type\":0,\"skill\":2},{\"type\":4,\"skill\":4},{\"type\":0,\"skill\":0},{\"type\":4,\"skill\":1}]}"} to 127.0.0.1:48000
+2022-8-6 3-35-26-805 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":4}"}
+2022-8-6 3-35-27-549 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":4,\"skill\":4}"}
+2022-8-6 3-35-27-550 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":6,\"rotationSpeed\":8,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-27-550 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":6,\"rotationSpeed\":8,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-27-550 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":6,\"rotationSpeed\":8,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-27-550 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":6,\"rotationSpeed\":8,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-27-551 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-35-27-551 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-35-27-551 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-35-27-551 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-35-30-111 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-35-30-112 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-35-30-113 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-35-31-923 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-35-31-924 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":7,\"rotationSpeed\":9,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-31-924 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":7,\"rotationSpeed\":9,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-31-924 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":7,\"rotationSpeed\":9,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-31-924 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":7,\"rotationSpeed\":9,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-31-925 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":1,\"skillList\":[{\"type\":4,\"skill\":0},{\"type\":5,\"skill\":0},{\"type\":4,\"skill\":2},{\"type\":4,\"skill\":5},{\"type\":2,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 3-35-31-925 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":1,\"skillList\":[{\"type\":4,\"skill\":0},{\"type\":5,\"skill\":0},{\"type\":4,\"skill\":2},{\"type\":4,\"skill\":5},{\"type\":2,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 3-35-34-48 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":5,\"skill\":0}"}
+2022-8-6 3-35-34-49 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":7,\"rotationSpeed\":9,\"bomb\":false,\"penetrate\":true}"} to 127.0.0.1:48000
+2022-8-6 3-35-34-49 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":7,\"rotationSpeed\":9,\"bomb\":false,\"penetrate\":true}"} to 127.0.0.1:48000
+2022-8-6 3-35-34-49 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":8,\"rotationSpeed\":10,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-34-49 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":8,\"rotationSpeed\":10,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-34-49 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-35-34-50 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-35-34-50 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-35-34-50 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-35-36-265 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-35-36-265 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-35-36-265 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 3-35-38-185 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 3-35-38-186 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":7,\"rotationSpeed\":9,\"bomb\":false,\"penetrate\":true}"} to 127.0.0.1:48000
+2022-8-6 3-35-38-186 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":7,\"rotationSpeed\":9,\"bomb\":false,\"penetrate\":true}"} to 127.0.0.1:48000
+2022-8-6 3-35-38-186 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":9,\"rotationSpeed\":11,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-38-186 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":9,\"rotationSpeed\":11,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-38-186 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":2,\"skillList\":[{\"type\":3,\"skill\":0},{\"type\":0,\"skill\":0},{\"type\":4,\"skill\":3},{\"type\":0,\"skill\":1},{\"type\":4,\"skill\":5}]}"} to 127.0.0.1:48000
+2022-8-6 3-35-38-186 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":2,\"skillList\":[{\"type\":3,\"skill\":0},{\"type\":0,\"skill\":0},{\"type\":4,\"skill\":3},{\"type\":0,\"skill\":1},{\"type\":4,\"skill\":5}]}"} to 127.0.0.1:48000
+2022-8-6 3-35-40-14 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":3,\"skill\":0}"}
+2022-8-6 3-35-40-410 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"type\":0,\"skill\":0}"}
+2022-8-6 3-35-40-410 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":7,\"rotationSpeed\":9,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-40-410 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":7,\"rotationSpeed\":9,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-40-411 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":10,\"rotationSpeed\":12,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-40-411 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":10,\"rotationSpeed\":12,\"bomb\":false,\"penetrate\":false}"} to 127.0.0.1:48000
+2022-8-6 3-35-40-411 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-35-40-411 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-35-40-411 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-35-40-412 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 3-35-47-557 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":4,\"startPos\":{\"x\":0.22714298963546754,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9026941657066345,\"y\":0.430282860994339},\"bulletSpeed\":10.0,\"rotationSpeed\":12.0}"}
+2022-8-6 3-35-47-558 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":4,\"startPos\":{\"x\":0.22714298963546754,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9026941657066345,\"y\":0.430282860994339},\"bulletSpeed\":10.0,\"rotationSpeed\":12.0}"} to 127.0.0.1:48000
+2022-8-6 3-35-49-968 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":5,\"startPos\":{\"x\":0.22714298963546754,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9752112627029419,\"y\":0.2212759107351303},\"bulletSpeed\":10.0,\"rotationSpeed\":12.0}"}
+2022-8-6 3-35-49-968 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":5,\"startPos\":{\"x\":0.22714298963546754,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9752112627029419,\"y\":0.2212759107351303},\"bulletSpeed\":10.0,\"rotationSpeed\":12.0}"} to 127.0.0.1:48000
+2022-8-6 3-35-50-150 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 3-35-50-151 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":80,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 3-35-50-151 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":80,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 3-36-0-354 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":0.7548099160194397,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9983953237533569,\"y\":0.05662865564227104},\"bulletSpeed\":10.0,\"rotationSpeed\":12.0}"}
+2022-8-6 3-36-0-354 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":0.7548099160194397,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9983953237533569,\"y\":0.05662865564227104},\"bulletSpeed\":10.0,\"rotationSpeed\":12.0}"} to 127.0.0.1:48000
+2022-8-6 3-36-0-508 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 3-36-0-509 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":60,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 3-36-0-509 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":60,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 3-36-9-887 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":0,\"startPos\":{\"x\":-2.087392568588257,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9629363417625427,\"y\":0.2697286605834961},\"bulletSpeed\":10.0,\"rotationSpeed\":12.0}"}
+2022-8-6 3-36-9-888 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":0,\"startPos\":{\"x\":-2.087392568588257,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9629363417625427,\"y\":0.2697286605834961},\"bulletSpeed\":10.0,\"rotationSpeed\":12.0}"} to 127.0.0.1:48000
+2022-8-6 3-36-14-348 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":0.08996891975402832,\"y\":-2.0895373821258547},\"dir\":{\"x\":-0.9998723268508911,\"y\":0.015977365896105768},\"bulletSpeed\":10.0,\"rotationSpeed\":12.0}"}
+2022-8-6 3-36-14-349 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletIdx\":6,\"startPos\":{\"x\":0.08996891975402832,\"y\":-2.0895373821258547},\"dir\":{\"x\":-0.9998723268508911,\"y\":0.015977365896105768},\"bulletSpeed\":10.0,\"rotationSpeed\":12.0}"} to 127.0.0.1:48000
+2022-8-6 3-36-14-466 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 3-36-14-466 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":40,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 3-36-14-467 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":40,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 3-36-16-599 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 3-36-16-599 					[  ] Sending {"type":"left","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-6 3-36-16-600 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 3-36-17-728 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 3-37-25-48 					
+2022-8-6 3-37-25-49 					[II] Server started on port 48000.
+2022-8-6 3-37-25-49 					[  ] Server is listening
+2022-8-6 3-37-25-50 					[  ] Found heandler damage.js
+2022-8-6 3-37-25-51 					[  ] Found heandler dead.js
+2022-8-6 3-37-25-51 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-37-25-51 					[  ] Found heandler fire.js
+2022-8-6 3-37-25-52 					[  ] Found heandler init.js
+2022-8-6 3-37-25-52 					[  ] Found heandler loaded.js
+2022-8-6 3-37-25-53 					[  ] Found heandler matchmaking.js
+2022-8-6 3-37-25-54 					[  ] Found heandler move.js
+2022-8-6 3-37-25-54 					[  ] Found heandler skillselected.js
+2022-8-6 3-38-7-434 					
+2022-8-6 3-38-7-436 					[II] Server started on port 48000.
+2022-8-6 3-38-7-436 					[  ] Server is listening
+2022-8-6 3-38-7-436 					[  ] Found heandler damage.js
+2022-8-6 3-38-7-437 					[  ] Found heandler dead.js
+2022-8-6 3-38-7-437 					[  ] Found heandler exampleHandler.js
+2022-8-6 3-38-7-437 					[  ] Found heandler fire.js
+2022-8-6 3-38-7-438 					[  ] Found heandler init.js
+2022-8-6 3-38-7-438 					[  ] Found heandler loaded.js
+2022-8-6 3-38-7-439 					[  ] Found heandler matchmaking.js
+2022-8-6 3-38-7-439 					[  ] Found heandler move.js
+2022-8-6 3-38-7-440 					[  ] Found heandler skillselected.js

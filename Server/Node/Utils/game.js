@@ -126,6 +126,9 @@ class game
         ws.ratefire      = 0.25;
         ws.rotationspeed = 7;
         ws.pushpower     = 10;
+        ws.bomb          = false;
+        ws.penetrate     = false;
+        ws.hasShield     = false;
     }
 
     sendGamedata() {
@@ -155,7 +158,7 @@ class game
                 blockRateFire: ws.ratefire,
                 blockSpeed: ws.blockspeed,
                 rotationSpeed: ws.rotationspeed,
-                bomb: ws.bomb,
+                bomb: ws.hasShield,
                 penetrate: ws.penetrate,
             };
 
@@ -172,7 +175,7 @@ class game
 
         ws.skills.push({ type, index });
 
-        if (type == 4 || type == 5) {
+        if (type == 3 || type == 4 || type == 5) {
             ws.abliSkills.push(new skills(null, ws).skills[type][index]);
         }
 
@@ -211,6 +214,7 @@ class game
             ws.pushpower = inst.pushpower;
             ws.bomb = inst.bomb;
             ws.penetrate = inst.penetrate;
+            ws.hasShield = inst.hasShield;
         });
     }
 
@@ -237,7 +241,6 @@ class game
                     sk = new skills(sk, damagedws)
                         .skills[2][skill.index](damage);
                 });
-            
         }
             
         damage = sk.damage;
@@ -250,20 +253,43 @@ class game
                         .skills[1][skill.index](damage);
                 });
         }
+ 
+        if (damagedws.hasShield) { // 쉴드
+            damagedws.hasShield = false;
+            sk.hpReturn = 0;
+            damage = 0;
+
+            this.broadcast(hs.toJson(
+                "skill",
+                JSON.stringify({
+                    command: "shieldoff"
+                })
+            ));
+
+            ws.shieldTimeout = setTimeout(() => {
+                damagedws.hasShield = true;
+                this.broadcast(hs.toJson(
+                    "skill",
+                    JSON.stringify({
+                        command: "shieldon"
+                    })
+                ));
+            }, 7000);
+        }
         
         attackws.hp += sk.hpReturn;
         damagedws.hp -= damage;
 
         if (sk.knockout) { // 기절
             damagedws.knockedout = true;
-            setTimeout(() => {
+            damagedws.knockedoutTimeout = setTimeout(() => {
                 damagedws.knockedout = false;
             }, 500);
         }
         
         if (sk.neutralize) { // 무력화
             damagedws.neutralized = true;
-            setTimeout(() => {
+            damagedws.neutralizedTimeout = setTimeout(() => {
                 damagedws.neutralized = false;
             }, 1500);
         }
@@ -292,6 +318,10 @@ class game
         deadws.hp = deadws.maxhp; // FIXME: 임시
         deadws.knockedout = false;
         deadws.neutralized = false;
+
+        clearImmediate(deadws.shieldTimeout);
+        clearImmediate(deadws.knockedoutTimeout);
+        clearImmediate(deadws.neutralizedTimeout);
 
         if (this.deadPlayers >= this.players.length - 1) {
             let ws = this.players.find(x => x != deadws);
@@ -352,6 +382,9 @@ class game
             ws.knockedout = false;
             ws.neutralized = false;
             ws.invincible = false;
+            clearImmediate(ws.shieldTimeout);
+            clearImmediate(ws.knockedoutTimeout);
+            clearImmediate(ws.neutralizedTimeout);
         });
     }
 

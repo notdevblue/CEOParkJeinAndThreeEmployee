@@ -19,6 +19,7 @@ class skills {
             this.knockout = false;
             this.penetrate = false;
             this.bomb = false;
+            this.hasShield = false;
 
         } else {
             this.damage = instance.damage;
@@ -34,8 +35,9 @@ class skills {
             this.specialCommands = instance.specialCommands;
             this.neutralize = instance.neutralize;
             this.knockout = instance.knockout;
-            this.penetrate = isntance.penetrate;
-            this.bomb = isntance.bomb;
+            this.penetrate = instance.penetrate;
+            this.bomb = instance.bomb;
+            this.hasShield = instance.hasShield;
         }
 
         this.hp = ws == null ? 100 : ws.hp;
@@ -95,6 +97,7 @@ class skills {
 
         this.defPas = [ // 페시브 방어 스킬
             (damage) => { // 쉴드
+                this.hasShield = true;
                 return this;
             },
         ]
