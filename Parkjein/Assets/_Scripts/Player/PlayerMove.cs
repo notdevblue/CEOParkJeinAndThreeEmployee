@@ -60,13 +60,18 @@ public class PlayerMove : MonoBehaviour
     {
         isGround = rigid.velocity.y == 0;
 
-        if (isGround) jumpCount = maxJumpCount;
+        if (isGround)
+        {
+            jumpCount = maxJumpCount;
+            anim.Anim.ResetTrigger(anim.ANIM_JUMP);
+        }
 
         if (Input.GetKeyDown(JUMP))
         {
             if ((!isGround && jumpCount <= 0)) return;
 
             jumpCount--;
+            anim.Anim.SetTrigger(anim.ANIM_JUMP);
             rigid.velocity = new Vector2(rigid.velocity.x, jumpSpeed);
         }
     }

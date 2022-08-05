@@ -10,6 +10,7 @@ public class PlayerAnimation : MonoBehaviour
     public readonly string ANIM_ATTACK = "attack";
     public readonly string ANIM_DIE = "die";
     public readonly string ANIM_HURT = "hurt";
+    public readonly string ANIM_JUMP = "jump";
 
     private const string ANIM_THROW = "Throw";
 
