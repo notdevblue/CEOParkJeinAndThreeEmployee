@@ -24,6 +24,8 @@ public class Remote : MonoBehaviour
         {
             if(sr != null)
                 sr.flipX = dir.x < 0;
+
+            if (dir.y > 0) anim.Anim.SetTrigger(anim.ANIM_JUMP);
         }
 
         _target = pos;

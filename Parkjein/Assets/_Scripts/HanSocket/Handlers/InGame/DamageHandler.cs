@@ -28,10 +28,9 @@ namespace HanSocket.Handlers.InGame
                 if (vos.TryDequeue(out var vo))
                 {
                     GameObject obj = UserData.Instance.users[vo.id];
-                    PlayerAnimation anim = obj.GetComponent<PlayerAnimation>();
 
                     obj.GetComponent<PlayerSetUI>().MyUI.SetHp((float)vo.hp / vo.maxhp);
-                    anim.Anim.SetTrigger(anim.ANIM_HURT);
+                    obj.GetComponent<PlayerAnimation>().SetHurt();
 
                     Debug.LogWarning($"Damaged: {vo.id}, HP: {vo.hp} maxHP {vo.maxhp}");
                 }
