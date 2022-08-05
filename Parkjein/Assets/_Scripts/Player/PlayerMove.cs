@@ -63,7 +63,6 @@ public class PlayerMove : MonoBehaviour
         if (isGround)
         {
             jumpCount = maxJumpCount;
-            anim.Anim.ResetTrigger(anim.ANIM_JUMP);
         }
 
         if (Input.GetKeyDown(JUMP))
