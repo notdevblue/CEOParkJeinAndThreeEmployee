@@ -12,6 +12,8 @@ namespace HanSocket.Sender.InGame
         private float _frame;
         private WaitForSecondsRealtime _wait;
 
+        private bool _stop = false;
+
         private void Start()
         {
             _frame = 1.0f / frame;
@@ -20,10 +22,16 @@ namespace HanSocket.Sender.InGame
             StartCoroutine(Send());
         }
 
+        public void Stop()
+        {
+            _stop = true;
+            StopAllCoroutines();
+        }
+
 
         IEnumerator Send()
         {
-            while (true)
+            while (!_stop)
             {
                 WebSocketClient.Instance.Send(
                     "move",

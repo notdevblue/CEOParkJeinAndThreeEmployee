@@ -29,7 +29,10 @@ namespace HanSocket.Handlers.InGame
         protected override void OnFlag()
         {
             _cvsSkillSelect
-                .Set((vo.skill == UserData.Instance.myId) || (vo.skill == -1));
+                .Set(
+                    (vo.skill == UserData.Instance.myId) || (vo.skill == -1),
+                    vo.selectCount
+                );
         }
     }
 }

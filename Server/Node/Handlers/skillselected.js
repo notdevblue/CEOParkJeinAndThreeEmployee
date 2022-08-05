@@ -6,6 +6,6 @@ module.exports = {
             return;
         }
 
-        ws.game.skillselected(-1);
+        ws.game.skillselected(ws, -1);
     }
 };

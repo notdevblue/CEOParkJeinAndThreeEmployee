@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using HanSocket.Data;
+using HanSocket.Sender.InGame;
 using HanSocket.VO.InGame;
 using UI.InGame;
 using UnityEngine;
@@ -12,7 +13,7 @@ namespace HanSocket.Handlers.InGame
         protected override string Type => "gameend";
         private GameEndCanvas _gameEndCvs;
         private GameEndVO vo;
-
+        
         private void Start()
         {
             _gameEndCvs = FindObjectOfType<GameEndCanvas>();
@@ -26,6 +27,10 @@ namespace HanSocket.Handlers.InGame
 
         protected override void OnFlag()
         {
+            var sender = FindObjectsOfType<PositionSender>();
+            for (int i = 0; i < sender.Length; ++i)
+                sender[i].Stop();
+
             string displayText =
                 (vo.winnerId == UserData.Instance.myId ? "Victory\n" : "Lost\n")
                 + vo.reason;

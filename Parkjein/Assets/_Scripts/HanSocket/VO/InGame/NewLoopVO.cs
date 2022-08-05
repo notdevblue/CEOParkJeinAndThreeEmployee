@@ -8,5 +8,6 @@ namespace HanSocket.VO.InGame
     {
         // 스킬 선택할 플레이어 아이디
         public int skill;
+        public int selectCount;
     }
 }

@@ -21,13 +21,15 @@ class game
         this.initialBlockRateFire = 0.5;
         this.initialBlockSpeed    = 1;
         this.initialRotationSpeed = 1;
-
+        
         this.initialPushPower     = 10; // 피격 시
         
         this.skillSelectCount     = 0; // 스킬 선택 카운트
+        this.lastLostPlayerId     = -1; // 마지막으로 (세트)진 플레이어 아이디
         this.gameWonStackToWin    = 3;
         this.setWonStackToWin     = 2;
-        
+        this.invincibleTimeMs     = 5000;
+
         // (3판 2선승제) => 5판 3선승
         // 한 세트 끝 마다 능력
     }
@@ -39,10 +41,7 @@ class game
             if (excludeIds.findIndex(x => x == ws.id) != -1)
                 return;
             
-            ws.send(payload);
-            ws.onDamage = [];
-
-            this.init(ws);
+            hs.send(ws, payload);
         });
     }
 
@@ -78,10 +77,12 @@ class game
             "newloop",
             JSON.stringify({
                 skill: targetId,
+                selectCount: this.skillSelectCount,
             }),
         ));
 
-        this.justDiedPlayer = null;
+
+        this.justDiedPlayer   = null;
     }
 
     loaded() {
@@ -92,9 +93,15 @@ class game
 
             let ids = [];
             this.players.forEach(ws => {
+                this.init(ws);
+
+                ws.onDamage    = [];
+                ws.setWon      = 0;
+                ws.gameWon     = 0;
+                ws.invincible  = false;
+                ws.selectCount = 1;
+
                 ids.push(ws.id);
-                ws.setWon  = 0;
-                ws.gameWon = 0;
             });
 
 
@@ -121,7 +128,7 @@ class game
 
             this.players.forEach(ws => {
                 inGameData.myId = ws.id;
-                ws.send(hs.toJson(
+                hs.send(ws, hs.toJson(
                     "gamedata",
                     JSON.stringify(inGameData)
                 ));
@@ -134,11 +141,13 @@ class game
 
     }
 
-    skillselected(index) {
+    skillselected(ws, index) {
         // TODO: 스킬 적용
 
+        if (--ws.selectCount < 0) return;
+
         if (--this.skillSelectCount <= 0) {
-            let pos = new Vector2(-2.0, 0.0);
+            let pos = new Vector2(-4.0, 0.0);
 
             this.players.forEach(ws => {
                 this.broadcast(hs.toJson(
@@ -149,7 +158,8 @@ class game
                     }),
                 ));
 
-                pos.x = 2;
+                pos.x = 4;
+                ws.selectCount = 0;
             });
         }
         
@@ -167,15 +177,20 @@ class game
                 ws.setWon     = 0;
                 deadws.setWon = 0;
                 ++ws.gameWon;
-
+                
                 if (ws.gameWon >= this.gameWonStackToWin) { // 게임 승리
                     this.gameEnd(ws.id);
                     return;
                 }
                 
                 // 새 세트 실행
-                this.skillSelectCount = 1;
+                this.skillSelectCount =
+                    (this.lastLostPlayerId == deadws.id) ? 2 : 1;
+                deadws.selectCount = this.skillSelectCount;
+
+                this.lastLostPlayerId = deadws.id;
                 this.newLoop();
+                return;
 
             } else { // 리스폰 처리
                 this.broadcast(hs.toJson(
@@ -186,7 +201,10 @@ class game
                     }),
                 ));
 
-                // TODO: n초간 무적 처리
+                deadws.invincible = true;
+                setTimeout(() => {
+                    deadws.invincible = false;
+                }, this.invincibleTimeMs);
             }
         }
     }
