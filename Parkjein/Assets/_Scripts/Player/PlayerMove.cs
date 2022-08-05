@@ -70,6 +70,7 @@ public class PlayerMove : MonoBehaviour
         {
             jumpCount = maxJumpCount;
         }
+        else if (jumpCount == 2) jumpCount = 1;
 
         if (Input.GetKeyDown(JUMP))
         {
