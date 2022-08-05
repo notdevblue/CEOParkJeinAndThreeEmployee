@@ -53,6 +53,7 @@ namespace HanSocket.Data
                     obj.GetComponent<PlayerMove>().enabled = false;
                     obj.GetComponent<PlayerShoot>().enabled = false;
                     obj.GetComponent<PositionSender>().enabled = false;
+                    obj.GetComponent<PlayerDamage>().enabled = false;
                     obj.GetComponent<Rigidbody2D>().gravityScale = 0;
                 }
                 else
