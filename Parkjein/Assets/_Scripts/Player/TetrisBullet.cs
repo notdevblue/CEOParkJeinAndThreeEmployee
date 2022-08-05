@@ -1,4 +1,5 @@
 using HanSocket;
+using HanSocket.Data;
 using HanSocket.VO.InGame;
 using System.Collections;
 using System.Collections.Generic;
@@ -45,6 +46,8 @@ public class TetrisBullet : MonoBehaviour
 
     public void CollisionEnter(GameObject obj)
     {
+        if (fireVO.shooterId.Equals(UserData.Instance.myId)) return;
+
         if(obj.CompareTag("PLAYER") || obj.CompareTag("GROUND"))
         {
             WebSocketClient.Instance.Send("collision", null);

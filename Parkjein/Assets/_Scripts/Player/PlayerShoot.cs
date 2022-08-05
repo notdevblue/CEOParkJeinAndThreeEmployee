@@ -85,12 +85,13 @@ public class PlayerShoot : MonoBehaviour
         }
 
         TetrisBullet bullet = BulletPool.Instance.GetBullet();
+        FireVO vo = new FireVO(UserData.Instance.myId,bullet.bulletIdx, startPos, dir, bulletSpeed);
 
         //WebSocketClient.Instance.Send("fire",
-        //    new FireVO( bullet.bulletIdx, transform.position, dir, bulletSpeed).ToJson());
+        //    vo.ToJson());
 
         anim.Anim.SetTrigger(anim.ANIM_ATTACK);
         isAttackAble = false;
-        bullet.Shoot(startPos, dir, bulletSpeed);
+        bullet.Shoot(vo);
     }
 }
