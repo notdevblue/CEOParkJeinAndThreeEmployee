@@ -30,7 +30,7 @@ namespace HanSocket.Handlers.InGame
             {
                 if (vos.TryDequeue(out var vo))
                 {
-                    UserData.Instance.users[vo.id].GetComponent<PlayerData>().MyUI?.SetIcon(SkillImageSetter.Instance.Get(vo.type, vo.skill).sprite);
+                    UserData.Instance.users[vo.id].GetComponent<PlayerData>().MyUI?.SetIcon(SkillImageSetter.Instance.Get(vo.type, vo.skill).iconSprite);
                     Debug.Log($"{vo.id}: {vo.type} 의 {vo.skill} 선택");
                 }
             }

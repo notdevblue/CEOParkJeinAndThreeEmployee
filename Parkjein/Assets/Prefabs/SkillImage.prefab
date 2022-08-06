@@ -48,60 +48,75 @@ MonoBehaviour:
   - type: 0
     skill: 0
     sprite: {fileID: 439637130, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: 696da776a6f596a459c5f6543c3070f8, type: 3}
     text: Critical
   - type: 0
     skill: 1
     sprite: {fileID: -1914124732, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: 21788c7c2258d0346b460038f7c2820d, type: 3}
     text: Knockout
   - type: 0
     skill: 2
     sprite: {fileID: 1995496425, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: 0b7e7dcf53b8d824f89fa6ffb0baad40, type: 3}
     text: Neutralize
   - type: 1
     skill: 0
     sprite: {fileID: -1596755683, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: 2dbb115215062db45af3db56afe84d7b, type: 3}
     text: Vampire
   - type: 2
     skill: 0
     sprite: {fileID: -1231767323, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: 5ab49a0a59d5cfd4bbd400c3002d87cd, type: 3}
     text: Skin Of Steel
   - type: 2
     skill: 1
     sprite: {fileID: -348045936, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: a3d8b20d69b96ab4ba220f2bcd6f813e, type: 3}
     text: Long Life
   - type: 3
     skill: 0
     sprite: {fileID: 141878745, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: 12c0590d12f5aad47a356815c78af6fd, type: 3}
     text: Shield
   - type: 4
     skill: 0
     sprite: {fileID: -489798912, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: d995d63c083f1dd4d8e252329b0cab4c, type: 3}
     text: Big  Block
   - type: 4
     skill: 1
     sprite: {fileID: -1101624770, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: bd8cd1f45c7a32c45885cca37fc7dfc4, type: 3}
     text: Small Block
   - type: 4
     skill: 2
     sprite: {fileID: 2057677218, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: 30f76d6ffc91c8e499cb068304df9c10, type: 3}
     text: Health
   - type: 4
     skill: 3
     sprite: {fileID: -1150963690, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: cbdc85a626e89a34fb949e4bd3eef579, type: 3}
     text: Sonic
   - type: 4
     skill: 4
     sprite: {fileID: -442748617, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: aec47aee5ec755641b824e46ddbee7b9, type: 3}
     text: Rotation
   - type: 4
     skill: 5
     sprite: {fileID: -1582201585, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: c43650f0e7b9f4249ba841e96f9c4b7c, type: 3}
     text: Knockback
   - type: 5
     skill: 0
     sprite: {fileID: 977970360, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: 8a5a5e83f0d4ef9468dba30eb47331fa, type: 3}
     text: Penetrate
   - type: 5
     skill: 1
     sprite: {fileID: 1041590934, guid: be43b0c7528a692e19e42e08f858a51b, type: 3}
+    iconSprite: {fileID: 21300000, guid: 10a218c6e59947849a4974f802513374, type: 3}
     text: Bomb
