@@ -39,7 +39,7 @@ namespace HanSocket.Handlers.InGame
                     bool isCritical = false;
 
                     data.MyUI.SetHp((float)vo.hp / vo.maxhp);
-                    atker.GetComponent<PlayerData>().MyUI.SetHp((float)vo.atkhp / vo.maxhp);
+                    atker.GetComponent<PlayerData>().MyUI.SetHp((float)vo.atkhp / vo.maxhp, vo.atkhp == 0);
 
                     obj.GetComponent<PlayerAnimation>().SetHurt();
                     EffectManager.Instance.PlayEffect("hit", vo.point, Vector2.zero,null);

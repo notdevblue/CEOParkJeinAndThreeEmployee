@@ -55,8 +55,14 @@ public class PlayerUI : MonoBehaviour
         SetHp(1f);
     }
 
-    public void SetHp(float hpAmount)
+    public void SetHp(float hpAmount,bool isDead = false)
     {
+        if(isDead)
+        {
+            hpAmount = 1f;
+            return;
+        }
+
         hpSlider.value = hpAmount;
         Debug.LogError($"REQUEST: {hpAmount}, CURVALUE {hpSlider.value}");
     }
