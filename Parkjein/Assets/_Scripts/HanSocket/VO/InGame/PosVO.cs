@@ -7,5 +7,6 @@ namespace HanSocket.VO.InGame
     public class PosVO : ValueObject
     {
         public Vector2 pos;
+        public int map;
     }
 }

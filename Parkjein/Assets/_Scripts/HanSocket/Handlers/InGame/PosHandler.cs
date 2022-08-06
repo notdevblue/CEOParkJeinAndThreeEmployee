@@ -11,6 +11,8 @@ namespace HanSocket.Handlers.InGame
     {
         protected override string Type => "pos";
 
+        public GameObject[] maps = new GameObject[0];
+
         private PosVO _vo;
 
         public PlayerUI left;
@@ -30,6 +32,7 @@ namespace HanSocket.Handlers.InGame
         IEnumerator InitUI()
         {
             PosVO vo = _vo;
+            Instantiate(maps[vo.map]);
             yield return new WaitUntil(() => UserData.Instance.users.Count >= 2);
 
             PlayerUI me = vo.pos.x > 0 ? right : left;

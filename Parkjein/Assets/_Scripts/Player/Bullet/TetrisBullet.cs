@@ -19,6 +19,8 @@ public class TetrisBullet : MonoBehaviour
     private FireVO fireVO;
     public FireVO @FireVO => fireVO;
 
+    public bool damaged = false;
+
 
     public void SetActive(bool active)
     {
@@ -30,6 +32,7 @@ public class TetrisBullet : MonoBehaviour
         if (rigid == null)
             rigid = gameObject.AddComponent<Rigidbody2D>();
 
+        damaged = false;
         transform.position = fireVO.startPos;
         this.fireVO = fireVO;
         this.shooterId = this.fireVO.shooterId;
@@ -52,10 +55,11 @@ public class TetrisBullet : MonoBehaviour
 
         bool stopBullet = false;
 
-        if (user != null && fireVO.shooterId != user.id)
+        if (!damaged && user != null && fireVO.shooterId != user.id)
         {
             if (user.id == WebSocketClient.Instance.id)
             {
+                damaged = true;
                 WebSocketClient.Instance.Send("damage",
                     new DamageVO(col.contacts[0].point).ToJson());
             }
@@ -66,19 +70,17 @@ public class TetrisBullet : MonoBehaviour
          || col.gameObject.CompareTag("BULLET"))
         {
             stopBullet = true;
-        }
-
-        if (stopBullet)
-        {
             if (shooterId == WebSocketClient.Instance.id)
             {
                 WebSocketClient.Instance.Send("bulletstop",
                     new BulletStopVO(bulletId, shooterId, transform.position, transform.rotation).ToJson());
             }
+        }
 
+        if (stopBullet)
+        {
             this.gameObject.tag = "GROUND";
             rigid.velocity = Vector2.zero;
-            Destroy(rigid);
         }
     }
 }
