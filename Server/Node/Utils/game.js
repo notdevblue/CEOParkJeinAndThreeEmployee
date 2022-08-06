@@ -111,6 +111,7 @@ class game
         
         this.resetPlayerValue(ws);
 
+        
         ws.pos = new Vector2(this.spawnLocation.x, this.spawnLocation.y);
         this.spawnLocation.x = 4;
 

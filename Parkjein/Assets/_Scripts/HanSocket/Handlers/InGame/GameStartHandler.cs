@@ -34,14 +34,12 @@ namespace HanSocket.Handlers.InGame
             {
                 if (vos.TryDequeue(out var vo))
                 {
-                    Debug.Log($"{(vo.id == WebSocketClient.Instance.id ? "나" : "상대")} 가 {(vo.pos.x > 0 ? "오른쪽" : "왼쪽")} 에 스폰함");
-
                     GameObject user   = UserData.Instance.users[vo.id];
                     Rigidbody2D rigid = user.GetComponent<Rigidbody2D>();
 
                     if(rigid != null)
                         rigid.velocity = Vector2.zero;
-                        
+
                     user.GetComponent<Remote>()
                         ?.SetTarget(vo.pos);
 

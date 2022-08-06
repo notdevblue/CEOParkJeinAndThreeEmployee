@@ -9,7 +9,7 @@ namespace HanSocket.Sender.InGame
     {
         public void Active(GameObject other)
         {
-            if (!other.GetComponent<Remote>().enabled)
+            if (other.GetComponent<Remote>() == null)
                 WebSocketClient.Instance.Send("dead", "");
         }
 

@@ -71,8 +71,8 @@ namespace HanSocket.Data
                     obj.name = $"RemotePlayer {id}";
 
                     isLeftUI = myId > id ? false : true;
-                    obj.GetComponent<PlayerMove>().enabled = false;
-                    obj.GetComponent<PlayerShoot>().enabled = false;
+                    MonoBehaviour.Destroy(obj.GetComponent<PlayerMove>());
+                    MonoBehaviour.Destroy(obj.GetComponent<PlayerShoot>());
                     MonoBehaviour.Destroy(obj.GetComponent<PositionSender>());
                     MonoBehaviour.Destroy(obj.GetComponent<Rigidbody2D>());
                     MonoBehaviour.Destroy(obj.transform.Find("ME").gameObject);
@@ -82,7 +82,7 @@ namespace HanSocket.Data
                     obj.name = $"Player {id}";
 
                     obj.GetComponent<Rigidbody2D>().gravityScale = 1;
-                    obj.GetComponent<Remote>().enabled = false;
+                    MonoBehaviour.Destroy(obj.GetComponent<Remote>());
                 }
             }
 

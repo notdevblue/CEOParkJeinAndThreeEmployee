@@ -11,25 +11,35 @@ namespace HanSocket.Handlers.InGame
     {
         protected override string Type => "pos";
 
-        private PosVO vo;
+        private PosVO _vo;
+
+        public PlayerUI left;
+        public PlayerUI right;
+
 
         protected override void OnArrived(string payload)
         {
-            vo = JsonUtility.FromJson<PosVO>(payload);
+            _vo = JsonUtility.FromJson<PosVO>(payload);
         }
 
         protected override void OnFlag()
         {
-            List<PlayerUI> uis = MonoBehaviour.FindObjectsOfType<PlayerUI>().ToList();
-            Debug.Log((vo.pos.x > 0 ? "오른쪽 스폰" : "왼쪽 스폰"));
-            string myName = (vo.pos.x > 0 ? "Right" : "Left");
-            string otherName = (vo.pos.x > 0 ? "Left" : "Right");
+            StartCoroutine(InitUI());
+        }
 
+        IEnumerator InitUI()
+        {
+            PosVO vo = _vo;
+            yield return new WaitUntil(() => UserData.Instance.users.Count >= 2);
+
+            PlayerUI me = vo.pos.x > 0 ? right : left;
+            PlayerUI you = vo.pos.x > 0 ? left : right;
 
             foreach (int key in UserData.Instance.users.Keys)
             {
-                UserData.Instance.users[key].GetComponent<PlayerData>().MyUI = 
-                    uis.Find(x => x.gameObject.name == (key.Equals(WebSocketClient.Instance.id) ? myName : otherName));
+                UserData.Instance.users[key]
+                    .GetComponent<PlayerData>().MyUI =
+                        (key == WebSocketClient.Instance.id ? me : you);
             }
         }
     }
