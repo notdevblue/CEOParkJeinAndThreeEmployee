@@ -1,0 +1,53 @@
+2022-8-7 0-10-5-261 					
+2022-8-7 0-10-5-263 					[II] Server started on port 48000.
+2022-8-7 0-10-5-263 					[  ] Server is listening
+2022-8-7 0-10-5-263 					[  ] Found heandler bulletstop.js
+2022-8-7 0-10-5-264 					[  ] Found heandler damage.js
+2022-8-7 0-10-5-264 					[  ] Found heandler dead.js
+2022-8-7 0-10-5-264 					[  ] Found heandler exampleHandler.js
+2022-8-7 0-10-5-265 					[  ] Found heandler fire.js
+2022-8-7 0-10-5-265 					[  ] Found heandler init.js
+2022-8-7 0-10-5-266 					[  ] Found heandler loaded.js
+2022-8-7 0-10-5-267 					[  ] Found heandler matchmaking.js
+2022-8-7 0-10-5-268 					[  ] Found heandler move.js
+2022-8-7 0-10-5-268 					[  ] Found heandler skillselected.js
+2022-8-7 0-18-54-183 					
+2022-8-7 0-18-54-184 					[II] Server started on port 48000.
+2022-8-7 0-18-54-184 					[  ] Server is listening
+2022-8-7 0-18-54-185 					[  ] Found heandler bulletstop.js
+2022-8-7 0-18-54-185 					[  ] Found heandler damage.js
+2022-8-7 0-18-54-186 					[  ] Found heandler dead.js
+2022-8-7 0-18-54-186 					[  ] Found heandler exampleHandler.js
+2022-8-7 0-18-54-186 					[  ] Found heandler fire.js
+2022-8-7 0-18-54-187 					[  ] Found heandler init.js
+2022-8-7 0-18-54-187 					[  ] Found heandler loaded.js
+2022-8-7 0-18-54-188 					[  ] Found heandler matchmaking.js
+2022-8-7 0-18-54-188 					[  ] Found heandler move.js
+2022-8-7 0-18-54-188 					[  ] Found heandler skillselected.js
+2022-8-7 0-22-56-889 		[::ffff:127.0.0.1]	[II] New client joined. ID:0
+2022-8-7 0-22-57-328 		[::ffff:127.0.0.1]	[  ] Received: {"type":"init","payload":""}
+2022-8-7 0-22-57-330 					[  ] Sending {"type":"init","payload":"{\"id\":0}"} to ::ffff:127.0.0.1
+2022-8-7 0-23-9-867 		[::ffff:127.0.0.1]	[II] New client joined. ID:1
+2022-8-7 0-23-9-983 		[::ffff:127.0.0.1]	[  ] Received: {"type":"init","payload":""}
+2022-8-7 0-23-9-984 					[  ] Sending {"type":"init","payload":"{\"id\":1}"} to ::ffff:127.0.0.1
+2022-8-7 0-23-11-944 		[::ffff:127.0.0.1]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-7 0-23-11-945 					[  ] Sending {"type":"match","payload":""} to ::ffff:127.0.0.1
+2022-8-7 0-23-14-478 		[::ffff:127.0.0.1]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-7 0-23-14-478 					[  ] Sending {"type":"match","payload":""} to ::ffff:127.0.0.1
+2022-8-7 0-23-14-479 					[  ] Sending {"type":"ingame","payload":""} to ::ffff:127.0.0.1
+2022-8-7 0-23-14-479 					[  ] Sending {"type":"ingame","payload":""} to ::ffff:127.0.0.1
+2022-8-7 0-23-14-553 		[::ffff:127.0.0.1]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-7 0-23-14-553 					[  ] Sending {"type":"pos","payload":"{\"pos\":{\"x\":-7,\"y\":-2.5},\"map\":0}"} to ::ffff:127.0.0.1
+2022-8-7 0-23-26-739 					
+2022-8-7 0-23-26-740 					[II] Server started on port 48000.
+2022-8-7 0-23-26-740 					[  ] Server is listening
+2022-8-7 0-23-26-740 					[  ] Found heandler bulletstop.js
+2022-8-7 0-23-26-741 					[  ] Found heandler damage.js
+2022-8-7 0-23-26-741 					[  ] Found heandler dead.js
+2022-8-7 0-23-26-742 					[  ] Found heandler exampleHandler.js
+2022-8-7 0-23-26-742 					[  ] Found heandler fire.js
+2022-8-7 0-23-26-742 					[  ] Found heandler init.js
+2022-8-7 0-23-26-743 					[  ] Found heandler loaded.js
+2022-8-7 0-23-26-743 					[  ] Found heandler matchmaking.js
+2022-8-7 0-23-26-743 					[  ] Found heandler move.js
+2022-8-7 0-23-26-744 					[  ] Found heandler skillselected.js

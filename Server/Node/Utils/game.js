@@ -35,6 +35,14 @@ class game
                 new Vector2(-5, -1.5),
                 new Vector2(5, -1.5),
             ],
+            [
+                new Vector2(-8, -2.5),
+                new Vector2(8, -2.5),
+            ],
+            [
+                new Vector2(-9, -1.5),
+                new Vector2(9, -1.5),
+            ],
         ];
 
         this.map = Math.round(Math.random() * (this.mapsSpawnLocation.length - 1));
@@ -113,7 +121,7 @@ class game
             }
             
 
-            hs.send(ws, hs.toJson(
+            hs.send(x, hs.toJson(
                 "newloop",
                 JSON.stringify({
                     skill: targetId,
