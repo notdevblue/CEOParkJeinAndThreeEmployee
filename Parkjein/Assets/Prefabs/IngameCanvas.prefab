@@ -567,8 +567,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '0 : 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 42d725c7e916ace92bed2bf271e86248, type: 2}
+  m_sharedMaterial: {fileID: -4978077079340630716, guid: 42d725c7e916ace92bed2bf271e86248, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -981,7 +981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: 1.8313}
+  m_AnchoredPosition: {x: 40, y: 1.8312988}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &989452974
@@ -1063,7 +1063,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -196.3828, y: 28.5816}
+  m_AnchoredPosition: {x: -196.3828, y: 28.581604}
   m_SizeDelta: {x: 285.5478, y: 71.1771}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &1011194385
@@ -1169,7 +1169,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 196.3828, y: 28.5816}
+  m_AnchoredPosition: {x: 196.3828, y: 28.581604}
   m_SizeDelta: {x: 285.5478, y: 71.1771}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &1017341668
@@ -1269,7 +1269,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: 1.8313}
+  m_AnchoredPosition: {x: -40, y: 1.8312988}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &1068989323
@@ -2461,16 +2461,16 @@ Canvas:
   m_GameObject: {fileID: 6031297913229798276}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 5
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1407059415
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &4588384597902441712

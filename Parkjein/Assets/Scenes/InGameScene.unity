@@ -676,25 +676,9 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 299225687}
-    - target: {fileID: 2581171690034177996, guid: 15300031e6cd21a4b969bb033f39ce57, type: 3}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2581171690034177996, guid: 15300031e6cd21a4b969bb033f39ce57, type: 3}
-      propertyPath: m_PlaneDistance
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2581171690034177996, guid: 15300031e6cd21a4b969bb033f39ce57, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1407059415
-      objectReference: {fileID: 0}
     - target: {fileID: 6031297913229798276, guid: 15300031e6cd21a4b969bb033f39ce57, type: 3}
       propertyPath: m_Name
       value: IngameCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 6031297913229798276, guid: 15300031e6cd21a4b969bb033f39ce57, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15300031e6cd21a4b969bb033f39ce57, type: 3}
@@ -1554,42 +1538,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1043335953480029161, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
-      propertyPath: m_fontSize
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043335953480029161, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 54cb9cfa486afa2118b13119f2693614, type: 2}
-    - target: {fileID: 1043335953480029161, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043335953480029161, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -4978077079340630716, guid: 54cb9cfa486afa2118b13119f2693614, type: 2}
-    - target: {fileID: 1043335953480029161, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 512
-      objectReference: {fileID: 0}
     - target: {fileID: 1043335953536790576, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 299225687}
-    - target: {fileID: 1043335953536790576, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043335953536790576, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
-      propertyPath: m_PlaneDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043335953536790576, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1407059415
-      objectReference: {fileID: 0}
     - target: {fileID: 1043335953536790577, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1783,22 +1735,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 299225687}
-    - target: {fileID: 7441506300880272188, guid: 6bf3484272dd6e52abcdb02c1dc9508a, type: 3}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441506300880272188, guid: 6bf3484272dd6e52abcdb02c1dc9508a, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441506300880272188, guid: 6bf3484272dd6e52abcdb02c1dc9508a, type: 3}
-      propertyPath: m_PlaneDistance
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441506300880272188, guid: 6bf3484272dd6e52abcdb02c1dc9508a, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1407059415
-      objectReference: {fileID: 0}
     - target: {fileID: 7441506300880272189, guid: 6bf3484272dd6e52abcdb02c1dc9508a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
