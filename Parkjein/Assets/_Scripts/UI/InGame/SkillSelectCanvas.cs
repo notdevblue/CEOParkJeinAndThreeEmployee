@@ -36,8 +36,6 @@ namespace UI.InGame
                     skills[i].type,
                     skills[i].skill,
                     () => {
-                    if (--_selectCount <= 0)
-                            gameObject.SetActive(false);
                     }
                 );
             }
