@@ -51,7 +51,7 @@ public class TetrisBullet : MonoBehaviour
         rigid.AddForce(fireVO.dir * fireVO.bulletSpeed, ForceMode2D.Impulse);
         rigid.AddTorque(fireVO.rotationSpeed);
 
-        StartCoroutine(Sync());
+        // StartCoroutine(Sync());
     }
 
     public void SetTarget(Vector2 pos, Quaternion rot)
@@ -98,6 +98,12 @@ public class TetrisBullet : MonoBehaviour
          || col.gameObject.CompareTag("BULLET"))
         {
             stopBullet = true;
+            damaged = true;
+            if (shooterId == WebSocketClient.Instance.id)
+            {
+                WebSocketClient.Instance.Send("bulletstop",
+                    new BulletStopVO(bulletId, shooterId, transform.position, transform.rotation).ToJson());
+            }
         }
 
         if (stopBullet)
