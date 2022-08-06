@@ -166,11 +166,11 @@ class game
         }
     }
 
-    resetPlayerValue(ws) {
+    resetPlayerValue(ws, donoresethp = false) {
         const sk         = new skills(null);
         ws.damage        = sk.damage;
-        ws.hp            = sk.hp;
-        ws.maxhp         = sk.hp;
+        ws.hp            = donoresethp ? ws.hp : sk.hp;
+        ws.maxhp         = donoresethp ? ws.maxhp : sk.hp;
         ws.blocksize     = sk.blocksize;
         ws.blockspeed    = sk.blockspeed;
         ws.speed         = sk.speed;
@@ -267,8 +267,8 @@ class game
         }
     }
 
-    applyStat(ws) {
-        this.resetPlayerValue(ws);
+    applyStat(ws, donoresethp = false) {
+        this.resetPlayerValue(ws, donoresethp);
         ws.abliSkills?.forEach(x => {
             let inst = new skills(null, ws).skills[x.type][x.index]();
             ws.damage = inst.damage;
@@ -290,46 +290,49 @@ class game
         if (this.processingDead) return;
 
         let attackws = this.players.find(x => x != damagedws);
-        let sk = new skills();
+
+        let atksk = new skills(null, attackws);
+        let defsk = new skills(null, damagedws);
         let damage;
 
-        this.applyStat(damagedws);
-        console.log(this.applyStat(attackws));
+        console.log(`\n1\natksk.damage: ${atksk.damage}, attackws.damage:${attackws.damage}`);
+        console.log(`defsk.damage: ${defsk.damage}, damagedws.damage:${damagedws.damage}\n`);
 
         if (!attackws.neutralized) {
             attackws.skills
                 ?.filter(x => x.type == 0)
                 ?.forEach(skill => {
-                    sk = new skills(sk, attackws)
+                    atksk = new skills(atksk, attackws)
                         .skills[0][skill.index]();
                 });
+            
+            damage = atksk.damage;
         }
         
-        damage = sk.damage;
         
         if (!damagedws.neutralized) {
             damagedws.skills
                 ?.filter(x => x.type == 2)
                 ?.forEach(skill => {
-                    sk = new skills(sk, damagedws)
+                    defsk = new skills(defsk, damagedws)
                         .skills[2][skill.index](damage);
                 });
-        }
             
-        damage = sk.damage;
+            damage = defsk.damage;
+        }
 
         if (!attackws.neutralized) {
             attackws.skills
                 ?.filter(x => x.type == 1)
                 ?.forEach(skill => {
-                    sk = new skills(sk, attackws)
+                    atksk = new skills(atksk, attackws)
                         .skills[1][skill.index](damage);
                 });
         }
  
         if (damagedws.hasShield) { // 쉴드
             damagedws.hasShield = false;
-            sk.hpReturn = 0;
+            atksk.hpReturn = 0;
             damage = 0;
 
             this.broadcast(hs.toJson(
@@ -344,21 +347,24 @@ class game
             }, 7000);
         }
 
-        if (sk.haslonglife && !damagedws.usedLonglife) {
+        if (defsk.haslonglife && !damagedws.usedLonglife) {
             damagedws.usedLonglife = true;
         }
 
-        attackws.hp += sk.hpReturn;
+        attackws.hp += atksk.hpReturn;
+        if (attackws.hp > attackws.maxhp) {
+            attackws.hp = atackws.maxhp;
+        }
         damagedws.hp -= damage;
 
-        if (sk.knockout) { // 기절
+        if (atksk.knockout) { // 기절
             damagedws.knockedout = true;
             damagedws.knockedoutTimeout = setTimeout(() => {
                 damagedws.knockedout = false;
             }, 500);
         }
         
-        if (sk.neutralize) { // 무력화
+        if (atksk.neutralize) { // 무력화
             damagedws.neutralized = true;
             damagedws.neutralizedTimeout = setTimeout(() => {
                 damagedws.neutralized = false;
@@ -375,7 +381,7 @@ class game
                 atkmaxhp: attackws.maxhp,
                 point: data.point,
                 damage: damage,
-                specialCommands: sk.specialCommands,
+                specialCommands: atksk.specialCommands,
             })
         ));
 
