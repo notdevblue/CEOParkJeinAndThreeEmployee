@@ -15,6 +15,7 @@ namespace HanSocket.VO.InGame
     [Serializable]
     public class SkillVO : ValueObject
     {
+        public int id;
         public int type;
         public int skill;
 

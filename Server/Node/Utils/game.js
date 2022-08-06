@@ -178,9 +178,16 @@ class game
 
         if (type == 3 || type == 4 || type == 5) {
             ws.abliSkills.push({ type: type, index: index });
-
-            // ws.abliSkills.push(new skills(null, ws).skills[type][index]);
         }
+
+        this.broadcast(hs.toJson(
+            "skillselected",
+            JSON.stringify({
+                id: ws.id,
+                type: type,
+                skill: index
+            })
+        ));
 
         if (--this.skillSelectCount <= 0) {
             let pos = new Vector2(-4.0, 0.0);
