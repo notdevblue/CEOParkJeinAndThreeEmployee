@@ -11,13 +11,15 @@ namespace UI.InGame
     public class SkillSelectCanvas : MonoBehaviour
     {
         private int _selectCount = 0;
-        
+        private CanvasGroup _cvsGroup;
+
         private SkillButton[] _skillIcon;
 
 
         private void Awake()
         {
             _skillIcon = GetComponentsInChildren<SkillButton>();
+            _cvsGroup = GetComponent<CanvasGroup>();
         }
 
         public void Set(bool canSelect, List<SkillVO> skills, int selectCount = 1)
@@ -38,6 +40,11 @@ namespace UI.InGame
             }
 
             gameObject.SetActive(true);
+        }
+
+        public void DoAlpha()
+        {
+            // _cvsGroup.alpha
         }
     }
 }
