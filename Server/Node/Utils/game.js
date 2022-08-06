@@ -52,7 +52,7 @@ class game
         });
         
         for (let i = 0; i < 5; ++i) {
-            let idx = Math.floor(Math.random() * (randomSkills.length - 1));
+            let idx = Math.round(Math.random() * (randomSkills.length - 1));
             let skill = randomSkills.splice(idx, 1)[0];
             let type = -1;
 
@@ -337,7 +337,7 @@ class game
     dead(deadws) {
         ++this.deadPlayers;
         this.justDiedPlayer = deadws;
-        deadws.hp = deadws.maxhp; // FIXME: 임시
+        deadws.hp = deadws.maxhp;
         deadws.knockedout = false;
         deadws.neutralized = false;
         deadws.usedLonglife = false;
