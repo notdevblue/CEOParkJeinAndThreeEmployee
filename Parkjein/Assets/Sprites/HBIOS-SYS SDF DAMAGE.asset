@@ -143,7 +143,7 @@ Material:
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
-    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FaceColor: {r: 4, g: 4, b: 4, a: 1}
     - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
@@ -162,11 +162,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: HBIOS-SYS SDF
+  m_Name: HBIOS-SYS SDF DAMAGE
   m_EditorClassIdentifier: 
-  hashCode: -781560070
+  hashCode: 2082150161
   material: {fileID: -4978077079340630716}
-  materialHashCode: 851767578
+  materialHashCode: 375942929
   m_Version: 1.1.0
   m_SourceFontFileGUID: 8fe4c2d0c23401fb98260279dc84e408
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 8fe4c2d0c23401fb98260279dc84e408, type: 3}
