@@ -19,18 +19,23 @@ public class EffectManager : MonoSingleton<EffectManager>
     [SerializeField]
     private CinemachineVirtualCamera vCam;
 
+    private CinemachineBasicMultiChannelPerlin cmPerlin;
+
     private float timer = 0f;
+
+    private void Start()
+    {
+        cmPerlin = vCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+    }
 
     private void Update()
     {
-        if(timer > 0f)
+        if (timer > 0f)
         {
             timer -= Time.deltaTime;
 
-            if(timer <= 0f)
+            if (timer <= 0f)
             {
-                CinemachineBasicMultiChannelPerlin cmPerlin = vCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-
                 cmPerlin.m_AmplitudeGain = 0f;
             }
         }
@@ -45,14 +50,13 @@ public class EffectManager : MonoSingleton<EffectManager>
 
     public void ShakeCamera(float power = 0.5f, float duration = 0.2f)
     {
-        CinemachineBasicMultiChannelPerlin cmPerlin = vCam.GetComponentInChildren<CinemachineBasicMultiChannelPerlin>();
         cmPerlin.m_AmplitudeGain = power;
         timer = duration;
     }
 
     #endregion
 
-    public void PlayEffect(string effectName, Vector2 pos, Vector2 normal,bool isEnd = false, float time = 0.2f, Transform parent = null)
+    public void PlayEffect(string effectName, Vector2 pos, Vector2 normal, bool isEnd = false, float time = 0.2f, Transform parent = null)
     {
         ParticleSystem effectPrefab = GetEffectPrefab(effectName);
 
@@ -64,9 +68,9 @@ public class EffectManager : MonoSingleton<EffectManager>
 
         effect.Play();
 
-        if(isEnd)
+        if (isEnd)
         {
-            StartCoroutine(EffectOff(effect,time));
+            StartCoroutine(EffectOff(effect, time));
         }
     }
 
