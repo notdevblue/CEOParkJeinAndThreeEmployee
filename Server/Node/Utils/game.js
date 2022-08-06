@@ -18,6 +18,9 @@ class game
         this.gameWonStackToWin = 3;
         this.setWonStackToWin  = 2;
         this.invincibleTimeMs  = 5000;
+    
+    
+        this.spawnLocation = new Vector2(-4.0, 0.0);
     }
 
     broadcast(payload, excludeIds = [-1,]) {
@@ -107,6 +110,16 @@ class game
         ws.abliSkills    = [];
         
         this.resetPlayerValue(ws);
+
+        ws.pos = new Vector2(this.spawnLocation.x, this.spawnLocation.y);
+        this.spawnLocation.x = 4;
+
+        hs.send(ws, hs.toJson(
+            "pos",
+            JSON.stringify({
+                pos: ws.pos
+            })
+        ));
         
         // 모든 클라이언트가 로딩 완료된 경우
         if (this.loadedCount >= this.players.length) {
@@ -191,7 +204,6 @@ class game
         ));
 
         if (--this.skillSelectCount <= 0) {
-            let pos = new Vector2(-4.0, 0.0);
 
             this.sendGamedata();
             this.players.forEach(ws => {
@@ -200,11 +212,10 @@ class game
                     "gamestart",
                     JSON.stringify({
                         id: ws.id,
-                        pos: pos,
+                        pos: ws.pos,
                     }),
                 ));
 
-                pos.x = 4;
                 ws.selectCount = 0;
             });
         }
