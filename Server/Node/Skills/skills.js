@@ -8,7 +8,7 @@ class skills {
             this.speed = ws == null ? 4 : ws.speed;
             this.jumpPower = 5;
             this.blocksize = ws == null ? 5 : ws.blocksize;
-            this.ratefire = ws == null ? 0.25 : ws.ratefire;
+            this.ratefire = ws == null ? 0.5 : ws.ratefire;
             this.blockspeed = ws == null ? 5 : ws.blockspeed;
             this.rotationspeed = ws == null ? 7 : ws.rotationspeed;
             this.pushpower = ws == null ? 10 : ws.pushpower;
@@ -60,7 +60,7 @@ class skills {
             () => { // 기절
                 if (Math.random() >= 0.6) {
                     this.knockout = true;
-                    
+
                     this.specialCommands.push(
                         new SkillVO("knockout", 0.5)
                     );

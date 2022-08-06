@@ -12,6 +12,7 @@ namespace HanSocket.VO.InGame
         public float maxhp;
         public float atkhp;
         public float atkmaxhp;
+        public float damage;
         public Vector2 point;
         public List<SpecialCommands> specialCommands;
 

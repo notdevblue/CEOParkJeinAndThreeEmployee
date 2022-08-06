@@ -57,14 +57,7 @@ namespace HanSocket.Handlers.InGame
                                 break;
                         }
 
-                        //if (x.command.CompareTo("knockout") == 0)
-                        //    move.Knockout(x.param);
-                        //else if (x.command.CompareTo("skinofsteel") == 0)
-                        //    SoundManager.Instance.PlaySfxSound(SoundManager.Instance.skinOfSteelSfx);
-                        //else if (x.command.CompareTo("critical") == 0)
-                        //    SoundManager.Instance.PlaySfxSound(SoundManager.Instance.criticalSfx);
                         Debug.LogWarning($"{x.command}:{x.param}");
-                        // Debug.Log(x);
                     });
 
                     SoundManager.Instance.PlayHit(!data.CanMove);

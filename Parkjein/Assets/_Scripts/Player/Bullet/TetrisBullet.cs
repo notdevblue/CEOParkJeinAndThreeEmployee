@@ -79,6 +79,7 @@ public class TetrisBullet : MonoBehaviour
 
         if (stopBullet)
         {
+            damaged = true;
             this.gameObject.tag = "GROUND";
             rigid.velocity = Vector2.zero;
         }

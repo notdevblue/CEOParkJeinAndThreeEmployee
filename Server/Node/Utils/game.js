@@ -362,6 +362,7 @@ class game
                 atkhp: attackws.hp,
                 atkmaxhp: attackws.maxhp,
                 point: data.point,
+                damage: damage,
                 specialCommands: sk.specialCommands,
             })
         ));
@@ -407,7 +408,7 @@ class game
                     "respawn",
                     JSON.stringify({
                         id: deadws.id,
-                        pos: new Vector2(0.0, 0.0),
+                        pos: this.mapsSpawnLocation[Math.round(Math.random * 1)],
                         wonId: ws.id,
                         setWon: ws.setWon
                     }),
