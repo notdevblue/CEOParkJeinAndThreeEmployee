@@ -232,6 +232,7 @@ MonoBehaviour:
   - {fileID: 8040777604131156961}
   defaultWinSprite: {fileID: 21300000, guid: 9411c12f93fbda143a9a1d7c02c9e378, type: 3}
   winSprite: {fileID: 21300000, guid: 9eba597d30b7a114ea7924c3748871ed, type: 3}
+  isLeft: 1
 --- !u!1 &179324600
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +703,7 @@ MonoBehaviour:
   - {fileID: 0}
   defaultWinSprite: {fileID: 21300000, guid: 9411c12f93fbda143a9a1d7c02c9e378, type: 3}
   winSprite: {fileID: 21300000, guid: 9eba597d30b7a114ea7924c3748871ed, type: 3}
+  isLeft: 0
 --- !u!1 &749720685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2584,9 +2586,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 596931692}
-  winImgs:
-  - {fileID: 21300000, guid: 9411c12f93fbda143a9a1d7c02c9e378, type: 3}
-  - {fileID: 21300000, guid: 9eba597d30b7a114ea7924c3748871ed, type: 3}
 --- !u!1 &7690812007617720728
 GameObject:
   m_ObjectHideFlags: 0

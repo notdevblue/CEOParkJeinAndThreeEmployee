@@ -10,6 +10,7 @@ namespace HanSocket.VO.InGame
         public int skill;
         public int selectCount;
         public List<SkillVO> skillList;
+        public List<WinVO> winList;
     }
 
     [Serializable]
@@ -24,5 +25,12 @@ namespace HanSocket.VO.InGame
             this.type = type;
             this.skill = skill;
         }
+    }
+
+    [Serializable]
+    public class WinVO
+    {
+        public int id;
+        public int win;
     }
 }

@@ -10,9 +10,6 @@ public class MainPanel : Panel
     [SerializeField]
     private TextMeshProUGUI scoreText;
 
-    [SerializeField]
-    private Sprite[] winImgs; // default - 0, win - 1
-
     public override void Open()
     {
         cvs.alpha = 1f;

@@ -16,6 +16,8 @@ namespace HanSocket.Handlers.InGame
         private NewLoopVO vo;
 
         private SkillSelectCanvas _cvsSkillSelect;
+        [SerializeField]
+        private MainPanel mainPanel;
 
         private void Start()
         {
@@ -30,19 +32,37 @@ namespace HanSocket.Handlers.InGame
 
         protected override void OnFlag()
         {
+            int leftScore = 0, rightScore = 0;
+
             _cvsSkillSelect
                 .Set(
                     (vo.skill == WebSocketClient.Instance.id) || (vo.skill == -1),
                     vo.skillList,
                     vo.selectCount
                 );
+
             SoundManager.Instance.PlaySelectSkillBgm();
             BulletPool.Instance.InitBullet();
-            foreach (GameObject item in UserData.Instance.users.Values)
-            {
-                item.GetComponent<PlayerData>().MyUI?.NewLoop();
-            }
 
+            vo.winList?.ForEach(x =>
+            {
+                PlayerData data = UserData.Instance.users[x.id].GetComponent<PlayerData>();
+
+                if (data == null || data.MyUI == null) return;
+
+                if (data.MyUI.isLeft)
+                {
+                    leftScore = x.win;
+                }
+                else
+                {
+                    rightScore = x.win;
+                }
+                print(x.win);
+                data.MyUI.NewLoop();
+            });
+
+            mainPanel.SetScoreText(leftScore, rightScore);
         }
     }
 }

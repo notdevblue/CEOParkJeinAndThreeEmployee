@@ -44,6 +44,7 @@ class game
 
         let randomSkills = [];
         let sendList     = [];
+        let winList      = [];
 
         skill.skills.forEach(x => {
             x.forEach(y => {
@@ -86,12 +87,20 @@ class game
             });
         }
 
+        this.players.forEach(ws => {
+            winList.push({
+                id:ws.id,
+                win:ws.gameWon
+            });
+        });
+
         this.broadcast(hs.toJson(
             "newloop",
             JSON.stringify({
                 skill: targetId,
                 selectCount: this.skillSelectCount,
-                skillList: sendList
+                skillList: sendList,
+                winList: winList
             })
         ));
 

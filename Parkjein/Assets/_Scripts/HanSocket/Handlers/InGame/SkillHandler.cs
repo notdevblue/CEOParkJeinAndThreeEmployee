@@ -38,7 +38,7 @@ namespace HanSocket.Handlers.InGame
 
                             if (obj != null)
                             {
-                                EffectManager.Instance.PlayEffect("shield", obj.transform.position, Vector2.zero, true, 0.5f, obj.transform);
+                                EffectManager.Instance.PlayEffect("shield", obj.transform.position, Vector2.zero, true, 0.2f, obj.transform);
                             }
                             break;
                         case "shieldon":
