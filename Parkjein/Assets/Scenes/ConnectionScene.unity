@@ -3260,13 +3260,13 @@ MonoBehaviour:
   matchBgm: {fileID: 8300000, guid: 7dd4bcb966dae15448ed43877bb906db, type: 3}
   selectSkillBgm: {fileID: 8300000, guid: 54d0d5fcc4271004b8e139ffe48804ca, type: 3}
   ingameBgm: {fileID: 8300000, guid: 1093301dc52f702f096c6d8554368cc4, type: 3}
-  throwSfx: {fileID: 8300000, guid: 696f10c6153f6fb43ad78c2c378592c8, type: 3}
-  hitSfx: {fileID: 8300000, guid: 43b2af94f499a88458c9ca79bac57d19, type: 3}
-  knockoutSfx: {fileID: 8300000, guid: 986f3b882c11f554fa7a04137aef8755, type: 3}
-  killSfx: {fileID: 8300000, guid: f1841758c3e06384ab2cb76e1fe04e79, type: 3}
-  shieldSfx: {fileID: 8300000, guid: cd7db8835e800c244b023c3f8a8af53a, type: 3}
-  skinOfSteelSfx: {fileID: 8300000, guid: a6cb324e92e5c3e419bbe2fd0ed6370e, type: 3}
-  criticalSfx: {fileID: 8300000, guid: 627900bd1c169a94ebeac4578cd82eaa, type: 3}
+  throwSfx: {fileID: 8300000, guid: 4132ff5f3a84fd14ab1692f1128140a1, type: 3}
+  hitSfx: {fileID: 8300000, guid: eda98ba314980677f8c3156eaf7ef5fa, type: 3}
+  knockoutSfx: {fileID: 8300000, guid: 1fd7fbdeec17c94f298e9dbd9157b72a, type: 3}
+  killSfx: {fileID: 8300000, guid: a31083fa366604a7cb8404aa15412728, type: 3}
+  shieldSfx: {fileID: 8300000, guid: bd01eb78077ede893ac78cd33a607783, type: 3}
+  skinOfSteelSfx: {fileID: 8300000, guid: 72a3bb4879a6c34ba8704293ae1cdfd5, type: 3}
+  criticalSfx: {fileID: 8300000, guid: 49df991d253478890bbed9104bcf48d1, type: 3}
 --- !u!4 &4702140017705170074
 Transform:
   m_ObjectHideFlags: 0
