@@ -13,6 +13,7 @@ public class PlayerMove : MonoBehaviour
     public SpriteRenderer Sr => sr;
 
     private bool _canMove = true;
+    public bool CanMove => _canMove;
 
     private Rigidbody2D rigid;
 

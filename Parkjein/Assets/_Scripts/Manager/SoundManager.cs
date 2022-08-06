@@ -14,6 +14,8 @@ namespace Managers
 
         [Header("sfx")]
         public AudioClip throwSfx;
+        public AudioClip hitSfx;
+        public AudioClip knockoutSfx;
 
         protected override void Awake()
         {
@@ -46,6 +48,11 @@ namespace Managers
         public void PlaySfxSound(AudioClip clip)
         {
             sfxSource.PlayOneShot(clip);
+        }
+
+        public void PlayHit(bool isKnockout)
+        {
+            PlaySfxSound(isKnockout ? knockoutSfx : hitSfx);
         }
 
         private void Init()

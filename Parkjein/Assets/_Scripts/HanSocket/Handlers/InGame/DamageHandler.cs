@@ -1,6 +1,7 @@
 using System.Collections.Concurrent;
 using HanSocket.Data;
 using HanSocket.VO.InGame;
+using Managers;
 using UnityEngine;
 
 namespace HanSocket.Handlers.InGame
@@ -28,6 +29,7 @@ namespace HanSocket.Handlers.InGame
                 if (vos.TryDequeue(out var vo))
                 {
                     GameObject obj = UserData.Instance.users[vo.id];
+                    PlayerMove move = obj.GetComponent<PlayerMove>();
 
                     obj.GetComponent<PlayerData>().MyUI.SetHp((float)vo.hp / vo.maxhp);
                     obj.GetComponent<PlayerAnimation>().SetHurt();
@@ -36,10 +38,12 @@ namespace HanSocket.Handlers.InGame
                     Debug.LogWarning($"AtkHP: {vo.atkhp}/{vo.atkmaxhp}, Damaged: {vo.id}, HP: {vo.hp}/{vo.maxhp}");
                     vo.specialCommands?.ForEach(x => {
                         if (x.command.CompareTo("knockout") == 0)
-                            obj.GetComponent<PlayerMove>().Knockout(x.param);
+                            move.Knockout(x.param);
                         Debug.LogWarning($"{x.command}:{x.param}");
                         // Debug.Log(x);
                     });
+
+                    SoundManager.Instance.PlayHit(move.CanMove);
                 }
             }
         }

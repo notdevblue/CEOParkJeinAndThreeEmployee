@@ -1,3 +1,4 @@
+using Managers;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,6 +32,7 @@ public class PlayerAnimation : MonoBehaviour
     public void SetHurt()
     {
         anim.SetTrigger(ANIM_HURT);
+        //SoundManager.Instance.PlaySfxSound(SoundManager.Instance.hitSfx);
     }
 
     public void SetAttack()
