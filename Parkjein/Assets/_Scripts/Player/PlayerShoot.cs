@@ -63,7 +63,7 @@ public class PlayerShoot : MonoBehaviour
 
     public void SetAttackSpeed(float attackSpeed)
     {
-        this.attackCoolTime = 1f / attackSpeed;
+        this.attackCoolTime = attackSpeed;
 
         this.curAttackCoolTime = this.attackCoolTime;
     }

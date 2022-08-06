@@ -45,8 +45,7 @@ public class EffectManager : MonoSingleton<EffectManager>
 
     public void ShakeCamera(float power = 0.5f, float duration = 0.2f)
     {
-        CinemachineBasicMultiChannelPerlin cmPerlin = vCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-        print(cmPerlin == null);
+        CinemachineBasicMultiChannelPerlin cmPerlin = vCam.GetComponentInChildren<CinemachineBasicMultiChannelPerlin>();
         cmPerlin.m_AmplitudeGain = power;
         timer = duration;
     }

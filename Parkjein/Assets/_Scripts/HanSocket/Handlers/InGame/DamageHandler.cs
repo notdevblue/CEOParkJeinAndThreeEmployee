@@ -37,7 +37,7 @@ namespace HanSocket.Handlers.InGame
 
                     if(vo.id == WebSocketClient.Instance.id)
                     {
-                        EffectManager.Instance.ShakeCamera(0.7f);
+                        EffectManager.Instance.ShakeCamera(0.9f);
                     }
 
                     Debug.LogWarning($"AtkHP: {vo.atkhp}/{vo.atkmaxhp}, Damaged: {vo.id}, HP: {vo.hp}/{vo.maxhp}");
