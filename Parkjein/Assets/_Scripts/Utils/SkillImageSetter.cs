@@ -21,6 +21,7 @@ public class SkillImage
 {
     public int type;
     public int skill;
+    public Sprite backSprite;
     public Sprite sprite;
     public Sprite iconSprite;
     public string text;

@@ -4,10 +4,11 @@ using HanSocket.VO.InGame;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
 namespace UI.InGame
 {    
-    public class SkillButton : MonoBehaviour
+    public class SkillButton : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
     {
         public Button btnSelect;
         public Image skillImage;
@@ -20,6 +21,8 @@ namespace UI.InGame
 
         private Action _onClickCallback;
 
+        private Sprite backSprite;
+        private Sprite frontSprite;
 
         private void Awake()
         {
@@ -47,7 +50,19 @@ namespace UI.InGame
 
             var obj   = SkillImageSetter.Instance.Get(type, index);
             text.text = obj.text;
-            skillImage.sprite = obj.sprite;
+
+            backSprite = skillImage.sprite = obj.backSprite;
+            frontSprite = obj.sprite;
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            skillImage.sprite = frontSprite;
+        }
+
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            skillImage.sprite = backSprite;
         }
     }
 }
