@@ -290,8 +290,10 @@ class game
         if (this.processingDead) return;
 
         let attackws = this.players.find(x => x != damagedws);
-
+        let damagedwsTempDamage = damagedws.damage;
+        
         let atksk = new skills(null, attackws);
+        damagedws.damage = atksk.damage;
         let defsk = new skills(null, damagedws);
         let damage;
 
@@ -370,6 +372,8 @@ class game
                 damagedws.neutralized = false;
             }, 1500);
         }
+
+        damagedws.damage = damagedwsTempDamage;
         
         this.broadcast(hs.toJson(
             "damage",
