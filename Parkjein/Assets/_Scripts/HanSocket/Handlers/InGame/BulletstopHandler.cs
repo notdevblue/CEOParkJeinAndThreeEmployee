@@ -29,9 +29,7 @@ namespace HanSocket.Handlers.InGame
                 {
                     
                     TetrisBullet bullet = BulletPool.Instance.GetActiveBullet(vo.id, vo.shooterId);
-                    bullet.transform.position = vo.pos;
-                    bullet.transform.rotation = vo.rot;
-
+                    bullet.SetTarget(vo.pos, vo.rot);
                 }
             }
         }

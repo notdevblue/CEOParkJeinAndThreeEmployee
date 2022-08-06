@@ -239,6 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   matchButton: {fileID: 609375420}
+  text: {fileID: 496335021}
 --- !u!1 &297573056
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,8 +429,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 13.5}
+  m_SizeDelta: {x: 0, y: -27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &496335021
 MonoBehaviour:
@@ -615,7 +616,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 291}
-  m_SizeDelta: {x: 260, y: 120}
+  m_SizeDelta: {x: 320, y: 120}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &609375420
 MonoBehaviour:
@@ -3257,8 +3258,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgmSource: {fileID: 4702140016460191809}
   sfxSource: {fileID: 4702140017705170077}
-  matchBgm: {fileID: 8300000, guid: 7dd4bcb966dae15448ed43877bb906db, type: 3}
-  selectSkillBgm: {fileID: 8300000, guid: 54d0d5fcc4271004b8e139ffe48804ca, type: 3}
+  matchBgm: {fileID: 8300000, guid: 8a46b16ec7883c793968f8c84a06d7f1, type: 3}
+  selectSkillBgm: {fileID: 8300000, guid: ff1ecf94e2a42e4bc95d43815948649a, type: 3}
   ingameBgm: {fileID: 8300000, guid: 1093301dc52f702f096c6d8554368cc4, type: 3}
   throwSfx: {fileID: 8300000, guid: 4132ff5f3a84fd14ab1692f1128140a1, type: 3}
   hitSfx: {fileID: 8300000, guid: eda98ba314980677f8c3156eaf7ef5fa, type: 3}

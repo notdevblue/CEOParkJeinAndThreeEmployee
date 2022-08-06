@@ -21,6 +21,14 @@ public class TetrisBullet : MonoBehaviour
 
     public bool damaged = false;
 
+    private Vector2 _pos
+        = new Vector2();
+    private Quaternion _rot
+        = new Quaternion();
+
+    private WaitForSecondsRealtime wait
+        = new WaitForSecondsRealtime(1.0f / 15.0f);
+
 
     public void SetActive(bool active)
     {
@@ -37,9 +45,29 @@ public class TetrisBullet : MonoBehaviour
         this.fireVO = fireVO;
         this.shooterId = this.fireVO.shooterId;
         this.SetActive(true);
+        _pos = transform.position;
+        _rot = Quaternion.identity;
         SoundManager.Instance.PlaySfxSound(SoundManager.Instance.throwSfx);
         rigid.AddForce(fireVO.dir * fireVO.bulletSpeed, ForceMode2D.Impulse);
         rigid.AddTorque(fireVO.rotationSpeed);
+
+        StartCoroutine(Sync());
+    }
+
+    public void SetTarget(Vector2 pos, Quaternion rot)
+    {
+        this.transform.position = pos;
+        this.transform.rotation = rot;
+    }
+
+    IEnumerator Sync()
+    {
+        while (gameObject.activeSelf)
+        {
+            yield return wait;
+            WebSocketClient.Instance.Send("bulletstop",
+                    new BulletStopVO(bulletId, shooterId, transform.position, transform.rotation).ToJson());
+        }
     }
 
     private Quaternion LookAt2D(Vector2 forward)
@@ -70,11 +98,6 @@ public class TetrisBullet : MonoBehaviour
          || col.gameObject.CompareTag("BULLET"))
         {
             stopBullet = true;
-            if (shooterId == WebSocketClient.Instance.id)
-            {
-                WebSocketClient.Instance.Send("bulletstop",
-                    new BulletStopVO(bulletId, shooterId, transform.position, transform.rotation).ToJson());
-            }
         }
 
         if (stopBullet)

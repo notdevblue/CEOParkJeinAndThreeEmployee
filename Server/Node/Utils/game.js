@@ -40,8 +40,8 @@ class game
                 new Vector2(8, -2.5),
             ],
             [
-                new Vector2(-9, -1.5),
-                new Vector2(9, -1.5),
+                new Vector2(-9, -0.5),
+                new Vector2(9, -0.5),
             ],
         ];
 
