@@ -240,7 +240,7 @@ class game
         });
     }
 
-    damage(damagedws) {
+    damage(damagedws,data) {
         let attackws = this.players.find(x => x != damagedws);
         let sk = new skills();
         let damage;
@@ -329,6 +329,7 @@ class game
                 hp: damagedws.hp,
                 atkhp: attackws.hp,
                 atkmaxhp: attackws.maxhp,
+                point: data.point,
                 specialCommands: sk.specialCommands,
             })
         ));

@@ -8,6 +8,6 @@ module.exports = {
             return;
         }
 
-        ws.game.damage(ws);
+        ws.game.damage(ws,JSON.parse(data));
     }
 };
