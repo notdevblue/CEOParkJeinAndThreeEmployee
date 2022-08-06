@@ -42,6 +42,16 @@ public class PlayerUI : MonoBehaviour
         SetHp(1f);
     }
 
+    public void NewLoop() 
+    {
+        for (int i = 0; i < winImg.Length; i++)
+        {
+            winImg[i].sprite = defaultWinSprite;
+        }
+
+        SetHp(1f);
+    }
+
     public void SetHp(float hpAmount)
     {
         hpSlider.value = hpAmount;

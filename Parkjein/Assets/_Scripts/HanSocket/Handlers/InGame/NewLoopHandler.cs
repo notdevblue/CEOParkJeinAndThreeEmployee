@@ -35,6 +35,12 @@ namespace HanSocket.Handlers.InGame
                     vo.skillList,
                     vo.selectCount
                 );
+
+            foreach (GameObject item in UserData.Instance.users.Values)
+            {
+                item.GetComponent<PlayerData>().MyUI.NewLoop();
+            }
+
         }
     }
 }
