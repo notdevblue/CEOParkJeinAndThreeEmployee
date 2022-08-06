@@ -6531,3 +6531,182 @@
 2022-8-6 13-25-48-50 					[  ] Found heandler matchmaking.js
 2022-8-6 13-25-48-51 					[  ] Found heandler move.js
 2022-8-6 13-25-48-51 					[  ] Found heandler skillselected.js
+2022-8-6 16-17-48-729 					
+2022-8-6 16-17-48-730 					[II] Server started on port 48000.
+2022-8-6 16-17-48-730 					[  ] Server is listening
+2022-8-6 16-17-48-731 					[  ] Found heandler damage.js
+2022-8-6 16-17-48-732 					[  ] Found heandler dead.js
+2022-8-6 16-17-48-732 					[  ] Found heandler exampleHandler.js
+2022-8-6 16-17-48-732 					[  ] Found heandler fire.js
+2022-8-6 16-17-48-733 					[  ] Found heandler init.js
+2022-8-6 16-17-48-733 					[  ] Found heandler loaded.js
+2022-8-6 16-17-48-734 					[  ] Found heandler matchmaking.js
+2022-8-6 16-17-48-734 					[  ] Found heandler move.js
+2022-8-6 16-17-48-735 					[  ] Found heandler skillselected.js
+2022-8-6 16-26-38-392 					
+2022-8-6 16-26-38-394 					[II] Server started on port 48000.
+2022-8-6 16-26-38-394 					[  ] Server is listening
+2022-8-6 16-26-38-394 					[  ] Found heandler damage.js
+2022-8-6 16-26-38-395 					[  ] Found heandler dead.js
+2022-8-6 16-26-38-395 					[  ] Found heandler exampleHandler.js
+2022-8-6 16-26-38-395 					[  ] Found heandler fire.js
+2022-8-6 16-26-38-396 					[  ] Found heandler init.js
+2022-8-6 16-26-38-396 					[  ] Found heandler loaded.js
+2022-8-6 16-26-38-397 					[  ] Found heandler matchmaking.js
+2022-8-6 16-26-38-397 					[  ] Found heandler move.js
+2022-8-6 16-26-38-398 					[  ] Found heandler skillselected.js
+2022-8-6 16-26-57-130 		[127.0.0.1:48000]	[II] New client joined. ID:0
+2022-8-6 16-26-57-502 		[127.0.0.1:48000]	[  ] Received: {"type":"init","payload":""}
+2022-8-6 16-26-57-503 					[  ] Sending {"type":"init","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-6 16-27-24-462 		[127.0.0.1:48000]	[II] New client joined. ID:1
+2022-8-6 16-27-24-587 		[127.0.0.1:48000]	[  ] Received: {"type":"init","payload":""}
+2022-8-6 16-27-24-588 					[  ] Sending {"type":"init","payload":"{\"id\":1}"} to 127.0.0.1:48000
+2022-8-6 16-27-35-950 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 16-27-35-950 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 16-27-37-295 		[127.0.0.1:48000]	[  ] Received: {"type":"matchmaking","payload":""}
+2022-8-6 16-27-37-296 					[  ] Sending {"type":"match","payload":""} to 127.0.0.1:48000
+2022-8-6 16-27-37-296 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 16-27-37-296 					[  ] Sending {"type":"ingame","payload":""} to 127.0.0.1:48000
+2022-8-6 16-27-37-340 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 16-27-37-340 					[  ] Sending {"type":"pos","payload":"{\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 16-27-37-418 		[127.0.0.1:48000]	[  ] Received: {"type":"loaded","payload":""}
+2022-8-6 16-27-37-418 					[  ] Sending {"type":"pos","payload":"{\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 16-27-37-419 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-27-37-420 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-27-37-420 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-27-37-420 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-27-37-421 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":5},{\"type\":4,\"skill\":0},{\"type\":2,\"skill\":1},{\"type\":2,\"skill\":0},{\"type\":5,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 16-27-37-421 					[  ] Sending {"type":"newloop","payload":"{\"skill\":-1,\"selectCount\":2,\"skillList\":[{\"type\":4,\"skill\":5},{\"type\":4,\"skill\":0},{\"type\":2,\"skill\":1},{\"type\":2,\"skill\":0},{\"type\":5,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 16-27-50-189 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"id\":0,\"type\":4,\"skill\":0}"}
+2022-8-6 16-27-50-190 					[  ] Sending {"type":"skillselected","payload":"{\"id\":0,\"type\":4,\"skill\":0}"} to 127.0.0.1:48000
+2022-8-6 16-27-50-190 					[  ] Sending {"type":"skillselected","payload":"{\"id\":0,\"type\":4,\"skill\":0}"} to 127.0.0.1:48000
+2022-8-6 16-27-51-794 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"id\":0,\"type\":2,\"skill\":1}"}
+2022-8-6 16-27-51-794 					[  ] Sending {"type":"skillselected","payload":"{\"id\":1,\"type\":2,\"skill\":1}"} to 127.0.0.1:48000
+2022-8-6 16-27-51-795 					[  ] Sending {"type":"skillselected","payload":"{\"id\":1,\"type\":2,\"skill\":1}"} to 127.0.0.1:48000
+2022-8-6 16-27-51-795 					[  ] Sending {"type":"skillallselected","payload":""} to 127.0.0.1:48000
+2022-8-6 16-27-51-795 					[  ] Sending {"type":"skillallselected","payload":""} to 127.0.0.1:48000
+2022-8-6 16-27-51-795 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-27-51-795 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-27-51-796 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":30,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":8,\"blockRateFire\":0.25,\"blockSpeed\":4.5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-27-51-796 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":30,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":8,\"blockRateFire\":0.25,\"blockSpeed\":4.5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-27-51-796 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 16-27-51-797 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 16-27-51-797 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 16-27-51-797 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 16-27-54-599 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":1,\"bulletIdx\":6,\"startPos\":{\"x\":2.1699886322021486,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.768009603023529,\"y\":0.6404382586479187},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-6 16-27-54-599 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":1,\"bulletIdx\":6,\"startPos\":{\"x\":2.1699886322021486,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.768009603023529,\"y\":0.6404382586479187},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 16-27-58-929 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":2,\"bulletIdx\":1,\"startPos\":{\"x\":0.35979628562927248,\"y\":-1.7346292734146119},\"dir\":{\"x\":-0.9928721785545349,\"y\":-0.11918404698371887},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-6 16-27-58-929 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":2,\"bulletIdx\":1,\"startPos\":{\"x\":0.35979628562927248,\"y\":-1.7346292734146119},\"dir\":{\"x\":-0.9928721785545349,\"y\":-0.11918404698371887},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 16-28-4-587 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":1,\"bulletIdx\":3,\"startPos\":{\"x\":-0.7576262354850769,\"y\":-1.6122136116027833},\"dir\":{\"x\":0.8585952520370483,\"y\":-0.5126539468765259},\"bulletSpeed\":4.5,\"rotationSpeed\":7.0}"}
+2022-8-6 16-28-4-587 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":1,\"bulletIdx\":3,\"startPos\":{\"x\":-0.7576262354850769,\"y\":-1.6122136116027833},\"dir\":{\"x\":0.8585952520370483,\"y\":-0.5126539468765259},\"bulletSpeed\":4.5,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 16-28-4-891 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 16-28-4-892 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":80,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-28-4-892 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":80,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-28-11-550 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 16-28-11-551 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 16-28-11-551 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 16-28-17-605 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 16-28-17-606 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-28-17-606 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-28-17-606 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":30,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":8,\"blockRateFire\":0.25,\"blockSpeed\":4.5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-28-17-606 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":30,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":8,\"blockRateFire\":0.25,\"blockSpeed\":4.5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-28-17-606 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":1,\"skillList\":[{\"type\":2,\"skill\":0},{\"type\":4,\"skill\":4},{\"type\":4,\"skill\":1},{\"type\":2,\"skill\":1},{\"type\":3,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 16-28-17-607 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":1,\"skillList\":[{\"type\":2,\"skill\":0},{\"type\":4,\"skill\":4},{\"type\":4,\"skill\":1},{\"type\":2,\"skill\":1},{\"type\":3,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 16-28-20-412 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"id\":0,\"type\":3,\"skill\":0}"}
+2022-8-6 16-28-20-413 					[  ] Sending {"type":"skillselected","payload":"{\"id\":1,\"type\":3,\"skill\":0}"} to 127.0.0.1:48000
+2022-8-6 16-28-20-413 					[  ] Sending {"type":"skillselected","payload":"{\"id\":1,\"type\":3,\"skill\":0}"} to 127.0.0.1:48000
+2022-8-6 16-28-20-413 					[  ] Sending {"type":"skillallselected","payload":""} to 127.0.0.1:48000
+2022-8-6 16-28-20-413 					[  ] Sending {"type":"skillallselected","payload":""} to 127.0.0.1:48000
+2022-8-6 16-28-20-413 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":true}"} to 127.0.0.1:48000
+2022-8-6 16-28-20-414 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":true}"} to 127.0.0.1:48000
+2022-8-6 16-28-20-414 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":30,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":8,\"blockRateFire\":0.25,\"blockSpeed\":4.5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-28-20-414 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":30,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":8,\"blockRateFire\":0.25,\"blockSpeed\":4.5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-28-20-414 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 16-28-20-414 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 16-28-20-415 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 16-28-20-415 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 16-28-25-30 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":1,\"bulletIdx\":6,\"startPos\":{\"x\":-0.16078999638557435,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.7788751125335693,\"y\":0.627178966999054},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-6 16-28-25-30 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":1,\"bulletIdx\":6,\"startPos\":{\"x\":-0.16078999638557435,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.7788751125335693,\"y\":0.627178966999054},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 16-28-25-248 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 16-28-25-248 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"maxhp\":100,\"hp\":80,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-28-25-248 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"maxhp\":100,\"hp\":80,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-28-26-862 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":2,\"bulletIdx\":1,\"startPos\":{\"x\":-0.6019607782363892,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.7412265539169312,\"y\":0.6712548732757568},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-6 16-28-26-863 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":2,\"bulletIdx\":1,\"startPos\":{\"x\":-0.6019607782363892,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.7412265539169312,\"y\":0.6712548732757568},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 16-28-31-333 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":3,\"bulletIdx\":6,\"startPos\":{\"x\":0.5833709239959717,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.8825066685676575,\"y\":0.47029978036880495},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-6 16-28-31-334 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":3,\"bulletIdx\":6,\"startPos\":{\"x\":0.5833709239959717,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.8825066685676575,\"y\":0.47029978036880495},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 16-28-35-544 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":1,\"bulletIdx\":3,\"startPos\":{\"x\":0.4172837734222412,\"y\":-2.677434206008911},\"dir\":{\"x\":0.951782763004303,\"y\":0.30677270889282229},\"bulletSpeed\":4.5,\"rotationSpeed\":7.0}"}
+2022-8-6 16-28-35-544 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":1,\"bulletIdx\":3,\"startPos\":{\"x\":0.4172837734222412,\"y\":-2.677434206008911},\"dir\":{\"x\":0.951782763004303,\"y\":0.30677270889282229},\"bulletSpeed\":4.5,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 16-28-35-606 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 16-28-35-606 					[  ] Sending {"type":"skill","payload":"{\"id\":1,\"command\":\"shieldoff\"}"} to 127.0.0.1:48000
+2022-8-6 16-28-35-607 					[  ] Sending {"type":"skill","payload":"{\"id\":1,\"command\":\"shieldoff\"}"} to 127.0.0.1:48000
+2022-8-6 16-28-35-608 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":100,\"atkhp\":80,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-28-35-608 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":100,\"atkhp\":80,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-28-39-919 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":2,\"bulletIdx\":1,\"startPos\":{\"x\":2.681396007537842,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9551441669464111,\"y\":0.2961410880088806},\"bulletSpeed\":4.5,\"rotationSpeed\":7.0}"}
+2022-8-6 16-28-39-920 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":2,\"bulletIdx\":1,\"startPos\":{\"x\":2.681396007537842,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.9551441669464111,\"y\":0.2961410880088806},\"bulletSpeed\":4.5,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 16-28-40-128 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 16-28-40-128 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":80,\"atkhp\":80,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-28-40-128 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":80,\"atkhp\":80,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-28-42-608 					[  ] Sending {"type":"skill","payload":"{\"command\":\"shieldon\"}"} to 127.0.0.1:48000
+2022-8-6 16-28-42-608 					[  ] Sending {"type":"skill","payload":"{\"command\":\"shieldon\"}"} to 127.0.0.1:48000
+2022-8-6 16-28-45-118 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":3,\"bulletIdx\":5,\"startPos\":{\"x\":4.119860649108887,\"y\":-2.677434206008911},\"dir\":{\"x\":0.8070573806762695,\"y\":0.5904729962348938},\"bulletSpeed\":4.5,\"rotationSpeed\":7.0}"}
+2022-8-6 16-28-45-118 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":3,\"bulletIdx\":5,\"startPos\":{\"x\":4.119860649108887,\"y\":-2.677434206008911},\"dir\":{\"x\":0.8070573806762695,\"y\":0.5904729962348938},\"bulletSpeed\":4.5,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 16-28-45-287 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 16-28-45-288 					[  ] Sending {"type":"skill","payload":"{\"id\":1,\"command\":\"shieldoff\"}"} to 127.0.0.1:48000
+2022-8-6 16-28-45-288 					[  ] Sending {"type":"skill","payload":"{\"id\":1,\"command\":\"shieldoff\"}"} to 127.0.0.1:48000
+2022-8-6 16-28-45-288 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":80,\"atkhp\":80,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-28-45-288 					[  ] Sending {"type":"damage","payload":"{\"id\":1,\"maxhp\":100,\"hp\":80,\"atkhp\":80,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-28-49-181 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":4,\"bulletIdx\":2,\"startPos\":{\"x\":4.119860649108887,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9973201155662537,\"y\":-0.07316134870052338},\"bulletSpeed\":4.5,\"rotationSpeed\":7.0}"}
+2022-8-6 16-28-49-181 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":4,\"bulletIdx\":2,\"startPos\":{\"x\":4.119860649108887,\"y\":-2.677434206008911},\"dir\":{\"x\":0.9973201155662537,\"y\":-0.07316134870052338},\"bulletSpeed\":4.5,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 16-28-52-288 					[  ] Sending {"type":"skill","payload":"{\"command\":\"shieldon\"}"} to 127.0.0.1:48000
+2022-8-6 16-28-52-288 					[  ] Sending {"type":"skill","payload":"{\"command\":\"shieldon\"}"} to 127.0.0.1:48000
+2022-8-6 16-28-55-947 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 16-28-55-947 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 16-28-55-947 					[  ] Sending {"type":"respawn","payload":"{\"id\":1,\"pos\":{\"x\":0,\"y\":0},\"wonId\":0,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 16-29-0-947 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":1,\"bulletIdx\":6,\"startPos\":{\"x\":3.888254165649414,\"y\":-1.736005425453186},\"dir\":{\"x\":0.9422058463096619,\"y\":-0.33503448963165285},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-6 16-29-0-947 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":1,\"bulletIdx\":6,\"startPos\":{\"x\":3.888254165649414,\"y\":-1.736005425453186},\"dir\":{\"x\":0.9422058463096619,\"y\":-0.33503448963165285},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 16-29-1-110 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 16-29-1-111 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"maxhp\":100,\"hp\":60,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-29-1-111 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"maxhp\":100,\"hp\":60,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-29-2-0 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 16-29-2-0 					[  ] Sending {"type":"respawn","payload":"{\"id\":0,\"pos\":{\"x\":0,\"y\":0},\"wonId\":1,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 16-29-2-0 					[  ] Sending {"type":"respawn","payload":"{\"id\":0,\"pos\":{\"x\":0,\"y\":0},\"wonId\":1,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 16-29-12-663 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 16-29-12-663 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":true}"} to 127.0.0.1:48000
+2022-8-6 16-29-12-663 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":true}"} to 127.0.0.1:48000
+2022-8-6 16-29-12-663 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":30,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":8,\"blockRateFire\":0.25,\"blockSpeed\":4.5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-29-12-664 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":30,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":8,\"blockRateFire\":0.25,\"blockSpeed\":4.5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-29-12-664 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":0},{\"type\":1,\"skill\":0},{\"type\":4,\"skill\":0},{\"type\":5,\"skill\":1},{\"type\":3,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 16-29-12-664 					[  ] Sending {"type":"newloop","payload":"{\"skill\":1,\"selectCount\":2,\"skillList\":[{\"type\":2,\"skill\":0},{\"type\":1,\"skill\":0},{\"type\":4,\"skill\":0},{\"type\":5,\"skill\":1},{\"type\":3,\"skill\":0}]}"} to 127.0.0.1:48000
+2022-8-6 16-29-14-87 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"id\":0,\"type\":5,\"skill\":1}"}
+2022-8-6 16-29-14-87 					[  ] Sending {"type":"skillselected","payload":"{\"id\":1,\"type\":5,\"skill\":1}"} to 127.0.0.1:48000
+2022-8-6 16-29-14-87 					[  ] Sending {"type":"skillselected","payload":"{\"id\":1,\"type\":5,\"skill\":1}"} to 127.0.0.1:48000
+2022-8-6 16-29-15-532 		[127.0.0.1:48000]	[  ] Received: {"type":"skillselected","payload":"{\"id\":0,\"type\":3,\"skill\":0}"}
+2022-8-6 16-29-15-532 					[  ] Sending {"type":"skillselected","payload":"{\"id\":1,\"type\":3,\"skill\":0}"} to 127.0.0.1:48000
+2022-8-6 16-29-15-532 					[  ] Sending {"type":"skillselected","payload":"{\"id\":1,\"type\":3,\"skill\":0}"} to 127.0.0.1:48000
+2022-8-6 16-29-15-532 					[  ] Sending {"type":"skillallselected","payload":""} to 127.0.0.1:48000
+2022-8-6 16-29-15-532 					[  ] Sending {"type":"skillallselected","payload":""} to 127.0.0.1:48000
+2022-8-6 16-29-15-533 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":true}"} to 127.0.0.1:48000
+2022-8-6 16-29-15-533 					[  ] Sending {"type":"gamedata","payload":"{\"id\":1,\"damage\":20,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":5,\"blockRateFire\":0.25,\"blockSpeed\":5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":true}"} to 127.0.0.1:48000
+2022-8-6 16-29-15-533 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":30,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":8,\"blockRateFire\":0.25,\"blockSpeed\":4.5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-29-15-533 					[  ] Sending {"type":"gamedata","payload":"{\"id\":0,\"damage\":30,\"hp\":100,\"speed\":4,\"jumpPower\":5,\"blockSize\":8,\"blockRateFire\":0.25,\"blockSpeed\":4.5,\"rotationSpeed\":7,\"bomb\":false,\"penetrate\":false,\"hasShield\":false}"} to 127.0.0.1:48000
+2022-8-6 16-29-15-533 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 16-29-15-533 					[  ] Sending {"type":"gamestart","payload":"{\"id\":1,\"pos\":{\"x\":4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 16-29-15-533 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 16-29-15-533 					[  ] Sending {"type":"gamestart","payload":"{\"id\":0,\"pos\":{\"x\":-4,\"y\":0}}"} to 127.0.0.1:48000
+2022-8-6 16-29-18-415 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":1,\"bulletIdx\":6,\"startPos\":{\"x\":-2.971515655517578,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.8691456317901611,\"y\":0.49455612897872927},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-6 16-29-18-416 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":1,\"bulletIdx\":6,\"startPos\":{\"x\":-2.971515655517578,\"y\":-2.677434206008911},\"dir\":{\"x\":-0.8691456317901611,\"y\":0.49455612897872927},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 16-29-18-621 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 16-29-18-621 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"maxhp\":100,\"hp\":80,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-29-18-621 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"maxhp\":100,\"hp\":80,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-29-22-701 		[127.0.0.1:48000]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":2,\"bulletIdx\":1,\"startPos\":{\"x\":-4.165255069732666,\"y\":-2.374230146408081},\"dir\":{\"x\":-0.9723312258720398,\"y\":-0.23360660672187806},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"}
+2022-8-6 16-29-22-701 					[  ] Sending {"type":"fire","payload":"{\"shooterId\":1,\"bulletId\":2,\"bulletIdx\":1,\"startPos\":{\"x\":-4.165255069732666,\"y\":-2.374230146408081},\"dir\":{\"x\":-0.9723312258720398,\"y\":-0.23360660672187806},\"bulletSpeed\":5.0,\"rotationSpeed\":7.0}"} to 127.0.0.1:48000
+2022-8-6 16-29-22-760 		[127.0.0.1:48000]	[  ] Received: {"type":"damage","payload":""}
+2022-8-6 16-29-22-761 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"maxhp\":100,\"hp\":60,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-29-22-761 					[  ] Sending {"type":"damage","payload":"{\"id\":0,\"maxhp\":100,\"hp\":60,\"atkhp\":100,\"atkmaxhp\":100,\"specialCommands\":[]}"} to 127.0.0.1:48000
+2022-8-6 16-29-23-878 		[127.0.0.1:48000]	[  ] Received: {"type":"dead","payload":""}
+2022-8-6 16-29-23-878 					[  ] Sending {"type":"respawn","payload":"{\"id\":0,\"pos\":{\"x\":0,\"y\":0},\"wonId\":1,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 16-29-23-879 					[  ] Sending {"type":"respawn","payload":"{\"id\":0,\"pos\":{\"x\":0,\"y\":0},\"wonId\":1,\"setWon\":1}"} to 127.0.0.1:48000
+2022-8-6 16-29-26-774 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 16-29-26-774 					[  ] Sending {"type":"left","payload":"{\"id\":0}"} to 127.0.0.1:48000
+2022-8-6 16-29-26-775 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
+2022-8-6 16-29-28-668 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected

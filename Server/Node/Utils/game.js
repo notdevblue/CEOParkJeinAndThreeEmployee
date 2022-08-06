@@ -205,6 +205,11 @@ class game
 
         if (--this.skillSelectCount <= 0) {
 
+            this.broadcast(hs.toJson(
+                "skillallselected",
+                ""
+            ));
+
             this.sendGamedata();
             this.players.forEach(ws => {
 
