@@ -282,7 +282,7 @@ class game
             damage = 0;
 
             this.broadcast(hs.toJson(
-                "skill", JSON.stringify({ command: "shieldoff" })
+                "skill", JSON.stringify({id : damagedws.id , command: "shieldoff" })
             ));
 
             damagedws.shieldTimeout = setTimeout(() => {

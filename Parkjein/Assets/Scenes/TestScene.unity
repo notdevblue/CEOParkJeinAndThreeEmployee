@@ -287,7 +287,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletParent: {fileID: 1083681318}
   initCount: 5
-  bulletObjInitcount: 10
 --- !u!1 &1536821444
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigid: {fileID: 1481536070058936990}
   bulletIdx: 0
+  bulletId: 0
 --- !u!50 &1481536070058936990
 Rigidbody2D:
   serializedVersion: 4

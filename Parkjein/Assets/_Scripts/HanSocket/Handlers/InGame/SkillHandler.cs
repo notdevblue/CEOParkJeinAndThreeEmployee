@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Concurrent;
 using UnityEngine;
 using HanSocket.VO.InGame;
+using HanSocket.Data;
 
 namespace HanSocket.Handlers.InGame
 {
@@ -28,6 +29,16 @@ namespace HanSocket.Handlers.InGame
                 if (vos.TryDequeue(out var vo))
                 {
                     Debug.LogError(vo.command);
+
+                    if(vo.command.Equals("shieldoff"))
+                    {
+                        GameObject obj = UserData.Instance.users[vo.id];
+
+                        if(obj != null)
+                        {
+                            EffectManager.Instance.PlayEffect("shield", obj.transform.position, Vector2.zero, true, 0.5f, obj.transform);
+                        }
+                    }
                 }
             }
         }

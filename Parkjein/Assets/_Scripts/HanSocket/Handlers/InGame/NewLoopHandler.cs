@@ -5,6 +5,7 @@ using HanSocket.Data;
 using HanSocket.VO.InGame;
 using UI.InGame;
 using UnityEngine;
+using Managers;
 
 namespace HanSocket.Handlers.InGame
 {
@@ -35,6 +36,7 @@ namespace HanSocket.Handlers.InGame
                     vo.skillList,
                     vo.selectCount
                 );
+            SoundManager.Instance.PlaySelectSkillBgm();
             BulletPool.Instance.InitBullet();
             foreach (GameObject item in UserData.Instance.users.Values)
             {

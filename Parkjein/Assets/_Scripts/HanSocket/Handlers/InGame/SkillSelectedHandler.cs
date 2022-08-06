@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Collections.Concurrent;
 using HanSocket.VO.InGame;
 using HanSocket.Data;
+using Managers;
 
 namespace HanSocket.Handlers.InGame
 {

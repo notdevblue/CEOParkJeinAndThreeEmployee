@@ -2962,7 +2962,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgmSource: {fileID: 4702140016460191809}
   sfxSource: {fileID: 4702140017705170077}
-  ingameBgm: {fileID: 0}
+  matchBgm: {fileID: 8300000, guid: 7dd4bcb966dae15448ed43877bb906db, type: 3}
+  selectSkillBgm: {fileID: 8300000, guid: 54d0d5fcc4271004b8e139ffe48804ca, type: 3}
+  ingameBgm: {fileID: 8300000, guid: 01f10561609356840bd9b26a5e0bad50, type: 3}
   throwSfx: {fileID: 8300000, guid: 696f10c6153f6fb43ad78c2c378592c8, type: 3}
   hitSfx: {fileID: 8300000, guid: 43b2af94f499a88458c9ca79bac57d19, type: 3}
   knockoutSfx: {fileID: 8300000, guid: 986f3b882c11f554fa7a04137aef8755, type: 3}

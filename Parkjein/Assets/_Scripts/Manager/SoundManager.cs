@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Managers
 {
@@ -10,6 +11,8 @@ namespace Managers
         public AudioSource sfxSource;
 
         [Header("bgm")]
+        public AudioClip matchBgm;
+        public AudioClip selectSkillBgm;
         public AudioClip ingameBgm;
 
         [Header("sfx")]
@@ -28,19 +31,47 @@ namespace Managers
 
         private void Start()
         {
-            //PlayBgmSound(ingameBgm);
+            SceneManager.sceneLoaded += (scene, mode) =>
+            {
+                if(scene.name.Equals("ConnectionScene"))
+                {
+                    PlayMatchBgm();
+                }
+            };
+
+            PlayMatchBgm();
         }
 
-        public void PlayBgmSound(AudioClip clip)
+        #region BGM
+        private void PlayBgmSound(AudioClip clip)
         {
             if (bgmSource.isPlaying) bgmSource.Stop();
             bgmSource.clip = clip;
             bgmSource.Play();
         }
+
+        public void PlayMatchBgm()
+        {
+            PlayBgmSound(matchBgm);
+        }
+
+        public void PlaySelectSkillBgm()
+        {
+            PlayBgmSound(selectSkillBgm);
+        }
+
+        public void PlayIngameBgm()
+        {
+            PlayBgmSound(ingameBgm);
+        }
+
         public void ChangeBgmSound(float volume = 0.3f)
         {
             bgmSource.volume = volume;
         }
+        #endregion
+
+
 
         public void ChangeSfxSound(float volume = 0.3f)
         {

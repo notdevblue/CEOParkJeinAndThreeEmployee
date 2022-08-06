@@ -18,6 +18,7 @@ namespace HanSocket.VO.InGame
     [Serializable]
     public class SpecialCommands
     {
+        public int id;
         public string command;
         public float param;
     }
