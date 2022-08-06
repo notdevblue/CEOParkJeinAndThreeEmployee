@@ -12,3 +12,4 @@
 [8.7.2022 3:23:26 AM] [Error]	 Managers.SoundManager Found more than one.
 [8.7.2022 3:23:28 AM] [Error]	 HanSocket.WebSocketClient Found more than one.
 [8.7.2022 3:23:28 AM] [Error]	 Managers.SoundManager Found more than one.
+[8.7.2022 8:00:06 AM] [Warning]	 HanSocket.WebSocketClient Does not exist, Creating.

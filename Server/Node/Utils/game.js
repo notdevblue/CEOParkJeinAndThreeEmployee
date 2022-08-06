@@ -311,7 +311,6 @@ class game
         
         
         if (!damagedws.neutralized) {
-            let beforeDamage = damage;
             damagedws.skills
                 ?.filter(x => x.type == 2)
                 ?.forEach(skill => {
@@ -319,7 +318,8 @@ class game
                         .skills[2][skill.index](damage);
                 });
             
-            if (beforeDamage != damage)
+            
+            if (damage != defsk.damage)
                 damage = defsk.damage;
         }
 
@@ -373,8 +373,8 @@ class game
             }, 1500);
         }
 
-        console.log(`\n${atksk.damage} ${attackws.damage}`);
-        console.log(`${defsk.damage} ${damagedws.damage}\n`);
+        // console.log(`\n\nATKSK${atksk.damage} ATKWS${attackws.damage}`);
+        // console.log(`DEFSK${defsk.damage} DEFWS${damagedws.damage}\n\n`);
 
         damagedws.damage = damagedwsTempDamage;
         

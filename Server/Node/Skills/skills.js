@@ -94,13 +94,12 @@ class skills {
             // 방어
             (damage) => { // 단단한 신체
                 if (Math.random() >= 0.6) {
-                    damage /= 2.0;
+                    this.damage /= 2.0;
                     
                     this.specialCommands.push(
                         new SkillVO("skinofsteel", this.damage)
                     );
                 }
-                this.damage = damage;
 
                 return this;
             },

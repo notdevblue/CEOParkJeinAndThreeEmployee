@@ -11,4 +11,4 @@ hs.process(ws => {
         match.leaveQueue(ws);
     if (ws.game != null)
         ws.game.left(ws);
-}, ["move",]);
+}, ["move", "bulletstop"]);
