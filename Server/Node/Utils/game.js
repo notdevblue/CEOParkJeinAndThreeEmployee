@@ -417,7 +417,7 @@ class game
                     "respawn",
                     JSON.stringify({
                         id: deadws.id,
-                        pos: this.mapsSpawnLocation[this.map][Math.round(Math.random * 1)],
+                        pos: this.mapsSpawnLocation[this.map][Math.round(Math.random() * 1.0)],
                         wonId: ws.id,
                         setWon: ws.setWon
                     }),
