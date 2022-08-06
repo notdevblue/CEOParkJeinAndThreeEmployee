@@ -17,6 +17,7 @@ namespace Managers
         public AudioClip hitSfx;
         public AudioClip knockoutSfx;
         public AudioClip killSfx;
+        public AudioClip shieldSfx;
 
         protected override void Awake()
         {
