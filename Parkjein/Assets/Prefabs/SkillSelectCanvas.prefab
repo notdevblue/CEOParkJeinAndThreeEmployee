@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 7441506300880272191}
   - component: {fileID: 7441506300880272190}
   - component: {fileID: 7441506300880272162}
+  - component: {fileID: 355752497}
   m_Layer: 5
   m_Name: SkillSelectCanvas
   m_TagString: Untagged
@@ -222,6 +223,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac5803feced3f1b32a07c23217f46228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeDuration: 1
+--- !u!225 &355752497
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7441506300880272185}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &731437889883186032
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -267,7 +281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7882175037434468559, guid: 8b8865ecaf52844c595fbd7e66eaf318, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 800
+      value: 618
       objectReference: {fileID: 0}
     - target: {fileID: 7882175037434468559, guid: 8b8865ecaf52844c595fbd7e66eaf318, type: 3}
       propertyPath: m_LocalPosition.x

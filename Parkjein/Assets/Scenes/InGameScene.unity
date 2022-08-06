@@ -406,18 +406,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7441506300880272185, guid: 6bf3484272dd6e52abcdb02c1dc9508a, type: 3}
   m_PrefabInstance: {fileID: 7441506301201932562}
   m_PrefabAsset: {fileID: 0}
---- !u!225 &355752497
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 355752491}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!114 &455159184 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 614646472, guid: 15300031e6cd21a4b969bb033f39ce57, type: 3}
@@ -1551,6 +1539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameEndCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1043335953536790589, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
 --- !u!1001 &7441506301201932562
@@ -1643,6 +1635,10 @@ PrefabInstance:
     - target: {fileID: 7441506300880272185, guid: 6bf3484272dd6e52abcdb02c1dc9508a, type: 3}
       propertyPath: m_Name
       value: SkillSelectCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441506300880272185, guid: 6bf3484272dd6e52abcdb02c1dc9508a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7441506300880272189, guid: 6bf3484272dd6e52abcdb02c1dc9508a, type: 3}
       propertyPath: m_Pivot.x

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using HanSocket;
 using HanSocket.VO.InGame;
+using DG.Tweening;
 
 namespace UI.InGame
 {
@@ -14,6 +15,8 @@ namespace UI.InGame
         private CanvasGroup _cvsGroup;
 
         private SkillButton[] _skillIcon;
+
+        public float fadeDuration = 1.0f;
 
 
         private void Awake()
@@ -42,9 +45,14 @@ namespace UI.InGame
             gameObject.SetActive(true);
         }
 
+        private void OnDisable()
+        {
+            _cvsGroup.alpha = 0.0f;
+        }
+
         public void DoAlpha()
         {
-            // _cvsGroup.alpha
+            _cvsGroup.DOFade(1.0f, 1.0f).SetEase(Ease.InOutQuad);
         }
     }
 }
