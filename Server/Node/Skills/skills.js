@@ -58,10 +58,13 @@ class skills {
                 return this;
             },
             () => { // 기절
-                this.specialCommands.push(
-                    new SkillVO("knockout", 0.5)
-                );
-                this.knockout = true;
+                if (Math.random() >= 0.6) {
+                    this.knockout = true;
+                    
+                    this.specialCommands.push(
+                        new SkillVO("knockout", 0.5)
+                    );
+                }
 
                 return this;
             },

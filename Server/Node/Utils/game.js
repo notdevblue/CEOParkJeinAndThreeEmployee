@@ -21,6 +21,23 @@ class game
     
     
         this.spawnLocation = new Vector2(-4.0, 0.0);
+
+        this.mapsSpawnLocation = [
+            [
+                new Vector2(-7, -2.5),
+                new Vector2(7, -2.5),
+            ],
+            [
+                new Vector2(-7, -2.5),
+                new Vector2(7, -2.5),
+            ],
+            [
+                new Vector2(-5, -1.5),
+                new Vector2(5, -1.5),
+            ],
+        ];
+
+        this.map = Math.round(Math.random() * (this.mapsSpawnLocation.length - 1));
     }
 
     broadcast(payload, excludeIds = [-1,]) {
@@ -110,7 +127,6 @@ class game
 
     loaded(ws) {
 
-        ++this.loadedCount;
         ws.setWon        = 0;
         ws.gameWon       = 0;
         ws.invincible    = false;
@@ -119,18 +135,19 @@ class game
         ws.abliSkills    = [];
         
         this.resetPlayerValue(ws);
-
         
-        ws.pos = new Vector2(this.spawnLocation.x, this.spawnLocation.y);
-        this.spawnLocation.x = 4;
-
+        ws.pos = this.mapsSpawnLocation[this.map][this.loadedCount];
+        
         hs.send(ws, hs.toJson(
             "pos",
             JSON.stringify({
-                pos: ws.pos
+                pos: ws.pos,
+                map: this.map,
             })
         ));
-        
+            
+        ++this.loadedCount; 
+
         // 모든 클라이언트가 로딩 완료된 경우
         if (this.loadedCount >= this.players.length) {
             this.skillSelectCount = 2;
@@ -395,11 +412,6 @@ class game
                         setWon: ws.setWon
                     }),
                 ));
-
-                deadws.invincible = true;
-                setTimeout(() => {
-                    deadws.invincible = false;
-                }, this.invincibleTimeMs);
             }
         }
     }
