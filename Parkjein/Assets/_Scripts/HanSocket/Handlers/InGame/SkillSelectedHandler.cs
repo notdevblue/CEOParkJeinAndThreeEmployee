@@ -12,8 +12,6 @@ namespace HanSocket.Handlers.InGame
     {
         protected override string Type => "skillselected";
 
-        public TMPro.TMP_Text text;
-
         private ConcurrentQueue<SkillVO> vos
             = new ConcurrentQueue<SkillVO>();
 
@@ -35,16 +33,6 @@ namespace HanSocket.Handlers.InGame
                 {
                     PlayerData p = UserData.Instance.users[vo.id]
                         .GetComponent<PlayerData>();
-
-                    if (p == null) {
-                        text.text += "P NULL\n";
-                    }
-                    else if (p.MyUI == null) {
-                        text.text += "P.MYUI NULL\n";
-                    }
-
-
-
 
                     UserData.Instance.users[vo.id]
                         .GetComponent<PlayerData>()

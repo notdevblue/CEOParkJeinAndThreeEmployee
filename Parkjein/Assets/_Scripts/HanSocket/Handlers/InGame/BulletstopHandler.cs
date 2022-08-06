@@ -9,13 +9,6 @@ namespace HanSocket.Handlers.InGame
     {
         protected override string Type => "bulletstop";
 
-        private TMPro.TMP_Text text;
-
-        private void Start()
-        {
-            text = GameObject.Find("TEXT").GetComponent<TMPro.TMP_Text>();
-        }
-
         private ConcurrentQueue<BulletStopVO> vos
          = new ConcurrentQueue<BulletStopVO>();
 
@@ -36,7 +29,6 @@ namespace HanSocket.Handlers.InGame
                 {
                     
                     TetrisBullet bullet = BulletPool.Instance.GetActiveBullet(vo.id, vo.shooterId);
-                    text.text = ($"{vo.shooterId}: {vo.id}, {vo.pos} {vo.rot.eulerAngles} NULL: {bullet == null}");
                     bullet.transform.position = vo.pos;
                     bullet.transform.rotation = vo.rot;
 
