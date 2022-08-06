@@ -767,6 +767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e921ee53548872dee82c2d54d966fe83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  respawned: 1
 --- !u!50 &864276348
 Rigidbody2D:
   serializedVersion: 4
@@ -1096,6 +1097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f02a72d83a30447191bd9f0676248cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deadSender: {fileID: 864276347}
 --- !u!114 &1349045553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1110,6 +1112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cvsSkill: {fileID: 355752491}
   mainPanel: {fileID: 850894466}
+  deadSender: {fileID: 864276347}
 --- !u!114 &1349045554
 MonoBehaviour:
   m_ObjectHideFlags: 0

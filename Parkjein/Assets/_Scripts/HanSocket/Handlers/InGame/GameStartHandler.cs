@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Concurrent;
 using HanSocket.Data;
+using HanSocket.Sender.InGame;
 using HanSocket.VO.InGame;
 using UI.InGame;
 using UnityEngine;
@@ -16,6 +17,8 @@ namespace HanSocket.Handlers.InGame
         public GameObject cvsSkill;
         public MainPanel mainPanel;
 
+        public DeadSender deadSender;
+
 
         protected override void OnArrived(string payload)
         {
@@ -26,6 +29,7 @@ namespace HanSocket.Handlers.InGame
         {
             cvsSkill.SetActive(false);
             mainPanel.Open();
+            deadSender.respawned = true;
         }
 
         private void Update()

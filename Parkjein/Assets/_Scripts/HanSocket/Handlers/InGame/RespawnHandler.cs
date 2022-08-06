@@ -2,12 +2,14 @@ using System.Collections.Concurrent;
 using UnityEngine;
 using HanSocket.VO.InGame;
 using HanSocket.Data;
+using HanSocket.Sender.InGame;
 
 namespace HanSocket.Handlers.InGame
 {
     public class RespawnHandler : HandlerBase
     {
         protected override string Type => "respawn";
+        public DeadSender deadSender;
 
         private ConcurrentQueue<RespawnVO> vos
             = new ConcurrentQueue<RespawnVO>();
@@ -43,6 +45,7 @@ namespace HanSocket.Handlers.InGame
 
                     if(vo.id == WebSocketClient.Instance.id)
                     {
+                        deadSender.respawned = true;
                         EffectManager.Instance.EnableDampingEndFrame();
                     }
 

@@ -21,6 +21,7 @@ class game
     
     
         this.spawnLocation = new Vector2(-4.0, 0.0);
+        this.processingDead = false;
 
         this.mapsSpawnLocation = [
             [
@@ -249,6 +250,8 @@ class game
 
             this.sendGamedata();
             this.players.forEach(ws => {
+                ws.setWon = 0;
+                this.processingDead = false;
 
                 this.broadcast(hs.toJson(
                     "gamestart",
@@ -282,7 +285,9 @@ class game
         });
     }
 
-    damage(damagedws,data) {
+    damage(damagedws, data) {
+        if (this.processingDead) return;
+
         let attackws = this.players.find(x => x != damagedws);
         let sk = new skills();
         let damage;
@@ -378,6 +383,9 @@ class game
     }
     
     dead(deadws) {
+        if (this.processingDead)
+            return;
+
         ++this.deadPlayers;
         this.justDiedPlayer = deadws;
         deadws.hp = deadws.maxhp;
@@ -394,6 +402,7 @@ class game
             ++ws.setWon;
 
             if (ws.setWon >= this.setWonStackToWin) { // 세트 승리
+                this.processingDead = true;
                 ws.setWon     = 0;
                 deadws.setWon = 0;
                 ++ws.gameWon;
