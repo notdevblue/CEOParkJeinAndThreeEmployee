@@ -29,8 +29,6 @@ namespace HanSocket.Handlers.InGame
             {
                 if (vos.TryDequeue(out var vo))
                 {
-                    Debug.LogError(vo.command);
-
                     switch (vo.command)
                     {
                         case "shieldoff":
