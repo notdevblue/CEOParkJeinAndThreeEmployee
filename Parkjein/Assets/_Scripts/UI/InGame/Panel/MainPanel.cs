@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using Managers;
 
 public class MainPanel : Panel
 {
@@ -20,5 +21,6 @@ public class MainPanel : Panel
     public void SetScoreText(int left,int right)
     {
         scoreText.text = $"{left} : {right}";
+        SoundManager.Instance.PlaySfxSound(SoundManager.Instance.killSfx);
     }
 }

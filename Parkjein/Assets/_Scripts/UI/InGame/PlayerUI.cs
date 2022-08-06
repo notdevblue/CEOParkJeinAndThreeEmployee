@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Managers;
 
 public class PlayerUI : MonoBehaviour
 {
@@ -63,6 +64,7 @@ public class PlayerUI : MonoBehaviour
         {
             winImg[i].sprite = winSprite;
         }
+        SoundManager.Instance.PlaySfxSound(SoundManager.Instance.killSfx);
     }
 
     public void SetIcon(Sprite icon)

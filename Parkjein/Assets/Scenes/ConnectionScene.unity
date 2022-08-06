@@ -2961,11 +2961,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgmSource: {fileID: 4702140016460191809}
-  sfxSource: {fileID: 4702140017705170077}
+  sfxSource: {fileID: 0}
   ingameBgm: {fileID: 0}
   throwSfx: {fileID: 8300000, guid: 696f10c6153f6fb43ad78c2c378592c8, type: 3}
   hitSfx: {fileID: 8300000, guid: 43b2af94f499a88458c9ca79bac57d19, type: 3}
   knockoutSfx: {fileID: 8300000, guid: 986f3b882c11f554fa7a04137aef8755, type: 3}
+  killSfx: {fileID: 8300000, guid: f1841758c3e06384ab2cb76e1fe04e79, type: 3}
 --- !u!4 &4702140017705170074
 Transform:
   m_ObjectHideFlags: 0
