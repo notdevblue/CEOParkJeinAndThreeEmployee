@@ -43,7 +43,7 @@ namespace HanSocket.Handlers.InGame
                         // Debug.Log(x);
                     });
 
-                    SoundManager.Instance.PlayHit(move.CanMove);
+                    SoundManager.Instance.PlayHit(!move.CanMove);
                 }
             }
         }
