@@ -8438,3 +8438,55 @@
 2022-8-6 17-26-58-892 					[  ] Sending {"type":"gameend","payload":"{\"winnerId\":1,\"reason\":\"Enemy left.\"}"} to 127.0.0.1:48000
 2022-8-6 17-26-58-892 		[127.0.0.1:48000]	move: 게임 중이 아닌 클라이언트의 요청
 2022-8-6 17-26-59-610 		[127.0.0.1:48000]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2022-8-6 17-35-9-963 					
+2022-8-6 17-35-9-964 					[II] Server started on port 48000.
+2022-8-6 17-35-9-964 					[  ] Server is listening
+2022-8-6 17-35-9-964 					[  ] Found heandler bulletstop.js
+2022-8-6 17-35-9-965 					[  ] Found heandler damage.js
+2022-8-6 17-35-9-965 					[  ] Found heandler dead.js
+2022-8-6 17-35-9-966 					[  ] Found heandler exampleHandler.js
+2022-8-6 17-35-9-966 					[  ] Found heandler fire.js
+2022-8-6 17-35-9-966 					[  ] Found heandler init.js
+2022-8-6 17-35-9-967 					[  ] Found heandler loaded.js
+2022-8-6 17-35-9-967 					[  ] Found heandler matchmaking.js
+2022-8-6 17-35-9-967 					[  ] Found heandler move.js
+2022-8-6 17-35-9-968 					[  ] Found heandler skillselected.js
+2022-8-6 17-35-19-734 					
+2022-8-6 17-35-19-735 					[II] Server started on port 48000.
+2022-8-6 17-35-19-735 					[  ] Server is listening
+2022-8-6 17-35-19-735 					[  ] Found heandler bulletstop.js
+2022-8-6 17-35-19-736 					[  ] Found heandler damage.js
+2022-8-6 17-35-19-736 					[  ] Found heandler dead.js
+2022-8-6 17-35-19-737 					[  ] Found heandler exampleHandler.js
+2022-8-6 17-35-19-737 					[  ] Found heandler fire.js
+2022-8-6 17-35-19-738 					[  ] Found heandler init.js
+2022-8-6 17-35-19-738 					[  ] Found heandler loaded.js
+2022-8-6 17-35-19-738 					[  ] Found heandler matchmaking.js
+2022-8-6 17-35-19-739 					[  ] Found heandler move.js
+2022-8-6 17-35-19-740 					[  ] Found heandler skillselected.js
+2022-8-6 17-35-26-151 					
+2022-8-6 17-35-26-152 					[II] Server started on port 48000.
+2022-8-6 17-35-26-152 					[  ] Server is listening
+2022-8-6 17-35-26-152 					[  ] Found heandler bulletstop.js
+2022-8-6 17-35-26-153 					[  ] Found heandler damage.js
+2022-8-6 17-35-26-153 					[  ] Found heandler dead.js
+2022-8-6 17-35-26-153 					[  ] Found heandler exampleHandler.js
+2022-8-6 17-35-26-154 					[  ] Found heandler fire.js
+2022-8-6 17-35-26-154 					[  ] Found heandler init.js
+2022-8-6 17-35-26-155 					[  ] Found heandler loaded.js
+2022-8-6 17-35-26-155 					[  ] Found heandler matchmaking.js
+2022-8-6 17-35-26-155 					[  ] Found heandler move.js
+2022-8-6 17-35-26-156 					[  ] Found heandler skillselected.js
+2022-8-6 17-36-47-878 					
+2022-8-6 17-36-47-879 					[II] Server started on port 48000.
+2022-8-6 17-36-47-879 					[  ] Server is listening
+2022-8-6 17-36-47-879 					[  ] Found heandler bulletstop.js
+2022-8-6 17-36-47-880 					[  ] Found heandler damage.js
+2022-8-6 17-36-47-880 					[  ] Found heandler dead.js
+2022-8-6 17-36-47-880 					[  ] Found heandler exampleHandler.js
+2022-8-6 17-36-47-881 					[  ] Found heandler fire.js
+2022-8-6 17-36-47-881 					[  ] Found heandler init.js
+2022-8-6 17-36-47-882 					[  ] Found heandler loaded.js
+2022-8-6 17-36-47-882 					[  ] Found heandler matchmaking.js
+2022-8-6 17-36-47-883 					[  ] Found heandler move.js
+2022-8-6 17-36-47-883 					[  ] Found heandler skillselected.js

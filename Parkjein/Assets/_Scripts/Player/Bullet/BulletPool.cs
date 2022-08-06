@@ -29,6 +29,11 @@ public class BulletPool : MonoSingleton<BulletPool>
         }
     }
 
+    public TetrisBullet GetActiveBullet(int id)
+    {
+        return bulletList.Find(x => x.bulletId == id);
+    }
+
     #region Bullet
     private TetrisBullet InstantiateBullet()
     {
