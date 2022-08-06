@@ -511,7 +511,6 @@ GameObject:
   m_Component:
   - component: {fileID: 795752169}
   - component: {fileID: 795752168}
-  - component: {fileID: 795752170}
   m_Layer: 0
   m_Name: Global Volume
   m_TagString: Untagged
@@ -551,20 +550,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &795752170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795752167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 287d07da3499c00a1af416b0a6cf8a64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectDuration: 0.1
-  damagedColor: {r: 1, g: 0.90250003, b: 0.87, a: 1}
 --- !u!1001 &850894465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -586,6 +571,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 791810971, guid: 15300031e6cd21a4b969bb033f39ce57, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 791810971, guid: 15300031e6cd21a4b969bb033f39ce57, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1300050468749368699, guid: 15300031e6cd21a4b969bb033f39ce57, type: 3}
@@ -1130,7 +1119,7 @@ MonoBehaviour:
   OnDamage:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 795752170}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DamageHue, Assembly-CSharp
         m_MethodName: OnDamage
         m_Mode: 0
