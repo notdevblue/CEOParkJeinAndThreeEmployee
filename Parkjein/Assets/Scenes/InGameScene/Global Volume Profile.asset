@@ -15,7 +15,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.2
+    m_Value: 0.3
 --- !u!114 &-2814511821205117337
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -37,10 +37,38 @@ MonoBehaviour:
     m_Value: 2
   intensity:
     m_OverrideState: 1
-    m_Value: 0.45
+    m_Value: 0.5
   clamp:
     m_OverrideState: 1
     m_Value: 0.05
+--- !u!114 &-614305832372294240
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
+  m_Name: ColorAdjustments
+  m_EditorClassIdentifier: 
+  active: 1
+  postExposure:
+    m_OverrideState: 1
+    m_Value: 0.6
+  contrast:
+    m_OverrideState: 1
+    m_Value: 15
+  colorFilter:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  hueShift:
+    m_OverrideState: 1
+    m_Value: 0
+  saturation:
+    m_OverrideState: 1
+    m_Value: 40
 --- !u!114 &-331863329423157695
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -62,13 +90,13 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.25
+    m_Value: 0.3
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.75
+    m_Value: 0.6
   rounded:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,6 +119,7 @@ MonoBehaviour:
   - {fileID: -331863329423157695}
   - {fileID: 3029709801782142035}
   - {fileID: 4487262227937526303}
+  - {fileID: -614305832372294240}
 --- !u!114 &1478394462426095313
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -106,19 +135,19 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.15
+    m_Value: 0.22
   xMultiplier:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   yMultiplier:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   center:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 0.5, y: 0.5}
   scale:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.95
 --- !u!114 &2558563088798132496
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -137,7 +166,7 @@ MonoBehaviour:
     m_Value: 2
   intensity:
     m_OverrideState: 1
-    m_Value: 0.15
+    m_Value: 0.3
   response:
     m_OverrideState: 1
     m_Value: 0
@@ -218,7 +247,7 @@ MonoBehaviour:
     m_Value: {fileID: 2800000, guid: bc3fb3147f3a57d4aa9fce350ce85a64, type: 3}
   dirtIntensity:
     m_OverrideState: 1
-    m_Value: 0.25
+    m_Value: 0.45
 --- !u!114 &9172824750860882899
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -234,7 +263,7 @@ MonoBehaviour:
   active: 1
   distance:
     m_OverrideState: 1
-    m_Value: 0.06
+    m_Value: 0.1
   cropToFit:
     m_OverrideState: 1
     m_Value: 0.45
