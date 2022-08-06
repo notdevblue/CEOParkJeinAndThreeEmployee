@@ -19,19 +19,11 @@ public class DamageText : MonoBehaviour
 
     private Coroutine co;
 
-    private WaitForSeconds ws;
-
-    private void Start()
-    {
-        alpha = text.color;
-
-        ws = new WaitForSeconds(disableTime);
-    }
-
     private void Update()
     {
         transform.Translate(new Vector3(0, moveSpeed * Time.deltaTime, 0));
         alpha.a = Mathf.Lerp(alpha.a, 0, Time.deltaTime * alphaSpeed);
+        text.color = alpha;
     }
 
     private void OnDisable()
@@ -48,25 +40,26 @@ public class DamageText : MonoBehaviour
         {
             StopCoroutine(co);
         }
-        StartCoroutine(DisableObj());
+        co = StartCoroutine(DisableObj());
     }
 
     public void Init(string msg, Color color,Vector2 pos)
     {
         text.text = msg;
-        text.color = color;
+        text.color = alpha = color;
         transform.position = pos;
     }
 
     IEnumerator DisableObj()
     {
-        yield return ws;
+        yield return new WaitForSeconds(disableTime);
 
         SetActive(false);
     }
 
     public void SetActive(bool active)
     {
+        print($"setActive {active}");
         gameObject.SetActive(active);
     }
 }
