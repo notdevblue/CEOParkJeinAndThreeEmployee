@@ -1,3 +1,4 @@
+using Managers;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,7 @@ namespace HanSocket.Handlers.InGame
 
         protected override void OnFlag()
         {
+            SoundManager.Instance.PlayIngameBgm();
             Debug.Log("와 스킬 다 선택했데요");
         }
     }
