@@ -57,6 +57,23 @@ public class MenuPanel : Panel
         }
     }
 
+    private void OnApplicationQuit()
+    {
+        Save();
+    }
+
+    private void Save()
+    {
+        PlayerPrefs.SetFloat("bgm", bgmSlider.value);
+        PlayerPrefs.SetFloat("sfx", sfxSlider.value);
+    }
+
+    private void Load()
+    {
+        bgmSlider.value = PlayerPrefs.GetFloat("bgm", 1f);
+        sfxSlider.value = PlayerPrefs.GetFloat("sfx", 1f);
+    }
+
     private void OpenMenu()
     {
         if(IsOpen)
@@ -118,8 +135,9 @@ public class MenuPanel : Panel
             SoundManager.Instance.ChangeBgmSound(value);
         });
 
-        resolutionDropdown.onValueChanged.AddListener(ChangeDropDownValue);
+        Load();
 
+        resolutionDropdown.onValueChanged.AddListener(ChangeDropDownValue);
         resolutionDropdown.RefreshShownValue();
     }
 
