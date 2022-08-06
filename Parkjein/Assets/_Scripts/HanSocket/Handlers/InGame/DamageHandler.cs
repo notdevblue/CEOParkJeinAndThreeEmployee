@@ -30,6 +30,8 @@ namespace HanSocket.Handlers.InGame
                 {
                     GameObject obj = UserData.Instance.users[vo.id];
                     PlayerData data = obj.GetComponent<PlayerData>();
+                    DamageText text = TextPool.Instance.GetDamageText();
+                    bool isCritical = false;
 
                     data.MyUI.SetHp((float)vo.hp / vo.maxhp);
                     obj.GetComponent<PlayerAnimation>().SetHurt();
@@ -51,6 +53,7 @@ namespace HanSocket.Handlers.InGame
                                 SoundManager.Instance.PlaySfxSound(SoundManager.Instance.skinOfSteelSfx);
                                 break;
                             case "critical":
+                                isCritical = true;
                                 SoundManager.Instance.PlaySfxSound(SoundManager.Instance.criticalSfx);
                                 break;
                             default:
@@ -60,6 +63,8 @@ namespace HanSocket.Handlers.InGame
                         Debug.LogWarning($"{x.command}:{x.param}");
                     });
 
+                    text.Init($"{vo.damage}", isCritical ? Color.red : Color.white, vo.point);
+                    text.SetActive(true);
                     SoundManager.Instance.PlayHit(!data.CanMove);
                 }
             }
