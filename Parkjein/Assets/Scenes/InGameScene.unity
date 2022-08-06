@@ -1145,6 +1145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1357797937}
   - component: {fileID: 1357797938}
+  - component: {fileID: 1357797939}
   m_Layer: 0
   m_Name: ' '
   m_TagString: Untagged
@@ -1182,6 +1183,20 @@ MonoBehaviour:
   bulletParent: {fileID: 1357797937}
   initCount: 20
   bulletId: 0
+--- !u!114 &1357797939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357797936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c9d1a19351bd740941eabb47e439e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePrefab: {fileID: 7340903628882775416, guid: 52ac21a7edd252f4cb76021226c79896, type: 3}
+  initCount: 20
 --- !u!1 &1618577531
 GameObject:
   m_ObjectHideFlags: 0
