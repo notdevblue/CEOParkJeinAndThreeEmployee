@@ -29,9 +29,9 @@ namespace HanSocket.Handlers.InGame
                 if (vos.TryDequeue(out var vo))
                 {
                     GameObject obj = UserData.Instance.users[vo.id];
-                    PlayerMove move = obj.GetComponent<PlayerMove>();
+                    PlayerData data = obj.GetComponent<PlayerData>();
 
-                    obj.GetComponent<PlayerData>().MyUI.SetHp((float)vo.hp / vo.maxhp);
+                    data.MyUI.SetHp((float)vo.hp / vo.maxhp);
                     obj.GetComponent<PlayerAnimation>().SetHurt();
                     EffectManager.Instance.PlayEffect("hit", vo.point, Vector2.zero,null);
 
@@ -40,7 +40,7 @@ namespace HanSocket.Handlers.InGame
                         switch (x.command)
                         {
                             case "knockout":
-                                move.Knockout(x.param);
+                                data.Knockout(x.param);
                                 break;
                             case "skinofsteel":
                                 SoundManager.Instance.PlaySfxSound(SoundManager.Instance.skinOfSteelSfx);
@@ -62,7 +62,7 @@ namespace HanSocket.Handlers.InGame
                         // Debug.Log(x);
                     });
 
-                    SoundManager.Instance.PlayHit(!move.CanMove);
+                    SoundManager.Instance.PlayHit(!data.CanMove);
                 }
             }
         }
