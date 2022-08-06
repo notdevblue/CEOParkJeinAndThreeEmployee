@@ -58,7 +58,6 @@ namespace HanSocket.Handlers.InGame
                 {
                     rightScore = x.win;
                 }
-                print(x.win);
                 data.MyUI.NewLoop();
             });
 

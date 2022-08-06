@@ -405,9 +405,19 @@ class game
     }
     
     gameEnd(winnerId, reason = "") {
+        let winList = [];
+
+        this.players.forEach(ws => {
+            winList.push({
+                id:ws.id,
+                win:ws.gameWon
+            });
+        });
+
         let payload = {
             winnerId: winnerId,
-            reason: reason
+            reason: reason,
+            winList: winList
         }
 
         this.players.forEach(ws => {
