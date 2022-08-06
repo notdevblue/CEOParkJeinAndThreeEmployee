@@ -5,6 +5,7 @@ using Objects;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Managers;
 
 public class TetrisBullet : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class TetrisBullet : MonoBehaviour
         transform.position = fireVO.startPos;
         this.fireVO = fireVO;
         this.SetActive(true);
+        SoundManager.Instance.PlaySfxSound(SoundManager.Instance.throwSfx);
         rigid.AddForce(fireVO.dir * fireVO.bulletSpeed, ForceMode2D.Impulse);
         rigid.AddTorque(fireVO.rotationSpeed);
     }

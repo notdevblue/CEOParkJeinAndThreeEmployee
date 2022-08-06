@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Managers;
 
 public class MenuPanel : Panel
 {
@@ -31,9 +32,20 @@ public class MenuPanel : Panel
 
     protected override void Start()
     {
+        MenuPanel[] panels = FindObjectsOfType<MenuPanel>();
+
+        if(panels.Length > 1)
+        {
+            for (int i = 1; i < panels.Length; i++)
+            {
+                Destroy(panels[i].transform.parent.gameObject);
+            }
+            return;
+        }
+        
+
         base.Start();
         InitUI();
-
         DontDestroyOnLoad(transform.parent.gameObject);
     }
 
@@ -98,12 +110,12 @@ public class MenuPanel : Panel
 
         sfxSlider.onValueChanged.AddListener(value =>
         {
-            //SoundManager.Instance.ChangeSfxSound(value);
+            SoundManager.Instance.ChangeSfxSound(value);
         });
 
         bgmSlider.onValueChanged.AddListener(value =>
         {
-            //SoundManager.Instance.ChangeBgmSound(value);
+            SoundManager.Instance.ChangeBgmSound(value);
         });
 
         resolutionDropdown.onValueChanged.AddListener(ChangeDropDownValue);
