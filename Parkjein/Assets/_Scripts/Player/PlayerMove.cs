@@ -58,10 +58,24 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("GROUND"))
+        {
+            isGround = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        if(col.CompareTag("GROUND"))
+        {
+            isGround = false;
+        }
+    }
+
     private void Jump()
     {
-        isGround = rigid.velocity.y == 0;
-
         if (isGround)
         {
             jumpCount = maxJumpCount;
