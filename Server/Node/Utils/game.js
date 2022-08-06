@@ -68,61 +68,63 @@ class game
                 randomSkills.push(randomSkills.length);
             });
         });
-        
-        for (let i = 0; i < 5; ++i) {
-            let idx = Math.round(Math.random() * (randomSkills.length - 1));
-            let skill = randomSkills.splice(idx, 1)[0];
-            let type = -1;
-
-            if (skill >= 13) {
-                type = 5;
-                skill -= 13;
-            }
-            else if (skill >= 7) {
-                type = 4;
-                skill -= 7;
-            }
-            else if (skill >= 6) {
-                type = 3;
-                skill -= 6;
-            }
-            else if (skill >= 4) {
-                type = 2;
-                skill -= 4;
-            }
-            else if (skill >= 3) {
-                type = 1;
-                skill -= 3;
-            }
-            else {
-                type = 0;
-            }
-            
-            sendList.push({
-                type: type,
-                skill: skill,
-            });
-        }
 
         this.players.forEach(ws => {
             winList.push({
-                id:ws.id,
-                win:ws.gameWon
+                id: ws.id,
+                win: ws.gameWon
             });
         });
+        
+        this.players.forEach(x => {
+            for (let i = 0; i < 5; ++i) {
+                let idx = Math.round(Math.random() * (randomSkills.length - 1));
+                let skill = randomSkills.splice(idx, 1)[0];
+                let type = -1;
+    
+                if (skill >= 13) {
+                    type = 5;
+                    skill -= 13;
+                }
+                else if (skill >= 7) {
+                    type = 4;
+                    skill -= 7;
+                }
+                else if (skill >= 6) {
+                    type = 3;
+                    skill -= 6;
+                }
+                else if (skill >= 4) {
+                    type = 2;
+                    skill -= 4;
+                }
+                else if (skill >= 3) {
+                    type = 1;
+                    skill -= 3;
+                }
+                else {
+                    type = 0;
+                }
+                
+                sendList.push({
+                    type: type,
+                    skill: skill,
+                });
+            }
+            
 
-        this.broadcast(hs.toJson(
-            "newloop",
-            JSON.stringify({
-                skill: targetId,
-                selectCount: this.skillSelectCount,
-                skillList: sendList,
-                winList: winList
-            })
-        ));
+            hs.send(ws, hs.toJson(
+                "newloop",
+                JSON.stringify({
+                    skill: targetId,
+                    selectCount: this.skillSelectCount,
+                    skillList: sendList,
+                    winList: winList
+                })
+            ));
+        });
 
-
-        this.justDiedPlayer   = null;
+        this.justDiedPlayer = null;
     }
 
     loaded(ws) {
