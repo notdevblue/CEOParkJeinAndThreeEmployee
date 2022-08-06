@@ -44,3 +44,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Godray
+    uniqueID: 1991896163
+    locked: 0

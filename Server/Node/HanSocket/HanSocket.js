@@ -39,8 +39,7 @@ class HanSocket {
       this.wss.on("connection", (ws, req) => {
          
          // save ip address
-         const ipAddr = req.headers["x-forwarded-for"] || req.headers.host;
-
+         const ipAddr = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
          // assign id to client
          ws.id = this.id++;
          ws.ipAddr = ipAddr;
