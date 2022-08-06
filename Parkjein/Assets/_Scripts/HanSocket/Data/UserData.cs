@@ -76,6 +76,7 @@ namespace HanSocket.Data
                     MonoBehaviour.Destroy(obj.GetComponent<PositionSender>());
                     MonoBehaviour.Destroy(obj.GetComponent<Rigidbody2D>());
                     MonoBehaviour.Destroy(obj.transform.Find("ME").gameObject);
+                    MonoBehaviour.Destroy(obj.transform.Find("ME2").gameObject);
                 }
                 else
                 {
