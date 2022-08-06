@@ -61,20 +61,11 @@ namespace HanSocket
                 if (data.type != "move" && data.type != "bulletstop")
                 {
                     Debug.Log($"Arrived: {e.Data}");
-                    q.Enqueue(e.Data.ToString());
                 }
 
             };
 
             ws.Connect();
-        }
-
-        ConcurrentQueue<string> q = new ConcurrentQueue<string>();
-
-        private void FixedUpdate()
-        {
-            if (q.Count > 0 && q.TryDequeue(out string rawpacket))
-                Text.text = (rawpacket.ToString() + "\n") + Text.text;
         }
 
         public void Disconnect(CloseStatusCode code = CloseStatusCode.Normal,
