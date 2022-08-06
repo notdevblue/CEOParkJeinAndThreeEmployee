@@ -21,6 +21,8 @@ namespace Managers
         public AudioClip knockoutSfx;
         public AudioClip killSfx;
         public AudioClip shieldSfx;
+        public AudioClip skinOfSteelSfx;
+        public AudioClip criticalSfx;
 
         protected override void Awake()
         {

@@ -37,8 +37,27 @@ namespace HanSocket.Handlers.InGame
 
                     Debug.LogWarning($"AtkHP: {vo.atkhp}/{vo.atkmaxhp}, Damaged: {vo.id}, HP: {vo.hp}/{vo.maxhp}");
                     vo.specialCommands?.ForEach(x => {
-                        if (x.command.CompareTo("knockout") == 0)
-                            move.Knockout(x.param);
+                        switch (x.command)
+                        {
+                            case "knockout":
+                                move.Knockout(x.param);
+                                break;
+                            case "skinofsteel":
+                                SoundManager.Instance.PlaySfxSound(SoundManager.Instance.skinOfSteelSfx);
+                                break;
+                            case "critical":
+                                SoundManager.Instance.PlaySfxSound(SoundManager.Instance.criticalSfx);
+                                break;
+                            default:
+                                break;
+                        }
+
+                        //if (x.command.CompareTo("knockout") == 0)
+                        //    move.Knockout(x.param);
+                        //else if (x.command.CompareTo("skinofsteel") == 0)
+                        //    SoundManager.Instance.PlaySfxSound(SoundManager.Instance.skinOfSteelSfx);
+                        //else if (x.command.CompareTo("critical") == 0)
+                        //    SoundManager.Instance.PlaySfxSound(SoundManager.Instance.criticalSfx);
                         Debug.LogWarning($"{x.command}:{x.param}");
                         // Debug.Log(x);
                     });

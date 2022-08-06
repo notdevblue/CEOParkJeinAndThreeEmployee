@@ -31,18 +31,21 @@ namespace HanSocket.Handlers.InGame
                 {
                     Debug.LogError(vo.command);
 
-                    if(vo.command.Equals("shieldoff"))
+                    switch (vo.command)
                     {
-                        GameObject obj = UserData.Instance.users[vo.id];
+                        case "shieldoff":
+                            GameObject obj = UserData.Instance.users[vo.id];
 
-                        if(obj != null)
-                        {
-                            EffectManager.Instance.PlayEffect("shield", obj.transform.position, Vector2.zero, true, 0.5f, obj.transform);
-                        }
-                    }
-                    else if(vo.command.Equals("shieldon"))
-                    {
-                        SoundManager.Instance.PlaySfxSound(SoundManager.Instance.shieldSfx);
+                            if (obj != null)
+                            {
+                                EffectManager.Instance.PlayEffect("shield", obj.transform.position, Vector2.zero, true, 0.5f, obj.transform);
+                            }
+                            break;
+                        case "shieldon":
+                            SoundManager.Instance.PlaySfxSound(SoundManager.Instance.shieldSfx);
+                            break;
+                        default:
+                            break;
                     }
                 }
             }

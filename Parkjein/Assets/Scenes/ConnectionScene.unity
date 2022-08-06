@@ -2970,6 +2970,8 @@ MonoBehaviour:
   knockoutSfx: {fileID: 8300000, guid: 986f3b882c11f554fa7a04137aef8755, type: 3}
   killSfx: {fileID: 8300000, guid: f1841758c3e06384ab2cb76e1fe04e79, type: 3}
   shieldSfx: {fileID: 8300000, guid: cd7db8835e800c244b023c3f8a8af53a, type: 3}
+  skinOfSteelSfx: {fileID: 8300000, guid: a6cb324e92e5c3e419bbe2fd0ed6370e, type: 3}
+  criticalSfx: {fileID: 8300000, guid: 627900bd1c169a94ebeac4578cd82eaa, type: 3}
 --- !u!4 &4702140017705170074
 Transform:
   m_ObjectHideFlags: 0
