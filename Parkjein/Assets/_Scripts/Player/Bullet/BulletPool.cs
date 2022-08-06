@@ -12,6 +12,7 @@ public class BulletPool : MonoSingleton<BulletPool>
     [SerializeField]
     private int initCount = 5;
 
+    [SerializeField]
     private int bulletId = 0;
 
     private List<TetrisBullet> bulletList = new List<TetrisBullet>();
@@ -29,9 +30,9 @@ public class BulletPool : MonoSingleton<BulletPool>
         }
     }
 
-    public TetrisBullet GetActiveBullet(int id)
+    public TetrisBullet GetActiveBullet(int id, int shooterId)
     {
-        return bulletList.Find(x => x.bulletId == id);
+        return bulletList.Find(x => (x.bulletId == id) && (x.FireVO.shooterId == shooterId));
     }
 
     #region Bullet

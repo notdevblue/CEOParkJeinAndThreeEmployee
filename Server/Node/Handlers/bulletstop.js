@@ -6,7 +6,7 @@ module.exports = {
         if (ws.game == null) return;
 
         ws.game.players.forEach(x => {
-            if (x.id == ws.id) return;
+            // if (x.id == ws.id) return;
 
             x.send(hs.toJson("bulletstop", data));
         })

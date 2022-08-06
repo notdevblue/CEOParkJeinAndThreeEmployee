@@ -7,10 +7,11 @@ namespace HanSocket.VO.InGame
     public class BulletStopVO : ValueObject
     {
         public int id;
+        public int shooterId;
         public Vector2 pos;
         public Quaternion rot;
 
-        public BulletStopVO(int id, Vector2 pos, Quaternion rot)
+        public BulletStopVO(int id, int shooterId, Vector2 pos, Quaternion rot)
         {
             this.id = id;
             this.pos = pos;

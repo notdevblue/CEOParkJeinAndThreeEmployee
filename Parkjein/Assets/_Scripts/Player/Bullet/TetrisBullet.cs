@@ -54,23 +54,26 @@ public class TetrisBullet : MonoBehaviour
         {
             if (user.id == WebSocketClient.Instance.id)
             {
-                stopBullet = true;
-                WebSocketClient.Instance.Send("bulletstop",
-                    new BulletStopVO(FireVO.bulletId, transform.position, transform.rotation).ToJson());
-
                 WebSocketClient.Instance.Send("damage",
                     new DamageVO(col.contacts[0].point).ToJson());
             }
         }
-        else if (col.gameObject.CompareTag("GROUND")
-              || (col.gameObject.CompareTag("PLAYER") && fireVO.shooterId != user.id)
-              || col.gameObject.CompareTag("BULLET"))
+
+
+        if (col.gameObject.CompareTag("GROUND")
+         || col.gameObject.CompareTag("BULLET"))
         {
             stopBullet = true;
         }
 
         if (stopBullet)
         {
+            if (fireVO.shooterId == WebSocketClient.Instance.id)
+            {
+                WebSocketClient.Instance.Send("bulletstop",
+                    new BulletStopVO(FireVO.bulletId, FireVO.shooterId, transform.position, transform.rotation).ToJson());
+            }
+
             this.gameObject.tag = "GROUND";
             rigid.velocity = Vector2.zero;
             Destroy(rigid);
