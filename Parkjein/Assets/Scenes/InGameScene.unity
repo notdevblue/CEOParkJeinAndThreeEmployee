@@ -1518,6 +1518,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1043335953480029161, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043335953480029161, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 54cb9cfa486afa2118b13119f2693614, type: 2}
+    - target: {fileID: 1043335953480029161, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043335953480029161, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4978077079340630716, guid: 54cb9cfa486afa2118b13119f2693614, type: 2}
+    - target: {fileID: 1043335953480029161, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 1043335953536790576, guid: 1ad2690ce9cf56256a5f44bf6f9d529e, type: 3}
       propertyPath: m_Camera
       value: 
