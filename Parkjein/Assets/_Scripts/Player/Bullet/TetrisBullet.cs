@@ -13,6 +13,7 @@ public class TetrisBullet : MonoBehaviour
     private Rigidbody2D rigid;
 
     public int bulletIdx;
+    public int bulletId;
 
     private FireVO fireVO;
     public FireVO @FireVO => fireVO;

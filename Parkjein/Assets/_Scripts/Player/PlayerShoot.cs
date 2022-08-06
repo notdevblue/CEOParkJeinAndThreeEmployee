@@ -24,6 +24,7 @@ public class PlayerShoot : MonoBehaviour
 
     [SerializeField]
     private float attackCoolTime = 1f;
+    [SerializeField]
     private float curAttackCoolTime = 1f;
 
     private bool isAttackAble = false;
@@ -54,6 +55,7 @@ public class PlayerShoot : MonoBehaviour
 
         if (Input.GetKeyDown(SHOOT) && isAttackAble)
         {
+            //print("before");
             if (EventSystem.current.IsPointerOverGameObject()) return;
             Shoot();
         }
@@ -78,8 +80,8 @@ public class PlayerShoot : MonoBehaviour
         }
 
         TetrisBullet bullet = BulletPool.Instance.GetBullet();
-        FireVO vo = new FireVO(WebSocketClient.Instance.id,bullet.bulletIdx, startPos, dir,data.BulletSpeed, data.RotationSpeed);
-
+        FireVO vo = new FireVO(WebSocketClient.Instance.id,bullet.bulletId,bullet.bulletIdx, startPos, dir,data.BulletSpeed, data.RotationSpeed);
+        //print("fire");
         WebSocketClient.Instance.Send("fire",
             vo.ToJson());
 

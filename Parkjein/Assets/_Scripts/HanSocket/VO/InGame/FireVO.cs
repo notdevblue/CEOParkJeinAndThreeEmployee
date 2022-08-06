@@ -7,6 +7,7 @@ namespace HanSocket.VO.InGame
     public class FireVO : ValueObject
     {
         public int shooterId;
+        public int bulletId;
 
         public int bulletIdx;
         public Vector2 startPos;
@@ -16,6 +17,7 @@ namespace HanSocket.VO.InGame
 
         public FireVO(
             int shooterId,
+            int bulletId,
             int bulletIdx,
             Vector2 startPos,
             Vector2 dir,
@@ -23,6 +25,7 @@ namespace HanSocket.VO.InGame
             float rotationSpeed)
         {
             this.shooterId = shooterId;
+            this.bulletId = bulletId;
             this.bulletIdx = bulletIdx;
             this.startPos = startPos;
             this.dir = dir;

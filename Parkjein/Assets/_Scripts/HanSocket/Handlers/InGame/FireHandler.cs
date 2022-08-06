@@ -19,7 +19,7 @@ namespace HanSocket.Handlers.InGame
         protected override void OnFlag()
         {
             UserData.Instance.users[fireVO.shooterId].GetComponent<PlayerAnimation>().SetAttack();
-            BulletPool.Instance.GetBullet(fireVO.bulletIdx).Shoot(fireVO);
+            BulletPool.Instance.GetBullet(fireVO.bulletIdx,fireVO.bulletId).Shoot(fireVO);
         }
 
     }
