@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 4533499050437222617}
   m_Layer: 0
   m_Name: bullet (4)
-  m_TagString: GROUND
+  m_TagString: BULLET
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

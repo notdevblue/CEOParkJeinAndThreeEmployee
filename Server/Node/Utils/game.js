@@ -295,10 +295,6 @@ class game
         let atksk = new skills(null, attackws);
         damagedws.damage = atksk.damage;
         let defsk = new skills(null, damagedws);
-        let damage;
-
-        console.log(`\n1\natksk.damage: ${atksk.damage}, attackws.damage:${attackws.damage}`);
-        console.log(`defsk.damage: ${defsk.damage}, damagedws.damage:${damagedws.damage}\n`);
 
         if (!attackws.neutralized) {
             attackws.skills
@@ -313,14 +309,17 @@ class game
         
         
         if (!damagedws.neutralized) {
+            let changed = false;
             damagedws.skills
                 ?.filter(x => x.type == 2)
                 ?.forEach(skill => {
+                    changed = true;
                     defsk = new skills(defsk, damagedws)
                         .skills[2][skill.index](damage);
                 });
             
-            damage = defsk.damage;
+            if (changed)
+                damage = defsk.damage;
         }
 
         if (!attackws.neutralized) {
@@ -355,7 +354,7 @@ class game
 
         attackws.hp += atksk.hpReturn;
         if (attackws.hp > attackws.maxhp) {
-            attackws.hp = atackws.maxhp;
+            attackws.hp = attackws.maxhp;
         }
         damagedws.hp -= damage;
 
@@ -373,12 +372,16 @@ class game
             }, 1500);
         }
 
+        console.log(`\n${atksk.damage} ${attackws.damage}`);
+        console.log(`${defsk.damage} ${damagedws.damage}\n`);
+
         damagedws.damage = damagedwsTempDamage;
         
         this.broadcast(hs.toJson(
             "damage",
             JSON.stringify({
                 id: damagedws.id,
+                attackerid: attackws.id,
                 maxhp: damagedws.maxhp,
                 hp: damagedws.hp,
                 atkhp: attackws.hp,

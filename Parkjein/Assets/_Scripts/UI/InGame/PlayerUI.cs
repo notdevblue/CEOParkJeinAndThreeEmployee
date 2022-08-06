@@ -8,7 +8,7 @@ using Managers;
 public class PlayerUI : MonoBehaviour
 {
     [SerializeField]
-    private Image playerFace; // »ç½Ç»ó ¾ø´Â°Í
+    private Image playerFace; // ï¿½ï¿½Ç»ï¿½ ï¿½ï¿½ï¿½Â°ï¿½
     [SerializeField]
     private Image[] winImg;
 
@@ -57,6 +57,9 @@ public class PlayerUI : MonoBehaviour
 
     public void SetHp(float hpAmount)
     {
+        if (hpAmount == -1)
+            hpAmount = hpSlider.maxValue;
+
         hpSlider.value = hpAmount;
     }
 

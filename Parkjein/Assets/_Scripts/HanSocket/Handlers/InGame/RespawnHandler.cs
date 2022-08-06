@@ -42,7 +42,7 @@ namespace HanSocket.Handlers.InGame
 
                     user.GetComponent<Remote>()
                         ?.SetTarget(vo.pos);
-                    user.GetComponent<PlayerData>().MyUI.SetHp(1);
+                    user.GetComponent<PlayerData>().MyUI.SetHp(-1);
                         
                     user.transform.position = vo.pos;
                     user.SetActive(true);

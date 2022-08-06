@@ -49,6 +49,7 @@ class skills {
             // 공격
             () => { // 크리티컬
                 if (Math.random() >= 0.6) {
+                    console.log(`\nCRITICAL BEFORE:${this.damage} AFTER:${this.damage * 2.0}\n`);
                     this.damage *= 2.0;
 
                     this.specialCommands.push(

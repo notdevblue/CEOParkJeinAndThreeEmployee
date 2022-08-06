@@ -8,6 +8,7 @@ namespace HanSocket.VO.InGame
     public class DamageVO : ValueObject
     {
         public int id;
+        public int attackerid;
         public float hp;
         public float maxhp;
         public float atkhp;

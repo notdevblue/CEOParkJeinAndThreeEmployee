@@ -33,11 +33,14 @@ namespace HanSocket.Handlers.InGame
                 if (vos.TryDequeue(out var vo))
                 {
                     GameObject obj = UserData.Instance.users[vo.id];
+                    GameObject atker = UserData.Instance.users[vo.attackerid];
                     PlayerData data = obj.GetComponent<PlayerData>();
                     DamageText text = TextPool.Instance.GetDamageText();
                     bool isCritical = false;
 
                     data.MyUI.SetHp((float)vo.hp / vo.maxhp);
+                    atker.GetComponent<PlayerData>().MyUI.SetHp((float)vo.atkhp / vo.maxhp);
+
                     obj.GetComponent<PlayerAnimation>().SetHurt();
                     EffectManager.Instance.PlayEffect("hit", vo.point, Vector2.zero,null);
 
