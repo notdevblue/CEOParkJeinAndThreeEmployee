@@ -32,12 +32,10 @@ public class BulletPool : MonoSingleton<BulletPool>
 
     public TetrisBullet GetActiveBullet(int id, int shooterId)
     {
-        
-        // bulletList.ForEach(x => {
-        //     if (x.FireVO == null)
-        //         Debug.LogError("WTF");
-        // });
-        return bulletList.Find(x => (x.bulletId == id) && (x.FireVO?.shooterId == shooterId));
+        return bulletList.Find(x => {
+            return (x.bulletId == id)
+                && (x.shooterId == shooterId);
+        });
     }
 
     #region Bullet
