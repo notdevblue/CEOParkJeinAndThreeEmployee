@@ -3,6 +3,7 @@ using System.Collections.Concurrent;
 using UnityEngine;
 using HanSocket.VO.InGame;
 using HanSocket.Data;
+using Managers;
 
 namespace HanSocket.Handlers.InGame
 {
@@ -38,6 +39,10 @@ namespace HanSocket.Handlers.InGame
                         {
                             EffectManager.Instance.PlayEffect("shield", obj.transform.position, Vector2.zero, true, 0.5f, obj.transform);
                         }
+                    }
+                    else if(vo.command.Equals("shieldon"))
+                    {
+                        SoundManager.Instance.PlaySfxSound(SoundManager.Instance.shieldSfx);
                     }
                 }
             }
