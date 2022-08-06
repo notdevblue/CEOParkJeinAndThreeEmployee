@@ -152,7 +152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7abc253d8ba0b40ba2611173f46f67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectList: []
+  effectList:
+  - name: shield
+    effectPrefab: {fileID: 8182672579667570649, guid: e216cb657993cbd4d9951040dd4ae23e, type: 3}
 --- !u!4 &57723788
 Transform:
   m_ObjectHideFlags: 0
