@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Collections.Concurrent;
 using HanSocket.VO.InGame;
+using HanSocket.Data;
 
 namespace HanSocket.Handlers.InGame
 {
@@ -29,6 +30,7 @@ namespace HanSocket.Handlers.InGame
             {
                 if (vos.TryDequeue(out var vo))
                 {
+                    UserData.Instance.users[vo.id].GetComponent<PlayerData>().MyUI?.SetIcon(SkillImageSetter.Instance.Get(vo.type, vo.skill).sprite);
                     Debug.Log($"{vo.id}: {vo.type} 의 {vo.skill} 선택");
                 }
             }

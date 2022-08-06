@@ -86,15 +86,7 @@ namespace HanSocket.Data
                 }
             }
 
-            List<PlayerUI> uis = MonoBehaviour.FindObjectsOfType<PlayerUI>().ToList();
-            if (id != myId)
-            {
-                users[id].GetComponent<PlayerData>().MyUI = uis.Find(x => x.gameObject.name == (isLeftUI ? "Right" : "Left"));
-            }
-            else
-            {
-                users[id].GetComponent<PlayerData>().MyUI = uis.Find(x => x.gameObject.name == (isLeftUI ? "Left" : "Right"));
-            }
+            
         }
     }
 }
