@@ -12,8 +12,9 @@ public class TetrisBullet : MonoBehaviour
     [SerializeField]
     private Rigidbody2D rigid;
 
-    public int bulletIdx;
-    public int bulletId;
+    public int bulletIdx = -1;
+    public int bulletId = -1;
+    public int shooterId = -1;
 
     private FireVO fireVO;
     public FireVO @FireVO => fireVO;
@@ -31,6 +32,7 @@ public class TetrisBullet : MonoBehaviour
 
         transform.position = fireVO.startPos;
         this.fireVO = fireVO;
+        this.shooterId = this.fireVO.shooterId;
         this.SetActive(true);
         SoundManager.Instance.PlaySfxSound(SoundManager.Instance.throwSfx);
         rigid.AddForce(fireVO.dir * fireVO.bulletSpeed, ForceMode2D.Impulse);
@@ -68,10 +70,10 @@ public class TetrisBullet : MonoBehaviour
 
         if (stopBullet)
         {
-            if (fireVO.shooterId == WebSocketClient.Instance.id)
+            if (shooterId == WebSocketClient.Instance.id)
             {
                 WebSocketClient.Instance.Send("bulletstop",
-                    new BulletStopVO(FireVO.bulletId, FireVO.shooterId, transform.position, transform.rotation).ToJson());
+                    new BulletStopVO(bulletId, shooterId, transform.position, transform.rotation).ToJson());
             }
 
             this.gameObject.tag = "GROUND";
