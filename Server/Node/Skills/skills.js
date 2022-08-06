@@ -20,6 +20,7 @@ class skills {
             this.penetrate = false;
             this.bomb = false;
             this.hasShield = false;
+            this.haslonglife = false;
 
         } else {
             this.damage = instance.damage;
@@ -38,6 +39,7 @@ class skills {
             this.penetrate = instance.penetrate;
             this.bomb = instance.bomb;
             this.hasShield = instance.hasShield;
+            this.haslonglife = instance.haslonglife;
         }
 
         this.hp = ws == null ? 100 : ws.hp;
@@ -48,6 +50,10 @@ class skills {
             () => { // 크리티컬
                 if (Math.random() >= 0.6) {
                     this.damage *= 2.0;
+
+                    this.specialCommands.push(
+                        new SkillVO("critical", this.damage)
+                    );
                 }
                 return this;
             },
@@ -72,6 +78,10 @@ class skills {
         this.atkPas = [
             (damage) => { // 흡혈
                 this.hpReturn += damage / 2.0;
+
+                this.specialCommands.push(
+                    new SkillVO("vampire", this.hpReturn)
+                );
                 return this;
             },
         ]
@@ -80,16 +90,25 @@ class skills {
             // 방어
             (damage) => { // 단단한 신체
                 if (Math.random() >= 0.6) {
-                    damage /=  2.0;
+                    damage /= 2.0;
+                    
+                    this.specialCommands.push(
+                        new SkillVO("skinofsteel", this.damage)
+                    );
                 }
                 this.damage = damage;
 
                 return this;
             },
             (damage) => { // 끈질긴 생명력
-                if (damage - this.hp <= 0) {
+                if ((ws == null ? false : !ws.usedLonglife) && (this.hp - damage <= 0)) {
+                    this.haslonglife = true;
+                    this.damage = this.hp - 1;
+
+                    this.specialCommands.push(
+                        new SkillVO("longlife", this.damage)
+                    );
                 }
-                this.damage = this.hp - 1;
 
                 return this;
             },

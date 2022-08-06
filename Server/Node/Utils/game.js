@@ -129,6 +129,7 @@ class game
         ws.bomb          = false;
         ws.penetrate     = false;
         ws.hasShield     = false;
+        ws.usedLonglife  = false;
     }
 
     sendGamedata() {
@@ -280,7 +281,13 @@ class game
                 ));
             }, 7000);
         }
-        
+
+        if (sk.haslonglife && !damagedws.usedLonglife) {
+            damagedws.usedLonglife = true;
+
+            console.log("\nLONGLIFE\n");
+        }
+
         attackws.hp += sk.hpReturn;
         damagedws.hp -= damage;
 
@@ -322,6 +329,7 @@ class game
         deadws.hp = deadws.maxhp; // FIXME: 임시
         deadws.knockedout = false;
         deadws.neutralized = false;
+        deadws.usedLonglife = false;
 
         clearImmediate(deadws.shieldTimeout);
         clearImmediate(deadws.knockedoutTimeout);
