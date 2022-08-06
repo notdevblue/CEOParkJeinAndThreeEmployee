@@ -35,10 +35,10 @@ namespace HanSocket.Handlers.InGame
                     vo.skillList,
                     vo.selectCount
                 );
-
+            BulletPool.Instance.InitBullet();
             foreach (GameObject item in UserData.Instance.users.Values)
             {
-                item.GetComponent<PlayerData>().MyUI.NewLoop();
+                item.GetComponent<PlayerData>().MyUI?.NewLoop();
             }
 
         }
