@@ -48,8 +48,8 @@ namespace HanSocket.Handlers.InGame
                     user.GetComponent<Remote>()
                         ?.SetTarget(vo.pos);
                         
-                    if (vo.id == WebSocketClient.Instance.id)
-                        data.MyUI?.transform.Find("ME").gameObject.SetActive(false);
+                    // if (vo.id == WebSocketClient.Instance.id)
+                        // data.MyUI?.transform.Find("ME").gameObject.SetActive(false);
 
                     if (vo.id == WebSocketClient.Instance.id)
                     {

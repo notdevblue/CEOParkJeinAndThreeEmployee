@@ -293,8 +293,6 @@ class game
         let damagedwsTempDamage = damagedws.damage;
         
         let atksk = new skills(null, attackws);
-        damagedws.damage = atksk.damage;
-        let defsk = new skills(null, damagedws);
 
         let damage = atksk.damage;
 
@@ -309,6 +307,8 @@ class game
             damage = atksk.damage;
         }
         
+        damagedws.damage = atksk.damage;
+        let defsk = new skills(null, damagedws);
         
         if (!damagedws.neutralized) {
             damagedws.skills

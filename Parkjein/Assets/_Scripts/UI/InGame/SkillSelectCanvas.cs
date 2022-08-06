@@ -15,19 +15,23 @@ namespace UI.InGame
         private CanvasGroup _cvsGroup;
 
         private SkillButton[] _skillIcon;
+        private GameObject _raycastblocker;
 
         public float fadeDuration = 1.0f;
+        
 
 
         private void Awake()
         {
             _skillIcon = GetComponentsInChildren<SkillButton>();
             _cvsGroup = GetComponent<CanvasGroup>();
+            _raycastblocker = transform.Find("RaycastBlocker").gameObject;
         }
 
         public void Set(bool canSelect, List<SkillVO> skills, int selectCount = 1)
         {
             _selectCount = selectCount;
+            _raycastblocker.SetActive(true);
 
             for (int i = 0; i < _skillIcon.Length; ++i)
             {
@@ -51,7 +55,9 @@ namespace UI.InGame
 
         public void DoAlpha()
         {
-            _cvsGroup.DOFade(1.0f, 1.0f).SetEase(Ease.InOutQuad);
+            _cvsGroup.DOFade(1.0f, 1.0f).SetEase(Ease.InOutQuad).OnComplete(() => {
+                _raycastblocker.SetActive(false);
+            });
         }
     }
 }
