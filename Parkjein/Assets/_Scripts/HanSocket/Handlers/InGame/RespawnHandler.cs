@@ -3,11 +3,15 @@ using UnityEngine;
 using HanSocket.VO.InGame;
 using HanSocket.Data;
 using HanSocket.Sender.InGame;
+using UnityEngine.Events;
 
 namespace HanSocket.Handlers.InGame
 {
     public class RespawnHandler : HandlerBase
     {
+        public UnityEvent<bool> OnDead
+            = new UnityEvent<bool>();
+            
         protected override string Type => "respawn";
         public DeadSender deadSender;
 
@@ -51,6 +55,8 @@ namespace HanSocket.Handlers.InGame
 
                     wUser.GetComponent<PlayerData>().MyUI.SetWinImg(vo.setWon);
                     BulletPool.Instance.InitBullet();
+
+                    OnDead?.Invoke(vo.id == WebSocketClient.Instance.id);
                 }
             }
         }

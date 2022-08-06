@@ -342,8 +342,6 @@ class game
 
         if (sk.haslonglife && !damagedws.usedLonglife) {
             damagedws.usedLonglife = true;
-
-            console.log("\nLONGLIFE\n");
         }
 
         attackws.hp += sk.hpReturn;

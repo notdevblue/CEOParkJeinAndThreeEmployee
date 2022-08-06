@@ -3,11 +3,15 @@ using HanSocket.Data;
 using HanSocket.VO.InGame;
 using Managers;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace HanSocket.Handlers.InGame
 {
     public class DamageHandler : HandlerBase
     {
+        public UnityEvent<bool> OnDamage
+            = new UnityEvent<bool>();
+
         protected override string Type => "damage";
 
         ConcurrentQueue<DamageVO> vos
@@ -66,6 +70,8 @@ namespace HanSocket.Handlers.InGame
                     text.Init($"{vo.damage}", isCritical ? Color.red : Color.white, vo.point);
                     text.SetActive(true);
                     SoundManager.Instance.PlayHit(!data.CanMove);
+
+                    OnDamage?.Invoke(vo.id == WebSocketClient.Instance.id);
                 }
             }
         }
