@@ -43,6 +43,11 @@ public class EffectManager : MonoSingleton<EffectManager>
 
     #region Cinemachine
 
+    public void EnableDampingEndFrame()
+    {
+        StartCoroutine(UtilClass.EnableDampingEndFrame(vCam));
+    }
+
     public void SetFollow(Transform trm)
     {
         vCam.Follow = trm;

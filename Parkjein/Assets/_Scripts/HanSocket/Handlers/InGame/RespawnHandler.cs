@@ -41,6 +41,11 @@ namespace HanSocket.Handlers.InGame
                     user.transform.position = vo.pos;
                     user.SetActive(true);
 
+                    if(vo.id == WebSocketClient.Instance.id)
+                    {
+                        EffectManager.Instance.EnableDampingEndFrame();
+                    }
+
                     wUser.GetComponent<PlayerData>().MyUI.SetWinImg(vo.setWon);
                     BulletPool.Instance.InitBullet();
                 }
