@@ -167,16 +167,17 @@ class game
     }
 
     resetPlayerValue(ws) {
-        ws.damage        = 20;
-        ws.hp            = 100;
-        ws.maxhp         = 100;
-        ws.blocksize     = 5;
-        ws.blockspeed    = 5;
-        ws.speed         = 4;
-        ws.jumpPower     = 5;
-        ws.ratefire      = 0.25;
-        ws.rotationspeed = 7;
-        ws.pushpower     = 10;
+        const sk         = new skills(null);
+        ws.damage        = sk.damage;
+        ws.hp            = sk.hp;
+        ws.maxhp         = sk.hp;
+        ws.blocksize     = sk.blocksize;
+        ws.blockspeed    = sk.blockspeed;
+        ws.speed         = sk.speed;
+        ws.jumpPower     = sk.jumpPower;
+        ws.ratefire      = sk.ratefire;
+        ws.rotationspeed = sk.rotationspeed;
+        ws.pushpower     = sk.pushpower;
         ws.bomb          = false;
         ws.penetrate     = false;
         ws.hasShield     = false;
@@ -291,6 +292,9 @@ class game
         let attackws = this.players.find(x => x != damagedws);
         let sk = new skills();
         let damage;
+
+        this.applyStat(damagedws);
+        console.log(this.applyStat(attackws));
 
         if (!attackws.neutralized) {
             attackws.skills

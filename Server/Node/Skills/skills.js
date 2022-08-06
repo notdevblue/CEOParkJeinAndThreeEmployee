@@ -4,14 +4,14 @@ class skills {
 
     constructor(instance, ws) {
         if (instance == null) {
-            this.damage = ws == null ? 20 : ws.damage;
-            this.speed = ws == null ? 4 : ws.speed;
+            this.damage = (ws == null ? 20 : ws.damage);
+            this.speed = (ws == null ? 4 : ws.speed);
             this.jumpPower = 5;
-            this.blocksize = ws == null ? 5 : ws.blocksize;
-            this.ratefire = ws == null ? 0.5 : ws.ratefire;
-            this.blockspeed = ws == null ? 8 : ws.blockspeed;
-            this.rotationspeed = ws == null ? 7 : ws.rotationspeed;
-            this.pushpower = ws == null ? 10 : ws.pushpower;
+            this.blocksize = (ws == null ? 5 : ws.blocksize);
+            this.ratefire = (ws == null ? 0.5 : ws.ratefire);
+            this.blockspeed = (ws == null ? 8 : ws.blockspeed);
+            this.rotationspeed = (ws == null ? 7 : ws.rotationspeed);
+            this.pushpower = (ws == null ? 10 : ws.pushpower);
             
             this.hpReturn = 0;
             this.specialCommands = [];
@@ -42,7 +42,7 @@ class skills {
             this.haslonglife = instance.haslonglife;
         }
 
-        this.hp = ws == null ? 100 : ws.hp;
+        this.hp = ((ws == null) ? 100 : ws.hp);
 
 
         this.atk = [

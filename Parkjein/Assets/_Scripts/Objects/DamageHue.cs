@@ -14,25 +14,25 @@ public class DamageHue : MonoBehaviour
 
     private void Awake()
     {
-        _volume = GetComponent<VolumeProfile>();
+        // _volume = GetComponent<VolumeProfile>();
 
-        if (_volume.TryGet<ColorAdjustments>(out var adj)) {
-            _colorAdj = adj;
-            _defaultColor = _colorAdj.colorFilter.value;
-        }
+        // if (_volume.TryGet<ColorAdjustments>(out var adj)) {
+        //     _colorAdj = adj;
+        //     _defaultColor = _colorAdj.colorFilter.value;
+        // }
     }
 
     public void OnDamage(bool isme)
     {
-        if (!isme) return;
+        // if (!isme) return;
 
-        _colorAdj.colorFilter.value = damagedColor;
+        // _colorAdj.colorFilter.value = damagedColor;
 
-        Invoke(nameof(ReturnToDefault), effectDuration);
+        // Invoke(nameof(ReturnToDefault), effectDuration);
     }
 
     private void ReturnToDefault()
     {
-        _colorAdj.colorFilter.value = _defaultColor;
+        // _colorAdj.colorFilter.value = _defaultColor;
     }
 }
