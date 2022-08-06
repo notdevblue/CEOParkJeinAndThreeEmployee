@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
+using Managers;
 
 namespace UI.InGame
 {    
@@ -35,6 +36,7 @@ namespace UI.InGame
 
                 btnSelect.interactable = false;
 
+                SoundManager.Instance.PlaySelect();
                 _onClickCallback();
             });
         }

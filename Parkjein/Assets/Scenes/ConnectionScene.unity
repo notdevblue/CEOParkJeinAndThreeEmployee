@@ -3267,6 +3267,7 @@ MonoBehaviour:
   shieldSfx: {fileID: 8300000, guid: bd01eb78077ede893ac78cd33a607783, type: 3}
   skinOfSteelSfx: {fileID: 8300000, guid: 72a3bb4879a6c34ba8704293ae1cdfd5, type: 3}
   criticalSfx: {fileID: 8300000, guid: 49df991d253478890bbed9104bcf48d1, type: 3}
+  btnSfx: {fileID: 8300000, guid: 23c09129960119c69aa6438188b3049a, type: 3}
 --- !u!4 &4702140017705170074
 Transform:
   m_ObjectHideFlags: 0

@@ -23,6 +23,7 @@ namespace Managers
         public AudioClip shieldSfx;
         public AudioClip skinOfSteelSfx;
         public AudioClip criticalSfx;
+        public AudioClip btnSfx;
 
         protected override void Awake()
         {
@@ -88,6 +89,11 @@ namespace Managers
         public void PlayHit(bool isKnockout)
         {
             PlaySfxSound(isKnockout ? knockoutSfx : hitSfx);
+        }
+
+        public void PlaySelect()
+        {
+            PlaySfxSound(btnSfx);
         }
 
         private void Init()

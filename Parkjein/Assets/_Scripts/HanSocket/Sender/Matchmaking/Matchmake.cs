@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Managers;
 
 namespace HanSocket.Sender.Matchmaking
 {
@@ -14,6 +15,7 @@ namespace HanSocket.Sender.Matchmaking
         {
             matchButton.onClick.AddListener(() => {
                 WebSocketClient.Instance.Send("matchmaking", "");
+                SoundManager.Instance.PlaySelect();
             });
         }
     }
