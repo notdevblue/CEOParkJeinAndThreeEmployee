@@ -347,11 +347,6 @@ class game
                 damagedws.neutralized = false;
             }, 1500);
         }
-
-        if (damagedws.hp <= 0) {
-            this.dead(damagedws);
-            return;
-        }
         
         this.broadcast(hs.toJson(
             "damage",
@@ -366,6 +361,10 @@ class game
                 specialCommands: sk.specialCommands,
             })
         ));
+
+        if (damagedws.hp <= 0) {
+            this.dead(damagedws);
+        }
     }
     
     dead(deadws) {
@@ -408,7 +407,7 @@ class game
                     "respawn",
                     JSON.stringify({
                         id: deadws.id,
-                        pos: this.mapsSpawnLocation[Math.round(Math.random * 1)],
+                        pos: this.mapsSpawnLocation[this.map][Math.round(Math.random * 1)],
                         wonId: ws.id,
                         setWon: ws.setWon
                     }),

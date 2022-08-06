@@ -190,7 +190,6 @@ class skills {
             this.def,
             this.defPas,
             this.abil,
-            this.atkTrm
         ];
     }
 

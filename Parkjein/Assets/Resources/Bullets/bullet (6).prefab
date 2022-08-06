@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5344220448195848611}
   m_Layer: 0
   m_Name: bullet (6)
-  m_TagString: BULLET
+  m_TagString: GROUND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,6 +101,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigid: {fileID: 5344220448195848615}
   bulletIdx: 0
+  bulletId: -1
+  shooterId: -1
+  damaged: 0
 --- !u!50 &5344220448195848615
 Rigidbody2D:
   serializedVersion: 4
