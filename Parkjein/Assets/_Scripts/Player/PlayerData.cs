@@ -32,6 +32,9 @@ public class PlayerData : MonoBehaviour
     [SerializeField]
     private PlayerAnimation anim;
 
+    private bool _canMove = true;
+    public bool CanMove => _canMove;
+
     public void InitValue(float jump, float speed, float bulletSpeed, float atkspeed, float rotationSpeed)
     {
         this.jumpSpeed = jump;
@@ -47,5 +50,16 @@ public class PlayerData : MonoBehaviour
     {
         shoot.SetAttackSpeed(attackSpeed);
         anim.SetAttackSpeed(attackSpeed > 1 ? attackSpeed : 1);
+    }
+
+    public void Knockout(float restoreTime)
+    {
+        _canMove = false;
+        Invoke("Restore", restoreTime);
+    }
+
+    private void Restore()
+    {
+        _canMove = true;
     }
 }

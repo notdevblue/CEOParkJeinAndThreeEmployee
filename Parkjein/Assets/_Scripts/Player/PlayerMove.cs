@@ -12,9 +12,6 @@ public class PlayerMove : MonoBehaviour
     private SpriteRenderer sr;
     public SpriteRenderer Sr => sr;
 
-    private bool _canMove = true;
-    public bool CanMove => _canMove;
-
     private Rigidbody2D rigid;
 
     private PlayerAnimation anim;
@@ -47,7 +44,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Move()
     {
-        if (!_canMove) return;
+        if (!data.CanMove) return;
 
         if (Input.GetKey(LEFT))
         {
@@ -98,16 +95,5 @@ public class PlayerMove : MonoBehaviour
         }
 
         transform.position += dir * data.MoveSpeed * Time.deltaTime;
-    }
-
-    public void Knockout(float restoreTime)
-    {
-        _canMove = false;
-        Invoke("Restore", restoreTime);
-    }
-
-    private void Restore()
-    {
-        _canMove = true;
     }
 }

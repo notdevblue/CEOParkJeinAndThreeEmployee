@@ -8,5 +8,6 @@ namespace HanSocket.VO.InGame
     {
         public int winnerId;
         public string reason;
+        public List<WinVO> winList;
     }
 }

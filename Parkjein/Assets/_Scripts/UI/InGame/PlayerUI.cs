@@ -23,6 +23,8 @@ public class PlayerUI : MonoBehaviour
     [SerializeField]
     private Sprite winSprite;
 
+    public bool isLeft;
+
     public void Init(Sprite playerSprite = null)
     {
         if(playerSprite != null)
