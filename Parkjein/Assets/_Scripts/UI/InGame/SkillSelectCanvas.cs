@@ -43,6 +43,7 @@ namespace UI.InGame
             }
 
             gameObject.SetActive(true);
+            DoAlpha();
         }
 
         private void OnDisable()
