@@ -83,6 +83,7 @@ namespace HanSocket.Data
 
                     obj.GetComponent<Rigidbody2D>().gravityScale = 1;
                     MonoBehaviour.Destroy(obj.GetComponent<Remote>());
+                    EffectManager.Instance.SetFollow(obj.transform);
                 }
             }
 

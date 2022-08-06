@@ -35,6 +35,11 @@ namespace HanSocket.Handlers.InGame
                     obj.GetComponent<PlayerAnimation>().SetHurt();
                     EffectManager.Instance.PlayEffect("hit", vo.point, Vector2.zero,null);
 
+                    if(vo.id == WebSocketClient.Instance.id)
+                    {
+                        EffectManager.Instance.ShakeCamera(0.7f);
+                    }
+
                     Debug.LogWarning($"AtkHP: {vo.atkhp}/{vo.atkmaxhp}, Damaged: {vo.id}, HP: {vo.hp}/{vo.maxhp}");
                     vo.specialCommands?.ForEach(x => {
                         switch (x.command)
