@@ -39,6 +39,7 @@ namespace HanSocket.Handlers.InGame
                 if (vos.TryDequeue(out var vo))
                 {
                     GameObject user   = UserData.Instance.users[vo.id];
+                    PlayerData data = user.GetComponent<PlayerData>();
                     Rigidbody2D rigid = user.GetComponent<Rigidbody2D>();
 
                     if(rigid != null)
@@ -46,9 +47,18 @@ namespace HanSocket.Handlers.InGame
 
                     user.GetComponent<Remote>()
                         ?.SetTarget(vo.pos);
+                        
+                    if (vo.id == WebSocketClient.Instance.id)
+                        data.MyUI?.transform.Find("ME").gameObject.SetActive(false);
+
+                    if (vo.id == WebSocketClient.Instance.id)
+                    {
+                        EffectManager.Instance.EnableDampingEndFrame();
+                    }
 
                     user.transform.position = vo.pos;
                     user.SetActive(true);
+                    data.MyUI?.SetHp(1);
                 }
             }
         }

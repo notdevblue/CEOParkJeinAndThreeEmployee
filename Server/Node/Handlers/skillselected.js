@@ -1,3 +1,5 @@
+const write = require("../Utils/Logger");
+
 module.exports = {
     type: "skillselected",
     handle: (ws, data) => {

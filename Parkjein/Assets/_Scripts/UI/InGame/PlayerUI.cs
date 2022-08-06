@@ -57,10 +57,8 @@ public class PlayerUI : MonoBehaviour
 
     public void SetHp(float hpAmount)
     {
-        if (hpAmount == -1)
-            hpAmount = hpSlider.maxValue;
-
         hpSlider.value = hpAmount;
+        Debug.LogError($"REQUEST: {hpAmount}, CURVALUE {hpSlider.value}");
     }
 
     public void SetWinImg(int win)

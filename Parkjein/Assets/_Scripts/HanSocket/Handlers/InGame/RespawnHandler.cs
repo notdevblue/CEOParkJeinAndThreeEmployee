@@ -42,7 +42,6 @@ namespace HanSocket.Handlers.InGame
 
                     user.GetComponent<Remote>()
                         ?.SetTarget(vo.pos);
-                    user.GetComponent<PlayerData>().MyUI.SetHp(-1);
                         
                     user.transform.position = vo.pos;
                     user.SetActive(true);
@@ -54,6 +53,8 @@ namespace HanSocket.Handlers.InGame
                     }
 
                     wUser.GetComponent<PlayerData>().MyUI.SetWinImg(vo.setWon);
+                    user.GetComponent<PlayerData>().MyUI.SetHp(1.0f);
+
                     BulletPool.Instance.InitBullet();
 
                     OnDead?.Invoke(vo.id == WebSocketClient.Instance.id);

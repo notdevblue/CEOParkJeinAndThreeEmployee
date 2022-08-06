@@ -94,7 +94,8 @@ public class TetrisBullet : MonoBehaviour
         }
 
 
-        if (col.gameObject.CompareTag("GROUND")
+        if (shooterId != user?.id
+         || col.gameObject.CompareTag("GROUND")
          || col.gameObject.CompareTag("BULLET"))
         {
             stopBullet = true;

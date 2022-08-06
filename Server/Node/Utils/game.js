@@ -296,6 +296,8 @@ class game
         damagedws.damage = atksk.damage;
         let defsk = new skills(null, damagedws);
 
+        let damage = atksk.damage;
+
         if (!attackws.neutralized) {
             attackws.skills
                 ?.filter(x => x.type == 0)
@@ -309,16 +311,15 @@ class game
         
         
         if (!damagedws.neutralized) {
-            let changed = false;
+            let beforeDamage = damage;
             damagedws.skills
                 ?.filter(x => x.type == 2)
                 ?.forEach(skill => {
-                    changed = true;
                     defsk = new skills(defsk, damagedws)
                         .skills[2][skill.index](damage);
                 });
             
-            if (changed)
+            if (beforeDamage != damage)
                 damage = defsk.damage;
         }
 
