@@ -38,7 +38,7 @@ function write(msg, ipAddr) {
    // TODO: 로그 파일 생성 안 하는 이슈
    
    console.log(msg);
-   fs.appendFile(filePath, [msg + "\r\n"]);
+   // fs.appendFile(filePath, [msg + "\r\n"]);
 }
 
 module.exports = write;
