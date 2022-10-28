@@ -1140,8 +1140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a185fcd6ae792cc5ea4d8a45128d2d34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ipAddr: 61.77.75.200
-  port: 48000
+  ipAddr: www.hanusegentoo.kro.kr
+  port: 39000
   id: 0
 --- !u!4 &1049130386
 Transform:
