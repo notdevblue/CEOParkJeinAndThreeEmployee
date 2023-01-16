@@ -1,0 +1,135 @@
+2023-1-16 13-50-26-920 					
+2023-1-16 13-50-26-922 					[II] Server started on port 48000.
+2023-1-16 13-50-26-922 					[  ] Server is listening
+2023-1-16 13-50-26-923 					[  ] Found heandler bulletstop.js
+2023-1-16 13-50-26-925 					[  ] Found heandler damage.js
+2023-1-16 13-50-26-927 					[  ] Found heandler dead.js
+2023-1-16 13-50-26-931 					[  ] Found heandler fire.js
+2023-1-16 13-50-26-929 					[  ] Found heandler exampleHandler.js
+2023-1-16 13-50-26-933 					[  ] Found heandler init.js
+2023-1-16 13-50-26-935 					[  ] Found heandler loaded.js
+2023-1-16 13-50-26-936 					[  ] Found heandler matchmaking.js
+2023-1-16 13-50-26-938 					[  ] Found heandler move.js
+2023-1-16 13-50-26-940 					[  ] Found heandler skillselected.js
+2023-1-16 13-50-49-838 					
+2023-1-16 13-50-49-840 					[II] Server started on port 48000.
+2023-1-16 13-50-49-840 					[  ] Server is listening
+2023-1-16 13-50-49-841 					[  ] Found heandler bulletstop.js
+2023-1-16 13-50-49-843 					[  ] Found heandler damage.js
+2023-1-16 13-50-49-855 					[  ] Found heandler dead.js
+2023-1-16 13-50-49-858 					[  ] Found heandler exampleHandler.js
+2023-1-16 13-50-49-860 					[  ] Found heandler fire.js
+2023-1-16 13-50-49-861 					[  ] Found heandler init.js
+2023-1-16 13-50-49-863 					[  ] Found heandler loaded.js
+2023-1-16 13-50-49-865 					[  ] Found heandler matchmaking.js
+2023-1-16 13-50-49-866 					[  ] Found heandler move.js
+2023-1-16 13-50-49-867 					[  ] Found heandler skillselected.js
+2023-1-16 13-53-7-825 		[::1]	[II] New client joined. ID:0
+2023-1-16 13-53-7-905 		[::1]	[  ] Received: {"type":"init","payload":""}
+2023-1-16 13-53-7-907 					[  ] Sending {"type":"init","payload":"{\"id\":0}"} to ::1
+2023-1-16 13-53-9-166 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":1,\"bulletIdx\":3,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.87812739610672,\"y\":0.47842687368392947},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-9-167 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-10-828 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":2,\"bulletIdx\":1,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.4722605347633362,\"y\":0.8814589977264404},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-10-829 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-13-211 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":3,\"bulletIdx\":4,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.4503403604030609,\"y\":0.892857015132904},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-13-212 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-16-475 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":4,\"bulletIdx\":5,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.7300805449485779,\"y\":0.6833611130714417},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-16-476 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-17-796 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":5,\"bulletIdx\":4,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.7354381084442139,\"y\":0.6775919198989868},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-17-797 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-18-851 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":6,\"bulletIdx\":4,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.7354381084442139,\"y\":0.6775919198989868},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-18-852 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-21-20 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":7,\"bulletIdx\":6,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.8688146471977234,\"y\":0.49513736367225649},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-21-21 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-22-502 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-22-501 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":8,\"bulletIdx\":6,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.8688146471977234,\"y\":0.49513736367225649},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-25-179 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":9,\"bulletIdx\":0,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.07026226073503494,\"y\":0.9975285530090332},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-25-179 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-26-485 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":10,\"bulletIdx\":4,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.328635036945343,\"y\":0.9444570541381836},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-26-486 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-28-6 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":11,\"bulletIdx\":5,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.328635036945343,\"y\":0.9444570541381836},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-28-7 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-29-13 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":12,\"bulletIdx\":2,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.8304738998413086,\"y\":0.5570574998855591},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-29-14 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-30-908 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":13,\"bulletIdx\":1,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.3735882043838501,\"y\":0.9275946617126465},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-30-909 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-32-139 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":14,\"bulletIdx\":4,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.8683521151542664,\"y\":0.4959481358528137},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-32-139 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-33-947 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":15,\"bulletIdx\":3,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.2825639545917511,\"y\":0.9592484831809998},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-33-948 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-35-125 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":16,\"bulletIdx\":4,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.9202837944030762,\"y\":0.39125147461891177},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-35-126 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-36-555 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":17,\"bulletIdx\":1,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.3013915717601776,\"y\":0.9535004496574402},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-36-556 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-37-852 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":18,\"bulletIdx\":0,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.9212668538093567,\"y\":0.3889310657978058},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-37-852 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-39-293 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":19,\"bulletIdx\":1,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.08182266354560852,\"y\":0.9966469407081604},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-39-294 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-40-782 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":20,\"bulletIdx\":6,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.6324293613433838,\"y\":0.7746179699897766},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-40-783 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-42-651 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":21,\"bulletIdx\":0,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.20881867408752442,\"y\":0.9779543876647949},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-42-652 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-43-956 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":22,\"bulletIdx\":5,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.8603385090827942,\"y\":0.5097231864929199},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-43-957 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-45-718 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":23,\"bulletIdx\":6,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.10782476514577866,\"y\":0.9941699504852295},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-45-718 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-46-957 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":24,\"bulletIdx\":0,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.47520169615745547,\"y\":0.8798768520355225},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-46-957 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-48-902 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":25,\"bulletIdx\":4,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.7525767087936401,\"y\":-0.6585046052932739},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-48-903 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-50-147 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":26,\"bulletIdx\":0,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.9250198006629944,\"y\":0.3799188435077667},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-50-148 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-51-309 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":27,\"bulletIdx\":1,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.24196310341358186,\"y\":0.9702854752540588},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-51-310 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-53-627 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":28,\"bulletIdx\":2,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.6754372715950012,\"y\":0.7374173998832703},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-53-628 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-54-732 		[::1]	[  ] Received: {"type":"fire","payload":"{\"shooterId\":0,\"bulletId\":29,\"bulletIdx\":1,\"startPos\":{\"x\":-3.700000047683716,\"y\":-2.687000036239624},\"dir\":{\"x\":0.9920192360877991,\"y\":-0.12608657777309419},\"bulletSpeed\":10.0,\"rotationSpeed\":5.0}"}
+2023-1-16 13-53-54-732 		[::1]	fire: 게임 중이 아닌 클라이언트의 요청
+2023-1-16 13-53-56-180 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-53-56-180 					[  ] Sending {"type":"match","payload":""} to ::1
+2023-1-16 13-53-57-60 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-53-57-60 					[  ] Sending {"type":"unmatch","payload":""} to ::1
+2023-1-16 13-53-57-723 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-53-57-723 					[  ] Sending {"type":"match","payload":""} to ::1
+2023-1-16 13-53-58-274 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-53-58-275 					[  ] Sending {"type":"unmatch","payload":""} to ::1
+2023-1-16 13-53-58-603 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-53-58-603 					[  ] Sending {"type":"match","payload":""} to ::1
+2023-1-16 13-53-59-59 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-53-59-59 					[  ] Sending {"type":"unmatch","payload":""} to ::1
+2023-1-16 13-53-59-316 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-53-59-317 					[  ] Sending {"type":"match","payload":""} to ::1
+2023-1-16 13-53-59-490 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-53-59-491 					[  ] Sending {"type":"unmatch","payload":""} to ::1
+2023-1-16 13-53-59-686 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-53-59-686 					[  ] Sending {"type":"match","payload":""} to ::1
+2023-1-16 13-53-59-900 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-53-59-900 					[  ] Sending {"type":"unmatch","payload":""} to ::1
+2023-1-16 13-54-0-75 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-54-0-76 					[  ] Sending {"type":"match","payload":""} to ::1
+2023-1-16 13-54-0-251 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-54-0-251 					[  ] Sending {"type":"unmatch","payload":""} to ::1
+2023-1-16 13-54-0-421 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-54-0-421 					[  ] Sending {"type":"match","payload":""} to ::1
+2023-1-16 13-54-0-580 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-54-0-581 					[  ] Sending {"type":"unmatch","payload":""} to ::1
+2023-1-16 13-54-0-740 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-54-0-740 					[  ] Sending {"type":"match","payload":""} to ::1
+2023-1-16 13-54-0-917 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-54-0-917 					[  ] Sending {"type":"unmatch","payload":""} to ::1
+2023-1-16 13-54-1-93 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-54-1-93 					[  ] Sending {"type":"match","payload":""} to ::1
+2023-1-16 13-54-1-260 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-54-1-260 					[  ] Sending {"type":"unmatch","payload":""} to ::1
+2023-1-16 13-54-1-452 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-54-1-453 					[  ] Sending {"type":"match","payload":""} to ::1
+2023-1-16 13-54-1-619 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-54-1-619 					[  ] Sending {"type":"unmatch","payload":""} to ::1
+2023-1-16 13-54-1-780 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-54-1-781 					[  ] Sending {"type":"match","payload":""} to ::1
+2023-1-16 13-54-2-115 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-54-2-115 					[  ] Sending {"type":"unmatch","payload":""} to ::1
+2023-1-16 13-54-2-508 		[::1]	[  ] Received: {"type":"matchmaking","payload":""}
+2023-1-16 13-54-2-509 					[  ] Sending {"type":"match","payload":""} to ::1
+2023-1-16 13-54-3-745 		[::1]	[II] Client disconnected, code: 1000, reason: Client disconnected
+2023-1-16 13-54-3-746 					[  ] Sending {"type":"unmatch","payload":""} to ::1
